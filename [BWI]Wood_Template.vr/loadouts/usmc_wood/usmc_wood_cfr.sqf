@@ -65,3 +65,4 @@ _unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";
 _unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";
 _unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";
 
+Hi adi
