@@ -29,14 +29,14 @@ player addItemToBackpack "RH_peq15b";
 player addItemToBackpack "rhsusf_acc_nt4_black";
 player addItemToBackpack "rhsusf_ANPVS_15";
 player addItemToBackpack "RH_m9qd";
-for "_i" from 1 to 2 do {this addItemToBackpack "HandGrenade";};
-for "_i" from 1 to 10 do {this addItemToBackpack "ACE_fieldDressing";};
-for "_i" from 1 to 10 do {this addItemToBackpack "ACE_packingBandage";};
-for "_i" from 1 to 5 do {this addItemToBackpack "ACE_elasticBandage";};
-for "_i" from 1 to 20 do {this addItemToBackpack "ACE_quikclot";};
-for "_i" from 1 to 5 do {this addItemToBackpack "ACE_morphine";};
-for "_i" from 1 to 3 do {this addItemToBackpack "ACE_tourniquet";};
-for "_i" from 1 to 5 do {this addItemToBackpack "ACE_epinephrine";};
+for "_i" from 1 to 2 do {player addItemToBackpack "HandGrenade";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_fieldDressing";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_packingBandage";};
+for "_i" from 1 to 5 do {player addItemToBackpack "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {player addItemToBackpack "ACE_quikclot";};
+for "_i" from 1 to 5 do {player addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 3 do {player addItemToBackpack "ACE_tourniquet";};
+for "_i" from 1 to 5 do {player addItemToBackpack "ACE_epinephrine";};
 player addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
 
 
