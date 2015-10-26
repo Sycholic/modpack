@@ -42,7 +42,7 @@ player addPrimaryWeaponItem "RH_compm4s";
 player addWeapon "rhs_weap_M136";
 player addWeapon "RH_m9";
 player addHandgunItem "RH_M6X";
-player addWeapon "Binocular"
+player addWeapon "Binocular";
 
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
