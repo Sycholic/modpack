@@ -34,6 +34,7 @@ player addItemToBackpack "ACE_tourniquet";
 player addItemToBackpack "RH_m9qd";
 player addItemToBackpack "ACE_epinephrine";
 player addHeadgear "rhsusf_mich_helmet_marpatwd_norotos";
+player addItemToBackpack "rhsusf_ANPVS_15";
 
 player addWeapon "rhs_weap_m4a1_carryhandle_grip";
 player addPrimaryWeaponItem "RH_SFM952V";
@@ -41,6 +42,7 @@ player addPrimaryWeaponItem "RH_compm4s";
 player addWeapon "rhs_weap_M136";
 player addWeapon "RH_m9";
 player addHandgunItem "RH_M6X";
+player addWeapon "Binocular";
 
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
