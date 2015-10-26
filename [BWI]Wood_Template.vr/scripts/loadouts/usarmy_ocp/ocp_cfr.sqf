@@ -18,7 +18,7 @@ player addItemToUniform "ACE_IR_Strobe_Item";
 for "_i" from 1 to 2 do {player addItemToUniform "Chemlight_green";};
 for "_i" from 1 to 2 do {player addItemToUniform "B_IR_Grenade";};
 player addVest "rhsusf_iotv_ocp_Medic";
-for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};
+for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
 player addItemToVest "SmokeShellRed";
 player addItemToVest "SmokeShellGreen";
 player addItemToVest "RH_15Rnd_9x19_M9";
