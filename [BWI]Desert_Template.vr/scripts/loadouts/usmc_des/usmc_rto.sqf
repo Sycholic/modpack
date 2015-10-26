@@ -51,13 +51,13 @@ player linkItem "ItemWatch";
 player linkItem "tf_anprc152";
 player linkItem "ItemGPS";
 
-_unit addItemToVest "30Rnd_556x45_Stanag";
-_unit addItemToVest "30Rnd_556x45_Stanag";
-_unit addItemToVest "30Rnd_556x45_Stanag";
-_unit addItemToVest "30Rnd_556x45_Stanag";
-_unit addItemToVest "30Rnd_556x45_Stanag";
-_unit addItemToVest "30Rnd_556x45_Stanag";
-_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";
-_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";
-_unit addItemToUniform "30Rnd_556x45_Stanag_Tracer_Red";
+player addItemToVest "30Rnd_556x45_Stanag";
+player addItemToVest "30Rnd_556x45_Stanag";
+player addItemToVest "30Rnd_556x45_Stanag";
+player addItemToVest "30Rnd_556x45_Stanag";
+player addItemToVest "30Rnd_556x45_Stanag";
+player addItemToVest "30Rnd_556x45_Stanag";
+player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";
+player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";
+player addItemToUniform "30Rnd_556x45_Stanag_Tracer_Red";
 
