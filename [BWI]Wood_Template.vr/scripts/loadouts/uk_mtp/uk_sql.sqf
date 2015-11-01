@@ -35,7 +35,7 @@ for "_i" from 1 to 3 do {player addItemToBackpack "ACE_quikclot";};
 player addItemToBackpack "ACE_morphine";
 player addItemToBackpack "ACE_tourniquet";
 player addItemToBackpack "rhsusf_ANPVS_15";
-player addItemToBackpack "UK3CB_BAF_SFFH";
+player addItemToBackpack "UK3CB_BAF_Silencer_L85";
 player addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black";
 player addHeadgear "UK3CB_BAF_H_Mk7_Camo_A";
 

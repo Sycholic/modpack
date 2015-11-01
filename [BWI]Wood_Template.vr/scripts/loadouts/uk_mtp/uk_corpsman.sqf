@@ -40,7 +40,6 @@ for "_i" from 1 to 2 do {player addItemToBackpack "ACE_bodyBag";};
 player addItemToBackpack "UK3CB_BAF_Silencer_L85";
 player addItemToBackpack "rhsusf_ANPVS_15";
 player addHeadgear "UK3CB_BAF_H_Mk7_Camo_B";
-player addItemToBackpack "UK3CB_BAF_SFFH";
 player addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black";
 
 
