@@ -1,0 +1,1 @@
+player setposasl [6817,1107,18];
