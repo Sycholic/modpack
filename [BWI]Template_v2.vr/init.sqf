@@ -132,6 +132,13 @@ b_dmr addAction ["[USMC (Wood)] - Designated Marksman", "BWI\loadouts\usmc_wood\
 b_dmr addAction ["[GER (Desert)] - Designated Marksman", "BWI\loadouts\ger_des\bw_dmr.sqf"];
 b_dmr addAction ["[GER (Wood)] - Designated Marksman", "BWI\loadouts\ger_wood\bw_dmr.sqf"];
 
+//crew
+
+b_pilot addAction ["[USMC (Desert)] - Rotary Pilot", "BWI\loadouts\usmc_des\usmc_des_hel.sqf"];
+b_pilot addAction ["[USMC (Wood)] - Rotary Pilot", "BWI\loadouts\usmc_wood\usmc_wood_hel.sqf"];
+b_pilot addAction ["[GER (Desert)] - Rotary Pilot", "BWI\loadouts\ger_des\bw_hel.sqf"];
+b_pilot addAction ["[GER (Wood)] - Rotary Pilot", "BWI\loadouts\ger_wood\bw_hel.sqf"];
+
 //rifleman
 
 b_rif addAction ["[US Army (UCP) - Rifleman]", "BWI\loadouts\usarmy_ucp\ucp_rifleman.sqf"];
