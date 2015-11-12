@@ -1,44 +1,47 @@
 //LOADOUTS - BWI - SQL/FTL
 
-removeAllWeapons player;
-removeAllItems player;
-removeAllAssignedItems player;
-removeUniform player;
-removeVest player;
-removeBackpack player;
-removeHeadgear player;
-removeGoggles player;
+_unit = (_this select 1);
+if( !local _unit ) exitWith {};
 
-player forceAddUniform "U_PMC_IndUniformRS_BSBPBB";
+removeAllWeapons _unit;
+removeAllItems _unit;
+removeAllAssignedItems _unit;
+removeUniform _unit;
+removeVest _unit;
+removeBackpack _unit;
+removeHeadgear _unit;
+removeGoggles _unit;
 
-player addVest "V_PlateCarrier2_blk";
-for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
-player addItemToVest "SmokeShellRed";
-player addItemToVest "SmokeShellGreen";
-player addItemToVest "UGL_FlareWhite_F";
-for "_i" from 1 to 4 do {player addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
-player addItemToVest "1Rnd_Smoke_Grenade_shell";
+_unit forceAddUniform "U_PMC_IndUniformRS_BSBPBB";
 
-player addBackpack "PMC_B_Kitbag_blk";
-player addItemToBackpack "RH_peq15b";
-player addItemToBackpack "rhsusf_acc_nt4_black";
-player addItemToBackpack "RH_m9qd";
-for "_i" from 1 to 3 do {player addItemToBackpack "RH_15Rnd_9x19_M9";};
-for "_i" from 1 to 9 do {player addItemToBackpack "1Rnd_HE_Grenade_shell";};
+_unit addVest "V_PlateCarrier2_blk";
+for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
+_unit addItemToVest "SmokeShellRed";
+_unit addItemToVest "SmokeShellGreen";
+_unit addItemToVest "UGL_FlareWhite_F";
+for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
+_unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
-player addHeadgear "BWA3_OpsCore_Schwarz";
+_unit addBackpack "PMC_B_Kitbag_blk";
+_unit addItemToBackpack "RH_peq15b";
+_unit addItemToBackpack "rhsusf_acc_nt4_black";
+_unit addItemToBackpack "RH_m9qd";
+for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
+for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
-player addWeapon "rhs_weap_m4a1_carryhandle_m203";
-player addPrimaryWeaponItem "RH_SFM952V";
-player addPrimaryWeaponItem "RH_ta31rmr"	;
-player addWeapon "RH_m9";
-player addHandgunItem "RH_M6X";
+_unit addHeadgear "BWA3_OpsCore_Schwarz";
 
-player linkItem "tf_anprc152";
+_unit addWeapon "rhs_weap_m4a1_carryhandle_m203";
+_unit addPrimaryWeaponItem "RH_SFM952V";
+_unit addPrimaryWeaponItem "RH_ta31rmr"	;
+_unit addWeapon "RH_m9";
+_unit addHandgunItem "RH_M6X";
 
-[player, "FTL"] call BWI_fnc_AddGear;
-[player, "FTL"] call BWI_fnc_AddMedical;
+_unit linkItem "tf_anprc152";
 
-for "_i" from 1 to 6 do {player addItemToVest "30Rnd_556x45_Stanag";}; 
-for "_i" from 1 to 3 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
+[_unit, "FTL"] call BWI_fnc_AddGear;
+[_unit, "FTL"] call BWI_fnc_AddMedical;
+
+for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};

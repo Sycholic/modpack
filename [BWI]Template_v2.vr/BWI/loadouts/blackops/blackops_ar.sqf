@@ -1,38 +1,41 @@
 //LOADOUTS - BWI - AAR (M27)
 
-removeAllWeapons player;
-removeAllItems player;
-removeAllAssignedItems player;
-removeUniform player;
-removeVest player;
-removeBackpack player;
-removeHeadgear player;
-removeGoggles player;
+_unit = (_this select 1);
+if( !local _unit ) exitWith {};
 
-player forceAddUniform "U_PMC_IndUniformRS_BSBPBB";
+removeAllWeapons _unit;
+removeAllItems _unit;
+removeAllAssignedItems _unit;
+removeUniform _unit;
+removeVest _unit;
+removeBackpack _unit;
+removeHeadgear _unit;
+removeGoggles _unit;
 
-player addVest "V_PlateCarrier2_blk";
-player addItemToVest "SmokeShellRed";
-player addItemToVest "SmokeShellGreen";
-for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
-for "_i" from 1 to 3 do {player addItemToVest "RH_15Rnd_9x19_M9";};
+_unit forceAddUniform "U_PMC_IndUniformRS_BSBPBB";
 
-player addBackpack "PMC_B_Kitbag_blk";
-player addItemToBackpack "RH_m9qd";
-player addItemToBackpack "RH_qdss_nt4";
+_unit addVest "V_PlateCarrier2_blk";
+_unit addItemToVest "SmokeShellRed";
+_unit addItemToVest "SmokeShellGreen";
+for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
+for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
 
-player addHeadgear "BWA3_OpsCore_Schwarz";
+_unit addBackpack "PMC_B_Kitbag_blk";
+_unit addItemToBackpack "RH_m9qd";
+_unit addItemToBackpack "RH_qdss_nt4";
 
-player addWeapon "hlc_m249_pip1";
-player addPrimaryWeaponItem "RH_c79";
-player addWeapon "RH_m9";
-player addHandgunItem "RH_M6X";
+_unit addHeadgear "BWA3_OpsCore_Schwarz";
 
-player linkItem "tf_rf7800str";
+_unit addWeapon "hlc_m249_pip1";
+_unit addPrimaryWeaponItem "RH_c79";
+_unit addWeapon "RH_m9";
+_unit addHandgunItem "RH_M6X";
 
-[player, "AR"] call BWI_fnc_AddGear;
-[player, "AR"] call BWI_fnc_AddMedical;
+_unit linkItem "tf_rf7800str";
 
-for "_i" from 1 to 3 do {player addItemToBackpack "hlc_200rnd_556x45_M_SAW";};
-player addItemToBackpack "hlc_200rnd_556x45_T_SAW";
+[_unit, "AR"] call BWI_fnc_AddGear;
+[_unit, "AR"] call BWI_fnc_AddMedical;
+
+for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_200rnd_556x45_M_SAW";};
+_unit addItemToBackpack "hlc_200rnd_556x45_T_SAW";

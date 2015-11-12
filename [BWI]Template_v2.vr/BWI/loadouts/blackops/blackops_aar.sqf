@@ -1,41 +1,44 @@
 //LOADOUTS - BWI - Automatic Rifleman (M27)
 
-removeAllWeapons player;
-removeAllItems player;
-removeAllAssignedItems player;
-removeUniform player;
-removeVest player;
-removeBackpack player;
-removeHeadgear player;
-removeGoggles player;
+_unit = (_this select 1);
+if( !local _unit ) exitWith {};
 
-player forceAddUniform "U_PMC_IndUniformRS_BSBPBB";
+removeAllWeapons _unit;
+removeAllItems _unit;
+removeAllAssignedItems _unit;
+removeUniform _unit;
+removeVest _unit;
+removeBackpack _unit;
+removeHeadgear _unit;
+removeGoggles _unit;
 
-player addVest "V_PlateCarrier2_blk";
-for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
-player addItemToVest "SmokeShellRed";
-player addItemToVest "SmokeShellGreen";
-for "_i" from 1 to 3 do {player addItemToVest "RH_15Rnd_9x19_M9";};
+_unit forceAddUniform "U_PMC_IndUniformRS_BSBPBB";
 
-player addBackpack "PMC_B_Kitbag_blk";
-player addItemToBackpack "RH_peq15b";
-player addItemToBackpack "rhsusf_acc_nt4_black";
-for "_i" from 1 to 2 do {player addItemToBackpack "HandGrenade";};
-player addItemToBackpack "RH_m9qd";
+_unit addVest "V_PlateCarrier2_blk";
+for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
+_unit addItemToVest "SmokeShellRed";
+_unit addItemToVest "SmokeShellGreen";
+for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
 
-player addHeadgear "BWA3_OpsCore_Schwarz";
+_unit addBackpack "PMC_B_Kitbag_blk";
+_unit addItemToBackpack "RH_peq15b";
+_unit addItemToBackpack "rhsusf_acc_nt4_black";
+for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
+_unit addItemToBackpack "RH_m9qd";
 
-player addWeapon "rhs_weap_m4a1_carryhandle_grip";
-player addPrimaryWeaponItem "RH_SFM952V";
-player addPrimaryWeaponItem "RH_compm4s";
-player addWeapon "RH_m9";
-player addHandgunItem "RH_M6X";
+_unit addHeadgear "BWA3_OpsCore_Schwarz";
 
-player linkItem "tf_rf7800str";
+_unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
+_unit addPrimaryWeaponItem "RH_SFM952V";
+_unit addPrimaryWeaponItem "RH_compm4s";
+_unit addWeapon "RH_m9";
+_unit addHandgunItem "RH_M6X";
 
-[player, "AAR"] call BWI_fnc_AddGear;
-[player, "AAR"] call BWI_fnc_AddMedical;
+_unit linkItem "tf_rf7800str";
 
-for "_i" from 1 to 3 do {player addItemToBackpack "hlc_200rnd_556x45_M_SAW";}; 
-for "_i" from 1 to 6 do {player addItemToVest "30Rnd_556x45_Stanag";}; 
-for "_i" from 1 to 3 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";}; 
+[_unit, "AAR"] call BWI_fnc_AddGear;
+[_unit, "AAR"] call BWI_fnc_AddMedical;
+
+for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_200rnd_556x45_M_SAW";}; 
+for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";}; 
