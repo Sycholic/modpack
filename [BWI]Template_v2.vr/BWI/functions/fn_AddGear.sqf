@@ -17,7 +17,7 @@
 *	HEL		= Helicopter Pilot / Crew
 *	JET		= Fixed Wing Pilot / Crew
 *	MMG		= Medium Machine Gun
-*	DM		= Designated Marksman
+*	DMR  	= Designated Marksman
 *	SNI		= Sniper
 *	DEM		= Demolition
 *	ARM		= Armor Driver / Crew
@@ -101,6 +101,18 @@ switch( _class ) do {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "Binocular";
 		_unit addItemToBackpack "ToolKit";
+	};
+	
+	case "HEL": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addWeapon "Binocular";
+		_unit addItemToBackpack "DemoCharge_Remote_Mag";
+		_unit addItemToBackpack "ACE_Clacker";
+	};
+	
+	case "DMR": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addWeapon "ACE_Vector";
 	};
 	
 	default {

@@ -17,7 +17,7 @@
 *	HEL		= Helicopter Pilot / Crew
 *	JET		= Fixed Wing Pilot / Crew
 *	MMG		= Medium Machine Gun
-*	DM		= Designated Marksman
+*	DMR 	= Designated Marksman
 *	SNI		= Sniper
 *	DEM		= Demolition
 *	ARM		= Armor Driver / Crew

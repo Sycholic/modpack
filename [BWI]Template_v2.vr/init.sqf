@@ -125,6 +125,13 @@ b_at addAction ["[Blackops] - Rifleman (NLAW)", "BWI\loadouts\blackops\blackops_
 r_at addAction ["[RUS (M.Flora)] - Rifleman (RPG-26)", "BWI\loadouts\rus_vdv_mflora\rus_at.sqf"];
 r_at addAction ["[RUS (Flora)] - Rifleman (RPG-26)", "BWI\loadouts\rus_vdv_flora\rus_at.sqf"];
 
+//dmr
+
+b_dmr addAction ["[USMC (Desert)] - Designated Marksman", "BWI\loadouts\usmc_des\usmc_des_dmr.sqf"];
+b_dmr addAction ["[USMC (Wood)] - Designated Marksman", "BWI\loadouts\usmc_wood\usmc_wood_dmr.sqf"];
+b_dmr addAction ["[GER (Desert)] - Designated Marksman", "BWI\loadouts\ger_des\bw_dmr.sqf"];
+b_dmr addAction ["[GER (Wood)] - Designated Marksman", "BWI\loadouts\ger_wood\bw_dmr.sqf"];
+
 //rifleman
 
 b_rif addAction ["[US Army (UCP) - Rifleman]", "BWI\loadouts\usarmy_ucp\ucp_rifleman.sqf"];
