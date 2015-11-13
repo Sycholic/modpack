@@ -12,7 +12,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-_unit forceAddUniform "U_PMC_IndUniformRS_BSBPBB";
+_unit forceAddUniform "U_PMC_IndUniformLS_BSBPBB";
 
 _unit addVest "V_PlateCarrier2_blk";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
