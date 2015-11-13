@@ -2,25 +2,25 @@
 *	Created by BWI iFu
 *
 *	Main function to add medical supplies to classes
-*	Classes: SQL, RTO, CM, ENG, FTL, CFR, AR, AAR, RAT, RIF, HEL, JET, MMG, DM, SNI, DEM, ARM
+*	Classes: SQL, RTO, CM, ENG, FTL, CFR, AR, AAR, RAT, RIF, HEL, JET, HMG, DM, SNI, DEM, ARM
 *
-*	SQl 	= Squadleader
-*	FTL 	= Fireteamleader
-*	RTO 	= Radio Operator
-*	CM	 	= Corpsman
-*	ENG		= Engineer
-*	CFR		= Combat First Responder
-*	AR		= Automatic Rifleman
-*	AAR		= Assistant Automatic Rifleman
-*	RAT		= Rifleman AT
-*	RIF		= Rifleman
-*	HEL		= Helicopter Pilot / Crew
-*	JET		= Fixed Wing Pilot / Crew
-*	MMG		= Medium Machine Gun
-*	DMR 	= Designated Marksman
-*	SNI		= Sniper
-*	DEM		= Demolition
-*	ARM		= Armor Driver / Crew
+*	SQL    = Squadleader
+*	FTL    = Fireteamleader
+*	RTO    = Radio Operator
+*	CM     = Corpsman
+*	ENG    = Engineer
+*	CFR    = Combat First Responder
+*	AR     = Automatic Rifleman
+*	AAR    = Assistant Automatic Rifleman
+*	RAT    = Rifleman AT
+*	RIF    = Rifleman
+*	HEL    = Helicopter Pilot / Crew
+*	JET    = Fixed Wing Pilot / Crew
+*	HMG    = Medium Machine Gun
+*	DMR    = Designated Marksman
+*	SNI    = Sniper
+*	DEM    = Demolition
+*	ARM    = Armor Driver / Crew
 *
 *	created 25.10.2015
 */
