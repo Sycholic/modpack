@@ -14,7 +14,7 @@ removeGoggles _unit;
 
 _unit forceAddUniform "U_PMC_IndUniformLS_BSBPBB";
 
-_unit addVest "V_PlateCarrier2_blk";
+_unit addVest "V_PlateCarrier1_PMC_blk";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellRed";
@@ -24,21 +24,23 @@ for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
 _unit addBackpack "PMC_B_Kitbag_blk";
-_unit addItemToBackpack "RH_peq15b";
-_unit addItemToBackpack "rhsusf_acc_nt4_black";
+_unit addItemToBackpack "rhsusf_acc_anpeq15A";
+_unit addItemToBackpack "RH_spr_mbs";
 _unit addItemToBackpack "RH_m9qd";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
 for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
-_unit addHeadgear "BWA3_OpsCore_Schwarz";
+_unit addHeadgear "BWA3_CrewmanKSK_Schwarz_Headset";
+_unit addGoggles "PU_shemagh_GryCLR";
 
-_unit addWeapon "rhs_weap_m4a1_carryhandle_m203";
+_unit addWeapon "RH_M4A1_ris_M203";
 _unit addPrimaryWeaponItem "RH_SFM952V";
 _unit addPrimaryWeaponItem "RH_ta31rmr"	;
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 
 _unit linkItem "tf_anprc152";
+
 
 [_unit, "SQL"] call BWI_fnc_AddGear;
 [_unit, "SQL"] call BWI_fnc_AddMedical;
