@@ -15,6 +15,4 @@ for /d %%a in ([BWI]*) do (
    )
 )
 
-pause
-
 endlocal
