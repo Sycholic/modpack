@@ -115,6 +115,33 @@ switch( _class ) do {
 		_unit addWeapon "ACE_Vector";
 	};
 	
+	case "JET": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addWeapon "Binocular";
+		_unit linkItem "ItemGPS";
+	};
+	
+	case "DEM": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addWeapon "Binocular";
+		_unit addItemToBackpack "ACE_Clacker";
+		for "_i" from 1 to 4  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
+		_unit addItemToBackpack "ACE_DefusalKit";
+	};
+	
+	case "ARM": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addWeapon "Binocular";
+		_unit linkItem "ItemGPS";
+	};
+	
+	case "SNI": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addWeapon "ACE_Vector";
+		_unit linkItem "ItemGPS";
+		_unit addItemToUniform "ACE_RangeCard";
+	};
+	
 	default {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "Binocular";
