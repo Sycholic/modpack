@@ -55,6 +55,14 @@ switch( _class ) do {
 		_unit addItemToBackpack "ACE_surgicalKit";
 	};
 	
+	case "JET": {
+		for "_i" from 1 to 2 do { _unit addItemToVest "ACE_fieldDressing"; };
+		for "_i" from 1 to 2 do { _unit addItemToVest "ACE_packingBandage"; };
+		for "_i" from 1 to 2 do { _unit addItemToVest "ACE_elasticBandage"; };
+		for "_i" from 1 to 2 do { _unit addItemToVest "ACE_quikclot"; };
+		_unit addItemToVest "ACE_morphine";
+	};
+	
 	default {
 		for "_i" from 1 to 4 do { _unit addItemToBackpack "ACE_fieldDressing"; };
 		for "_i" from 1 to 3 do { _unit addItemToBackpack "ACE_packingBandage"; };
