@@ -1,4 +1,3 @@
-
 _unit = (_this select 1);
 if( !local _unit ) exitWith {};
 
@@ -32,8 +31,8 @@ _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 _unit addWeapon "rhs_weap_makarov_pmm";
 _unit linkItem "tf_pnr1000a";
 
-[_unit, "CFR"] call BWI_fnc_AddGear;
-[_unit, "CFR"] call BWI_fnc_AddMedical;
+[_unit, "DEM"] call BWI_fnc_AddGear;
+[_unit, "DEM"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";};
 for "_i" from 1 to 3 do {_unit addItemToVest "hlc_30Rnd_545x39_t_ak";};
