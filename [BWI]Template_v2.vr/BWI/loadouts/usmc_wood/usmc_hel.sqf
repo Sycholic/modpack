@@ -1,4 +1,4 @@
-//LOADOUTS - BWI - Rifleman
+
 _unit = (_this select 1);
 if( !local _unit ) exitWith {};
 
@@ -10,7 +10,6 @@ removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
-
 
 _unit forceAddUniform "U_B_HeliPilotCoveralls";
 

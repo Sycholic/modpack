@@ -27,7 +27,7 @@ _unit addItemToBackpack "RH_gemtech45";
 
 _unit addHeadgear "BWA3_MICH_Fleck";
 
-_unit addGoggles "NeckTight_TanBLK";
+_unit addGoggles "NeckTight_ODBLK";
 
 _unit addWeapon "BWA3_MG4";
 _unit addPrimaryWeaponItem "acc_pointer_IR";

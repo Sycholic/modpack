@@ -12,6 +12,7 @@ for /d %%a in ([BWI]*) do (
       robocopy "[BWI]Template_v2.vr\BWI" "%%a\BWI" /E /XF carrier_tp.sqf > "logs\%%a_copy.log"
 	  robocopy "[BWI]Template_v2.vr\VAS" "%%a\VAS" /E >> "logs\%%a_copy.log"
 	  copy "[BWI]Template_v2.vr\onPlayerRespawn.sqf" "%%a" >> "logs\%%a_copy.log"
+	  copy "[BWI]Template_v2.vr\init.sqf" "%%a" >> "logs\%%a_copy.log"
    )
 )
 

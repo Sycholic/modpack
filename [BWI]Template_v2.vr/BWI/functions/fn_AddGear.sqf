@@ -97,6 +97,12 @@ switch( _class ) do {
 		_unit addWeapon "Binocular";
 	};
 	
+	case "MMG": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addItemToUniform "ACE_RangeCard";
+		_unit addWeapon "Binocular";
+	};
+	
 	case "ENG": {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "Binocular";
