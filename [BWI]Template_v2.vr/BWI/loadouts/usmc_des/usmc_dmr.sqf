@@ -40,5 +40,5 @@ _unit linkItem "tf_rf7800str";
 [_unit, "DMR"] call BWI_fnc_AddGear;
 [_unit, "DMR"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToBackpack "20Rnd_762x51_Mag";}; 
+for "_i" from 1 to 10 do {_unit addItemToBackpack "20Rnd_762x51_Mag";}; 
 for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_20Rnd_762x51_Mag_Tracer_Dim";};

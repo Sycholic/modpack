@@ -11,16 +11,16 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-_unit forceAddUniform "BWA3_Uniform2_Tropen";
+_unit forceAddUniform "BWA3_Uniform_Crew_Tropen";
 
-_unit addVest "BWA3_Vest_Rifleman1_Tropen";
+_unit addVest "BWA3_Vest_Tropen";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
 _unit addItemToVest "rhs_mag_m18_green";
 _unit addItemToVest "rhs_mag_m18_red";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {_unit addItemToVest "RH_12Rnd_45cal_usp";};
 
-_unit addBackpack "BWA3_Kitbag_Tropen";
+_unit addBackpack "BWA3_AssaultPack_Tropen";
 _unit addItemToBackpack "acc_flashlight";
 _unit addItemToBackpack "BWA3_muzzle_snds_G36";
 _unit addItemToBackpack "RH_gemtech45";

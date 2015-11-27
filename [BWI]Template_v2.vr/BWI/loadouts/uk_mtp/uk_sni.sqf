@@ -11,32 +11,30 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-_unit forceAddUniform "BWA3_Uniform_Crew_Fleck";
+_unit forceAddUniform "U_B_GhillieSuit";
 
-_unit addVest "BWA3_Vest_Fleck";
+_unit addVest "UK3CB_BAF_V_Osprey_Belt_A";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
 _unit addItemToVest "rhs_mag_m18_green";
 _unit addItemToVest "rhs_mag_m18_red";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {_unit addItemToVest "RH_12Rnd_45cal_usp";};
 
-_unit addBackpack "BWA3_AssaultPack_Fleck";
+_unit addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A";
 _unit addItemToBackpack "acc_flashlight";
 _unit addItemToBackpack "BWA3_muzzle_snds_G36";
 _unit addItemToBackpack "RH_gemtech45";
 
-_unit addHeadgear "rhsusf_cvc_green_ess";
+_unit addHeadgear "UK3CB_BAF_H_Mk7_Camo_CESS_D";
 
-_unit addWeapon "BWA3_G36K";
-_unit addPrimaryWeaponItem "acc_pointer_IR";
-_unit addPrimaryWeaponItem "BWA3_optic_RSAS";
+_unit addWeapon "UK3CB_BAF_L115A3_Ghillie";
+_unit addPrimaryWeaponItem "UK3CB_BAF_SB31250_Ghillie";
 _unit addWeapon "RH_usp";
 _unit addHandgunItem "RH_X300";
 
 _unit linkItem "tf_anprc152";
 
-[_unit, "ARM"] call BWI_fnc_AddGear;
-[_unit, "ARM"] call BWI_fnc_AddMedical;
+[_unit, "SNI"] call BWI_fnc_AddGear;
+[_unit, "SNI"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36";}; 
-for "_i" from 1 to 3 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36_Tracer";};
+for "_i" from 1 to 20 do {_unit addItemToBackpack "UK3CB_BAF_L115A3_Mag";}; 

@@ -39,4 +39,5 @@ _unit linkItem "tf_rf7800str";
 [_unit, "DMR"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToBackpack "BWA3_20Rnd_762x51_G28";}; 
+for "_i" from 1 to 4 do {_unit addItemToBackpack "BWA3_20Rnd_762x51_G28";};
 for "_i" from 1 to 3 do {_unit addItemToBackpack "BWA3_20Rnd_762x51_G28_Tracer_Dim";};
