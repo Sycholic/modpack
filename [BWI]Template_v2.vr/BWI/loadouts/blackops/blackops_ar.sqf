@@ -25,7 +25,7 @@ _unit addBackpack "PMC_B_Kitbag_blk";
 _unit addItemToBackpack "RH_m9qd";
 _unit addItemToBackpack "RH_qdss_nt4";
 
-_unit addHeadgear "BWA3_CrewmanKSK_Schwarz_Headset";
+_unit addHeadgear "usaf_ach_blk_ir";
 _unit addGoggles "PU_shemagh_GryCLR";
 
 _unit addWeapon "hlc_m249_pip1";

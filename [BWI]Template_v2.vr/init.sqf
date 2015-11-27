@@ -142,6 +142,7 @@ b_dmr addAction ["[USMC (Desert)] - Designated Marksman", "BWI\loadouts\usmc_des
 b_dmr addAction ["[USMC (Wood)] - Designated Marksman", "BWI\loadouts\usmc_wood\usmc_dmr.sqf"];
 b_dmr addAction ["[GER (Desert)] - Designated Marksman", "BWI\loadouts\ger_des\bw_dmr.sqf"];
 b_dmr addAction ["[GER (Wood)] - Designated Marksman", "BWI\loadouts\ger_wood\bw_dmr.sqf"];
+b_dmr addAction ["[UK (MTP)] - Designated Marksman", "BWI\loadouts\uk_mtp\uk_dmr.sqf"];
 
 r_dmr addAction ["[RUS (M.Flora)] - Designated Marksman", "BWI\loadouts\rus_vdv_mflora\rus_dmr.sqf"];
 r_dmr addAction ["[RUS (Flora)] - Designated Marksman", "BWI\loadouts\rus_vdv_flora\rus_dmr.sqf"];
@@ -160,6 +161,8 @@ b_pilot addAction ["[GER (Desert)] - Rotary Pilot", "BWI\loadouts\ger_des\bw_hel
 b_pilot addAction ["[GER (Desert)] - Fixed Wing Pilot", "BWI\loadouts\ger_des\bw_jet.sqf"];
 b_pilot addAction ["[GER (Wood)] - Rotary Pilot", "BWI\loadouts\ger_wood\bw_hel.sqf"];
 b_pilot addAction ["[GER (Wood)] - Fixed Wing Pilot", "BWI\loadouts\ger_wood\bw_jet.sqf"];
+b_pilot addAction ["[UK (MTP)] - Rotary Pilot", "BWI\loadouts\uk_mtp\uk_hel.sqf"];
+b_pilot addAction ["[UK (MTP)] - Fixed Wing Pilot", "BWI\loadouts\uk_mtp\uk_jet.sqf"];
 
 r_pilot addAction ["[RUS (M.Flora)] - Rotary Pilot", "BWI\loadouts\rus_vdv_mflora\rus_hel.sqf"];
 r_pilot addAction ["[RUS (M.Flora)] - Fixed Wing Pilot", "BWI\loadouts\rus_vdv_mflora\rus_jet.sqf"];
@@ -173,6 +176,7 @@ b_hmg addAction ["[USMC (Desert)] - Medium Machine Gun (M240B)", "BWI\loadouts\u
 b_hmg addAction ["[USMC (Wood)] - Medium Machine Gun (M240B)", "BWI\loadouts\usmc_wood\usmc_mmg.sqf"];
 b_hmg addAction ["[GER (Desert)] - Medium Machine Gun (MG5)", "BWI\loadouts\ger_des\bw_mmg.sqf"];
 b_hmg addAction ["[GER (Wood)] - Medium Machine Gun (MG5)", "BWI\loadouts\ger_wood\bw_mmg.sqf"];
+b_hmg addAction ["[UK (MTP)] - Medium Machine Gun (L7A2)", "BWI\loadouts\uk_mtp\uk_mmg.sqf"];
 
 r_hmg addAction ["[RUS (M.Flora)] - Medium Machine Gun (PKP)", "BWI\loadouts\rus_vdv_mflora\rus_mmg.sqf"];
 r_hmg addAction ["[RUS (Flora)] - Medium Machine Gun (PKP)", "BWI\loadouts\rus_vdv_flora\rus_mmg.sqf"];
@@ -185,6 +189,7 @@ b_sniper addAction ["[USMC (Desert)] - Sniper", "BWI\loadouts\usmc_des\usmc_sni.
 b_sniper addAction ["[USMC (Wood)] - Sniper", "BWI\loadouts\usmc_wood\usmc_sni.sqf"];
 b_sniper addAction ["[GER (Desert)] - Sniper", "BWI\loadouts\ger_des\bw_sni.sqf"];
 b_sniper addAction ["[GER (Wood)] - Sniper", "BWI\loadouts\ger_wood\bw_sni.sqf"];
+b_sniper addAction ["[UK (MTP)] - Sniper", "BWI\loadouts\uk_mtp\uk_sni.sqf"];
 
 r_sniper addAction ["[RUS (M.Flora)] - Sniper", "BWI\loadouts\rus_vdv_mflora\rus_sni.sqf"];
 r_sniper addAction ["[RUS (Flora)] - Sniper", "BWI\loadouts\rus_vdv_flora\rus_sni.sqf"];
@@ -196,6 +201,7 @@ b_demo addAction ["[USMC (Desert)] - Demolition Specialist", "BWI\loadouts\usmc_
 b_demo addAction ["[USMC (Wood)] - Demolition Specialist", "BWI\loadouts\usmc_wood\usmc_dem.sqf"];
 b_demo addAction ["[GER (Desert)] - Demolition Specialist", "BWI\loadouts\ger_des\bw_dem.sqf"];
 b_demo addAction ["[GER (Wood)] - Demolition Specialist", "BWI\loadouts\ger_wood\bw_dem.sqf"];
+b_demo addAction ["[UK (MTP)] - Demolition Specialist", "BWI\loadouts\uk_mtp\uk_dem.sqf"];
 
 r_demo addAction ["[RUS (M.Flora)] - Demolition Specialist", "BWI\loadouts\rus_vdv_mflora\rus_dem.sqf"];
 r_demo addAction ["[RUS (Flora)] - Demolition Specialist", "BWI\loadouts\rus_vdv_flora\rus_dem.sqf"];
@@ -207,6 +213,7 @@ b_crew addAction ["[USMC (Desert)] - Armor Crewman", "BWI\loadouts\usmc_des\usmc
 b_crew addAction ["[USMC (Wood)] - Armor Crewman", "BWI\loadouts\usmc_wood\usmc_arm.sqf"];
 b_crew addAction ["[GER (Desert)] - Armor Crewman", "BWI\loadouts\ger_des\bw_arm.sqf"];
 b_crew addAction ["[GER (Wood)] - Armor Crewman", "BWI\loadouts\ger_wood\bw_arm.sqf"];
+b_crew addAction ["[UK (MTP)] - Armor Crewman", "BWI\loadouts\uk_mtp\uk_arm.sqf"];
 
 r_crew addAction ["[RUS (M.Flora)] - Armor Crewman", "BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"];
 r_crew addAction ["[RUS (Flora)] - Armor Crewman", "BWI\loadouts\rus_vdv_flora\rus_arm.sqf"];
