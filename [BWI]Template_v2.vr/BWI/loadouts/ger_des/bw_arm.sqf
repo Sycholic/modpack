@@ -33,7 +33,7 @@ _unit addPrimaryWeaponItem "BWA3_optic_RSAS";
 _unit addWeapon "RH_usp";
 _unit addHandgunItem "RH_X300";
 
-_unit linkItem "tf_rf7800str";
+_unit linkItem "tf_anprc152";
 
 [_unit, "ARM"] call BWI_fnc_AddGear;
 [_unit, "ARM"] call BWI_fnc_AddMedical;
