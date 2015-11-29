@@ -26,7 +26,7 @@ _unit addItemToBackpack "RH_qdss_nt4";
 
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
 
-_unit addWeapon "hlc_lmg_M60E4";
+_unit addWeapon "rhs_weap_m240B_CAP";
 _unit addPrimaryWeaponItem "RH_c79";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
@@ -36,5 +36,5 @@ _unit linkItem "tf_rf7800str";
 [_unit, "MMG"] call BWI_fnc_AddGear;
 [_unit, "MMG"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_100Rnd_762x51_B_M60E4";};
-_unit addItemToBackpack "hlc_100Rnd_762x51_M_M60E4"; 
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_100Rnd_762x51";};
+_unit addItemToBackpack "rhsusf_100Rnd_762x51_m62_tracer";

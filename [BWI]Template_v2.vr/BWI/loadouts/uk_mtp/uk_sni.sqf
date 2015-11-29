@@ -21,8 +21,7 @@ for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {_unit addItemToVest "RH_12Rnd_45cal_usp";};
 
 _unit addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A";
-_unit addItemToBackpack "acc_flashlight";
-_unit addItemToBackpack "BWA3_muzzle_snds_G36";
+_unit addItemToBackpack "UK3CB_BAF_Silencer_L115A3";
 _unit addItemToBackpack "RH_gemtech45";
 
 _unit addHeadgear "UK3CB_BAF_H_Mk7_Camo_CESS_D";

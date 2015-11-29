@@ -11,7 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-_unit forceAddUniform "UK3CB_BAF_U_HeliPilotCoveralls_RN";
+_unit forceAddUniform "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
 
 _unit addVest "V_TacVest_blk";
 _unit addItemToVest "rhs_mag_m18_green";
@@ -31,7 +31,7 @@ _unit addWeapon "hlc_smg_mp5a4";
 _unit addPrimaryWeaponItem "optic_ACO_grn_smg";
 _unit addWeapon "RH_usp";
 
-_unit linkItem "tf_anprc152_5";
+_unit linkItem "tf_anprc152";
 
 [_unit, "HEL"] call BWI_fnc_AddGear;
 [_unit, "HEL"] call BWI_fnc_AddMedical;

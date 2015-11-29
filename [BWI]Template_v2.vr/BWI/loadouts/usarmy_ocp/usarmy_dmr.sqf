@@ -22,8 +22,9 @@ for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
 
 _unit addBackpack "rhsusf_assault_eagleaiii_ocp";
-_unit addItemToBackpack "RH_peq15b";
-_unit addItemToBackpack "rhsusf_acc_nt4_black";
+_unit addItemToBackpack "rhsusf_acc_anpeq15A";
+_unit addItemToBackpack "RH_SFM952V";
+_unit addItemToBackpack "RH_fa762";
 _unit addItemToBackpack "RH_m9qd";
 
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
@@ -38,5 +39,6 @@ _unit linkItem "tf_rf7800str";
 [_unit, "DMR"] call BWI_fnc_AddGear;
 [_unit, "DMR"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "20Rnd_762x51_Mag";}; 
+for "_i" from 1 to 2 do {_unit addItemToVest "20Rnd_762x51_Mag";}; 
+for "_i" from 1 to 8 do {_unit addItemToBackpack "20Rnd_762x51_Mag";}; 
 for "_i" from 1 to 3 do {_unit addItemToVest "ACE_20Rnd_762x51_Mag_Tracer_Dim";};

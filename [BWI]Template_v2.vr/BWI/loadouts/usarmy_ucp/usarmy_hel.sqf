@@ -32,7 +32,7 @@ _unit addPrimaryWeaponItem "optic_ACO_grn_smg";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 
-_unit linkItem "tf_rf7800str";
+_unit linkItem "tf_anprc152";
 
 [_unit, "HEL"] call BWI_fnc_AddGear;
 [_unit, "HEL"] call BWI_fnc_AddMedical;

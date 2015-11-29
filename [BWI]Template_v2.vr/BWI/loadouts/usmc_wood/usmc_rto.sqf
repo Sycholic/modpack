@@ -38,5 +38,6 @@ _unit linkItem "tf_anprc152";
 [_unit, "RTO"] call BWI_fnc_AddGear;
 [_unit, "RTO"] call BWI_fnc_AddMedical;
 
+_unit addItemToBackpack "30Rnd_556x45_Stanag";
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
 for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};

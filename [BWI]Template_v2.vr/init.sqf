@@ -128,7 +128,7 @@ b_at addAction ["[USMC (Wood)] - Rifleman (M136)", "BWI\loadouts\usmc_wood\usmc_
 b_at addAction ["[GER (Desert)] - Rifleman (Panzerfaust)", "BWI\loadouts\ger_des\bw_rat.sqf"];
 b_at addAction ["[GER (Wood)] - Rifleman (Panzerfaust)", "BWI\loadouts\ger_wood\bw_rat.sqf"];
 b_at addAction ["[UK (MTP)] - Rifleman (NLAW)", "BWI\loadouts\uk_mtp\uk_rat.sqf"];
-b_at addAction ["[Blackops] - Rifleman (NLAW)", "BWI\loadouts\blackops\blackops_rat.sqf"];
+b_at addAction ["[Blackops] - Rifleman (M136)", "BWI\loadouts\blackops\blackops_rat.sqf"];
 b_at addAction ["[US - 1985] - Rifleman (AT-4)", "BWI\loadouts\us_1985\us_rat.sqf"];
 
 r_at addAction ["[RUS (M.Flora)] - Rifleman (RPG-26)", "BWI\loadouts\rus_vdv_mflora\rus_rat.sqf"];
@@ -202,6 +202,7 @@ b_demo addAction ["[USMC (Wood)] - Demolition Specialist", "BWI\loadouts\usmc_wo
 b_demo addAction ["[GER (Desert)] - Demolition Specialist", "BWI\loadouts\ger_des\bw_dem.sqf"];
 b_demo addAction ["[GER (Wood)] - Demolition Specialist", "BWI\loadouts\ger_wood\bw_dem.sqf"];
 b_demo addAction ["[UK (MTP)] - Demolition Specialist", "BWI\loadouts\uk_mtp\uk_dem.sqf"];
+b_demo addAction ["[Blackops] - Demolition Specialist", "BWI\loadouts\blackops\blackops_dem.sqf"];
 
 r_demo addAction ["[RUS (M.Flora)] - Demolition Specialist", "BWI\loadouts\rus_vdv_mflora\rus_dem.sqf"];
 r_demo addAction ["[RUS (Flora)] - Demolition Specialist", "BWI\loadouts\rus_vdv_flora\rus_dem.sqf"];

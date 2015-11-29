@@ -25,7 +25,7 @@ _unit addItemToBackpack "acc_flashlight";
 _unit addItemToBackpack "BWA3_muzzle_snds_G36";
 _unit addItemToBackpack "RH_gemtech45";
 
-_unit addHeadgear "rhsusf_cvc_green_ess";
+_unit addHeadgear "BWA3_CrewmanKSK_Fleck_Headset";
 
 _unit addWeapon "BWA3_G36K";
 _unit addPrimaryWeaponItem "acc_pointer_IR";

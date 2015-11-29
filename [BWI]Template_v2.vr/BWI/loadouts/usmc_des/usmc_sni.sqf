@@ -20,8 +20,9 @@ for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
 
-_unit addBackpack "B_Kitbag_cbr";
+_unit addBackpack "B_Carryall_cbr";
 _unit addItemToBackpack "RH_m9qd";
+_unit addItemToBackpack "rhsusf_acc_M2010S";
 
 _unit addHeadgear "rhsusf_lwh_helmet_marpatd_ess";
 

@@ -114,6 +114,7 @@ switch( _class ) do {
 		_unit addWeapon "Binocular";
 		_unit addItemToBackpack "DemoCharge_Remote_Mag";
 		_unit addItemToBackpack "ACE_Clacker";
+		_unit linkItem "ItemGPS";
 	};
 	
 	case "DMR": {

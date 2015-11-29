@@ -25,7 +25,7 @@ _unit addItemToBackpack "UK3CB_BAF_Silencer_L85";
 _unit addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 
-_unit addHeadgear "rhsusf_cvc_green_ess";
+_unit addHeadgear "UK3CB_BAF_H_CrewHelmet_A";
 
 _unit addWeapon "UK3CB_BAF_L85A2_RIS";
 _unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
