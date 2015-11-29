@@ -56,9 +56,6 @@ switch( _class ) do {
 		_unit addWeapon "ACE_Vector";
 		_unit linkItem "ItemGPS";
 		_unit addItemToBackpack "DemoCharge_Remote_Mag";
-		_unit addItemToBackpack "ACE_DefusalKit";
-		_unit addItemToBackpack "ACE_Clacker";
-		_unit addItemToBackpack "ACE_M26_Clacker";
 	};
 	
 	case "FTL": {
@@ -66,9 +63,6 @@ switch( _class ) do {
 		_unit addWeapon "ACE_Vector";
 		_unit linkItem "ItemGPS";
 		_unit addItemToBackpack "DemoCharge_Remote_Mag";
-		_unit addItemToBackpack "ACE_DefusalKit";
-		_unit addItemToBackpack "ACE_Clacker";
-		_unit addItemToBackpack "ACE_M26_Clacker";
 	};
 	
 	case "CM": {
@@ -113,7 +107,6 @@ switch( _class ) do {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "Binocular";
 		_unit addItemToBackpack "DemoCharge_Remote_Mag";
-		_unit addItemToBackpack "ACE_Clacker";
 		_unit linkItem "ItemGPS";
 	};
 	
