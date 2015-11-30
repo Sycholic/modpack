@@ -1,0 +1,40 @@
+  /////////////////////////////////////////////////////////////////
+ // Created by: Adi and Ryan for Black Watch International //
+/////////////////////////////////////////////////////////////////
+
+respawn = BASE;
+respawndelay = 10;
+respawnOnStart = 0;
+disabledAI = true;
+enableDebugConsole = 1;
+disableChannels[]={0,1};
+respawnButton=0;
+
+author="09.11.2015";
+OnLoadName="BWI: St. Agnes";
+OnLoadMission = "Black Watch International";
+
+#include "VAS\menu.hpp"
+
+class CfgFunctions
+{
+	#include "BWI\cfgFunctions.hpp"
+	#include "VAS\cfgfunctions.hpp"
+};
+
+class CfgRemoteExec
+{
+	class Functions
+	{
+		mode = 1;
+		class BWI_fnc_ReclaimOwnershipOfAI { allowedTargets=2; };
+		class BWI_fnc_EndMission {};
+	};
+	
+	class Commands
+	{
+		mode = 1;
+		class hint { allowedTargets=1; };
+		class hintSilent { allowedTargets=1; };
+	};
+};
