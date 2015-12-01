@@ -11,12 +11,11 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-
 _unit forceAddUniform "rhs_uniform_flora_patchless";
 
-_unit addVest "rhs_6b23_ML_crew";
+_unit addVest "rhs_6b23_crew";
 
-_unit addBackpack "B_FieldPack_blk";
+_unit addBackpack "B_FieldPack_oli";
 _unit addItemToBackpack "acc_pointer_IR";
 _unit addItemToBackpack "hlc_muzzle_545SUP_AK";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_HandFlare_Red";};

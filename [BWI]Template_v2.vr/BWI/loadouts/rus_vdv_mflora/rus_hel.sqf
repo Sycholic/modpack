@@ -11,7 +11,6 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-
 _unit forceAddUniform "rhs_uniform_df15";
 
 _unit addVest "rhs_vest_commander";

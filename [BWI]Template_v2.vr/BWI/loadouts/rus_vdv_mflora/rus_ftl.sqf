@@ -11,13 +11,11 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-
 _unit forceAddUniform "rhs_uniform_vdv_mflora";
 
 _unit addVest "rhs_6b23_ML_6sh92_headset";
-for "_i" from 1 to 2 do {_unit addItemToVest "ACE_M84";};
 
-_unit addBackpack "B_Kitbag_cbr";
+_unit addBackpack "B_Kitbag_mcamo";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};
 _unit addItemToBackpack "acc_pointer_IR";
 _unit addItemToBackpack "hlc_muzzle_545SUP_AK";
@@ -26,10 +24,11 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_GRD_White";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_GRD_Red";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 _unit addItemToBackpack "hlc_GRD_green";
-
+for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
+_unit addItemToBackpack "SmokeShellRed";
+_unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhs_6b27m_ML_ess_bala";
-
 
 _unit addWeapon "hlc_rifle_ak12GL";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";

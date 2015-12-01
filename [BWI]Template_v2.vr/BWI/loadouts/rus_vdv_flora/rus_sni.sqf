@@ -10,9 +10,8 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-_unit forceAddUniform "U_O_GhillieSuit";
+_unit forceAddUniform "U_I_GhillieSuit";
 _unit addVest "rhs_6b23_6sh92_headset";
-for "_i" from 1 to 2 do {_unit addItemToVest "ACE_M84";};
 
 _unit addBackpack "B_Kitbag_sgg";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};

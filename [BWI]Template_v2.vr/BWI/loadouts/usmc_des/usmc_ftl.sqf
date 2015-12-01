@@ -11,7 +11,6 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-
 _unit forceAddUniform "rhs_uniform_FROG01_d";
 
 _unit addVest "rhsusf_spc_teamleader";

@@ -24,14 +24,15 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_HandFlare_Green";};
 
 _unit addHeadgear "rhs_zsh7a_mike";
 
-[_unit, "HEL"] call BWI_fnc_AddGear;
-[_unit, "HEL"] call BWI_fnc_AddMedical;
 
 _unit addWeapon "hlc_rifle_aku12";
 _unit addPrimaryWeaponItem "RH_SFM952V";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 _unit addWeapon "rhs_weap_makarov_pmm";
 _unit linkItem "tf_pnr1000a";
+
+[_unit, "HEL"] call BWI_fnc_AddGear;
+[_unit, "HEL"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 3 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";};
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};

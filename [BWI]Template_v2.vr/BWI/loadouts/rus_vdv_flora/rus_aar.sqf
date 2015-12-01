@@ -13,7 +13,6 @@ removeGoggles _unit;
 
 _unit forceAddUniform "rhs_uniform_flora_patchless";
 _unit addVest "rhs_6b23_6sh92_headset";
-for "_i" from 1 to 2 do {_unit addItemToVest "ACE_M84";};
 
 _unit addBackpack "B_Kitbag_sgg";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};
@@ -24,12 +23,14 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellRed";};
 _unit addItemToBackpack "SmokeShellGreen";
+
 _unit addHeadgear "rhs_6b26_ess_bala";
 
 _unit addWeapon "hlc_rifle_ak12";
 _unit addPrimaryWeaponItem "RH_SFM952V";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 _unit addWeapon "rhs_weap_makarov_pmm";
+
 _unit linkItem "tf_pnr1000a";
 
 [_unit, "AAR"] call BWI_fnc_AddGear;
