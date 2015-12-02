@@ -73,7 +73,6 @@ b_eng addAction ["[US - 1985] - Engineer", "BWI\loadouts\us_1985\us_eng.sqf"];
 r_eng addAction ["[RUS (M.Flora)] - Engineer", "BWI\loadouts\rus_vdv_mflora\rus_eng.sqf"];
 r_eng addAction ["[RUS (Flora)] - Engineer", "BWI\loadouts\rus_vdv_flora\rus_eng.sqf"];
 
-
 //cfr
 
 b_cfr addAction ["[US Army (UCP)] - Combat First Responder", "BWI\loadouts\usarmy_ucp\usarmy_cfr.sqf"];
@@ -134,6 +133,74 @@ b_at addAction ["[US - 1985] - Rifleman (AT-4)", "BWI\loadouts\us_1985\us_rat.sq
 r_at addAction ["[RUS (M.Flora)] - Rifleman (RPG-26)", "BWI\loadouts\rus_vdv_mflora\rus_rat.sqf"];
 r_at addAction ["[RUS (Flora)] - Rifleman (RPG-26)", "BWI\loadouts\rus_vdv_flora\rus_rat.sqf"];
 
+//mat
+
+b_mat addAction ["[US Army (UCP)] - Medium Anti-Tank Leader", "BWI\loadouts\usarmy_ucp\usarmy_lmat.sqf"];
+b_mat addAction ["[US Army (UCP)] - Medium Anti-Tank Gunner", "BWI\loadouts\usarmy_ucp\usarmy_mat.sqf"];
+b_mat addAction ["[US Army (UCP)] - Medium Anti-Tank Assistant", "BWI\loadouts\usarmy_ucp\usarmy_amat.sqf"];
+b_mat addAction ["[US Army (OCP)] - Medium Anti-Tank Leader", "BWI\loadouts\usarmy_ocp\usarmy_lmat.sqf"];
+b_mat addAction ["[US Army (OCP)] - Medium Anti-Tank Gunner", "BWI\loadouts\usarmy_ocp\usarmy_mat.sqf"];
+b_mat addAction ["[US Army (OCP)] - Medium Anti-Tank Assistant", "BWI\loadouts\usarmy_ocp\usarmy_amat.sqf"];
+b_mat addAction ["[USMC (Desert)] - Medium Anti-Tank Leader", "BWI\loadouts\usmc_des\usmc_lmat.sqf"];
+b_mat addAction ["[USMC (Desert)] - Medium Anti-Tank Gunner", "BWI\loadouts\usmc_des\usmc_mat.sqf"];
+b_mat addAction ["[USMC (Desert)] - Medium Anti-Tank Assistant", "BWI\loadouts\usmc_des\usmc_amat.sqf"];
+b_mat addAction ["[USMC (Wood)] - Medium Anti-Tank Leader", "BWI\loadouts\usmc_wood\usmc_lmat.sqf"];
+b_mat addAction ["[USMC (Wood)] - Medium Anti-Tank Gunner", "BWI\loadouts\usmc_wood\usmc_mat.sqf"];
+b_mat addAction ["[USMC (Wood)] - Medium Anti-Tank Assistant", "BWI\loadouts\usmc_wood\usmc_amat.sqf"];
+b_mat addAction ["[GER (Desert)] - Medium Anti-Tank Leader", "BWI\loadouts\ger_des\bw_lmat.sqf"];
+b_mat addAction ["[GER (Desert)] - Medium Anti-Tank Gunner", "BWI\loadouts\ger_des\bw_mat.sqf"];
+b_mat addAction ["[GER (Desert)] - Medium Anti-Tank Assistant", "BWI\loadouts\ger_des\bw_amat.sqf"];
+b_mat addAction ["[GER (Wood)] - Medium Anti-Tank Leader", "BWI\loadouts\ger_wood\bw_lmat.sqf"];
+b_mat addAction ["[GER (Wood)] - Medium Anti-Tank Gunner", "BWI\loadouts\ger_wood\bw_mat.sqf"];
+b_mat addAction ["[GER (Wood)] - Medium Anti-Tank Assistant", "BWI\loadouts\ger_wood\bw_amat.sqf"];
+b_mat addAction ["[UK (MTP)] - Medium Anti-Tank Leader", "BWI\loadouts\uk_mtp\uk_lmat.sqf"];
+b_mat addAction ["[UK (MTP)] - Medium Anti-Tank Gunner", "BWI\loadouts\uk_mtp\uk_mat.sqf"];
+b_mat addAction ["[UK (MTP)] - Medium Anti-Tank Assistant", "BWI\loadouts\uk_mtp\uk_amat.sqf"];
+
+r_mat addAction ["[RUS (M.Flora)] - Medium Anti-Tank Leader", "BWI\loadouts\rus_vdv_mflora\rus_lmat.sqf"];
+r_mat addAction ["[RUS (M.Flora)] - Medium Anti-Tank Gunner", "BWI\loadouts\rus_vdv_mflora\rus_mat.sqf"];
+r_mat addAction ["[RUS (M.Flora)] - Medium Anti-Tank Assistant", "BWI\loadouts\rus_vdv_mflora\rus_amat.sqf"];
+r_mat addAction ["[RUS (Flora)] - Medium Anti-Tank Leader", "BWI\loadouts\rus_vdv_flora\rus_lmat.sqf"];
+r_mat addAction ["[RUS (Flora)] - Medium Anti-Tank Gunner", "BWI\loadouts\rus_vdv_flora\rus_mat.sqf"];
+r_mat addAction ["[RUS (Flora)] - Medium Anti-Tank Assistant", "BWI\loadouts\rus_vdv_flora\rus_amat.sqf"];
+
+//hat
+
+b_hat addAction ["[US Army (UCP)] - Heavy Anti-Tank Leader", "BWI\loadouts\usarmy_ucp\usarmy_lhat.sqf"];
+b_hat addAction ["[US Army (UCP)] - Heavy Anti-Tank Gunner", "BWI\loadouts\usarmy_ucp\usarmy_hat.sqf"];
+b_hat addAction ["[US Army (UCP)] - Heavy Anti-Tank Assistant", "BWI\loadouts\usarmy_ucp\usarmy_ahat.sqf"];
+b_hat addAction ["[US Army (OCP)] - Heavy Anti-Tank Leader", "BWI\loadouts\usarmy_ocp\usarmy_lhat.sqf"];
+b_hat addAction ["[US Army (OCP)] - Heavy Anti-Tank Gunner", "BWI\loadouts\usarmy_ocp\usarmy_hat.sqf"];
+b_hat addAction ["[US Army (OCP)] - Heavy Anti-Tank Assistant", "BWI\loadouts\usarmy_ocp\usarmy_ahat.sqf"];
+b_hat addAction ["[USMC (Desert)] - Heavy Anti-Tank Leader", "BWI\loadouts\usmc_des\usmc_lhat.sqf"];
+b_hat addAction ["[USMC (Desert)] - Heavy Anti-Tank Gunner", "BWI\loadouts\usmc_des\usmc_hat.sqf"];
+b_hat addAction ["[USMC (Desert)] - Heavy Anti-Tank Assistant", "BWI\loadouts\usmc_des\usmc_ahat.sqf"];
+b_hat addAction ["[USMC (Wood)] - Heavy Anti-Tank Leader", "BWI\loadouts\usmc_wood\usmc_lhat.sqf"];
+b_hat addAction ["[USMC (Wood)] - Heavy Anti-Tank Gunner", "BWI\loadouts\usmc_wood\usmc_hat.sqf"];
+b_hat addAction ["[USMC (Wood)] - Heavy Anti-Tank Assistant", "BWI\loadouts\usmc_wood\usmc_ahat.sqf"];
+b_hat addAction ["[GER (Desert)] - Heavy Anti-Tank Leader", "BWI\loadouts\ger_des\bw_lhat.sqf"];
+b_hat addAction ["[GER (Desert)] - Heavy Anti-Tank Gunner", "BWI\loadouts\ger_des\bw_hat.sqf"];
+b_hat addAction ["[GER (Desert)] - Heavy Anti-Tank Assistant", "BWI\loadouts\ger_des\bw_ahat.sqf"];
+b_hat addAction ["[GER (Wood)] - Heavy Anti-Tank Leader", "BWI\loadouts\ger_wood\bw_lhat.sqf"];
+b_hat addAction ["[GER (Wood)] - Heavy Anti-Tank Gunner", "BWI\loadouts\ger_wood\bw_hat.sqf"];
+b_hat addAction ["[GER (Wood)] - Heavy Anti-Tank Assistant", "BWI\loadouts\ger_wood\bw_ahat.sqf"];
+b_hat addAction ["[UK (MTP)] - Heavy Anti-Tank Leader", "BWI\loadouts\uk_mtp\uk_lhat.sqf"];
+b_hat addAction ["[UK (MTP)] - Heavy Anti-Tank Gunner", "BWI\loadouts\uk_mtp\uk_hat.sqf"];
+b_hat addAction ["[UK (MTP)] - Heavy Anti-Tank Assistant", "BWI\loadouts\uk_mtp\uk_ahat.sqf"];
+
+//aa
+
+b_aa addAction ["[US Army (UCP)] - Anti Air", "BWI\loadouts\usarmy_ucp\usarmy_aa.sqf"];
+b_aa addAction ["[US Army (OCP)] - Anti Air", "BWI\loadouts\usarmy_ocp\usarmy_aa.sqf"];
+b_aa addAction ["[USMC (Desert)] - Anti Air", "BWI\loadouts\usmc_des\usmc_aa.sqf"];
+b_aa addAction ["[USMC (Wood)] - Anti Air", "BWI\loadouts\usmc_wood\usmc_aa.sqf"];
+b_aa addAction ["[GER (Desert)] - Anti Air", "BWI\loadouts\ger_des\bw_aa.sqf"];
+b_aa addAction ["[GER (Wood)] - Anti Air", "BWI\loadouts\ger_wood\bw_aa.sqf"];
+b_aa addAction ["[UK (MTP)] - Anti Air", "BWI\loadouts\uk_mtp\uk_aa.sqf"];
+
+r_aa addAction ["[RUS (M.Flora)] - Anti Air", "BWI\loadouts\rus_vdv_mflora\rus_aa.sqf"];
+r_aa addAction ["[RUS (Flora)] - Anti Air", "BWI\loadouts\rus_vdv_flora\rus_aa.sqf"];
+
 //dmr
 
 b_dmr addAction ["[US Army (UCP)] - Designated Marksman", "BWI\loadouts\usarmy_ucp\usarmy_dmr.sqf"];
@@ -143,6 +210,7 @@ b_dmr addAction ["[USMC (Wood)] - Designated Marksman", "BWI\loadouts\usmc_wood\
 b_dmr addAction ["[GER (Desert)] - Designated Marksman", "BWI\loadouts\ger_des\bw_dmr.sqf"];
 b_dmr addAction ["[GER (Wood)] - Designated Marksman", "BWI\loadouts\ger_wood\bw_dmr.sqf"];
 b_dmr addAction ["[UK (MTP)] - Designated Marksman", "BWI\loadouts\uk_mtp\uk_dmr.sqf"];
+b_dmr addAction ["[Blackops] - Designated Marksman", "BWI\loadouts\blackops\blackops_dmr.sqf"];
 
 r_dmr addAction ["[RUS (M.Flora)] - Designated Marksman", "BWI\loadouts\rus_vdv_mflora\rus_dmr.sqf"];
 r_dmr addAction ["[RUS (Flora)] - Designated Marksman", "BWI\loadouts\rus_vdv_flora\rus_dmr.sqf"];
@@ -170,16 +238,16 @@ r_pilot addAction ["[RUS (Flora)] - Rotary Pilot", "BWI\loadouts\rus_vdv_flora\r
 r_pilot addAction ["[RUS (Flora)] - Fixed Wing Pilot", "BWI\loadouts\rus_vdv_flora\rus_jet.sqf"];
 
 // mmg
-b_hmg addAction ["[US Army (UCP)] - Medium Machine Gun (M60)", "BWI\loadouts\usarmy_ucp\usarmy_mmg.sqf"];
-b_hmg addAction ["[US Army (OCP)] - Medium Machine Gun (M60)", "BWI\loadouts\usarmy_ocp\usarmy_mmg.sqf"];
-b_hmg addAction ["[USMC (Desert)] - Medium Machine Gun (M240B)", "BWI\loadouts\usmc_des\usmc_mmg.sqf"];
-b_hmg addAction ["[USMC (Wood)] - Medium Machine Gun (M240B)", "BWI\loadouts\usmc_wood\usmc_mmg.sqf"];
-b_hmg addAction ["[GER (Desert)] - Medium Machine Gun (MG5)", "BWI\loadouts\ger_des\bw_mmg.sqf"];
-b_hmg addAction ["[GER (Wood)] - Medium Machine Gun (MG5)", "BWI\loadouts\ger_wood\bw_mmg.sqf"];
-b_hmg addAction ["[UK (MTP)] - Medium Machine Gun (L7A2)", "BWI\loadouts\uk_mtp\uk_mmg.sqf"];
+b_mmg addAction ["[US Army (UCP)] - Medium Machine Gun (M60)", "BWI\loadouts\usarmy_ucp\usarmy_mmg.sqf"];
+b_mmg addAction ["[US Army (OCP)] - Medium Machine Gun (M60)", "BWI\loadouts\usarmy_ocp\usarmy_mmg.sqf"];
+b_mmg addAction ["[USMC (Desert)] - Medium Machine Gun (M240B)", "BWI\loadouts\usmc_des\usmc_mmg.sqf"];
+b_mmg addAction ["[USMC (Wood)] - Medium Machine Gun (M240B)", "BWI\loadouts\usmc_wood\usmc_mmg.sqf"];
+b_mmg addAction ["[GER (Desert)] - Medium Machine Gun (MG5)", "BWI\loadouts\ger_des\bw_mmg.sqf"];
+b_mmg addAction ["[GER (Wood)] - Medium Machine Gun (MG5)", "BWI\loadouts\ger_wood\bw_mmg.sqf"];
+b_mmg addAction ["[UK (MTP)] - Medium Machine Gun (L7A2)", "BWI\loadouts\uk_mtp\uk_mmg.sqf"];
 
-r_hmg addAction ["[RUS (M.Flora)] - Medium Machine Gun (PKP)", "BWI\loadouts\rus_vdv_mflora\rus_mmg.sqf"];
-r_hmg addAction ["[RUS (Flora)] - Medium Machine Gun (PKP)", "BWI\loadouts\rus_vdv_flora\rus_mmg.sqf"];
+r_mmg addAction ["[RUS (M.Flora)] - Medium Machine Gun (PKP)", "BWI\loadouts\rus_vdv_mflora\rus_mmg.sqf"];
+r_mmg addAction ["[RUS (Flora)] - Medium Machine Gun (PKP)", "BWI\loadouts\rus_vdv_flora\rus_mmg.sqf"];
 
 
 //sniper

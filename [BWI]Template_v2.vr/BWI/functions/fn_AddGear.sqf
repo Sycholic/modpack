@@ -21,6 +21,13 @@
 *	SNI    = Sniper
 *	DEM    = Demolition
 *	ARM    = Armor Driver / Crew
+*	MAT	   = Medium Anti-Tank Gunner
+*	AMAT   = Medium Anti-Tank Assistant
+*	LMAT   = Medium Anti-Tank Leader
+*	HAT	   = Heavy Anti-Tank Gunner
+*	AMAT   = Heavy Anti-Tank Assistant
+*	LMAT   = Heavy Anti-Tank Leader
+*	AA     = Anti Air
 *
 *	created 25.10.2015
 */
@@ -76,6 +83,44 @@ switch( _class ) do {
 		_unit addItemToUniform "ACE_RangeCard";
 		_unit addItemToBackpack "ACE_SpareBarrel";
 		_unit addWeapon "ACE_Vector";
+	};
+	
+	case "MAT": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addItemToUniform "ACE_RangeCard";
+		_unit addWeapon "ACE_Vector";
+	};
+	
+	case "AMAT": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addItemToUniform "ACE_RangeCard";
+		_unit addWeapon "ACE_Vector";
+	};
+	
+	case "LMAT": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addItemToUniform "ACE_RangeCard";
+		_unit addWeapon "ACE_Vector";
+		_unit linkItem "ItemGPS";
+	};
+	
+	case "HAT": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addItemToUniform "ACE_RangeCard";
+		_unit addWeapon "ACE_Vector";
+	};
+	
+	case "AHAT": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addItemToUniform "ACE_RangeCard";
+		_unit addWeapon "ACE_Vector";
+	};
+	
+	case "LHAT": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addItemToUniform "ACE_RangeCard";
+		_unit addWeapon "ACE_Vector";
+		_unit linkItem "ItemGPS";
 	};
 	
 	case "RTO": {
