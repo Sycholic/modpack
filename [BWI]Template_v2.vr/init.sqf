@@ -238,8 +238,8 @@ r_pilot addAction ["[RUS (Flora)] - Rotary Pilot", "BWI\loadouts\rus_vdv_flora\r
 r_pilot addAction ["[RUS (Flora)] - Fixed Wing Pilot", "BWI\loadouts\rus_vdv_flora\rus_jet.sqf"];
 
 // mmg
-b_mmg addAction ["[US Army (UCP)] - Medium Machine Gun (M60)", "BWI\loadouts\usarmy_ucp\usarmy_mmg.sqf"];
-b_mmg addAction ["[US Army (OCP)] - Medium Machine Gun (M60)", "BWI\loadouts\usarmy_ocp\usarmy_mmg.sqf"];
+b_mmg addAction ["[US Army (UCP)] - Medium Machine Gun (M240B)", "BWI\loadouts\usarmy_ucp\usarmy_mmg.sqf"];
+b_mmg addAction ["[US Army (OCP)] - Medium Machine Gun (M240B)", "BWI\loadouts\usarmy_ocp\usarmy_mmg.sqf"];
 b_mmg addAction ["[USMC (Desert)] - Medium Machine Gun (M240B)", "BWI\loadouts\usmc_des\usmc_mmg.sqf"];
 b_mmg addAction ["[USMC (Wood)] - Medium Machine Gun (M240B)", "BWI\loadouts\usmc_wood\usmc_mmg.sqf"];
 b_mmg addAction ["[GER (Desert)] - Medium Machine Gun (MG5)", "BWI\loadouts\ger_des\bw_mmg.sqf"];
