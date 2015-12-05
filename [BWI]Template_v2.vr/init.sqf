@@ -9,6 +9,7 @@ b_sql addAction ["[GER (Wood)] - Squad Leader", "BWI\loadouts\ger_wood\bw_sql.sq
 b_sql addAction ["[UK (MTP)] - Squad Leader", "BWI\loadouts\uk_mtp\uk_sql.sqf"];
 b_sql addAction ["[Blackops] - Squad Leader", "BWI\loadouts\blackops\blackops_sql.sqf"];
 b_sql addAction ["[US - 1985] - Squad Leader", "BWI\loadouts\us_1985\us_sql.sqf"];
+b_sql addAction ["[PMC] - Squad Leader", "BWI\loadouts\pmc\pmc_sql.sqf"];
 
 r_sql addAction ["[RUS (M.Flora)] - Squad Leader", "BWI\loadouts\rus_vdv_mflora\rus_sql.sqf"];
 r_sql addAction ["[RUS (Flora)] - Squad Leader", "BWI\loadouts\rus_vdv_flora\rus_sql.sqf"];
@@ -24,6 +25,8 @@ b_ftl addAction ["[GER (Wood)] - Fireteam Leader", "BWI\loadouts\ger_wood\bw_ftl
 b_ftl addAction ["[UK (MTP)] - Fireteam Leader", "BWI\loadouts\uk_mtp\uk_ftl.sqf"];
 b_ftl addAction ["[Blackops] - Fireteam Leader", "BWI\loadouts\blackops\blackops_ftl.sqf"];
 b_ftl addAction ["[US - 1985] - Fireteam Leader", "BWI\loadouts\us_1985\us_sql.sqf"];
+b_ftl addAction ["[PMC] - Fireteam Leader", "BWI\loadouts\pmc\pmc_sql.sqf"];
+
 
 r_ftl addAction ["[RUS (M.Flora)] - Fireteam Leader", "BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"];
 r_ftl addAction ["[RUS (Flora)] - Fireteam Leader", "BWI\loadouts\rus_vdv_flora\rus_ftl.sqf"];
@@ -39,6 +42,7 @@ b_rto addAction ["[GER (Wood)] - Radio Transmitter Operator", "BWI\loadouts\ger_
 b_rto addAction ["[UK (MTP)] - Radio Transmitter Operator", "BWI\loadouts\uk_mtp\uk_rto.sqf"];
 b_rto addAction ["[Blackops] - Radio Transmitter Operator", "BWI\loadouts\blackops\blackops_rto.sqf"];
 b_rto addAction ["[US - 1985] - Radio Transmitter Operator", "BWI\loadouts\us_1985\us_rto.sqf"];
+b_rto addAction ["[PMC] - Radio Transmitter Operator", "BWI\loadouts\pmc\pmc_rto.sqf"];
 
 r_rto addAction ["[RUS (M.Flora)] - Radio Transmitter Operator", "BWI\loadouts\rus_vdv_mflora\rus_rto.sqf"];
 r_rto addAction ["[RUS (Flora)] - Radio Transmitter Operator", "BWI\loadouts\rus_vdv_flora\rus_rto.sqf"];
@@ -54,6 +58,7 @@ b_corps addAction ["[GER (Wood)] - Corpsman", "BWI\loadouts\ger_wood\bw_cm.sqf"]
 b_corps addAction ["[UK (MTP)] - Corpsman", "BWI\loadouts\uk_mtp\uk_cm.sqf"];
 b_corps addAction ["[Blackops] - Corpsman", "BWI\loadouts\blackops\blackops_cm.sqf"];
 b_corps addAction ["[US - 1985] - Corpsman", "BWI\loadouts\us_1985\us_cm.sqf"];
+b_corps addAction ["[PMC] - Corpsman", "BWI\loadouts\pmc\pmc_cm.sqf"];
 
 r_corps addAction ["[RUS (M.Flora)] - Corpsman", "BWI\loadouts\rus_vdv_mflora\rus_cm.sqf"];
 r_corps addAction ["[RUS (Flora)] - Corpsman", "BWI\loadouts\rus_vdv_flora\rus_cm.sqf"];
@@ -69,6 +74,7 @@ b_eng addAction ["[GER (Wood)] - Engineer", "BWI\loadouts\ger_wood\bw_eng.sqf"];
 b_eng addAction ["[UK (MTP)] - Engineer", "BWI\loadouts\uk_mtp\uk_eng.sqf"];
 b_eng addAction ["[Blackops] - Engineer", "BWI\loadouts\blackops\blackops_eng.sqf"];
 b_eng addAction ["[US - 1985] - Engineer", "BWI\loadouts\us_1985\us_eng.sqf"];
+b_eng addAction ["[PMC] - Engineer", "BWI\loadouts\pmc\pmc_eng.sqf"];
 
 r_eng addAction ["[RUS (M.Flora)] - Engineer", "BWI\loadouts\rus_vdv_mflora\rus_eng.sqf"];
 r_eng addAction ["[RUS (Flora)] - Engineer", "BWI\loadouts\rus_vdv_flora\rus_eng.sqf"];
@@ -84,6 +90,7 @@ b_cfr addAction ["[GER (Wood)] - Combat First Responder", "BWI\loadouts\ger_wood
 b_cfr addAction ["[UK (MTP)] - Combat First Responder", "BWI\loadouts\uk_mtp\uk_cfr.sqf"];
 b_cfr addAction ["[Blackops] - Combat First Responder", "BWI\loadouts\blackops\blackops_cfr.sqf"];
 b_cfr addAction ["[US - 1985] - Combat First Responder", "BWI\loadouts\us_1985\us_cfr.sqf"];
+b_cfr addAction ["[PMC] - Combat First Responder", "BWI\loadouts\pmc\pmc_cfr.sqf"];
 
 r_cfr addAction ["[RUS (M.Flora)] - Combat First Responder", "BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf"];
 r_cfr addAction ["[RUS (Flora)] - Combat First Responder", "BWI\loadouts\rus_vdv_flora\rus_cfr.sqf"];
@@ -99,6 +106,7 @@ b_ar addAction ["[GER (Wood)] - Automatic Rifleman", "BWI\loadouts\ger_wood\bw_a
 b_ar addAction ["[UK (MTP)] - Automatic Rifleman", "BWI\loadouts\uk_mtp\uk_ar.sqf"];
 b_ar addAction ["[Blackops] - Automatic Rifleman", "BWI\loadouts\blackops\blackops_ar.sqf"];
 b_ar addAction ["[US - 1985] - Automatic Rifleman", "BWI\loadouts\us_1985\us_ar.sqf"];
+b_ar addAction ["[PMC] - Automatic Rifleman", "BWI\loadouts\pmc\pmc_ar.sqf"];
 
 r_ar addAction ["[RUS (M.Flora)] - Automatic Rifleman", "BWI\loadouts\rus_vdv_mflora\rus_ar.sqf"];
 r_ar addAction ["[RUS (Flora)] - Automatic Rifleman", "BWI\loadouts\rus_vdv_flora\rus_ar.sqf"];
@@ -114,6 +122,7 @@ b_aar addAction ["[GER (Wood)] - Ass. Automatic Rifleman", "BWI\loadouts\ger_woo
 b_aar addAction ["[UK (MTP)] - Ass. Automatic Rifleman", "BWI\loadouts\uk_mtp\uk_aar.sqf"];
 b_aar addAction ["[Blackops] - Ass. Automatic Rifleman", "BWI\loadouts\blackops\blackops_aar.sqf"];
 b_aar addAction ["[US - 1985] - Ass. Automatic Rifleman", "BWI\loadouts\us_1985\us_aar.sqf"];
+b_aar addAction ["[PMC] - Ass. Automatic Rifleman", "BWI\loadouts\pmc\pmc_aar.sqf"];
 
 r_aar addAction ["[RUS (M.Flora)] - Ass. Automatic Rifleman", "BWI\loadouts\rus_vdv_mflora\rus_aar.sqf"];
 r_aar addAction ["[RUS (Flora)] - Ass. Automatic Rifleman", "BWI\loadouts\rus_vdv_flora\rus_aar.sqf"];
@@ -129,6 +138,7 @@ b_at addAction ["[GER (Wood)] - Rifleman (Panzerfaust)", "BWI\loadouts\ger_wood\
 b_at addAction ["[UK (MTP)] - Rifleman (NLAW)", "BWI\loadouts\uk_mtp\uk_rat.sqf"];
 b_at addAction ["[Blackops] - Rifleman (M136)", "BWI\loadouts\blackops\blackops_rat.sqf"];
 b_at addAction ["[US - 1985] - Rifleman (AT-4)", "BWI\loadouts\us_1985\us_rat.sqf"];
+b_at addAction ["[PMC] - Rifleman (M136)", "BWI\loadouts\pmc\pmc_rat.sqf"];
 
 r_at addAction ["[RUS (M.Flora)] - Rifleman (RPG-26)", "BWI\loadouts\rus_vdv_mflora\rus_rat.sqf"];
 r_at addAction ["[RUS (Flora)] - Rifleman (RPG-26)", "BWI\loadouts\rus_vdv_flora\rus_rat.sqf"];
@@ -211,6 +221,7 @@ b_dmr addAction ["[GER (Desert)] - Designated Marksman", "BWI\loadouts\ger_des\b
 b_dmr addAction ["[GER (Wood)] - Designated Marksman", "BWI\loadouts\ger_wood\bw_dmr.sqf"];
 b_dmr addAction ["[UK (MTP)] - Designated Marksman", "BWI\loadouts\uk_mtp\uk_dmr.sqf"];
 b_dmr addAction ["[Blackops] - Designated Marksman", "BWI\loadouts\blackops\blackops_dmr.sqf"];
+b_dmr addAction ["[PMC] - Designated Marksman", "BWI\loadouts\pmc\pmc_dmr.sqf"];
 
 r_dmr addAction ["[RUS (M.Flora)] - Designated Marksman", "BWI\loadouts\rus_vdv_mflora\rus_dmr.sqf"];
 r_dmr addAction ["[RUS (Flora)] - Designated Marksman", "BWI\loadouts\rus_vdv_flora\rus_dmr.sqf"];
@@ -231,6 +242,7 @@ b_pilot addAction ["[GER (Wood)] - Rotary Pilot", "BWI\loadouts\ger_wood\bw_hel.
 b_pilot addAction ["[GER (Wood)] - Fixed Wing Pilot", "BWI\loadouts\ger_wood\bw_jet.sqf"];
 b_pilot addAction ["[UK (MTP)] - Rotary Pilot", "BWI\loadouts\uk_mtp\uk_hel.sqf"];
 b_pilot addAction ["[UK (MTP)] - Fixed Wing Pilot", "BWI\loadouts\uk_mtp\uk_jet.sqf"];
+b_pilot addAction ["[PMC] - Rotary Pilot", "BWI\loadouts\pmc\pmc_hel.sqf"];
 
 r_pilot addAction ["[RUS (M.Flora)] - Rotary Pilot", "BWI\loadouts\rus_vdv_mflora\rus_hel.sqf"];
 r_pilot addAction ["[RUS (M.Flora)] - Fixed Wing Pilot", "BWI\loadouts\rus_vdv_mflora\rus_jet.sqf"];
@@ -271,6 +283,7 @@ b_demo addAction ["[GER (Desert)] - Demolition Specialist", "BWI\loadouts\ger_de
 b_demo addAction ["[GER (Wood)] - Demolition Specialist", "BWI\loadouts\ger_wood\bw_dem.sqf"];
 b_demo addAction ["[UK (MTP)] - Demolition Specialist", "BWI\loadouts\uk_mtp\uk_dem.sqf"];
 b_demo addAction ["[Blackops] - Demolition Specialist", "BWI\loadouts\blackops\blackops_dem.sqf"];
+b_demo addAction ["[PMC] - Demolition Specialist", "BWI\loadouts\pmc\pmc_dem.sqf"];
 
 r_demo addAction ["[RUS (M.Flora)] - Demolition Specialist", "BWI\loadouts\rus_vdv_mflora\rus_dem.sqf"];
 r_demo addAction ["[RUS (Flora)] - Demolition Specialist", "BWI\loadouts\rus_vdv_flora\rus_dem.sqf"];
@@ -298,6 +311,7 @@ b_rif addAction ["[GER (Wood)] - Rifleman", "BWI\loadouts\ger_wood\bw_rif.sqf"];
 b_rif addAction ["[UK (MTP)] - Rifleman", "BWI\loadouts\uk_mtp\uk_rif.sqf"];
 b_rif addAction ["[Blackops] - Rifleman", "BWI\loadouts\blackops\blackops_rif.sqf"];
 b_rif addAction ["[US - 1985] - Rifleman", "BWI\loadouts\us_1985\us_rif.sqf"];
+b_rif addAction ["[PMC] - Rifleman", "BWI\loadouts\pmc\pmc_rif.sqf"];
 
 r_rif addAction ["[RUS (M.Flora)] - Rifleman", "BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"];
 r_rif addAction ["[RUS (Flora)] - Rifleman", "BWI\loadouts\rus_vdv_flora\rus_rif.sqf"];
