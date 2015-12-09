@@ -47,7 +47,7 @@ _BWI_lfnc_AddStandardGear = {
 	
 	(_this select 0) linkItem "ItemMap";
 	(_this select 0) linkItem "ItemCompass";
-	(_this select 0) linkItem "ItemWatch";
+	(_this select 0) linkItem "ACE_microDAGR";
 };
 
 _unit = _this select 0;
