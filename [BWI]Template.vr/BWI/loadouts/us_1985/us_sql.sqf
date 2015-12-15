@@ -11,7 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-_unit forceAddUniform "USAF_AFSOC_CombatUniform_wdl";
+_unit forceAddUniform "rhs_uniform_FROG01_m81";
 _unit addItemToUniform "ACE_MapTools";
 for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_CableTie";};
 _unit addItemToUniform "ACE_EarPlugs";

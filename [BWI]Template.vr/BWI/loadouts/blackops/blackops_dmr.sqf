@@ -27,7 +27,7 @@ _unit addItemToBackpack "RH_SFM952V";
 _unit addItemToBackpack "RH_fa762";
 _unit addItemToBackpack "RH_m9qd";
 
-_unit addHeadgear "usaf_ach_blk_ir";
+_unit addHeadgear "BWA3_OpsCore_Schwarz_Camera";
 _unit addGoggles "PU_shemagh_GryCLR";
 
 _unit addWeapon "srifle_EBR_F";

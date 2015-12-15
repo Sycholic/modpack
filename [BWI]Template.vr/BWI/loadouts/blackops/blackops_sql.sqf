@@ -30,7 +30,7 @@ _unit addItemToBackpack "RH_m9qd";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
 for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
-_unit addHeadgear "usaf_ach_blk_ir";
+_unit addHeadgear "BWA3_OpsCore_Schwarz_Camera";
 _unit addGoggles "PU_shemagh_GryCLR";
 
 _unit addWeapon "RH_M4A1_ris_M203";
