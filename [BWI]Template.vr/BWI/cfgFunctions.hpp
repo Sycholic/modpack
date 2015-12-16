@@ -10,3 +10,14 @@ class BWI
 		class EndMission {};
 	};
 };
+
+class BWI_gui
+{
+	tag="BWI_gui";
+	class functions
+	{
+		file="BWI\gui\functions";
+		class selectLoadout {};
+		class displayTreeViewEntries {};
+	};
+};

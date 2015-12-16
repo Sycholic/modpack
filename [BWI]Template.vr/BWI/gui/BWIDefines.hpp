@@ -1,3 +1,20 @@
+#define BWI_SIDE_WEST 			0
+#define BWI_SIDE_EAST 			1
+
+#define BWI_FACTION_USMC   		0
+#define BWI_FACTION_USARMY 		1
+#define BWI_FACTION_BLACKOPS 	2
+#define BWI_FACTION_UK			3
+#define BWI_FACTION_GERBW		4
+#define BWI_FACTION_US1985 		5
+
+#define BWI_USMC_DESERT			0
+#define BWI_USMC_WOOD			1
+#define BWI_USARMY_OCP			0
+#define BWI_USARMY_UCP			1
+#define BWI_GERBW_DESERT		0
+#define BWI_GERBW_WOOD			1
+
 class BWITreeView
 {
 	access = 0; // Control access (0 - ReadAndWrite, 1 - ReadAndCreate, 2 - ReadOnly, 3 - ReadOnlyVerified)
