@@ -33,6 +33,8 @@ if( _sideNr == 0 ) then {
 	_tvFaction tvExpand [0];
 };
 
+_tvRole tvAdd [[],"Platoon Leader"];
+_tvRole tvAdd [[],"Platoon RTO"];
 _tvRole tvAdd [[],"Squad Leader"];
 _tvRole tvAdd [[],"Fireteam Leader"];
 _tvRole tvAdd [[],"Radio Operator"];

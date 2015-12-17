@@ -93,37 +93,39 @@ if( lbCurSel _xlistSide == 1 ) then {
 // single member role
 if( count _roleSelected == 1 ) then {
 	switch ( _roleSelected select 0 ) do {
-		case 0: { _role = "sql"; };
-		case 1: { _role = "ftl"; };
-		case 2: { _role = "rto"; };
-		case 3: { _role = "cm"; };
-		case 4: { _role = "eng"; };
-		case 5: { _role = "cfr"; };
-		case 6: { _role = "ar"; };
-		case 7: { _role = "mmg"; };
-		case 8: { _role = "aar"; };
-		case 9: { _role = "rat"; };
-		case 10:{
+		case 0: { _role = "pl"; };
+		case 1: { _role = "prto"; };
+		case 2: { _role = "sql"; };
+		case 3: { _role = "ftl"; };
+		case 4: { _role = "rto"; };
+		case 5: { _role = "cm"; };
+		case 6: { _role = "eng"; };
+		case 7: { _role = "cfr"; };
+		case 8: { _role = "ar"; };
+		case 9: { _role = "mmg"; };
+		case 10: { _role = "aar"; };
+		case 11: { _role = "rat"; };
+		case 12:{
 					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Medium AT'!</t>";
 					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 					_role = ""; _error = true;
 				};
-		case 11:{
+		case 13:{
 					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Heavy AT'!</t>";
 					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 					_role = ""; _error = true;
 				};
-		case 12:{ _role = "aa"; };
-		case 13:{ _role = "dmr"; };
-		case 14:{
+		case 14:{ _role = "aa"; };
+		case 15:{ _role = "dmr"; };
+		case 16:{
 					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Pilot'!</t>";
 					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 					_role = ""; _error = true;
 				};
-		case 15:{ _role = "sni"; };
-		case 16:{ _role = "dem"; };
-		case 17:{ _role = "arm"; };
-		case 18:{ _role = "rif"; };
+		case 17:{ _role = "sni"; };
+		case 18:{ _role = "dem"; };
+		case 19:{ _role = "arm"; };
+		case 20:{ _role = "rif"; };
 		default { _role = ""; _error = true; };
 	};
 };
@@ -131,17 +133,17 @@ if( count _roleSelected == 1 ) then {
 // multi member role (HAT/MAT/pilot team)
 if( count _roleSelected == 2 ) then {
 	switch ( _roleSelected select 0 ) do {
-		case 10:{
+		case 12:{
 					if( _factionSelected select 1 == 0 ) then { _role = "lmat"; }; 
 					if( _factionSelected select 1 == 1 ) then { _role = "mat";  };
 					if( _factionSelected select 1 == 2 ) then { _role = "amat"; };
 				};
-		case 11:{
+		case 13:{
 					if( _factionSelected select 1 == 0 ) then { _role = "lhat"; }; 
 					if( _factionSelected select 1 == 1 ) then { _role = "hat";  };
 					if( _factionSelected select 1 == 2 ) then { _role = "ahat"; };
 				};
-		case 14:{
+		case 16:{
 					if( _factionSelected select 1 == 0 ) then { _role = "hel"; }; 
 					if( _factionSelected select 1 == 1 ) then { _role = "jet"; };
 				};
