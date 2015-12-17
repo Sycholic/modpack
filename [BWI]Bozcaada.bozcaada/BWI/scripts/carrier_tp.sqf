@@ -1,1 +1,1 @@
-player setposasl [3819.25,3998.89,18];
+player setposasl [3662,4113,18];
