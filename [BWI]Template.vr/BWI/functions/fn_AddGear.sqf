@@ -4,8 +4,10 @@
 *	Main function to add standard gear to classes
 *	Classes: SQL, RTO, CM, ENG, FTL, CFR, AR, AAR, RAT, RIF, HEL, JET, HMG, DM, SNI, DEM, ARM
 *
+*	PL     = Platoon Leader
 *	SQL    = Squadleader
 *	FTL    = Fireteamleader
+*	PRTO   = Platoon Radio Operator
 *	RTO    = Radio Operator
 *	CM     = Corpsman
 *	ENG    = Engineer
@@ -47,7 +49,7 @@ _BWI_lfnc_AddStandardGear = {
 	
 	(_this select 0) linkItem "ItemMap";
 	(_this select 0) linkItem "ItemCompass";
-	(_this select 0) linkItem "ACE_microDAGR";
+	(_this select 0) linkItem "tf_microDAGR";
 };
 
 _unit = _this select 0;
@@ -58,24 +60,40 @@ if( isNull _unit )  exitWith {};
 // Faction independet gear. Respective classes should have that gear
 switch( _class ) do {
 
+	case "PL": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addWeapon "ACE_Vector";
+		_unit linkItem "ItemcTab";
+		_unit addItemToBackpack "DemoCharge_Remote_Mag";
+	};
+	
+	case "PRTO": {
+		[_unit] call _BWI_lfnc_AddStandardGear;
+		_unit addWeapon "ACE_Vector";
+		_unit linkItem "ItemcTab";
+		_unit addItemToBackpack "DemoCharge_Remote_Mag";
+	};
+
 	case "SQL": {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "ACE_Vector";
-		_unit linkItem "ItemGPS";
+		_unit linkItem "ItemAndroid";
 		_unit addItemToBackpack "DemoCharge_Remote_Mag";
+		_unit addItemToBackpack "ItemcTabHCam";
 	};
 	
 	case "FTL": {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "ACE_Vector";
-		_unit linkItem "ItemGPS";
+		_unit linkItem "ItemMicroDAGR";
 		_unit addItemToBackpack "DemoCharge_Remote_Mag";
+		_unit addItemToBackpack "ItemcTabHCam";
 	};
 	
 	case "CM": {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemGPS";
+		_unit linkItem "ItemAndroid";
 	};
 	
 	case "AAR": {
@@ -101,7 +119,7 @@ switch( _class ) do {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addItemToUniform "ACE_RangeCard";
 		_unit addWeapon "ACE_Vector";
-		_unit linkItem "ItemGPS";
+		_unit linkItem "ItemMicroDAGR";
 	};
 	
 	case "HAT": {
@@ -120,14 +138,14 @@ switch( _class ) do {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addItemToUniform "ACE_RangeCard";
 		_unit addWeapon "ACE_Vector";
-		_unit linkItem "ItemGPS";
+		_unit linkItem "ItemMicroDAGR";
 	};
 	
 	case "RTO": {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "Laserdesignator";
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "Laserbatteries";};
-		_unit linkItem "ItemGPS";
+		_unit linkItem "ItemAndroid";
 	};
 	
 	case "AR": {
@@ -152,7 +170,7 @@ switch( _class ) do {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "Binocular";
 		_unit addItemToBackpack "DemoCharge_Remote_Mag";
-		_unit linkItem "ItemGPS";
+		_unit linkItem "ItemMicroDAGR";
 	};
 	
 	case "DMR": {
@@ -163,7 +181,7 @@ switch( _class ) do {
 	case "JET": {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemGPS";
+		_unit linkItem "ItemMicroDAGR";
 	};
 	
 	case "DEM": {
@@ -177,13 +195,13 @@ switch( _class ) do {
 	case "ARM": {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemGPS";
+		_unit linkItem "ItemMicroDAGR";
 	};
 	
 	case "SNI": {
 		[_unit] call _BWI_lfnc_AddStandardGear;
 		_unit addWeapon "ACE_Vector";
-		_unit linkItem "ItemGPS";
+		_unit linkItem "ItemMicroDAGR";
 		_unit addItemToUniform "ACE_RangeCard";
 	};
 	

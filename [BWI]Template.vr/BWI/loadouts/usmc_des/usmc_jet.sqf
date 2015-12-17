@@ -12,16 +12,16 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 
-_unit forceAddUniform "U_I_pilotCoveralls";
+_unit forceAddUniform "FIR_Fighter_Pilot_Nomex";
 
-_unit addVest "V_Chestrig_rgr";
+_unit addVest "FIR_pilot_vest";
 _unit addItemToVest "ACE_HandFlare_Red";
 _unit addItemToVest "ACE_HandFlare_Green";
 for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
 
 _unit addBackpack "B_Parachute";
 
-_unit addHeadgear "USAF_SFS_Pilot_H_Down";
+_unit addHeadgear "FIR_USHelmetType1_Navy_Black_Open";
 
 _unit addWeapon "RH_m9";
 

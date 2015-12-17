@@ -1,3 +1,19 @@
+//Platoon Lead
+
+b_sql addAction ["[US Army (UCP)] - Platoon Leader", "BWI\loadouts\usarmy_ucp\usarmy_pl.sqf"];
+b_sql addAction ["[US Army (OCP)] - Platoon Leader", "BWI\loadouts\usarmy_ocp\usarmy_pl.sqf"];
+b_sql addAction ["[USMC (Desert)] - Platoon Leader", "BWI\loadouts\usmc_des\usmc_pl.sqf"];
+b_sql addAction ["[USMC (Wood)] - Platoon Leader", "BWI\loadouts\usmc_wood\usmc_pl.sqf"];
+b_sql addAction ["[GER (Desert)] - Platoon Leader", "BWI\loadouts\ger_des\bw_pl.sqf"];
+b_sql addAction ["[GER (Wood)] - Platoon Leader", "BWI\loadouts\ger_wood\bw_pl.sqf"];
+b_sql addAction ["[UK (MTP)] - Platoon Leader", "BWI\loadouts\uk_mtp\uk_pl.sqf"];
+b_sql addAction ["[Blackops] - Platoon Leader", "BWI\loadouts\blackops\blackops_pl.sqf"];
+b_sql addAction ["[US - 1985] - Platoon Leader", "BWI\loadouts\us_1985\us_pl.sqf"];
+b_sql addAction ["[PMC] - Platoon Leader", "BWI\loadouts\pmc\pmc_pl.sqf"];
+
+r_sql addAction ["[RUS (M.Flora)] - Platoon Leader", "BWI\loadouts\rus_vdv_mflora\rus_pl.sqf"];
+r_sql addAction ["[RUS (Flora)] - Platoon Leader", "BWI\loadouts\rus_vdv_flora\rus_pl.sqf"];
+
 //SquadLead
 
 b_sql addAction ["[US Army (UCP)] - Squad Leader", "BWI\loadouts\usarmy_ucp\usarmy_sql.sqf"];
@@ -30,6 +46,22 @@ b_ftl addAction ["[PMC] - Fireteam Leader", "BWI\loadouts\pmc\pmc_sql.sqf"];
 
 r_ftl addAction ["[RUS (M.Flora)] - Fireteam Leader", "BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"];
 r_ftl addAction ["[RUS (Flora)] - Fireteam Leader", "BWI\loadouts\rus_vdv_flora\rus_ftl.sqf"];
+
+//Platoon RTO
+
+b_rto addAction ["[US Army (UCP)] - Platoon Radio Transmitter Operator", "BWI\loadouts\usarmy_ucp\usarmy_prto.sqf"];
+b_rto addAction ["[US Army (OCP)] - Platoon Radio Transmitter Operator", "BWI\loadouts\usarmy_ocp\usarmy_prto.sqf"];
+b_rto addAction ["[USMC (Desert)] - Platoon Radio Transmitter Operator", "BWI\loadouts\usmc_des\usmc_prto.sqf"];
+b_rto addAction ["[USMC (Wood)] - Platoon Radio Transmitter Operator", "BWI\loadouts\usmc_wood\usmc_prto.sqf"];
+b_rto addAction ["[GER (Desert)] - Platoon Radio Transmitter Operator", "BWI\loadouts\ger_des\bw_prto.sqf"];
+b_rto addAction ["[GER (Wood)] - Platoon Radio Transmitter Operator", "BWI\loadouts\ger_wood\bw_prto.sqf"];
+b_rto addAction ["[UK (MTP)] - Platoon Radio Transmitter Operator", "BWI\loadouts\uk_mtp\uk_prto.sqf"];
+b_rto addAction ["[Blackops] - Platoon Radio Transmitter Operator", "BWI\loadouts\blackops\blackops_prto.sqf"];
+b_rto addAction ["[US - 1985] - Platoon Radio Transmitter Operator", "BWI\loadouts\us_1985\us_prto.sqf"];
+b_rto addAction ["[PMC] - Platoon Radio Transmitter Operator", "BWI\loadouts\pmc\pmc_prto.sqf"];
+
+r_rto addAction ["[RUS (M.Flora)] - Platoon Radio Transmitter Operator", "BWI\loadouts\rus_vdv_mflora\rus_prto.sqf"];
+r_rto addAction ["[RUS (Flora)] - Platoon Radio Transmitter Operator", "BWI\loadouts\rus_vdv_flora\rus_prto.sqf"];
 
 //RTO
 

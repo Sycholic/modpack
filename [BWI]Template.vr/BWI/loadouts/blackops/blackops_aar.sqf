@@ -26,7 +26,7 @@ _unit addItemToBackpack "RH_spr_mbs";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
 _unit addItemToBackpack "RH_m9qd";
 
-_unit addHeadgear "usaf_ach_blk_ir";
+_unit addHeadgear "BWA3_OpsCore_Schwarz_Camera";
 _unit addGoggles "PU_shemagh_GryCLR";
 
 _unit addWeapon "RH_M4A1_ris";
