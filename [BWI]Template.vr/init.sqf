@@ -1,3 +1,5 @@
+[true,30,false,true,30,3,true,[]] execVM "BWI\scripts\WerthlesHeadless.sqf";
+
 //Platoon Lead
 
 b_sql addAction ["[US Army (UCP)] - Platoon Leader", "BWI\loadouts\usarmy_ucp\usarmy_pl.sqf"];

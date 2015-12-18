@@ -134,18 +134,18 @@ if( count _roleSelected == 1 ) then {
 if( count _roleSelected == 2 ) then {
 	switch ( _roleSelected select 0 ) do {
 		case 12:{
-					if( _factionSelected select 1 == 0 ) then { _role = "lmat"; }; 
-					if( _factionSelected select 1 == 1 ) then { _role = "mat";  };
-					if( _factionSelected select 1 == 2 ) then { _role = "amat"; };
+					if( _roleSelected select 1 == 0 ) then { _role = "lmat"; }; 
+					if( _roleSelected select 1 == 1 ) then { _role = "mat";  };
+					if( _roleSelected select 1 == 2 ) then { _role = "amat"; };
 				};
 		case 13:{
-					if( _factionSelected select 1 == 0 ) then { _role = "lhat"; }; 
-					if( _factionSelected select 1 == 1 ) then { _role = "hat";  };
-					if( _factionSelected select 1 == 2 ) then { _role = "ahat"; };
+					if( _roleSelected select 1 == 0 ) then { _role = "lhat"; }; 
+					if( _roleSelected select 1 == 1 ) then { _role = "hat";  };
+					if( _roleSelected select 1 == 2 ) then { _role = "ahat"; };
 				};
 		case 16:{
-					if( _factionSelected select 1 == 0 ) then { _role = "hel"; }; 
-					if( _factionSelected select 1 == 1 ) then { _role = "jet"; };
+					if( _roleSelected select 1 == 0 ) then { _role = "hel"; }; 
+					if( _roleSelected select 1 == 1 ) then { _role = "jet"; };
 				};
 		default { _role = ""; _error = true; };
 	};
