@@ -13,6 +13,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "U_PMC_IndUniformLS_BSBPBB";
+_unit addItemToUniform "RH_15Rnd_9x19_M9";
 
 _unit addVest "V_PlateCarrier1_PMC_blk";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
@@ -23,11 +24,11 @@ _unit addItemToVest "UGL_FlareWhite_F";
 for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
-_unit addBackpack "PMC_B_Kitbag_blk";
+_unit addBackpack "tf_rt1523g_black";
 _unit addItemToBackpack "rhsusf_acc_anpeq15A";
 _unit addItemToBackpack "RH_spr_mbs";
 _unit addItemToBackpack "RH_m9qd";
-for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
 for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
 _unit addHeadgear "BWA3_OpsCore_Schwarz_Camera";
@@ -40,7 +41,6 @@ _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 
 _unit linkItem "tf_anprc152";
-
 
 [_unit, "PL"] call BWI_fnc_AddGear;
 [_unit, "PL"] call BWI_fnc_AddMedical;

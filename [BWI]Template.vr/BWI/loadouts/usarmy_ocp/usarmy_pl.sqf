@@ -23,7 +23,7 @@ _unit addItemToVest "UGL_FlareWhite_F";
 for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
-_unit addBackpack "rhsusf_assault_eagleaiii_ocp";
+_unit addBackpack "tf_rt1523g_big_rhs";
 _unit addItemToBackpack "RH_peq15b";
 _unit addItemToBackpack "rhsusf_acc_nt4_black";
 _unit addItemToBackpack "RH_m9qd";
