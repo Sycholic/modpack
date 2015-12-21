@@ -23,8 +23,8 @@ if( _sideNr == 0 ) then {
 	_tvFaction tvAdd [[1],"UCP"];
 	_tvFaction tvExpand [1];
 
-	_tvFaction tvAdd [[4],"Flecktarn (Desert)"];
-	_tvFaction tvAdd [[4],"Tropentarn (Wood)"];
+	_tvFaction tvAdd [[4],"Tropentarn (Desert)"];
+	_tvFaction tvAdd [[4],"Flecktarn (Wood)"];
 	_tvFaction tvExpand [4];
 } else {
 	_tvFaction tvAdd [[],"RUS VDV"];
