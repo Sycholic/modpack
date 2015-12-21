@@ -22,11 +22,10 @@ _unit addItemToVest "UGL_FlareWhite_F";
 for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
-_unit addBackpack "B_AssaultPack_cbr";
+_unit addBackpack "tf_rt1523g_sage";
 _unit addItemToBackpack "RH_peq15b";
 _unit addItemToBackpack "rhsusf_acc_nt4_black";
 _unit addItemToBackpack "RH_m9qd";
-_unit addItemToBackpack "ACE__M26_Clacker";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
 for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 

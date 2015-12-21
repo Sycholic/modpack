@@ -31,7 +31,7 @@ _unit addItemToBackpack "RH_m9qd";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
 for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
-_pmc_headgear = ["H_Cap_pmc_headphones", "H_Cap_headphones", "usaf_capb_headphones_tan", "usaf_capb_headphones_blk", "H_Cap_oli_hs", "rhsusf_bowman_cap"];
+_pmc_headgear = ["H_MilCap_gry", "H_Cap_pmc_headphones", "H_Cap_headphones", "H_Cap_oli_hs", "rhsusf_bowman_cap"];
 _randomHeadgear = _pmc_headgear select floor random count _pmc_headgear;
 _unit addHeadgear _randomHeadgear;
 

@@ -20,7 +20,7 @@ _unit addItemToVest "rhs_mag_m18_red";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {_unit addItemToVest "RH_12Rnd_45cal_usp";};
 
-_unit addBackpack "BWA3_Kitbag_Fleck";
+_unit addBackpack "tf_rt1523g_big_bwmod";
 _unit addItemToBackpack "acc_flashlight";
 _unit addItemToBackpack "BWA3_muzzle_snds_G36";
 _unit addItemToBackpack "RH_gemtech45";
