@@ -84,6 +84,7 @@ if( lbCurSel _xlistSide == 1 ) then {
 			case 0: {
 						if( _factionSelected select 1 == 0 ) then { _factionPath = "rus_vdv_flora\rus_";  }; 
 						if( _factionSelected select 1 == 1 ) then { _factionPath = "rus_vdv_mflora\rus_";  };
+						if( _factionSelected select 1 == 2 ) then { _factionPath = "rus_vdv_emr\rus_";  };
 					};
 			default { _factionPath = ""; _error = true; };
 		};
