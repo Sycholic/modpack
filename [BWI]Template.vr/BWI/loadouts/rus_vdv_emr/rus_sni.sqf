@@ -11,6 +11,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "U_I_GhillieSuit";
+for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 
 _unit addVest "rhs_6b23_digi_6sh92_headset";
 

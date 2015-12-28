@@ -12,6 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "rhs_uniform_df15";
+for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 _unit addVest "rhs_vest_commander";
 for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_9x18_12_57N181S";};
 _unit addItemToVest "ACE_HandFlare_Red";
