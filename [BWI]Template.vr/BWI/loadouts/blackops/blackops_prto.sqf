@@ -13,6 +13,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "U_PMC_IndUniformLS_BSBPBB";
+for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "V_PlateCarrier1_PMC_blk";
 for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};

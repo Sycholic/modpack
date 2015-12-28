@@ -13,6 +13,7 @@ removeGoggles _unit;
 
 
 _unit forceAddUniform "rhs_uniform_vdv_mflora";
+for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 
 _unit addVest "rhs_6b23_ML_6sh92_headset";
 

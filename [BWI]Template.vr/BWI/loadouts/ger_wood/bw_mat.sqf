@@ -12,6 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "BWA3_Uniform_Fleck";
+for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "BWA3_Vest_Rifleman1_Fleck";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};

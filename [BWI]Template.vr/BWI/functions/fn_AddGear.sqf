@@ -40,7 +40,6 @@ _BWI_lfnc_AddStandardGear = {
 	(_this select 0) addItemToUniform "ACE_MapTools";
 	for "_i" from 1 to 4 do { (_this select 0) addItemToUniform "ACE_CableTie"; };
 	for "_i" from 1 to 2 do { (_this select 0) addItemToUniform "Chemlight_green";};
-	for "_i" from 1 to 2 do { (_this select 0) addItemToUniform "B_IR_Grenade";};
 	(_this select 0) addItemToUniform "ACE_EarPlugs";
 	(_this select 0) addItemToUniform "ACE_IR_Strobe_Item";
 	(_this select 0) addItemToUniform "ACE_Flashlight_MX991";

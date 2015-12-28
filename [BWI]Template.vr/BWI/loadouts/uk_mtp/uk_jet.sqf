@@ -13,6 +13,7 @@ removeGoggles _unit;
 
 
 _unit forceAddUniform "UK3CB_BAF_U_HeliPilotCoveralls_RN";
+for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "FIR_pilot_vest";
 _unit addItemToVest "ACE_HandFlare_Red";
