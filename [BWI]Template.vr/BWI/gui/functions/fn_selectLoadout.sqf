@@ -160,6 +160,11 @@ if ( !_error ) then {
 		[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 		false;
 	} else {
+		
+		BWI_armory_sideSelected = lbCurSel _xlistSide;
+		BWI_armory_factionSelected = _factionSelected;
+		BWI_armory_roleSelected = _roleSelected;
+		
 		[objNull, player] call compile _preprocessedScript;
 
 		closeDialog 1;
