@@ -30,6 +30,7 @@ if( _sideNr == 0 ) then {
 	_tvFaction tvAdd [[],"RUS VDV"];
 	_tvFaction tvAdd [[0],"Flora"];
 	_tvFaction tvAdd [[0],"Mountain Flora"];
+	_tvFaction tvAdd [[0],"EMR"];
 	_tvFaction tvExpand [0];
 };
 
