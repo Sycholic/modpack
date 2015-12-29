@@ -12,6 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "U_B_HeliPilotCoveralls";
+for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "V_HarnessO_gry";
 _unit addItemToVest "SmokeShellRed";

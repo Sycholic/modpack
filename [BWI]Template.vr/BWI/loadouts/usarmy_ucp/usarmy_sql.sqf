@@ -13,6 +13,7 @@ removeGoggles _unit;
 
 
 _unit forceAddUniform "rhs_uniform_cu_ucp";
+for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "rhsusf_iotv_ucp_squadleader";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};

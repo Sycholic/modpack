@@ -12,6 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
+for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "UK3CB_BAF_V_Osprey_Rifleman_B";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
