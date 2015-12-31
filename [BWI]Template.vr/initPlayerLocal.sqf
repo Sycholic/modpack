@@ -1,3 +1,5 @@
+BWI_medical_MASH = objNull;
+BWI_medical_TentDeployed = false;
 
 BWI_armory_baseSlot = "You are slotted as: ";
 
@@ -100,5 +102,11 @@ switch _squad do
 				if( _fireteamRole == "rif" ) then { BWI_armory_roleSelected = [20]; BWI_armory_baseSlot = BWI_armory_baseSlot + " / Rifleman"; };
 			};
 		};
+	};
+};
+
+"BWI_medical_MASH" addPublicVariableEventHandler {
+	if( !isNull BWI_medical_MASH ) then {
+		BWI_medical_MASH addAction ["<t color='#1111ff'>Deconstruct Medical Tent</t>", "BWI\scripts\repackageMedicalTent.sqf", nil, 1.5, false, false, "", "BWI_medical_TentDeployed && ('ToolKit' in items _this)"];
 	};
 };
