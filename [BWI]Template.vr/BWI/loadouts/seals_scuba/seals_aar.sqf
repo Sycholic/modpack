@@ -26,7 +26,9 @@ _unit addItemToBackpack "rhsusf_acc_nt4_black";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
 _unit addItemToBackpack "RH_m9qd";
 
-_unit addHeadgear "rhsusf_lwh_helmet_marpatd_ess";
+_unit addHeadgear "BWA3_OpsCore_Schwarz";
+
+_unit addGoggles "G_B_Diving";
 
 _unit addWeapon "RH_M16A4_m";
 _unit addPrimaryWeaponItem "RH_SFM952V";
@@ -41,3 +43,4 @@ _unit linkItem "tf_rf7800str";
 
 for "_i" from 1 to 6 do {_unit addItemToBackpack "30Rnd_556x45_Stanag";}; 
 for "_i" from 1 to 3 do {_unit addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";}; 
+for "_i" from 1 to 5 do {_unit addItemToBackpack "RH_60Rnd_556x45_M855A1";}; 
