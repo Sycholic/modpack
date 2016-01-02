@@ -25,7 +25,6 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellRed";};
 _unit addItemToBackpack "SmokeShellGreen";
 _unit addHeadgear "rhs_6b26_ess_bala";
 
-
 _unit addWeapon "hlc_rifle_ak12";
 _unit addPrimaryWeaponItem "RH_SFM952V";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
