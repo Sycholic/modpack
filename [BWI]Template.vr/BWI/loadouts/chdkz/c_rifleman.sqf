@@ -37,11 +37,9 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_8Rnd_9x18_Mak";};
 _unit addHeadgear "LOP_H_SSh68Helmet_BLK";
 
-
 _unit addWeapon "hlc_rifle_ak47";
 _unit addWeapon "RH_mak";
 _unit addWeapon "Binocular";
-
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";

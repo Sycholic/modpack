@@ -42,7 +42,6 @@ _unit addHandgunItem "RH_M6X";
 
 _unit linkItem "tf_anprc152";
 
-
 [_unit, "SQL"] call BWI_fnc_AddGear;
 [_unit, "SQL"] call BWI_fnc_AddMedical;
 
