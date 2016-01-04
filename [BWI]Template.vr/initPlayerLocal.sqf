@@ -107,6 +107,6 @@ switch _squad do
 
 "BWI_medical_MASH" addPublicVariableEventHandler {
 	if( !isNull BWI_medical_MASH ) then {
-		BWI_medical_MASH addAction ["<t color='#1111ff'>Deconstruct Medical Tent</t>", "BWI\scripts\repackageMedicalTent.sqf", nil, 1.5, false, false, "", "BWI_medical_TentDeployed && ('ToolKit' in items _this)"];
+		BWI_medical_MASH setVariable ["ace_medical_isMedicalFacility", true];
 	};
 };

@@ -7,16 +7,17 @@ _surfaceNormal = [];
 _posTent = [0,0,0];
 
 _posPlayer = getPosATL player;
-_posTent set [0, ((_posPlayer select 0) + (5 * _sine))];
-_posTent set [1, ((_posPlayer select 1) + (5 * _cosine)) ];
+_posTent set [0, ((_posPlayer select 0) + (8 * _sine))];
+_posTent set [1, ((_posPlayer select 1) + (8 * _cosine)) ];
 
-BWI_medical_MASH = createVehicle ['MASH_EP1', _posTent, [], 0, 'CAN_COLLIDE'];
-_tentLookDir = [getPos BWI_medical_MASH, getPos player] call BIS_fnc_dirTo;
+BWI_medical_MASH = createVehicle ['CampEast_EP1', _posTent, [], 0, 'CAN_COLLIDE'];
+BWI_medical_MASH enableSimulation false;
+BWI_medical_MASH allowDamage false;
+BWI_medical_MASH setVariable ["ace_medical_isMedicalFacility", true];
+_tentLookDir = [getPos player, getPos BWI_medical_MASH] call BIS_fnc_dirTo;
 BWI_medical_MASH setDir _tentLookDir;
 _surfaceNormal = surfaceNormal position BWI_medical_MASH;
 BWI_medical_MASH setVectorUp _surfaceNormal;
-BWI_medical_MASH enableSimulation false;
-BWI_medical_MASH allowDamage false;
 publicVariable "BWI_medical_MASH";
 
 player removeItem "ARP_Objects_BoxMre_M";
