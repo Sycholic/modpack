@@ -15,6 +15,7 @@ if( _sideNr == 0 ) then {
 	_tvFaction tvAdd [[],"US - 1985"];
 	_tvFaction tvAdd [[],"PMC"];
 	_tvFaction tvAdd [[],"SEALS - Scuba"];
+	_tvFaction tvAdd [[],"UN (Ger)"];
 
 	_tvFaction tvAdd [[0],"Desert"];
 	_tvFaction tvAdd [[0],"Wood"];

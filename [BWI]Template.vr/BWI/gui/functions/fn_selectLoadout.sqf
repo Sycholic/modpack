@@ -40,6 +40,7 @@ if( lbCurSel _xlistSide == 0 ) then {
 			case 5: { _factionPath = "us_1985\us_"; };
 			case 6: { _factionPath = "pmc\pmc_"; };
 			case 7: { _factionPath = "seals_scuba\seals_"; };
+			case 8: { _factionPath = "un_ger\bw_"; };
 			default { _factionPath = ""; _error = true; };
 		};
 	};
