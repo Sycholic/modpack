@@ -24,12 +24,10 @@
 *
 *	created 25.10.2015
 */
-private ["_unit", "_class", "_i"];
+params ["_unit", "_class"];
+private ["_i"];
 
-_unit = _this select 0;
-_class = _this select 1;
-
-if( isNull _unit )  exitWith {};
+if( isNull _unit || !local _unit )  exitWith {};
 
 switch( _class ) do {
 	case "CFR": {

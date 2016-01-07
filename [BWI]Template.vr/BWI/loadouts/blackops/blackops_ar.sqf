@@ -36,7 +36,6 @@ _unit addHandgunItem "RH_M6X";
 
 _unit linkItem "tf_rf7800str";
 
-
 [_unit, "AR"] call BWI_fnc_AddGear;
 [_unit, "AR"] call BWI_fnc_AddMedical;
 
