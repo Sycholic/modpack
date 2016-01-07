@@ -1,3 +1,5 @@
+BWI_medical_MASH = objNull;
+BWI_medical_TentDeployed = false;
 
 BWI_armory_baseSlot = "You are slotted as: ";
 BWI_squadName = "";
@@ -213,3 +215,8 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 	};
 };
 
+"BWI_medical_MASH" addPublicVariableEventHandler {
+	if( !isNull BWI_medical_MASH ) then {
+		BWI_medical_MASH setVariable ["ace_medical_isMedicalFacility", true];
+	};
+};
