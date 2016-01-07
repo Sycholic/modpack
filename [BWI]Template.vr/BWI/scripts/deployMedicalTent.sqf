@@ -16,8 +16,8 @@
 	BWI_medical_MASH enableSimulation false;
 	BWI_medical_MASH allowDamage false;
 	BWI_medical_MASH setVariable ["ace_medical_isMedicalFacility", true];
-	_tentLookDir = [getPos BWI_medical_MASH, getPos player] call BIS_fnc_dirTo;
-	BWI_medical_MASH setDir abs( 180 - _tentLookDir );
+	_tentLookDir = [getPos player, getPos BWI_medical_MASH] call BIS_fnc_dirTo;
+	BWI_medical_MASH setDir _tentLookDir;
 	_surfaceNormal = surfaceNormal position BWI_medical_MASH;
 	BWI_medical_MASH setVectorUp _surfaceNormal;
 	publicVariable "BWI_medical_MASH";
