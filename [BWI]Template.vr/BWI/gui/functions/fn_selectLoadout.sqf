@@ -76,6 +76,7 @@ if( lbCurSel _xlistSide == 1 ) then {
 						[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 						_factionPath = ""; _error = true;
 					};
+			case 1: { _factionPath = "taliban\taliban_"; };
 			default { _factionPath = ""; _error = true; };
 		};
 	};

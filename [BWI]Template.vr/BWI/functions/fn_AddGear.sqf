@@ -33,18 +33,18 @@
 *
 *	created 25.10.2015
 */
-params ["_unit", "_class", ["_epoch", "modern"]];
+params ["_unit", "_class", ["_equipment", "modern"]];
 private ["_i", "_BWI_lfnc_AddStandardGear"];
 
 // Class- and faction independent gear. Everyone should have _unit 
 _BWI_lfnc_AddStandardGear = {
-	params ["_unit", "_epoch"];
+	params ["_unit", "_equipment"];
 	_unit addItemToUniform "ACE_MapTools";
 	for "_i" from 1 to 4 do { _unit addItemToUniform "ACE_CableTie"; };
 	for "_i" from 1 to 2 do { _unit addItemToUniform "Chemlight_green";};
 	_unit addItemToUniform "ACE_EarPlugs";
 	
-	if( _epoch == "modern" ) then {
+	if( _equipment == "modern" ) then {
 		_unit addItemToUniform "ACE_IR_Strobe_Item";
 		_unit addItemToUniform "ACE_Flashlight_MX991";
 		_unit addItemToBackpack "rhsusf_ANPVS_15";
@@ -61,8 +61,8 @@ if( isNull _unit || !local _unit )  exitWith {};
 switch( _class ) do {
 
 	case "PL": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 			_unit linkItem "ItemcTab";
 		} else {
@@ -72,8 +72,8 @@ switch( _class ) do {
 	};
 	
 	case "PRTO": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 			_unit linkItem "ItemcTab";
 		} else {
@@ -83,8 +83,8 @@ switch( _class ) do {
 	};
 
 	case "SQL": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 			_unit linkItem "ItemAndroid";
 			_unit addItemToBackpack "ItemcTabHCam";
@@ -95,8 +95,8 @@ switch( _class ) do {
 	};
 	
 	case "FTL": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 			_unit linkItem "ItemMicroDAGR";
 			_unit addItemToBackpack "ItemcTabHCam";
@@ -107,16 +107,16 @@ switch( _class ) do {
 	};
 	
 	case "CM": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "Binocular";
 			_unit linkItem "ItemAndroid";
 		};
 	};
 	
 	case "AAR": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 		} else {
 			_unit addWeapon "Binocular";
@@ -126,8 +126,8 @@ switch( _class ) do {
 	};
 	
 	case "MAT": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 		} else {
 			_unit addWeapon "Binocular";
@@ -136,8 +136,8 @@ switch( _class ) do {
 	};
 	
 	case "AMAT": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 		} else {
 			_unit addWeapon "Binocular";
@@ -146,8 +146,8 @@ switch( _class ) do {
 	};
 	
 	case "LMAT": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 			_unit linkItem "ItemMicroDAGR";
 		} else {
@@ -157,8 +157,8 @@ switch( _class ) do {
 	};
 	
 	case "HAT": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 		} else {
 			_unit addWeapon "Binocular";
@@ -167,8 +167,8 @@ switch( _class ) do {
 	};
 	
 	case "AHAT": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 		} else {
 			_unit addWeapon "Binocular";
@@ -177,8 +177,8 @@ switch( _class ) do {
 	};
 	
 	case "LHAT": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 			_unit linkItem "ItemMicroDAGR";
 		} else {
@@ -188,8 +188,8 @@ switch( _class ) do {
 	};
 	
 	case "RTO": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "Laserdesignator";
 			_unit linkItem "ItemAndroid";
 			for "_i" from 1 to 2 do {_unit addItemToBackpack "Laserbatteries";};
@@ -199,32 +199,32 @@ switch( _class ) do {
 	};
 	
 	case "AR": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "Binocular";
 		};
 		_unit addItemToUniform "ACE_RangeCard";
 	};
 	
 	case "MMG": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "Binocular";
 		};
 		_unit addItemToUniform "ACE_RangeCard";
 	};
 	
 	case "ENG": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "Binocular";
 		};
 		_unit addItemToBackpack "ToolKit";
 	};
 	
 	case "HEL": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "Binocular";
 			_unit linkItem "ItemMicroDAGR";
 		};
@@ -232,8 +232,8 @@ switch( _class ) do {
 	};
 	
 	case "DMR": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 		} else {
 			_unit addWeapon "Binocular";
@@ -241,16 +241,16 @@ switch( _class ) do {
 	};
 	
 	case "JET": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "Binocular";
 			_unit linkItem "ItemMicroDAGR";
 		};
 	};
 	
 	case "DEM": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "Binocular";
 		};
 		_unit addItemToBackpack "ACE_Clacker";
@@ -259,16 +259,16 @@ switch( _class ) do {
 	};
 	
 	case "ARM": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "Binocular";
 			_unit linkItem "ItemMicroDAGR";
 		};
 	};
 	
 	case "SNI": {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "ACE_Vector";
 			_unit linkItem "ItemMicroDAGR";
 		} else {
@@ -278,8 +278,8 @@ switch( _class ) do {
 	};
 	
 	default {
-		[_unit, _epoch] call _BWI_lfnc_AddStandardGear;
-		if( _epoch == "modern" ) then {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
 			_unit addWeapon "Binocular";
 		};
 	};
