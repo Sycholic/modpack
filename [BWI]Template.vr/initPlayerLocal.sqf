@@ -4,9 +4,16 @@ BWI_squadName = "";
 if( side player == west ) then {
 	BWI_armory_sideSelected = 0;
 	BWI_armory_factionSelected = [0,0];
-} else {
+};
+
+if( side player == east ) then {
 	BWI_armory_sideSelected = 1;
 	BWI_armory_factionSelected = [0,1];
+};
+
+if( side player == independent ) then {
+	BWI_armory_sideSelected = 2;
+	BWI_armory_factionSelected = [0];
 };
 
 if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {

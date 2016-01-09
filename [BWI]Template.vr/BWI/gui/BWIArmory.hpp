@@ -100,7 +100,7 @@ class BWIArmory
 			idc = 1006;
 			x = 0.36 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
-			w = 0.103125 * safezoneW;
+			w = 0.11125 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0.275,0.463,0.694,1};
 			

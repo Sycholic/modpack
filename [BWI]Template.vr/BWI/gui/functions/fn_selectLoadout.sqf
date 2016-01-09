@@ -38,9 +38,8 @@ if( lbCurSel _xlistSide == 0 ) then {
 						_factionPath = ""; _error = true;
 					};
 			case 5: { _factionPath = "us_1985\us_"; };
-			case 6: { _factionPath = "pmc\pmc_"; };
-			case 7: { _factionPath = "seals_scuba\seals_"; };
-			case 8: { _factionPath = "un_ger\bw_"; };
+			case 6: { _factionPath = "seals_scuba\seals_"; };
+			case 7: { _factionPath = "un_ger\bw_"; };
 			default { _factionPath = ""; _error = true; };
 		};
 	};
@@ -93,6 +92,27 @@ if( lbCurSel _xlistSide == 1 ) then {
 		};
 	};
 };
+
+
+// independent is current side
+if( lbCurSel _xlistSide == 2 ) then {
+
+	// single camo faction
+	if( count _factionSelected == 1 ) then {
+		switch ( _factionSelected select 0 ) do {
+			case 0: { _factionPath = "pmc\pmc_"; };
+			default { _factionPath = ""; _error = true; };
+		};
+	};
+
+	// multi camo faction
+	if( count _factionSelected == 2 ) then {
+		switch ( _factionSelected select 0 ) do {
+			default { _factionPath = ""; _error = true; };
+		};
+	};
+};
+
 
 // single member role
 if( count _roleSelected == 1 ) then {
