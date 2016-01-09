@@ -14,7 +14,7 @@ if( side player == west ) then {
 
 if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 	BWI_armory_roleSelected = [1];
-	BWI_armory_baseSlot = "Zeus";
+	BWI_armory_baseSlot = BWI_armory_baseSlot + "Zeus";
 	group player setGroupIdGlobal ["Game Master"];
 } else {
 	_squad    	    = (str player) select [6,3];
