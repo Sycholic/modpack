@@ -27,7 +27,7 @@ _unit addHeadgear "LOP_H_Turban";
 
 _unit addGoggles "SFG_Tac_BeardD";
 
-_unit addWeapon "hlc_rifle_ak12GL";
+_unit addWeapon "rhs_weap_ak74m_gp25_npz";
 _unit addPrimaryWeaponItem "RH_barska_rds";
 _unit addWeapon "RH_mak";
 
