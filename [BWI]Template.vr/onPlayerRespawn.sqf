@@ -30,5 +30,5 @@ player addAction ["BWI: CommCard", "createDialog 'ShowCommCard';", nil, -10, fal
 _platoonRole = (str player) select [10,3];
 
 if( _platoonRole == "eng" ) then {
-	player addAction ["<t color='#11ffff'>Deploy Medical Tent</t>", "BWI\scripts\deployMedicalTent.sqf", nil, 1.5, false, false, "", "!BWI_medical_TentDeployed && ('BWI_medical_tentBox' in items _this) && ('ToolKit' in items _this)"];
+	player addAction ["<t color='#11ffff'>Deploy Medical Tent</t>", "BWI\scripts\deployMedicalTent.sqf", nil, 1.5, false, false, "", "('BWI_medical_tentBox' in items _this) && ('ToolKit' in items _this)"];
 };
