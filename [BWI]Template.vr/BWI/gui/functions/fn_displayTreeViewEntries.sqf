@@ -43,6 +43,7 @@ switch _sideNr do {
 	
 	case 2: {
 		_tvFaction tvAdd [[],"PMC"];
+		_tvFaction tvAdd [[],"FSA"];
 	};
 };
 
