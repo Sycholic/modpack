@@ -31,8 +31,8 @@ _unit addWeapon "RH_mak";
 
 _unit linkItem "tf_fadak";
 
-[_unit, "RTO", "TALIBAN"] call BWI_fnc_AddGear;
-[_unit, "RTO", "TALIBAN"] call BWI_fnc_AddMedical;
+[_unit, "PRTO", "TALIBAN"] call BWI_fnc_AddGear;
+[_unit, "PRTO", "TALIBAN"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";}; 
 for "_i" from 1 to 3 do {_unit addItemToVest "hlc_30Rnd_545x39_t_ak";};
