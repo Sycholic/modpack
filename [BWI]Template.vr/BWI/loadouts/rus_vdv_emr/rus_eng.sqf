@@ -24,7 +24,6 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellRed";};
 _unit addItemToBackpack "SmokeShellGreen";
-_unit addItemToBackpack "BWI_medical_tentBox";
 
 _unit addHeadgear "rhs_6b27m_digi_ess";
 

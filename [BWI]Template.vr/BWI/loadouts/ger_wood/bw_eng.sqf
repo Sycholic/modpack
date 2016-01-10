@@ -25,7 +25,6 @@ _unit addBackpack "BWA3_Kitbag_Fleck";
 _unit addItemToBackpack "acc_flashlight";
 _unit addItemToBackpack "BWA3_muzzle_snds_G36";
 _unit addItemToBackpack "RH_gemtech45";
-_unit addItemToBackpack "BWI_medical_tentBox";
 
 _unit addHeadgear "BWA3_MICH_Fleck";
 

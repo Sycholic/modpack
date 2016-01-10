@@ -26,7 +26,6 @@ _unit addBackpack "PMC_B_Kitbag_blk";
 _unit addItemToBackpack "rhsusf_acc_anpeq15A";
 _unit addItemToBackpack "RH_spr_mbs";
 _unit addItemToBackpack "RH_m9qd";
-_unit addItemToBackpack "BWI_medical_tentBox";
 
 _unit addHeadgear "BWA3_OpsCore_Schwarz_Camera";
 _unit addGoggles "PU_shemagh_GryCLR";

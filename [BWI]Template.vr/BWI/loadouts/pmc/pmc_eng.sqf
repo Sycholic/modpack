@@ -27,7 +27,6 @@ _unit addBackpack "PMC_B_Carryall_blk";
 _unit addItemToBackpack "RH_peq15b";
 _unit addItemToBackpack "hlc_muzzle_snds_AUG";
 _unit addItemToBackpack "RH_m9qd";
-_unit addItemToBackpack "BWI_medical_tentBox";
 
 _pmc_headgear = ["H_Cap_pmc", "H_Capbw_pmc", "H_Cap_usblack", "H_Cap_blk"];
 _randomHeadgear = _pmc_headgear select floor random count _pmc_headgear;

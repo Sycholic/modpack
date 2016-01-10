@@ -25,7 +25,6 @@ _unit addBackpack "B_Carryall_khk";
 _unit addItemToBackpack "RH_peq15b";
 _unit addItemToBackpack "rhsusf_acc_nt4_black";
 _unit addItemToBackpack "RH_m9qd";
-_unit addItemToBackpack "BWI_medical_tentBox";
 
 _unit addHeadgear "rhsusf_lwh_helmet_marpatd_ess";
 

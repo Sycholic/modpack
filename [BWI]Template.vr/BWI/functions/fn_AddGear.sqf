@@ -220,6 +220,7 @@ switch( _class ) do {
 			_unit addWeapon "Binocular";
 		};
 		_unit addItemToBackpack "ToolKit";
+		_unit addItemToBackpack "BWI_medical_tentBox";
 	};
 	
 	case "HEL": {
