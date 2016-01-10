@@ -101,6 +101,7 @@ if( lbCurSel _xlistSide == 2 ) then {
 	if( count _factionSelected == 1 ) then {
 		switch ( _factionSelected select 0 ) do {
 			case 0: { _factionPath = "pmc\pmc_"; };
+			case 1: { _factionPath = "fsa\fsa_"; };
 			default { _factionPath = ""; _error = true; };
 		};
 	};
