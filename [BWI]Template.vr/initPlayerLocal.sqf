@@ -36,6 +36,11 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 				group player setGroupIdGlobal ["Platoon Element"];
 			};
 			
+			if( _platoonRole == "apl" ) then {
+				BWI_armory_roleSelected = [0];
+				BWI_armory_baseSlot = BWI_armory_baseSlot + " Assistant Platoon Leader";
+			};
+			
 			if( _platoonRole == "rto" ) then {
 				BWI_armory_roleSelected = [1];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon JTAC";
