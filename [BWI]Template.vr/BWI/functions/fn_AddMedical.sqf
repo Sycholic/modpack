@@ -65,7 +65,6 @@ switch( _class ) do {
 		for "_i" from 1 to 3 do { _unit addItemToBackpack "ACE_packingBandage"; };
 		for "_i" from 1 to 3 do { _unit addItemToBackpack "ACE_elasticBandage"; };
 		for "_i" from 1 to 2 do { _unit addItemToBackpack "ACE_quikclot"; };
-		for "_i" from 1 to 1 do { _unit addItemToBackpack "ACE_morphine"; };
 		_unit addItemToBackpack "ACE_tourniquet";
 	};
 };
