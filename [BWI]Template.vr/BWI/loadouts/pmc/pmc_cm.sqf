@@ -23,7 +23,7 @@ _unit addItemToVest "SmokeShellRed";
 _unit addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 2 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
 
-_unit addBackpack "B_AssaultPack_blk";
+_unit addBackpack "PMC_B_Carryall_blk";
 _unit addItemToBackpack "RH_peq15b";
 _unit addItemToBackpack "hlc_muzzle_snds_AUG";
 _unit addItemToBackpack "RH_m9qd";

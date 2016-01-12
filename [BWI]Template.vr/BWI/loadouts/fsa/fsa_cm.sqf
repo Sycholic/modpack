@@ -18,7 +18,7 @@ _unit forceAddUniform _randomUni;
 _unit addVest "LOP_V_6Sh92_OLV";
 for "_i" from 1 to 2 do {_unit addItemToVest "RH_8Rnd_9x18_Mak";};
 
-_unit addBackpack "B_FieldPack_oli";
+_unit addBackpack "B_Carryall_oli";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 
 _unit addHeadgear "H_Shemag_olive";
