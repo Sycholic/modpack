@@ -27,7 +27,6 @@ _unit addBackpack "B_AssaultPack_blk";
 _unit addItemToBackpack "RH_peq15b";
 _unit addItemToBackpack "hlc_muzzle_snds_AUG";
 _unit addItemToBackpack "RH_m9qd";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
 
 _pmc_headgear = ["H_Cap_pmc", "H_Capbw_pmc", "H_Cap_usblack", "H_Cap_blk"];
 _randomHeadgear = _pmc_headgear select floor random count _pmc_headgear;
@@ -44,5 +43,5 @@ _unit linkItem "tf_anprc152";
 [_unit, "CM"] call BWI_fnc_AddGear;
 [_unit, "CM"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_556x45_B_AUG";}; 
-for "_i" from 1 to 3 do {_unit addItemToVest "hlc_30Rnd_556x45_T_AUG";};
+for "_i" from 1 to 2 do {_unit addItemToVest "hlc_30Rnd_556x45_B_AUG";}; 
+for "_i" from 1 to 2 do {_unit addItemToVest "hlc_30Rnd_556x45_T_AUG";};

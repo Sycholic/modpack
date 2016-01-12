@@ -24,7 +24,6 @@ _unit addBackpack "B_Carryall_khk";
 _unit addItemToBackpack "RH_peq15b";
 _unit addItemToBackpack "rhsusf_acc_nt4_black";
 _unit addItemToBackpack "RH_m9qd";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
 
 _unit addHeadgear "rhsusf_mich_helmet_marpatwd_norotos";
 
@@ -39,5 +38,5 @@ _unit linkItem "tf_anprc152";
 [_unit, "CM"] call BWI_fnc_AddGear;
 [_unit, "CM"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
-for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";}; 
+for "_i" from 1 to 2 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 2 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";}; 

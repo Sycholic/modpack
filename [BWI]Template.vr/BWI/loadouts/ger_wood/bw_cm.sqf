@@ -18,7 +18,6 @@ _unit addVest "BWA3_Vest_Medic_Fleck";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
 _unit addItemToVest "rhs_mag_m18_green";
 _unit addItemToVest "rhs_mag_m18_red";
-for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {_unit addItemToVest "RH_12Rnd_45cal_usp";};
 
 _unit addBackpack "BWA3_Kitbag_Fleck_Medic";
@@ -39,5 +38,5 @@ _unit linkItem "tf_anprc152";
 [_unit, "CM"] call BWI_fnc_AddGear;
 [_unit, "CM"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36";}; 
-for "_i" from 1 to 3 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36_Tracer";};
+for "_i" from 1 to 2 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36";}; 
+for "_i" from 1 to 2 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36_Tracer";};

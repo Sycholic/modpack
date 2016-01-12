@@ -20,7 +20,6 @@ for "_i" from 1 to 2 do {_unit addItemToVest "RH_8Rnd_9x18_Mak";};
 
 _unit addBackpack "B_FieldPack_oli";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
-for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 
 _unit addHeadgear "H_Shemag_olive";
 
@@ -32,5 +31,5 @@ _unit linkItem "tf_fadak";
 [_unit, "CM", "FSA"] call BWI_fnc_AddGear;
 [_unit, "CM", "FSA"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";}; 
-for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_30Rnd_545x39_t_ak";};
+for "_i" from 1 to 2 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";}; 
+for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_30Rnd_545x39_t_ak";};

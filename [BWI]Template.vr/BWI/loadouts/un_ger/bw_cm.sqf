@@ -24,7 +24,6 @@ _unit addItemToBackpack "RH_gemtech45";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_an_m8hc";};
 _unit addItemToBackpack "rhs_mag_m18_green";
 _unit addItemToBackpack "rhs_mag_m18_red";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_m67";};
 
 _unit addHeadgear "LOP_H_6B27M_ess_UN";
 
@@ -39,5 +38,5 @@ _unit linkItem "tf_anprc152";
 [_unit, "CM"] call BWI_fnc_AddGear;
 [_unit, "CM"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36";}; 
-for "_i" from 1 to 3 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36_Tracer";};
+for "_i" from 1 to 2 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36";}; 
+for "_i" from 1 to 2 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36_Tracer";};

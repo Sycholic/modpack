@@ -20,7 +20,6 @@ _unit addBackpack "B_Kitbag_sgg";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};
 _unit addItemToBackpack "acc_pointer_IR";
 _unit addItemToBackpack "hlc_muzzle_545SUP_AK";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellRed";};
 _unit addItemToBackpack "SmokeShellGreen";
@@ -35,5 +34,5 @@ _unit linkItem "tf_fadak";
 [_unit, "CM"] call BWI_fnc_AddGear;
 [_unit, "CM"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";};
-for "_i" from 1 to 3 do {_unit addItemToVest "hlc_30Rnd_545x39_t_ak";};
+for "_i" from 1 to 2 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";};
+for "_i" from 1 to 2 do {_unit addItemToVest "hlc_30Rnd_545x39_t_ak";};

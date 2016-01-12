@@ -13,7 +13,6 @@ removeGoggles _unit;
 
 _unit forceAddUniform "U_B_Wetsuit";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
-for "_i" from 1 to 2 do {_unit addItemToUniform "HandGrenade";};
 
 _unit addVest "V_RebreatherB";
 
@@ -41,5 +40,5 @@ _unit linkItem "tf_anprc152";
 [_unit, "CM"] call BWI_fnc_AddGear;
 [_unit, "CM"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToBackpack "30Rnd_556x45_Stanag";}; 
-for "_i" from 1 to 3 do {_unit addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";}; 
+for "_i" from 1 to 2 do {_unit addItemToBackpack "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 2 do {_unit addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";}; 

@@ -16,7 +16,6 @@ _unit forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "UK3CB_BAF_V_Osprey_Medic_C";
-for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
 _unit addItemToVest "rhs_mag_m18_red";
 _unit addItemToVest "rhs_mag_m18_green";
@@ -39,5 +38,5 @@ _unit linkItem "tf_anprc152";
 [_unit, "CM"] call BWI_fnc_AddGear;
 [_unit, "CM"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
-for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";}; 
+for "_i" from 1 to 2 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 2 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";}; 
