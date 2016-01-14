@@ -38,7 +38,7 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 
-_unit linkItem "tf_anprc152";
+_unit linkItem "tf_anprc148jem";
 
 [_unit, "ENG"] call BWI_fnc_AddGear;
 [_unit, "ENG"] call BWI_fnc_AddMedical;

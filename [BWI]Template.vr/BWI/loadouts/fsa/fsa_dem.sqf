@@ -27,7 +27,7 @@ _unit addHeadgear "H_Shemag_olive";
 _unit addWeapon "rhs_weap_ak74m_npz";
 _unit addWeapon "RH_mak";
 
-_unit linkItem "tf_pnr1000a";
+_unit linkItem "tf_anprc154";
 
 [_unit, "DEM", "FSA"] call BWI_fnc_AddGear;
 [_unit, "DEM", "FSA"] call BWI_fnc_AddMedical;

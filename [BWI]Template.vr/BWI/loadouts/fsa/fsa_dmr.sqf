@@ -27,7 +27,7 @@ _unit addWeapon "rhs_weap_svdp";
 _unit addPrimaryWeaponItem "rhs_acc_pso1m2";
 _unit addWeapon "RH_mak";
 
-_unit linkItem "tf_pnr1000a";
+_unit linkItem "tf_anprc154";
 
 [_unit, "DMR", "FSA"] call BWI_fnc_AddGear;
 [_unit, "DMR", "FSA"] call BWI_fnc_AddMedical;
