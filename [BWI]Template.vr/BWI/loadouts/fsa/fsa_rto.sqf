@@ -18,7 +18,7 @@ _unit forceAddUniform _randomUni;
 _unit addVest "LOP_V_6Sh92_OLV";
 for "_i" from 1 to 2 do {_unit addItemToVest "RH_8Rnd_9x18_Mak";};
 
-_unit addBackpack "tf_mr3000_rhs";
+_unit addBackpack "tf_anprc155";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 
@@ -27,7 +27,7 @@ _unit addHeadgear "H_Shemag_olive";
 _unit addWeapon "rhs_weap_ak74m_npz";
 _unit addWeapon "RH_mak";
 
-_unit linkItem "tf_fadak";
+_unit linkItem "tf_anprc148jem";
 
 [_unit, "RTO", "FSA"] call BWI_fnc_AddGear;
 [_unit, "RTO", "FSA"] call BWI_fnc_AddMedical;

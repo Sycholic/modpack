@@ -27,7 +27,7 @@ _unit addWeapon "rhs_weap_ak74m_gp25_npz";
 _unit addPrimaryWeaponItem "RH_barska_rds";
 _unit addWeapon "RH_mak";
 
-_unit linkItem "tf_fadak";
+_unit linkItem "tf_anprc148jem";
 
 [_unit, "SQL", "FSA"] call BWI_fnc_AddGear;
 [_unit, "SQL", "FSA"] call BWI_fnc_AddMedical;

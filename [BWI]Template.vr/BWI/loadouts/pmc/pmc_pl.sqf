@@ -25,7 +25,7 @@ _unit addItemToVest "UGL_FlareWhite_F";
 for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
-_unit addBackpack "tf_rt1523g_black";
+_unit addBackpack "tf_anprc155_coyote";
 _unit addItemToBackpack "RH_peq15b";
 _unit addItemToBackpack "hlc_muzzle_snds_AUG";
 _unit addItemToBackpack "RH_m9qd";
@@ -43,7 +43,7 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 
-_unit linkItem "tf_anprc152";
+_unit linkItem "tf_anprc148jem";
 
 [_unit, "PL"] call BWI_fnc_AddGear;
 [_unit, "PL"] call BWI_fnc_AddMedical;

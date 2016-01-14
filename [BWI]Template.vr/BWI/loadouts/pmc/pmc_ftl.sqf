@@ -42,7 +42,7 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 
-_unit linkItem "tf_anprc152";
+_unit linkItem "tf_anprc148jem";
 
 [_unit, "FTL"] call BWI_fnc_AddGear;
 [_unit, "FTL"] call BWI_fnc_AddMedical;

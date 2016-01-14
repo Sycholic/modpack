@@ -19,7 +19,7 @@ for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 _unit addVest "V_PlateCarrier1_PMC_blk";
 for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
 
-_unit addBackpack "tf_rt1523g_black";
+_unit addBackpack "tf_anprc155_coyote";
 _unit addItemToBackpack "RH_peq15b";
 _unit addItemToBackpack "hlc_muzzle_snds_AUG";
 _unit addItemToBackpack "RH_m9qd";
@@ -38,7 +38,7 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 
-_unit linkItem "tf_anprc152";
+_unit linkItem "tf_anprc148jem";
 
 [_unit, "RTO"] call BWI_fnc_AddGear;
 [_unit, "RTO"] call BWI_fnc_AddMedical;

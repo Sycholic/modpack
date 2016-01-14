@@ -28,7 +28,7 @@ _unit addWeapon "rhs_weap_ak74m_npz";
 _unit addWeapon "RH_mak";
 _unit addWeapon "rhs_weap_rpg26";
 
-_unit linkItem "tf_pnr1000a";
+_unit linkItem "tf_anprc154";
 
 [_unit, "RAT", "FSA"] call BWI_fnc_AddGear;
 [_unit, "RAT", "FSA"] call BWI_fnc_AddMedical;
