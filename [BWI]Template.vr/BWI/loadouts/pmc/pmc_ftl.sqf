@@ -14,7 +14,7 @@ removeGoggles _unit;
 _pmc_uniforms = ["U_I_G_Story_Protagonist_F", "U_PMC_IndUniformLS_TSTPTB", "U_PMC_IndUniformLS_BSTPTB", "U_PMC_IndUniformLS_TSBPTB", "U_PMC_IndUniformLS_GSYPTB", "U_PMC_IndUniformLS_YSYPTB", "U_PMC_IndUniformLS_YSBPBB", "U_PMC_CombatUniformLS_SSGPSB"];
 _randomUni = _pmc_uniforms select floor random count _pmc_uniforms;
 _unit forceAddUniform _randomUni;
-for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
+for "_i" from 1 to 2 do {_unit addItemToUniform "I_IR_Grenade";};
 
 _unit addVest "rhsusf_spc_teamleader";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
