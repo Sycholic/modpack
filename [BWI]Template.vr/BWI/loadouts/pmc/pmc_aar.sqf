@@ -14,6 +14,7 @@ removeGoggles _unit;
 _pmc_uniforms = ["U_I_G_Story_Protagonist_F", "U_PMC_IndUniformLS_TSTPTB", "U_PMC_IndUniformLS_BSTPTB", "U_PMC_IndUniformLS_TSBPTB", "U_PMC_IndUniformLS_GSYPTB", "U_PMC_IndUniformLS_YSYPTB", "U_PMC_IndUniformLS_YSBPBB", "U_PMC_CombatUniformLS_SSGPSB"];
 _randomUni = _pmc_uniforms select floor random count _pmc_uniforms;
 _unit forceAddUniform _randomUni;
+for "_i" from 1 to 2 do {_unit addItemToUniform "I_IR_Grenade";};
 
 _unit addVest "V_PlateCarrier1_PMC_blk";
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
@@ -37,7 +38,7 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 
-_unit linkItem "tf_rf7800str";
+_unit linkItem "tf_anprc154";
 
 [_unit, "AAR"] call BWI_fnc_AddGear;
 [_unit, "AAR"] call BWI_fnc_AddMedical;

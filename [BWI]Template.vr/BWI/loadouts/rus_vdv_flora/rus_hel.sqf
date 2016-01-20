@@ -11,8 +11,8 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-
 _unit forceAddUniform "rhs_uniform_df15";
+for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 
 _unit addVest "rhs_vest_commander";
 
@@ -23,7 +23,6 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_HandFlare_Red";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_HandFlare_Green";};
 
 _unit addHeadgear "rhs_zsh7a_mike";
-
 
 _unit addWeapon "hlc_rifle_aku12";
 _unit addPrimaryWeaponItem "RH_SFM952V";

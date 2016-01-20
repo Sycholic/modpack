@@ -12,6 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "rhs_uniform_vdv_mflora";
+for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 
 _unit addVest "rhs_6b23_ML_6sh92_headset";
 
@@ -24,7 +25,7 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellRed";};
 _unit addItemToBackpack "SmokeShellGreen";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_PG7VR_mag";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_PG7VL_mag";};
 _unit addHeadgear "rhs_6b27m_ML_ess_bala";
 
 _unit addWeapon "hlc_rifle_ak12";

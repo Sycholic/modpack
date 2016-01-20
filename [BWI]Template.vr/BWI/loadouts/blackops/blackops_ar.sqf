@@ -13,6 +13,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "U_PMC_IndUniformLS_BSBPBB";
+for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "V_PlateCarrier1_PMC_blk";
 _unit addItemToVest "SmokeShellRed";
@@ -34,7 +35,6 @@ _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 
 _unit linkItem "tf_rf7800str";
-
 
 [_unit, "AR"] call BWI_fnc_AddGear;
 [_unit, "AR"] call BWI_fnc_AddMedical;

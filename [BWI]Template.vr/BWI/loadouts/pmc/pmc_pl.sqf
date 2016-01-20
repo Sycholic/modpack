@@ -14,6 +14,7 @@ removeGoggles _unit;
 _pmc_uniforms = ["U_I_G_Story_Protagonist_F", "U_PMC_IndUniformLS_TSTPTB", "U_PMC_IndUniformLS_BSTPTB", "U_PMC_IndUniformLS_TSBPTB", "U_PMC_IndUniformLS_GSYPTB", "U_PMC_IndUniformLS_YSYPTB", "U_PMC_IndUniformLS_YSBPBB", "U_PMC_CombatUniformLS_SSGPSB"];
 _randomUni = _pmc_uniforms select floor random count _pmc_uniforms;
 _unit forceAddUniform _randomUni;
+for "_i" from 1 to 2 do {_unit addItemToUniform "I_IR_Grenade";};
 
 _unit addVest "V_PlateCarrier1_PMC_blk";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
@@ -24,7 +25,7 @@ _unit addItemToVest "UGL_FlareWhite_F";
 for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
-_unit addBackpack "tf_rt1523g_black";
+_unit addBackpack "tf_anprc155_coyote";
 _unit addItemToBackpack "RH_peq15b";
 _unit addItemToBackpack "hlc_muzzle_snds_AUG";
 _unit addItemToBackpack "RH_m9qd";
@@ -42,7 +43,7 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 
-_unit linkItem "tf_anprc152";
+_unit linkItem "tf_anprc148jem";
 
 [_unit, "PL"] call BWI_fnc_AddGear;
 [_unit, "PL"] call BWI_fnc_AddMedical;

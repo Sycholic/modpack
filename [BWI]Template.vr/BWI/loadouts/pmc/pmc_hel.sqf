@@ -12,6 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "U_PMC_IndUniformLS_YSYPTB";
+for "_i" from 1 to 2 do {_unit addItemToUniform "I_IR_Grenade";};
 
 _unit addVest "V_PlateCarrier1_PMC_coyote";
 _unit addItemToVest "SmokeShellRed";
@@ -31,7 +32,7 @@ _unit addPrimaryWeaponItem "optic_ACO_grn_smg";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 
-_unit linkItem "tf_rf7800str";
+_unit linkItem "tf_anprc154";
 
 [_unit, "HEL"] call BWI_fnc_AddGear;
 [_unit, "HEL"] call BWI_fnc_AddMedical;

@@ -100,7 +100,7 @@ class BWIArmory
 			idc = 1006;
 			x = 0.36 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
-			w = 0.103125 * safezoneW;
+			w = 0.11125 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0.275,0.463,0.694,1};
 			
@@ -116,6 +116,15 @@ class BWIArmory
 			h = 0.06 * safezoneH;
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,0,0,1};
+		};
+		
+		class lblSlotPicked: RscStructuredText
+		{
+			idc = 1008;
+			x = 0.309724 * safezoneW + safezoneX;
+			y = 0.785659 * safezoneH + safezoneY;
+			w = 0.38 * safezoneW;
+			h = 0.033 * safezoneH;
 		};
 	};
 };

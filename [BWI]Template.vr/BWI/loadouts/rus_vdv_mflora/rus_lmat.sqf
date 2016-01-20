@@ -12,6 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "rhs_uniform_vdv_mflora";
+for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 
 _unit addVest "rhs_6b23_ML_6sh92_headset";
 
@@ -39,4 +40,4 @@ _unit linkItem "tf_fadak";
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";};
 for "_i" from 1 to 3 do {_unit addItemToVest "hlc_30Rnd_545x39_t_ak";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_rpg7_PG7VR_mag";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_rpg7_PG7VL_mag";};

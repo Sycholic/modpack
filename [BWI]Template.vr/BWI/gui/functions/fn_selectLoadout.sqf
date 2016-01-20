@@ -38,7 +38,8 @@ if( lbCurSel _xlistSide == 0 ) then {
 						_factionPath = ""; _error = true;
 					};
 			case 5: { _factionPath = "us_1985\us_"; };
-			case 6: { _factionPath = "pmc\pmc_"; };
+			case 6: { _factionPath = "seals_scuba\seals_"; };
+			case 7: { _factionPath = "un_ger\bw_"; };
 			default { _factionPath = ""; _error = true; };
 		};
 	};
@@ -74,6 +75,7 @@ if( lbCurSel _xlistSide == 1 ) then {
 						[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 						_factionPath = ""; _error = true;
 					};
+			case 1: { _factionPath = "taliban\taliban_"; };
 			default { _factionPath = ""; _error = true; };
 		};
 	};
@@ -84,11 +86,34 @@ if( lbCurSel _xlistSide == 1 ) then {
 			case 0: {
 						if( _factionSelected select 1 == 0 ) then { _factionPath = "rus_vdv_flora\rus_";  }; 
 						if( _factionSelected select 1 == 1 ) then { _factionPath = "rus_vdv_mflora\rus_";  };
+						if( _factionSelected select 1 == 2 ) then { _factionPath = "rus_vdv_emr\rus_";  };
 					};
 			default { _factionPath = ""; _error = true; };
 		};
 	};
 };
+
+
+// independent is current side
+if( lbCurSel _xlistSide == 2 ) then {
+
+	// single camo faction
+	if( count _factionSelected == 1 ) then {
+		switch ( _factionSelected select 0 ) do {
+			case 0: { _factionPath = "pmc\pmc_"; };
+			case 1: { _factionPath = "fsa\fsa_"; };
+			default { _factionPath = ""; _error = true; };
+		};
+	};
+
+	// multi camo faction
+	if( count _factionSelected == 2 ) then {
+		switch ( _factionSelected select 0 ) do {
+			default { _factionPath = ""; _error = true; };
+		};
+	};
+};
+
 
 // single member role
 if( count _roleSelected == 1 ) then {
@@ -160,6 +185,11 @@ if ( !_error ) then {
 		[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 		false;
 	} else {
+		
+		BWI_armory_sideSelected = lbCurSel _xlistSide;
+		BWI_armory_factionSelected = _factionSelected;
+		BWI_armory_roleSelected = _roleSelected;
+		
 		[objNull, player] call compile _preprocessedScript;
 
 		closeDialog 1;

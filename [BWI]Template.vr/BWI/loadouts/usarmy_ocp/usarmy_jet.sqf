@@ -11,8 +11,8 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-
 _unit forceAddUniform "FIR_Fighter_Pilot_USN_Nomex";
+for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "FIR_pilot_vest";
 _unit addItemToVest "ACE_HandFlare_Red";

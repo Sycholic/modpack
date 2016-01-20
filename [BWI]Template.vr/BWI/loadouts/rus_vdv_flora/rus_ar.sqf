@@ -12,6 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "rhs_uniform_flora_patchless";
+for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 _unit addVest "rhs_6b23_6sh92_headset";
 
 _unit addBackpack "B_Kitbag_sgg";
@@ -33,7 +34,6 @@ _unit linkItem "tf_pnr1000a";
 
 [_unit, "AR"] call BWI_fnc_AddGear;
 [_unit, "AR"] call BWI_fnc_AddMedical;
-
 
 for "_i" from 1 to 8 do {_unit addItemToVest "hlc_45Rnd_545x39_t_rpk";};
 for "_i" from 1 to 8 do {_unit addItemToBackpack "hlc_45Rnd_545x39_t_rpk";};

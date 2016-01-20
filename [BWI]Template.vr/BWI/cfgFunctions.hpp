@@ -8,6 +8,7 @@ class BWI
 		class AddMedical {};
 		class ReclaimOwnershipOfAI {};
 		class EndMission {};
+		class AddNewMedicalTentObject {};
 	};
 };
 
