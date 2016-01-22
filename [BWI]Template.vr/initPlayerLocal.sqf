@@ -39,6 +39,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 			if( _platoonRole == "apl" ) then {
 				BWI_armory_roleSelected = [0];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + " Assistant Platoon Leader";
+				group player setGroupIdGlobal ["Support Element"];
 			};
 			
 			if( _platoonRole == "rto" ) then {
@@ -51,7 +52,6 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 			if( _platoonRole == "eng" ) then {
 				BWI_armory_roleSelected = [6];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Combat Engineer";
-				group player setGroupIdGlobal ["Platoon Logistics"];
 			};
 			
 			if( _platoonRole == "dri" ) then {
@@ -64,7 +64,6 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 			if( _platoonRole2 == "cm"  ) then {
 				BWI_armory_roleSelected = [5];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Corpsman";
-				group player setGroupIdGlobal ["Platoon Medical"];
 			};
 			
 			if( _platoonRole  == "dri" ) then {
