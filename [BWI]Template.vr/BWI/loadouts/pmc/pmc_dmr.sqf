@@ -1,6 +1,6 @@
 //LOADOUTS - BWI - Rifleman
 
-_unit = (_this select 1);
+_unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
 removeAllWeapons _unit;
@@ -10,7 +10,6 @@ removeUniform _unit;
 removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
-removeGoggles _unit;
 
 _pmc_uniforms = ["U_I_G_Story_Protagonist_F", "U_PMC_IndUniformLS_TSTPTB", "U_PMC_IndUniformLS_BSTPTB", "U_PMC_IndUniformLS_TSBPTB", "U_PMC_IndUniformLS_GSYPTB", "U_PMC_IndUniformLS_YSYPTB", "U_PMC_IndUniformLS_YSBPBB", "U_PMC_CombatUniformLS_SSGPSB"];
 _randomUni = _pmc_uniforms select floor random count _pmc_uniforms;

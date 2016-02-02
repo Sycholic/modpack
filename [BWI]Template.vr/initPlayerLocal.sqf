@@ -1,3 +1,28 @@
+/**
+*
+*	Vars for reinsertion
+*
+*/
+BWI_playerGotKilled = false;
+BWI_playerCanDeploy = true;
+BWI_playerKillCount = 0;
+
+/**
+*
+*	Vars for FOB objects
+*
+*/
+BWI_logistics_FOB_Flag = objNull;
+BWI_logistics_FOB_Net = objNull;
+BWI_logistics_FOB_AmmoBox = objNull;
+BWI_logistics_FOB_Table = objNull;
+BWI_logistics_FOB_AmmoBox_AddAction = -1;
+
+/**
+*
+*	Evaluate preselected factions and slot description
+*
+*/
 BWI_armory_baseSlot = "You are slotted as: ";
 BWI_squadName = "";
 
@@ -220,5 +245,25 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 				};
 			};
 		};
+	};
+};
+
+/**
+*
+*	Vars for reinsertion
+*
+*/
+"BWI_logistics_FOB_Flag" addPublicVariableEventHandler {
+	_squad 			= (str player) select [6,3];
+	_platoonRole 	= (str player) select [10,3];
+	_platoonRole2	= (str player) select [10,2];
+
+	if( _squad == "log" && _platoonRole == "eng" ) then {
+		BWI_logistics_FOB_Flag addAction ["<t color='#1111ff'>Deconstruct FOB</t>", "BWI\scripts\repackageFOB.sqf", [], 1.5, false, false, "", "('ToolKit' in items _this)"];
+	};
+	
+	if( _squad == "ple" && ( _platoonRole2 == "pl" || _platoonRole == "apl" ) ) then {
+		BWI_logistics_FOB_Flag addAction ["<t color='#11ff11'>Enable Armory</t>", "true remoteExec [""BWI_fnc_ToggleArmoryAtFOB""];", [], 1.5, false, false, "", "BWI_logistics_FOB_AmmoBox_AddAction == -1"];
+		BWI_logistics_FOB_Flag addAction ["<t color='#ff1111'>Disable Armory</t>", "false remoteExec [""BWI_fnc_ToggleArmoryAtFOB""];", [], 1.5, false, false, "", "BWI_logistics_FOB_AmmoBox_AddAction != -1"];
 	};
 };
