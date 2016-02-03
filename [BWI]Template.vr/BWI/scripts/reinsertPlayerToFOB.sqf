@@ -8,4 +8,5 @@ _fobPos set [0, (_fobPos select 0) + (2 * _sine)];
 _fobPos set [1, (_fobPos select 1) + (2 * _cosine)];
 player setPosATL _fobPos;
 BWI_playerCanDeploy = false;
+[player, "DEPLOYED"] call BWI_fnc_ReportReinsertionToPlatoon;
 hintSilent "";

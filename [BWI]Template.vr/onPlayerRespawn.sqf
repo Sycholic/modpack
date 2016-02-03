@@ -60,8 +60,10 @@ if( BWI_playerGotKilled ) then {
 	_timerScript = [] spawn {
 		_timer = 120 + (BWI_playerKillCount - 1) * 180;
 		
+		[player, "STARTTIMER", _timer] call BWI_fnc_ReportReinsertionToPlatoon;
+		
 		while { _timer > 0 && !BWI_playerCanDeploy } do {
-			hintSilent parseText format ["<t color='#ff1111'>Waiting for reinsertion</t><br/>Wait til the timer has finished!<br/>%1:%2 remaining.", floor(_timer / 60), [_timer % 60,2] call CBA_fnc_formatNumber];
+			hintSilent parseText format ["<t color='#ff1111'>Waiting for reinsertion</t><br/>Wait til the timer has finished!<br/>%1:%2 remaining.", [floor(_timer / 60),2] call CBA_fnc_formatNumber, [_timer % 60,2] call CBA_fnc_formatNumber];
 			sleep 1;
 			_timer = _timer - 1;
 		};

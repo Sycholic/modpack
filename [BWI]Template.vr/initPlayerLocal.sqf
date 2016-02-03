@@ -6,6 +6,8 @@
 BWI_playerGotKilled = false;
 BWI_playerCanDeploy = true;
 BWI_playerKillCount = 0;
+BWI_playerReinsertionQueue = [];
+BWI_playerReinsertCriticalSection = false;
 
 /**
 *
