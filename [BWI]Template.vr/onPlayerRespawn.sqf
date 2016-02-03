@@ -46,9 +46,8 @@ player addAction ["BWI: CommCard", "createDialog 'ShowCommCard';", nil, -10, fal
 _platoonRole = (str player) select [10,3];
 
 if( _platoonRole == "eng" ) then {
-	player addAction ["<t color='#11ffff'>Deploy Medical Tent</t>", "BWI\scripts\deployMedicalTent.sqf", nil, 1.5, false, false, "", "!isNull BWI_logistics_FOB_Flag && (_this distance2D BWI_logistics_FOB_Flag) < 30 && ('BWI_medical_tentBox' in items _this) && ('ToolKit' in items _this)"];
-	player addAction ["<t color='#ff1111'>(outside FOB perimeter)</t>", "", nil, 1.5, false, false, "", "(isNull BWI_logistics_FOB_Flag || (_this distance BWI_logistics_FOB_Flag) > 30) && ('BWI_medical_tentBox' in items _this) && ('ToolKit' in items _this)"];
-	player addAction ["<t color='#ff11ff'>Deploy FOB</t>", "BWI\scripts\deployFOB.sqf", nil, 1.5, false, false, "", "('BWI_logistics_fobBox' in items _this) && ('ToolKit' in items _this)"];
+	player addAction ["<t color='#11ffff'>Deploy Medical Tent</t>", "BWI\scripts\deployMedicalTent.sqf", nil, 1.5, false, false, "", "('BWI_medical_tentBox' in items _this) && ('ToolKit' in items _this)"];
+	player addAction ["<t color='#11ffff'>Deploy FOB</t>", "BWI\scripts\deployFOB.sqf", nil, 1.5, false, false, "", "('BWI_logistics_fobBox' in items _this) && ('ToolKit' in items _this)"];
 };
 
 /**

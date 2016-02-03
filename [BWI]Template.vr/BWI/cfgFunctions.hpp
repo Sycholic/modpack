@@ -9,7 +9,6 @@ class BWI
 		class ReclaimOwnershipOfAI {};
 		class EndMission {};
 		class AddNewMedicalTentObject {};
-		class ToggleArmoryAtFOB {};
 	};
 };
 

@@ -16,7 +16,6 @@ BWI_logistics_FOB_Flag = objNull;
 BWI_logistics_FOB_Net = objNull;
 BWI_logistics_FOB_AmmoBox = objNull;
 BWI_logistics_FOB_Table = objNull;
-BWI_logistics_FOB_AmmoBox_AddAction = -1;
 
 /**
 *
@@ -260,10 +259,5 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 
 	if( _squad == "log" && _platoonRole == "eng" ) then {
 		BWI_logistics_FOB_Flag addAction ["<t color='#1111ff'>Deconstruct FOB</t>", "BWI\scripts\repackageFOB.sqf", [], 1.5, false, false, "", "('ToolKit' in items _this)"];
-	};
-	
-	if( _squad == "ple" && ( _platoonRole2 == "pl" || _platoonRole == "apl" ) ) then {
-		BWI_logistics_FOB_Flag addAction ["<t color='#11ff11'>Enable Armory</t>", "true remoteExec [""BWI_fnc_ToggleArmoryAtFOB""];", [], 1.5, false, false, "", "BWI_logistics_FOB_AmmoBox_AddAction == -1"];
-		BWI_logistics_FOB_Flag addAction ["<t color='#ff1111'>Disable Armory</t>", "false remoteExec [""BWI_fnc_ToggleArmoryAtFOB""];", [], 1.5, false, false, "", "BWI_logistics_FOB_AmmoBox_AddAction != -1"];
 	};
 };
