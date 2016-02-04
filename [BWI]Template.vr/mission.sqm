@@ -3120,7 +3120,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			position[]={395.41202,5,517.87207};
@@ -3141,6 +3141,18 @@ class Mission
 			skill=0.60000002;
 			text="carrier_tp";
 			init="this enableSimulation false;";
+		};
+		class Item2
+		{
+			position[]={400.66443,5,517.87305};
+			id=172;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Teleporter";
+			init="this addAction [""<t color='#11ffff'>Use FOB teleporter</t>"", ""BWI\scripts\reinsertPlayerToFOB.sqf"", nil, 1.5, false, false, """", ""BWI_playerCanDeploy && !isNull BWI_logistics_FOB_Flag""]; this addAction [""<t color='#FFA805'>(FOB not placed)</t>"", """", nil, 1.5, false, false, """", ""BWI_playerCanDeploy && isNull BWI_logistics_FOB_Flag""];";
+			description="teleporterPole";
 		};
 	};
 	class Markers

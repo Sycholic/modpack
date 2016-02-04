@@ -43,11 +43,17 @@ player addAction ["BWI: CommCard", "createDialog 'ShowCommCard';", nil, -10, fal
 *	Add actions to player objects when they initially spawn or respawn
 *
 */
-_platoonRole = (str player) select [10,3];
+_platoonRole2 	= (str player) select [10,2];
+_platoonRole    = (str player) select [10,3];
 
 if( _platoonRole == "eng" ) then {
 	player addAction ["<t color='#11ffff'>Deploy Medical Tent</t>", "BWI\scripts\deployMedicalTent.sqf", nil, 1.5, false, false, "", "('BWI_medical_tentBox' in items _this) && ('ToolKit' in items _this)"];
 	player addAction ["<t color='#11ffff'>Deploy FOB</t>", "BWI\scripts\deployFOB.sqf", nil, 1.5, false, false, "", "('BWI_logistics_fobBox' in items _this) && ('ToolKit' in items _this)"];
+};
+
+if( _platoonRole == "apl" || _platoonRole2 == "pl" ) then {
+	player addAction ["Display reinforcements list", "BWI\scripts\displayReinforcements.sqf", nil, 1.5, false, false, "", "!BWI_displayReinsertionQueue"];
+	player addAction ["Hide reinforcements list", "BWI_displayReinsertionQueue = false; hint """";", nil, 1.5, false, false, "", "BWI_displayReinsertionQueue"];
 };
 
 /**

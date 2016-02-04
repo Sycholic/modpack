@@ -8,7 +8,7 @@ BWI_playerCanDeploy = true;
 BWI_playerKillCount = 0;
 BWI_playerReinsertionQueue = [];
 BWI_playerReinsertCriticalSection = false;
-
+BWI_displayReinsertionQueue = false;
 /**
 *
 *	Vars for FOB objects
@@ -248,6 +248,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 		};
 	};
 };
+
 
 /**
 *

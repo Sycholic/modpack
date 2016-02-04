@@ -23,8 +23,8 @@ if( _reportType == "STARTTIMER" ) then {
 				{
 					waitUntil { !BWI_playerReinsertCriticalSection };
 					BWI_playerReinsertCriticalSection = true;
-					if( (_x select 0) > 0 ) then {
-						_timer = (_x select 0) - 10;
+					if( (_x select 2) > 0 ) then {
+						_timer = (_x select 2) - 10;
 						if ( _timer < 0 ) then {
 							_timer = 0;
 						};
@@ -46,7 +46,7 @@ if( _reportType == "STARTTIMER" ) then {
 	} forEach BWI_playerReinsertionQueue;
 	
 	if( _deleteIndex != -1 ) then {
-		BWI_playerReinsertCriticalSection deleteAt _deleteIndex;
+		BWI_playerReinsertionQueue deleteAt _deleteIndex;
 	};
 	
 	BWI_playerReinsertCriticalSection = false;
