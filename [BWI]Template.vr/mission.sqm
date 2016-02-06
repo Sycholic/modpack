@@ -33,7 +33,8 @@ class Mission
 		"TTT_NimitzArrest",
 		"TTT_NimitzRepair",
 		"TTT_NimitzFlightDeck",
-		"JS_JC_FA18"
+		"JS_JC_FA18",
+		"BWI_Resupply_Boxes"
 	};
 	addOnsAuto[]=
 	{
@@ -52,6 +53,8 @@ class Mission
 		"A3_Supplies_F_Heli_CargoNets",
 		"CAMisc",
 		"aia_misc_config",
+		"aia_misc_e_config",
+		"BWI_Resupply_Boxes",
 		"map_vr"
 	};
 	randomSeed=11414424;
@@ -3120,7 +3123,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3;
+		items=5;
 		class Item0
 		{
 			position[]={395.41202,5,517.87207};
@@ -3129,7 +3132,7 @@ class Mission
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			text="SpawnVAS";
-			init="this addAction[""<t color='#12EF00'>Virtual Arsenal</t>"",{['Open', true] call BIS_fnc_arsenal}]; this enableSimulation false; this allowDamage false;this addAction [""<t color='#d58200'>BWI: Armory</t>"", ""createDialog 'BWIArmory';""];";
+			init="this enableSimulation false; this allowDamage false;this addAction [""<t color='#d58200'>BWI: Armory</t>"", ""createDialog 'BWIArmory';""];";
 		};
 		class Item1
 		{
@@ -3154,10 +3157,26 @@ class Mission
 			init="this addAction [""<t color='#11ffff'>Use FOB teleporter</t>"", ""BWI\scripts\reinsertPlayerToFOB.sqf"", nil, 1.5, false, false, """", ""BWI_playerCanDeploy && !isNull BWI_logistics_FOB_Flag""]; this addAction [""<t color='#FFA805'>(FOB not placed)</t>"", """", nil, 1.5, false, false, """", ""BWI_playerCanDeploy && isNull BWI_logistics_FOB_Flag""];";
 			description="teleporterPole";
 		};
+		class Item3
+		{
+			position[]={408.32791,5,520.9986};
+			id=173;
+			side="EMPTY";
+			vehicle="BWI_Box_Accessories";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={408.34506,5,514.96246};
+			id=174;
+			side="EMPTY";
+			vehicle="BWI_Box_Facewear";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
-		items=4;
+		items=3;
 		class Item0
 		{
 			position[]={395.66608,5,508.05371};
@@ -3169,21 +3188,14 @@ class Mission
 			position[]={386.00858,5,517.7655};
 			name="respawn_guerrila";
 			type="Empty";
-			angle=0.324076;
+			angle=90;
 		};
 		class Item2
 		{
-			position[]={388.66034,5,533.66418};
+			position[]={395.56064,5,528.08118};
 			name="respawn_east";
 			type="Empty";
-			angle=-3.0395501;
-		};
-		class Item3
-		{
-			position[]={395.56064,5,528.08118};
-			name="respawn_east_1";
-			type="Empty";
-			angle=-3.0395501;
+			angle=180;
 		};
 	};
 };
