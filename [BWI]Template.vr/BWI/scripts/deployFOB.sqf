@@ -47,12 +47,6 @@
 	clearItemCargoGlobal BWI_logistics_FOB_AmmoBox;
 	clearWeaponCargoGlobal BWI_logistics_FOB_AmmoBox;
 	clearMagazineCargoGlobal BWI_logistics_FOB_AmmoBox;
-	BWI_logistics_FOB_AmmoBox addItemCargoGlobal ["30Rnd_556x45_Stanag", 20];
-	BWI_logistics_FOB_AmmoBox addItemCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 20];
-	BWI_logistics_FOB_AmmoBox addItemCargoGlobal ["ACE_packingBandage", 20];
-	BWI_logistics_FOB_AmmoBox addItemCargoGlobal ["ACE_fieldDressing", 20];
-	BWI_logistics_FOB_AmmoBox addItemCargoGlobal ["ACE_bloodIV_500", 20];
-	BWI_logistics_FOB_AmmoBox addItemCargoGlobal ["ACE_elasticBandage", 20];
 	
 	BWI_logistics_FOB_Table = createVehicle ['Land_WoodenTable_large_F', _posTable, [], 0, 'CAN_COLLIDE'];
 	BWI_logistics_FOB_Table setDir ( _dirTable - 90 );

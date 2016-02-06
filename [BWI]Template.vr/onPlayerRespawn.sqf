@@ -68,20 +68,30 @@ if( BWI_playerGotKilled ) then {
 		
 		[player, "STARTTIMER", _timer] call BWI_fnc_ReportReinsertionToPlatoon;
 		
-		while { _timer > 0 && !BWI_playerCanDeploy } do {
+		while { _timer > 0 && !BWI_playerCanDeploy && (player distance2D SpawnVAS) < 50 } do {
 			hintSilent parseText format ["<t color='#ff1111'>Waiting for reinsertion</t><br/>Wait til the timer has finished!<br/>%1:%2 remaining.", [floor(_timer / 60),2] call CBA_fnc_formatNumber, [_timer % 60,2] call CBA_fnc_formatNumber];
 			sleep 1;
 			_timer = _timer - 1;
 		};
 		
-		BWI_playerCanDeploy = true;
-		
-		while { isNull BWI_logistics_FOB_Flag } do {
-			hintSilent parseText "<t color='#FFA805'>FOB not placed</t><br/>You have to wait until the FOB has been placed by the PL/APL to reinsert.";
-			sleep 2;
+		if( ( player distance2D SpawnVAS ) >= 50) then {
+			hint "";
+			[player, "DEPLOYED"] call BWI_fnc_ReportReinsertionToPlatoon;
+		} else {
+			BWI_playerCanDeploy = true;
+			
+			while { isNull BWI_logistics_FOB_Flag && ( player distance2D SpawnVAS ) < 50 } do {
+				hintSilent parseText "<t color='#FFA805'>FOB not placed</t><br/>You have to wait until the FOB has been placed by the PL/APL to reinsert.";
+				sleep 2;
+			};
+			
+			if( ( player distance2D SpawnVAS ) >= 50) then {
+				hint "";
+				[player, "DEPLOYED"] call BWI_fnc_ReportReinsertionToPlatoon;
+			} else {
+				hintSilent parseText "<t color='#11ff11'>REINSERTION READY!</t><br/>Use the teleporter flag pole!";
+			};
 		};
-		
-		hintSilent parseText "<t color='#11ff11'>REINSERTION READY!</t><br/>Use the teleporter flag pole!";
 	};
 	
 };
