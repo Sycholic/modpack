@@ -1,5 +1,5 @@
 
-_unit = (_this select 1);
+_unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
 removeAllWeapons _unit;
@@ -9,7 +9,6 @@ removeUniform _unit;
 removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
-removeGoggles _unit;
 
 _unit forceAddUniform "BWA3_Uniform2_Fleck";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
@@ -36,7 +35,7 @@ _unit addHandgunItem "RH_X300";
 
 _unit linkItem "tf_anprc152";
 
-[_unit, "ENG"] call BWI_fnc_AddGear;
+[_unit, (_this select 1)] call BWI_fnc_AddGear;
 [_unit, "ENG"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36";}; 
