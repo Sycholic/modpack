@@ -18,7 +18,9 @@ BWI_displayReinsertionQueue = false;
 BWI_logistics_FOB_Flag = objNull;
 BWI_logistics_FOB_Net = objNull;
 BWI_logistics_FOB_AmmoBox = objNull;
-BWI_logistics_FOB_Table = objNull;
+BWI_logistics_FOB_Table1 = objNull;
+BWI_logistics_FOB_Table2 = objNull;
+BWI_logistics_FOB_Board = objNull;
 
 /**
 *
