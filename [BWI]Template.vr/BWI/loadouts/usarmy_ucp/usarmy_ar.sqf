@@ -1,6 +1,6 @@
 
 
-_unit = (_this select 1);
+_unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
 removeAllWeapons _unit;
@@ -10,7 +10,6 @@ removeUniform _unit;
 removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
-removeGoggles _unit;
 
 _unit forceAddUniform "rhs_uniform_cu_ucp";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};

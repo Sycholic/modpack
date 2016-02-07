@@ -1,3 +1,49 @@
+/**
+*
+*	Vars for reinsertion
+*
+*/
+BWI_playerGotKilled = false;
+BWI_playerCanDeploy = true;
+BWI_playerKillCount = 0;
+BWI_playerReinsertionQueue = [];
+BWI_playerReinsertCriticalSection = false;
+BWI_displayReinsertionQueue = false;
+
+/**
+*
+*	Vars for FOB objects
+*
+*/
+if ( isNil "BWI_logistics_FOB_Flag" ) then {
+	BWI_logistics_FOB_Flag = objNull;
+};
+
+if ( isNil "BWI_logistics_FOB_Net" ) then {
+	BWI_logistics_FOB_Net = objNull;
+};
+
+if ( isNil "BWI_logistics_FOB_AmmoBox" ) then {
+	BWI_logistics_FOB_AmmoBox = objNull;
+};
+
+if ( isNil "BWI_logistics_FOB_Table1" ) then {
+	BWI_logistics_FOB_Table1 = objNull;
+};
+
+if ( isNil "BWI_logistics_FOB_Table2" ) then {
+	BWI_logistics_FOB_Table2 = objNull;
+};
+
+if ( isNil "BWI_logistics_FOB_Board" ) then {
+	BWI_logistics_FOB_Board = objNull;
+};
+
+/**
+*
+*	Evaluate preselected factions and slot description
+*
+*/
 BWI_armory_baseSlot = "You are slotted as: ";
 BWI_squadName = "";
 
@@ -24,6 +70,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 	_squad    	    = (str player) select [6,3];
 	_platoonRole2 	= (str player) select [10,2];
 	_platoonRole 	= (str player) select [10,3];
+	_platoonRole4	= (str player) select [10,4];
 	_fireteam		= (str player) select [10,3];
 	_fireteamRole   = (str player) select [14,3];
 
@@ -49,14 +96,14 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 		};
 		
 		case "log": {
-			if( _platoonRole == "eng" ) then {
+			if( _platoonRole4 == "eng1" ) then {
 				BWI_armory_roleSelected = [6];
-				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Combat Engineer";
+				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Combat Engineer (FOB)";
 			};
 			
-			if( _platoonRole == "dri" ) then {
-				BWI_armory_roleSelected = [20];
-				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Logistics Driver";
+			if( _platoonRole4 == "eng2" ) then {
+				BWI_armory_roleSelected = [7];
+				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Combat Engineer (MEDTENT)";
 			};
 		};
 
@@ -64,11 +111,6 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 			if( _platoonRole2 == "cm"  ) then {
 				BWI_armory_roleSelected = [5];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Corpsman";
-			};
-			
-			if( _platoonRole  == "dri" ) then {
-				BWI_armory_roleSelected = [20];
-				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Medical Driver";
 			};
 		};
 		
@@ -220,5 +262,21 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 				};
 			};
 		};
+	};
+};
+
+
+/**
+*
+*	Vars for reinsertion
+*
+*/
+"BWI_logistics_FOB_Flag" addPublicVariableEventHandler {
+	_squad 			= (str player) select [6,3];
+	_platoonRole 	= (str player) select [10,3];
+	_platoonRole2	= (str player) select [10,2];
+
+	if( _squad == "log" && _platoonRole == "eng" ) then {
+		BWI_logistics_FOB_Flag addAction ["<t color='#1111ff'>Deconstruct FOB</t>", "BWI\scripts\repackageFOB.sqf", [], 1.5, false, false, "", "('ToolKit' in items _this)"];
 	};
 };

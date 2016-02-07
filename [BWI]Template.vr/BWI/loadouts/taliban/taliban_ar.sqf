@@ -1,5 +1,5 @@
 //LOADOUTS - BWI - AAR (M27)
-_unit = (_this select 1);
+_unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
 removeAllWeapons _unit;
@@ -9,7 +9,6 @@ removeUniform _unit;
 removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
-removeGoggles _unit;
 
 _taliban_uniforms = ["LOP_U_AM_Fatigue_01", "LOP_U_AM_Fatigue_02", "LOP_U_AM_Fatigue_03", "LOP_U_AM_Fatigue_04"];
 _randomUni = _taliban_uniforms select floor random count _taliban_uniforms;
