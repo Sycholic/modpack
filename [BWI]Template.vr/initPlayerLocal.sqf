@@ -15,12 +15,29 @@ BWI_displayReinsertionQueue = false;
 *	Vars for FOB objects
 *
 */
-BWI_logistics_FOB_Flag = objNull;
-BWI_logistics_FOB_Net = objNull;
-BWI_logistics_FOB_AmmoBox = objNull;
-BWI_logistics_FOB_Table1 = objNull;
-BWI_logistics_FOB_Table2 = objNull;
-BWI_logistics_FOB_Board = objNull;
+if ( isNil "BWI_logistics_FOB_Flag" ) then {
+	BWI_logistics_FOB_Flag = objNull;
+};
+
+if ( isNil "BWI_logistics_FOB_Net" ) then {
+	BWI_logistics_FOB_Net = objNull;
+};
+
+if ( isNil "BWI_logistics_FOB_AmmoBox" ) then {
+	BWI_logistics_FOB_AmmoBox = objNull;
+};
+
+if ( isNil "BWI_logistics_FOB_Table1" ) then {
+	BWI_logistics_FOB_Table1 = objNull;
+};
+
+if ( isNil "BWI_logistics_FOB_Table2" ) then {
+	BWI_logistics_FOB_Table2 = objNull;
+};
+
+if ( isNil "BWI_logistics_FOB_Board" ) then {
+	BWI_logistics_FOB_Board = objNull;
+};
 
 /**
 *
