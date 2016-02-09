@@ -153,6 +153,7 @@ if( count _roleSelected == 1 ) then {
 		case 19:{ _role = "dem"; };
 		case 20:{ _role = "arm"; };
 		case 21:{ _role = "rif"; };
+		case 22:{ _role = "zeus"; };
 		default { _role = ""; _error = true; };
 	};
 };

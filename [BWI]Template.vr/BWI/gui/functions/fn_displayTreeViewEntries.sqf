@@ -70,6 +70,7 @@ _tvRole tvAdd [[],"Sniper"];
 _tvRole tvAdd [[],"Demolition Specialist"];
 _tvRole tvAdd [[],"Armor Crewman"];
 _tvRole tvAdd [[],"Rifleman"];
+_tvRole tvAdd [[],"Zeus"];
 
 _tvRole tvAdd [[13],"Leader"];
 _tvRole tvAdd [[13],"Gunner"];
