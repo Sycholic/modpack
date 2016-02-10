@@ -20,7 +20,7 @@ _unit addGoggles "G_Aviator";
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "tf_microdagr";
-_unit linkItem "tf_anprc152_1";
+_unit linkItem "tf_anprc152";
 
 _unit setFace "WhiteHead_03";
 _unit setSpeaker "ACE_NoVoice";
