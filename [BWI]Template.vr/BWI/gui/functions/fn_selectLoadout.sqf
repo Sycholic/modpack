@@ -161,19 +161,19 @@ if( count _roleSelected == 1 ) then {
 // multi member role (HAT/MAT/pilot team)
 if( count _roleSelected == 2 ) then {
 	switch ( _roleSelected select 0 ) do {
-		case 12:{
+		case 13:{
 					if( _roleSelected select 1 == 0 ) then { _role = "lmat"; }; 
 					if( _roleSelected select 1 == 1 ) then { _role = "mat";  };
 					if( _roleSelected select 1 == 2 ) then { _role = "amat"; };
 				};
-		case 13:{
+		case 14:{
 					if( _roleSelected select 1 == 0 ) then { _role = "lhat"; }; 
 					if( _roleSelected select 1 == 1 ) then { _role = "hat";  };
 					if( _roleSelected select 1 == 2 ) then { _role = "ahat"; };
 				};
-		case 16:{
-					if( _roleSelected select 1 == 0 ) then { _role = "hel"; }; 
-					if( _roleSelected select 1 == 1 ) then { _role = "jet"; };
+		case 17:{
+					if( _roleSelected select 1 == 0 ) then { _role = "jet"; }; 
+					if( _roleSelected select 1 == 1 ) then { _role = "hel"; };
 				};
 		default { _role = ""; _error = true; };
 	};

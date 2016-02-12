@@ -78,8 +78,8 @@ _tvRole tvAdd [[13],"Spotter"];
 _tvRole tvAdd [[14],"Leader"];
 _tvRole tvAdd [[14],"Gunner"];
 _tvRole tvAdd [[14],"Spotter"];
-_tvRole tvAdd [[17],"Rotary"];
 _tvRole tvAdd [[17],"Fixed Wing"];
+_tvRole tvAdd [[17],"Rotary"];
 
 _tvFaction tvSetCurSel BWI_armory_factionSelected;
 _tvRole tvSetCurSel BWI_armory_roleSelected;
