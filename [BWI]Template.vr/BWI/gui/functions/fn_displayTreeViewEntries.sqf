@@ -48,29 +48,29 @@ switch _sideNr do {
 };
 
 
-_tvRole tvAdd [[],"Platoon Leader"];
+_tvRole tvAdd [[],"Platoon Leader"];		//0
 _tvRole tvAdd [[],"Platoon RTO"];
 _tvRole tvAdd [[],"Squad Leader"];
 _tvRole tvAdd [[],"Fireteam Leader"];
 _tvRole tvAdd [[],"Radio Operator"];
-_tvRole tvAdd [[],"Corpsman"];
+_tvRole tvAdd [[],"Corpsman"];				//5
 _tvRole tvAdd [[],"Engineer (FOB)"];
 _tvRole tvAdd [[],"Engineer (MEDTENT)"];
 _tvRole tvAdd [[],"Combat First Responder"];
 _tvRole tvAdd [[],"Automatic Rifleman"];
-_tvRole tvAdd [[],"Medium Machine Gun"];
+_tvRole tvAdd [[],"Medium Machine Gun"];		//10
 _tvRole tvAdd [[],"Ass. Automatic Rifleman"];
 _tvRole tvAdd [[],"Rifleman AT"];
 _tvRole tvAdd [[],"Medium AT"];
 _tvRole tvAdd [[],"Heavy AT"];
-_tvRole tvAdd [[],"Anti Air"];
+_tvRole tvAdd [[],"Anti Air"];					//15
 _tvRole tvAdd [[],"Designated Marksman"];
 _tvRole tvAdd [[],"Pilot"];
 _tvRole tvAdd [[],"Sniper"];
 _tvRole tvAdd [[],"Demolition Specialist"];
-_tvRole tvAdd [[],"Armor Crewman"];
+_tvRole tvAdd [[],"Armor Crewman"];				//20
 _tvRole tvAdd [[],"Rifleman"];
-_tvRole tvAdd [[],"Zeus"];
+_tvRole tvAdd [[],"Zeus"];					//22
 
 _tvRole tvAdd [[13],"Leader"];
 _tvRole tvAdd [[13],"Gunner"];

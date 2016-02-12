@@ -63,7 +63,7 @@ if( side player == independent ) then {
 };
 
 if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
-	BWI_armory_roleSelected = [1];
+	BWI_armory_roleSelected = [22];
 	BWI_armory_baseSlot = BWI_armory_baseSlot + "Zeus";
 	group player setGroupIdGlobal ["Game Master"];
 } else {
@@ -150,7 +150,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 				
 			};
 			
-			BWI_armory_roleSelected = [19];
+			BWI_armory_roleSelected = [20];
 		};
 
 		case "jet": {
@@ -165,7 +165,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon 1 / Jet 1 Copilot";
 			};
 
-			BWI_armory_roleSelected = [16,0];
+			BWI_armory_roleSelected = [17,0];
 		};	
 		
 		case "rot": {
@@ -180,7 +180,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon 1 / Rotary 1 Copilot";
 			};
 			
-			BWI_armory_roleSelected = [16,1];
+			BWI_armory_roleSelected = [17,1];
 		};
 		
 		default {
@@ -218,7 +218,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 					};
 					
 					if( _fireteamRole == "rif" ) then {
-						BWI_armory_roleSelected = [20];
+						BWI_armory_roleSelected = [21];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Rifleman";
 					};
 				};
@@ -232,12 +232,12 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 					};
 					
 					if( _fireteamRole == "cfr" ) then {
-						BWI_armory_roleSelected = [7];
+						BWI_armory_roleSelected = [8];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Combat First Responder";
 					};
 					
 					if( _fireteamRole == "rif" ) then {
-						BWI_armory_roleSelected = [20];
+						BWI_armory_roleSelected = [21];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Rifleman";
 					};
 				};
@@ -251,12 +251,12 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 					};
 					
 					if( _fireteamRole == "cfr" ) then {
-						BWI_armory_roleSelected = [7];
+						BWI_armory_roleSelected = [8];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Combat First Responder";
 					};
 					
 					if( _fireteamRole == "rif" ) then {
-						BWI_armory_roleSelected = [20];
+						BWI_armory_roleSelected = [21];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Rifleman";
 					};
 				};
