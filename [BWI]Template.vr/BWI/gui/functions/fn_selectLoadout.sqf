@@ -10,6 +10,7 @@ _factionSelected = tvCurSel _tvFaction;
 _roleSelected = tvCurSel _tvRole;
 _factionPath = "";
 _role = "";
+_loadoutParameter = "";
 _error = false;
 
 if( count _factionSelected == 0 ) exitWith {false};
@@ -124,33 +125,35 @@ if( count _roleSelected == 1 ) then {
 		case 3: { _role = "ftl"; };
 		case 4: { _role = "rto"; };
 		case 5: { _role = "cm"; };
-		case 6: { _role = "eng"; };
-		case 7: { _role = "cfr"; };
-		case 8: { _role = "ar"; };
-		case 9: { _role = "mmg"; };
-		case 10: { _role = "aar"; };
-		case 11: { _role = "rat"; };
-		case 12:{
+		case 6: { _role = "eng"; _loadoutParameter = "ENGF"; };
+		case 7: { _role = "eng"; _loadoutParameter = "ENGT"; };
+		case 8: { _role = "cfr"; };
+		case 9: { _role = "ar"; };
+		case 10: { _role = "mmg"; };
+		case 11: { _role = "aar"; };
+		case 12: { _role = "rat"; };
+		case 13:{
 					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Medium AT'!</t>";
 					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 					_role = ""; _error = true;
 				};
-		case 13:{
+		case 14:{
 					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Heavy AT'!</t>";
 					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 					_role = ""; _error = true;
 				};
-		case 14:{ _role = "aa"; };
-		case 15:{ _role = "dmr"; };
-		case 16:{
+		case 15:{ _role = "aa"; };
+		case 16:{ _role = "dmr"; };
+		case 17:{
 					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Pilot'!</t>";
 					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 					_role = ""; _error = true;
 				};
-		case 17:{ _role = "sni"; };
-		case 18:{ _role = "dem"; };
-		case 19:{ _role = "arm"; };
-		case 20:{ _role = "rif"; };
+		case 18:{ _role = "sni"; };
+		case 19:{ _role = "dem"; };
+		case 20:{ _role = "arm"; };
+		case 21:{ _role = "rif"; };
+		case 22:{ _role = "zeus"; };
 		default { _role = ""; _error = true; };
 	};
 };
@@ -158,19 +161,19 @@ if( count _roleSelected == 1 ) then {
 // multi member role (HAT/MAT/pilot team)
 if( count _roleSelected == 2 ) then {
 	switch ( _roleSelected select 0 ) do {
-		case 12:{
+		case 13:{
 					if( _roleSelected select 1 == 0 ) then { _role = "lmat"; }; 
 					if( _roleSelected select 1 == 1 ) then { _role = "mat";  };
 					if( _roleSelected select 1 == 2 ) then { _role = "amat"; };
 				};
-		case 13:{
+		case 14:{
 					if( _roleSelected select 1 == 0 ) then { _role = "lhat"; }; 
 					if( _roleSelected select 1 == 1 ) then { _role = "hat";  };
 					if( _roleSelected select 1 == 2 ) then { _role = "ahat"; };
 				};
-		case 16:{
-					if( _roleSelected select 1 == 0 ) then { _role = "hel"; }; 
-					if( _roleSelected select 1 == 1 ) then { _role = "jet"; };
+		case 17:{
+					if( _roleSelected select 1 == 0 ) then { _role = "jet"; }; 
+					if( _roleSelected select 1 == 1 ) then { _role = "hel"; };
 				};
 		default { _role = ""; _error = true; };
 	};
@@ -190,7 +193,12 @@ if ( !_error ) then {
 		BWI_armory_factionSelected = _factionSelected;
 		BWI_armory_roleSelected = _roleSelected;
 		
-		[objNull, player] call compile _preprocessedScript;
+		if( "" == _loadoutParameter ) then {
+			[player] call compile _preprocessedScript;
+		} else {
+			[player, _loadoutParameter] call compile _preprocessedScript;
+		};
+		
 
 		closeDialog 1;
 		true

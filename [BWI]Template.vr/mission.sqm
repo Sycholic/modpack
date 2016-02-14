@@ -33,7 +33,8 @@ class Mission
 		"TTT_NimitzArrest",
 		"TTT_NimitzRepair",
 		"TTT_NimitzFlightDeck",
-		"JS_JC_FA18"
+		"JS_JC_FA18",
+		"BWI_Resupply_Boxes"
 	};
 	addOnsAuto[]=
 	{
@@ -52,6 +53,8 @@ class Mission
 		"A3_Supplies_F_Heli_CargoNets",
 		"CAMisc",
 		"aia_misc_config",
+		"aia_misc_e_config",
+		"BWI_Resupply_Boxes",
 		"map_vr"
 	};
 	randomSeed=11414424;
@@ -93,7 +96,7 @@ class Mission
 					rank="COLONEL";
 					skill=0.60000002;
 					text="b_pl1_ple_pl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_pl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_pl.sqf"";";
 					description="Platoon Leader";
 					syncId=0;
 					synchronizations[]={1};
@@ -108,7 +111,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="b_pl1_ple_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_prto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_prto.sqf"";";
 					description="Platoon Radio Operator / JTAC";
 				};
 			};
@@ -850,7 +853,7 @@ class Mission
 					rank="COLONEL";
 					skill=0.60000002;
 					text="o_pl1_ple_pl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_pl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_pl.sqf"";";
 					description="Platoon Leader";
 				};
 				class Item1
@@ -864,7 +867,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="o_pl1_ple_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_prto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_prto.sqf"";";
 					description="Platoon Radio Operator / JTAC";
 				};
 			};
@@ -887,7 +890,7 @@ class Mission
 					rank="COLONEL";
 					skill=0.60000002;
 					text="i_pl1_ple_pl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_pl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_pl.sqf"";";
 					description="Platoon Leader";
 				};
 				class Item1
@@ -900,7 +903,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_ple_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_prto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_prto.sqf"";";
 					description="Platoon Radio Operator / JTAC";
 				};
 			};
@@ -942,7 +945,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="b_pl1_ple_apl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_pl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_pl.sqf"";";
 					description="Assistant Platoon Leader";
 					syncId=2;
 					synchronizations[]={1};
@@ -958,7 +961,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="b_pl1_med_cm1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Platoon Corpsman";
 				};
 				class Item2
@@ -972,7 +975,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="b_pl1_med_cm2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Platoon Corpsman";
 				};
 				class Item3
@@ -985,8 +988,8 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="b_pl1_log_eng1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_eng.sqf"";";
-					description="Platoon Combat Engineer";
+					init="[this,""ENGF""] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_eng.sqf"";";
+					description="Platoon Combat Engineer (FOB)";
 				};
 				class Item4
 				{
@@ -998,8 +1001,8 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="b_pl1_log_eng2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_eng.sqf"";";
-					description="Platoon Combat Engineer";
+					init="[this,""ENGT""] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_eng.sqf"";";
+					description="Platoon Combat Engineer (MEDTENT)";
 				};
 			};
 		};
@@ -1021,7 +1024,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="b_pl1_sqa_sqe_sql";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_sql.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_sql.sqf"";";
 					description="Squad Alpha Leader";
 				};
 				class Item1
@@ -1034,7 +1037,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqa_sqe_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rto.sqf"";";
 					description="Radio Transmitter Operator";
 				};
 				class Item2
@@ -1048,7 +1051,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b_pl1_sqa_ft1_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item3
@@ -1061,7 +1064,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqa_ft1_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item4
@@ -1074,7 +1077,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqa_ft1_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item5
@@ -1087,7 +1090,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqa_ft1_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item6
@@ -1101,7 +1104,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b_pl1_sqa_ft2_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item7
@@ -1113,7 +1116,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqa_ft2_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item8
@@ -1126,7 +1129,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqa_ft2_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item9
@@ -1139,7 +1142,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqa_ft2_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 			};
@@ -1162,7 +1165,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="b_pl1_sqb_sqe_sql";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_sql.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_sql.sqf"";";
 					description="Squad Bravo Leader";
 				};
 				class Item1
@@ -1175,7 +1178,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqb_sqe_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rto.sqf"";";
 					description="Radio Transmitter Operator";
 				};
 				class Item2
@@ -1189,7 +1192,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b_pl1_sqb_ft1_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item3
@@ -1202,7 +1205,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqb_ft1_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item4
@@ -1215,7 +1218,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqb_ft1_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item5
@@ -1228,7 +1231,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqb_ft1_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item6
@@ -1242,7 +1245,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b_pl1_sqb_ft2_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item7
@@ -1255,7 +1258,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqb_ft2_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item8
@@ -1268,7 +1271,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqb_ft2_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item9
@@ -1281,7 +1284,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqb_ft2_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 			};
@@ -1304,7 +1307,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="b_pl1_sqc_sqe_sql";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_sql.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_sql.sqf"";";
 					description="Squad Charlie Leader";
 					syncId=3;
 					synchronizations[]={3};
@@ -1319,7 +1322,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqc_sqe_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rto.sqf"";";
 					description="Radio Transmitter Operator";
 				};
 				class Item2
@@ -1333,7 +1336,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b_pl1_sqc_ft1_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item3
@@ -1346,7 +1349,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqc_ft1_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item4
@@ -1359,7 +1362,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqc_ft1_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item5
@@ -1372,7 +1375,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqc_ft1_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item6
@@ -1386,7 +1389,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b_pl1_sqc_ft2_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item7
@@ -1399,7 +1402,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqc_ft2_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item8
@@ -1412,7 +1415,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqc_ft2_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item9
@@ -1425,7 +1428,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_sqc_ft2_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
 					description="Rifleman";
 				};
 			};
@@ -1447,7 +1450,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="b_pl1_arm1_driver";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
 					description="Armor Driver";
 				};
 				class Item1
@@ -1460,7 +1463,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_arm1_commander";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
 					description="Armor Commander";
 				};
 				class Item2
@@ -1473,7 +1476,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_arm1_gunner";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
 					description="Armor Gunner";
 				};
 			};
@@ -1495,7 +1498,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="b_pl1_arm2_driver";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
 					description="Armor Driver";
 				};
 				class Item1
@@ -1508,7 +1511,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_arm2_commander";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
 					description="Armor Commander";
 				};
 				class Item2
@@ -1521,7 +1524,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_arm2_gunner";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
 					description="Armor Gunner";
 				};
 			};
@@ -1543,7 +1546,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="b_pl1_jet1_pilot";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
 					description="Fixed Wing Pilot";
 				};
 				class Item1
@@ -1556,7 +1559,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_jet1_copilot";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
 					description="Fixed Wing Copilot";
 				};
 			};
@@ -1578,7 +1581,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="b_pl1_rot1_pilot";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_hel.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_hel.sqf"";";
 					description="Rotary Pilot";
 				};
 				class Item1
@@ -1591,7 +1594,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b_pl1_rot1_copilot";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_hel.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_hel.sqf"";";
 					description="Rotary Copilot";
 				};
 			};
@@ -1613,7 +1616,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="z1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rto.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Game Master";
 				};
 				class Item1
@@ -1626,7 +1629,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="z2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rto.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Game Master";
 				};
 				class Item2
@@ -1639,7 +1642,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="z3";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rto.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Actor";
 				};
 				class Item3
@@ -1652,7 +1655,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="z4";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rto.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Actor";
 				};
 			};
@@ -1675,7 +1678,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="i_pl1_ple_apl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_pl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_pl.sqf"";";
 					description="Assistant Platoon Leader";
 				};
 				class Item1
@@ -1689,7 +1692,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="i_pl1_med_cm1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Platoon Corpsman";
 				};
 				class Item2
@@ -1703,7 +1706,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="i_pl1_med_cm2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Platoon Corpsman";
 				};
 				class Item3
@@ -1717,8 +1720,8 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="i_pl1_log_eng1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_eng.sqf"";";
-					description="Platoon Combat Engineer";
+					init="[this, ""ENGF""] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_eng.sqf"";";
+					description="Platoon Combat Engineer (FOB)";
 				};
 				class Item4
 				{
@@ -1731,8 +1734,8 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="i_pl1_log_eng2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_eng.sqf"";";
-					description="Platoon Combat Engineer";
+					init="[this, ""ENGT""] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_eng.sqf"";";
+					description="Platoon Combat Engineer (MEDTENT)";
 				};
 			};
 		};
@@ -1754,7 +1757,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="i_pl1_sqa_sqe_sql";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_sql.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_sql.sqf"";";
 					description="Squad Alpha Leader";
 				};
 				class Item1
@@ -1767,7 +1770,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqa_sqe_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rto.sqf"";";
 					description="Radio Transmitter Operator";
 				};
 				class Item2
@@ -1781,7 +1784,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="i_pl1_sqa_ft1_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item3
@@ -1794,7 +1797,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqa_ft1_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item4
@@ -1807,7 +1810,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqa_ft1_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item5
@@ -1820,7 +1823,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqa_ft1_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item6
@@ -1834,7 +1837,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="i_pl1_sqa_ft2_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item7
@@ -1847,7 +1850,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqa_ft2_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item8
@@ -1860,7 +1863,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqa_ft2_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item9
@@ -1873,7 +1876,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqa_ft2_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 			};
@@ -1896,7 +1899,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="i_pl1_sqb_sqe_sql";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_sql.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_sql.sqf"";";
 					description="Squad Bravo Leader";
 				};
 				class Item1
@@ -1909,7 +1912,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqb_sqe_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rto.sqf"";";
 					description="Radio Transmitter Operator";
 				};
 				class Item2
@@ -1923,7 +1926,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="i_pl1_sqb_ft1_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item3
@@ -1936,7 +1939,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqb_ft1_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item4
@@ -1949,7 +1952,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqb_ft1_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item5
@@ -1962,7 +1965,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqb_ft1_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item6
@@ -1976,7 +1979,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="i_pl1_sqb_ft2_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item7
@@ -1989,7 +1992,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqb_ft2_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item8
@@ -2002,7 +2005,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqb_ft2_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item9
@@ -2015,7 +2018,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqb_ft2_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 			};
@@ -2038,7 +2041,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="i_pl1_sqc_sqe_sql";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_sql.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_sql.sqf"";";
 					description="Squad Charlie Leader";
 				};
 				class Item1
@@ -2051,7 +2054,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqc_sqe_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rto.sqf"";";
 					description="Radio Transmitter Operator";
 				};
 				class Item2
@@ -2065,7 +2068,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="i_pl1_sqc_ft1_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item3
@@ -2078,7 +2081,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqc_ft1_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item4
@@ -2091,7 +2094,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqc_ft1_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item5
@@ -2104,7 +2107,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqc_ft1_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item6
@@ -2118,7 +2121,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="i_pl1_sqc_ft2_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item7
@@ -2131,7 +2134,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqc_ft2_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item8
@@ -2144,7 +2147,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqc_ft2_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item9
@@ -2157,7 +2160,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="i_pl1_sqc_ft2_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
 					description="Rifleman";
 				};
 			};
@@ -2336,7 +2339,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="z11";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_pl.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Game Master";
 				};
 				class Item1
@@ -2350,7 +2353,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="z9";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_pl.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Game Master";
 				};
 				class Item2
@@ -2365,7 +2368,7 @@ class Mission
 					rank="COLONEL";
 					skill=0.60000002;
 					text="z10";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_pl.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Actor";
 				};
 				class Item3
@@ -2379,7 +2382,7 @@ class Mission
 					rank="COLONEL";
 					skill=0.60000002;
 					text="z12";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_pl.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Actor";
 				};
 			};
@@ -2402,7 +2405,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="o_pl1_ple_apl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_pl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_pl.sqf"";";
 					description="Assistant Platoon Leader";
 				};
 				class Item1
@@ -2416,7 +2419,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="o_pl1_med_cm1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Platoon Corpsman";
 				};
 				class Item2
@@ -2430,7 +2433,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="o_pl1_med_cm2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cm.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Platoon Corpsman";
 				};
 				class Item3
@@ -2444,8 +2447,8 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="o_pl1_log_eng1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_eng.sqf"";";
-					description="Platoon Combat Engineer";
+					init="[this, ""ENGF""] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_eng.sqf"";";
+					description="Platoon Combat Engineer (FOB)";
 				};
 				class Item4
 				{
@@ -2458,8 +2461,8 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="o_pl1_log_eng2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_eng.sqf"";";
-					description="Platoon Combat Engineer";
+					init="[this, ""ENGT""] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_eng.sqf"";";
+					description="Platoon Combat Engineer (MEDTENT)";
 				};
 			};
 		};
@@ -2481,7 +2484,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="o_pl1_sqa_sqe_sql";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_sql.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_sql.sqf"";";
 					description="Squad Alpha Leader";
 				};
 				class Item1
@@ -2494,7 +2497,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqa_sqe_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rto.sqf"";";
 					description="Radio Transmitter Operator";
 				};
 				class Item2
@@ -2508,7 +2511,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="o_pl1_sqa_ft1_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item3
@@ -2521,7 +2524,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqa_ft1_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item4
@@ -2534,7 +2537,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqa_ft1_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item5
@@ -2547,7 +2550,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqa_ft1_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item6
@@ -2561,7 +2564,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="o_pl1_sqa_ft2_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item7
@@ -2574,7 +2577,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqa_ft2_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item8
@@ -2587,7 +2590,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqa_ft2_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item9
@@ -2600,7 +2603,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqa_ft2_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 			};
@@ -2623,7 +2626,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="o_pl1_sqb_sqe_sql";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_sql.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_sql.sqf"";";
 					description="Squad Bravo Leader";
 				};
 				class Item1
@@ -2637,7 +2640,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqb_sqe_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rto.sqf"";";
 					description="Radio Transmitter Operator";
 				};
 				class Item2
@@ -2651,7 +2654,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="o_pl1_sqb_ft1_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item3
@@ -2664,7 +2667,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqb_ft1_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item4
@@ -2677,7 +2680,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqb_ft1_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item5
@@ -2690,7 +2693,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqb_ft1_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item6
@@ -2704,7 +2707,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="o_pl1_sqb_ft2_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item7
@@ -2717,7 +2720,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqb_ft2_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item8
@@ -2730,7 +2733,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqb_ft2_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item9
@@ -2743,7 +2746,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqb_ft2_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 			};
@@ -2766,7 +2769,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="o_pl1_sqc_sqe_sql";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_sql.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_sql.sqf"";";
 					description="Squad Charlie Leader";
 				};
 				class Item1
@@ -2779,7 +2782,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqc_sqe_rto1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rto.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rto.sqf"";";
 					description="Radio Transmitter Operator";
 				};
 				class Item2
@@ -2793,7 +2796,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="o_pl1_sqc_ft1_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item3
@@ -2806,7 +2809,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqc_ft1_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item4
@@ -2819,7 +2822,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqc_ft1_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item5
@@ -2832,7 +2835,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqc_ft1_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item6
@@ -2846,7 +2849,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="o_pl1_sqc_ft2_ftl";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
 					description="Fire Team Leader";
 				};
 				class Item7
@@ -2859,7 +2862,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqc_ft2_cfr1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Combat First Responder";
 				};
 				class Item8
@@ -2872,7 +2875,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqc_ft2_rif2";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 				class Item9
@@ -2885,7 +2888,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_sqc_ft2_rif1";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
 					description="Rifleman";
 				};
 			};
@@ -2907,7 +2910,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="o_pl1_arm1_driver";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
 					description="Armor Driver";
 				};
 				class Item1
@@ -2920,7 +2923,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_arm1_commander";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
 					description="Armor Commander";
 				};
 				class Item2
@@ -2933,7 +2936,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_arm1_gunner";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
 					description="Armor Gunner";
 				};
 			};
@@ -2955,7 +2958,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="o_pl1_arm2_driver";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
 					description="Armor Driver";
 				};
 				class Item1
@@ -2968,7 +2971,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_arm2_commander";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
 					description="Armor Commander";
 				};
 				class Item2
@@ -2981,7 +2984,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_arm2_gunner";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
 					description="Armor Gunner";
 				};
 			};
@@ -3003,7 +3006,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="o_pl1_jet1_pilot";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
 					description="Fixed Wing Pilot";
 				};
 				class Item1
@@ -3016,7 +3019,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_jet1_copilot";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
 					description="Fixed Wing Copilot";
 				};
 			};
@@ -3038,7 +3041,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="o_pl1_rot1_pilot";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_hel.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_hel.sqf"";";
 					description="Rotary Pilot";
 				};
 				class Item1
@@ -3051,7 +3054,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="o_pl1_rot1_copilot";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_hel.sqf"";";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_hel.sqf"";";
 					description="Rotary Copilot";
 				};
 			};
@@ -3073,7 +3076,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="z5";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_pl.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Game Master";
 				};
 				class Item1
@@ -3086,12 +3089,12 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="z6";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_pl.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Game Master";
 				};
 				class Item2
 				{
-					position[]={394.73593,5,531.45117};
+					position[]={394.93646,5,531.50098};
 					azimut=-179.92999;
 					id=168;
 					side="EAST";
@@ -3099,7 +3102,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="z7";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_pl.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Actor";
 				};
 				class Item3
@@ -3112,7 +3115,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="z8";
-					init="[objNull, this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_pl.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
+					init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_zeus.sqf""; this setVariable [""Ace_medical_medicClass"", 2];";
 					description="Actor";
 				};
 			};
@@ -3120,7 +3123,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=2;
+		items=5;
 		class Item0
 		{
 			position[]={395.41202,5,517.87207};
@@ -3129,7 +3132,7 @@ class Mission
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			text="SpawnVAS";
-			init="this addAction[""<t color='#12EF00'>Virtual Arsenal</t>"",{['Open', true] call BIS_fnc_arsenal}]; this enableSimulation false; this allowDamage false;this addAction [""<t color='#d58200'>BWI: Armory</t>"", ""createDialog 'BWIArmory';""];";
+			init="this enableSimulation false; this allowDamage false;this addAction [""<t color='#d58200'>BWI: Armory</t>"", ""createDialog 'BWIArmory';""];";
 		};
 		class Item1
 		{
@@ -3142,10 +3145,38 @@ class Mission
 			text="carrier_tp";
 			init="this enableSimulation false;";
 		};
+		class Item2
+		{
+			position[]={400.66443,5,517.87305};
+			id=172;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Teleporter";
+			init="this addAction [""<t color='#11ffff'>Use FOB teleporter</t>"", ""BWI\scripts\reinsertPlayerToFOB.sqf"", nil, 1.5, false, false, """", ""BWI_playerCanDeploy && !isNull BWI_logistics_FOB_Flag""]; this addAction [""<t color='#FFA805'>(FOB not placed)</t>"", """", nil, 1.5, false, false, """", ""BWI_playerCanDeploy && isNull BWI_logistics_FOB_Flag""];";
+			description="teleporterPole";
+		};
+		class Item3
+		{
+			position[]={408.32791,5,520.9986};
+			id=173;
+			side="EMPTY";
+			vehicle="BWI_Box_Accessories";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={408.34506,5,514.96246};
+			id=174;
+			side="EMPTY";
+			vehicle="BWI_Box_Facewear";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
-		items=4;
+		items=3;
 		class Item0
 		{
 			position[]={395.66608,5,508.05371};
@@ -3157,21 +3188,14 @@ class Mission
 			position[]={386.00858,5,517.7655};
 			name="respawn_guerrila";
 			type="Empty";
-			angle=0.324076;
+			angle=90;
 		};
 		class Item2
 		{
-			position[]={388.66034,5,533.66418};
+			position[]={395.56064,5,528.08118};
 			name="respawn_east";
 			type="Empty";
-			angle=-3.0395501;
-		};
-		class Item3
-		{
-			position[]={395.56064,5,528.08118};
-			name="respawn_east_1";
-			type="Empty";
-			angle=-3.0395501;
+			angle=180;
 		};
 	};
 };

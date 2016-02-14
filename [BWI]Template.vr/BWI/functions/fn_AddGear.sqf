@@ -214,7 +214,17 @@ switch( _class ) do {
 		_unit addItemToUniform "ACE_RangeCard";
 	};
 	
-	case "ENG": {
+	case "ENGF": {
+		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
+		if( _equipment == "modern" ) then {
+			_unit linkItem "ItemAndroid";
+			_unit addWeapon "Binocular";
+		};
+		_unit addItemToBackpack "ToolKit";
+		_unit addItemToBackpack "BWI_logistics_fobBox";
+	};
+	
+	case "ENGT": {
 		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
 		if( _equipment == "modern" ) then {
 			_unit linkItem "ItemAndroid";
