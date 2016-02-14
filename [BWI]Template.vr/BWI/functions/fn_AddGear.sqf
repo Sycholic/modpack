@@ -217,6 +217,7 @@ switch( _class ) do {
 	case "ENG": {
 		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
 		if( _equipment == "modern" ) then {
+			_unit linkItem "ItemAndroid";
 			_unit addWeapon "Binocular";
 		};
 		_unit addItemToBackpack "ToolKit";
