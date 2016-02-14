@@ -26,10 +26,9 @@ _unit addItemToBackpack "rhsusf_acc_nt4_black";
 _unit addItemToBackpack "RH_m9qd";
 
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
-
-_unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
+_unit addWeapon "RH_M16A4_m";
 _unit addPrimaryWeaponItem "RH_SFM952V";
-_unit addPrimaryWeaponItem "RH_compm4s";
+_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 

@@ -31,9 +31,9 @@ for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
 
-_unit addWeapon "rhs_weap_m4a1_carryhandle_m203";
+_unit addWeapon "RH_M16A4gl";
 _unit addPrimaryWeaponItem "RH_SFM952V";
-_unit addPrimaryWeaponItem "RH_ta31rmr";
+_unit addPrimaryWeaponItem "RH_eotech553mag";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_M6X";
 

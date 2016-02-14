@@ -28,9 +28,9 @@ _unit addItemToBackpack "tf47_m3maaws_HEAT";
 
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
 
-_unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
+_unit addWeapon "RH_M16A4_m";
 _unit addPrimaryWeaponItem "RH_SFM952V";
-_unit addPrimaryWeaponItem "RH_compm4s";
+_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 _unit addWeapon "tf47_m3maaws";
 _unit addSecondaryWeaponItem "tf47_optic_m3maaws";
 _unit addWeapon "RH_m9";
