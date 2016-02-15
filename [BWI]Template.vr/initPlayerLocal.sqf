@@ -209,7 +209,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 					
 					if( _fireteamRole == "sql" ) then {
 						BWI_armory_roleSelected = [2];  BWI_armory_baseSlot = BWI_armory_baseSlot + " / Leader";
-						group player setGroupIdGlobal ["%GroupNames-Actual", BWI_squadName];
+						group player setGroupIdGlobal ["%GroupNames", BWI_squadName];
 					};
 					
 					if( _fireteamRole == "rto" ) then {
