@@ -52,15 +52,15 @@
 		case "rhs_uniform_FROG01_d"				: { _flagObject = "Flag_US_F"; };
 		case "rhs_uniform_FROG01_wd"			: { _flagObject = "Flag_US_F"; };
 		default {
-			if( side player == "west" ) then {
+			if( side player == west ) then {
 				_flagObject = "Flag_Blue_F";
 			};
 			
-			if( side player == "east" ) then {
+			if( side player == east ) then {
 				_flagObject = "Flag_Red_F";
 			};
 			
-			if( side player == "independent" ) then {
+			if( side player == independent ) then {
 				_flagObject = "Flag_Green_F";
 			};
 		};
