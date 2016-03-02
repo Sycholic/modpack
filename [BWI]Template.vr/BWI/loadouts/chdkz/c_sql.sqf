@@ -20,7 +20,7 @@ _unit addItemToUniform "ACE_IR_Strobe_Item";
 for "_i" from 1 to 2 do {_unit addItemToUniform "Chemlight_red";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 _unit addVest "LOP_6sh46";
-_unit addItemToVest "RH_8Rnd_9x18_Mak";
+_unit addItemToVest "CUP_8Rnd_9x18_Makarov_M";
 _unit addBackpack "B_Carryall_cbr";
 for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_packingBandage";};
@@ -40,7 +40,7 @@ _unit addItemToBackpack "DemoCharge_Remote_Mag";
 _unit addHeadgear "LOP_H_ChDKZ_Beret";
 
 _unit addWeapon "hlc_rifle_aks74_GL";
-_unit addWeapon "RH_mak";
+_unit addWeapon "CUP_hgun_Makarov";
 _unit addWeapon "ACE_Vector";
 
 _unit linkItem "ItemMap";

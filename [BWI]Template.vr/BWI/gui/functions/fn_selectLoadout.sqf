@@ -119,41 +119,53 @@ if( lbCurSel _xlistSide == 2 ) then {
 // single member role
 if( count _roleSelected == 1 ) then {
 	switch ( _roleSelected select 0 ) do {
-		case 0: { _role = "pl"; };
-		case 1: { _role = "prto"; };
-		case 2: { _role = "sql"; };
-		case 3: { _role = "ftl"; };
-		case 4: { _role = "rto"; };
-		case 5: { _role = "cm"; };
-		case 6: { _role = "eng"; _loadoutParameter = "ENGF"; };
-		case 7: { _role = "eng"; _loadoutParameter = "ENGT"; };
-		case 8: { _role = "cfr"; };
-		case 9: { _role = "ar"; };
-		case 10: { _role = "mmg"; };
-		case 11: { _role = "aar"; };
-		case 12: { _role = "rat"; };
-		case 13:{
-					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Medium AT'!</t>";
+		case 0 :{
+					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Leadership'!</t>";
 					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 					_role = ""; _error = true;
 				};
-		case 14:{
-					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Heavy AT'!</t>";
+		case 1 :{
+					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Radio'!</t>";
 					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 					_role = ""; _error = true;
 				};
-		case 15:{ _role = "aa"; };
-		case 16:{ _role = "dmr"; };
-		case 17:{
-					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Pilot'!</t>";
+		case 2 :{
+					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Support'!</t>";
 					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 					_role = ""; _error = true;
 				};
-		case 18:{ _role = "sni"; };
-		case 19:{ _role = "dem"; };
-		case 20:{ _role = "arm"; };
-		case 21:{ _role = "rif"; };
-		case 22:{ _role = "zeus"; };
+		case 3 :{
+					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'LMG Team'!</t>";
+					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
+					_role = ""; _error = true;
+				};
+		case 4 :{
+					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'MMG Team'!</t>";
+					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
+					_role = ""; _error = true;
+				};
+		case 5 :{
+					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'MAT Team'!</t>";
+					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
+					_role = ""; _error = true;
+				};
+		case 6 :{
+					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'HAT Team'!</t>";
+					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
+					_role = ""; _error = true;
+				};
+		case 7 :{
+					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Specialists'!</t>";
+					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
+					_role = ""; _error = true;
+				};
+		case 8 :{
+					_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Crewman'!</t>";
+					[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
+					_role = ""; _error = true;
+				};
+		case 9 :{ _role = "rif"; };
+		case 10:{ _role = "zeus"; };
 		default { _role = ""; _error = true; };
 	};
 };
@@ -161,19 +173,51 @@ if( count _roleSelected == 1 ) then {
 // multi member role (HAT/MAT/pilot team)
 if( count _roleSelected == 2 ) then {
 	switch ( _roleSelected select 0 ) do {
-		case 13:{
+		case 0 :{
+					if( _roleSelected select 1 == 0 ) then { _role = "pl"; }; 
+					if( _roleSelected select 1 == 1 ) then { _role = "pl"; };
+					if( _roleSelected select 1 == 2 ) then { _role = "sql"; };
+					if( _roleSelected select 1 == 3 ) then { _role = "ftl"; };
+				};
+		case 1 :{
+					if( _roleSelected select 1 == 0 ) then { _role = "prto"; }; 
+					if( _roleSelected select 1 == 1 ) then { _role = "rto"; };
+				};
+		case 2 :{
+					if( _roleSelected select 1 == 0 ) then { _role = "cm"; }; 
+					if( _roleSelected select 1 == 1 ) then { _role = "cfr"; };
+					if( _roleSelected select 1 == 2 ) then { _role = "eng"; _loadoutParameter = "ENGF"; };
+					if( _roleSelected select 1 == 3 ) then { _role = "eng"; _loadoutParameter = "ENGT"; };
+				};
+		case 3 :{
+					if( _roleSelected select 1 == 0 ) then { _role = "lmg"; };
+					if( _roleSelected select 1 == 1 ) then { _role = "almg"; };
+				};
+		case 4 :{
+					if( _roleSelected select 1 == 0 ) then { _role = "mmg"; }; 
+					if( _roleSelected select 1 == 1 ) then { _role = "ammg"; };
+				};
+		case 5 :{
 					if( _roleSelected select 1 == 0 ) then { _role = "lmat"; }; 
 					if( _roleSelected select 1 == 1 ) then { _role = "mat";  };
 					if( _roleSelected select 1 == 2 ) then { _role = "amat"; };
 				};
-		case 14:{
+		case 6 :{
 					if( _roleSelected select 1 == 0 ) then { _role = "lhat"; }; 
 					if( _roleSelected select 1 == 1 ) then { _role = "hat";  };
 					if( _roleSelected select 1 == 2 ) then { _role = "ahat"; };
 				};
-		case 17:{
+		case 7 :{
+					if( _roleSelected select 1 == 0 ) then { _role = "rat"; }; 
+					if( _roleSelected select 1 == 1 ) then { _role = "aa"; };
+					if( _roleSelected select 1 == 2 ) then { _role = "dmr"; };
+					if( _roleSelected select 1 == 3 ) then { _role = "sni"; }; 
+					if( _roleSelected select 1 == 4 ) then { _role = "dem"; };
+				};
+		case 8 :{
 					if( _roleSelected select 1 == 0 ) then { _role = "jet"; }; 
 					if( _roleSelected select 1 == 1 ) then { _role = "hel"; };
+					if( _roleSelected select 1 == 2 ) then { _role = "arm"; };
 				};
 		default { _role = ""; _error = true; };
 	};

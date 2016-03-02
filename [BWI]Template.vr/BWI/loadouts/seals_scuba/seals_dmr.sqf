@@ -20,11 +20,10 @@ _unit addItemToBackpack "SmokeShellRed";
 _unit addItemToBackpack "SmokeShellGreen";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
-_unit addItemToBackpack "rhsusf_acc_anpeq15side";
-_unit addItemToBackpack "RH_SFM952V_tan";
-_unit addItemToBackpack "RH_fa762_des";
-_unit addItemToBackpack "RH_m9qd";
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
+_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
+_unit addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black_tan";
+_unit addItemToBackpack "CUP_acc_ANPEQ_15";
 
 _unit addHeadgear "BWA3_OpsCore_Schwarz";
 
@@ -32,8 +31,7 @@ _unit addGoggles "G_B_Diving";
 
 _unit addWeapon "srifle_EBR_F";
 _unit addPrimaryWeaponItem "optic_DMS";
-_unit addWeapon "RH_m9";
-_unit addHandgunItem "RH_M6X";
+_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_rf7800str";
 

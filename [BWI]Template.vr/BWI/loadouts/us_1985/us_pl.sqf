@@ -22,14 +22,13 @@ for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
 _unit addBackpack "tf_rt1523g_green";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 8 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "RH_M16A2gl";
-_unit addWeapon "RH_m9";
-_unit addHandgunItem "RH_M6X";
+_unit addWeapon "CUP_arifle_M16A2_GL";
+_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_anprc152";
 

@@ -10,23 +10,27 @@ removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
 
-_taliban_uniforms = ["LOP_U_AM_Fatigue_01", "LOP_U_AM_Fatigue_02", "LOP_U_AM_Fatigue_03", "LOP_U_AM_Fatigue_04"];
-_randomUni = _taliban_uniforms select floor random count _taliban_uniforms;
+_taliban_uniforms = ["CUP_O_TKI_Khet_Partug_01", "CUP_O_TKI_Khet_Partug_02", "CUP_O_TKI_Khet_Partug_08", "CUP_O_TKI_Khet_Partug_06"];
+_randomUni = selectRandom _taliban_uniforms;
 _unit forceAddUniform _randomUni;
 
-_unit addVest "LOP_6sh46";
-for "_i" from 1 to 2 do {_unit addItemToVest "RH_8Rnd_9x18_Mak";};
+_taliban_vests = ["CUP_V_OI_TKI_Jacket3_01", "CUP_V_OI_TKI_Jacket3_02", "CUP_V_OI_TKI_Jacket3_03", "CUP_V_OI_TKI_Jacket3_04", "CUP_V_OI_TKI_Jacket3_05", "CUP_V_OI_TKI_Jacket3_06"];
+_randomVest = selectRandom _taliban_vests;
+_unit addVest _randomVest;
+for "_i" from 1 to 2 do {_unit addItemToVest "CUP_8Rnd_9x18_Makarov_M";};
 
-_unit addBackpack "tf_mr3000_rhs";
+_unit addBackpack "tf_mr3000_bwmod_tropen";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 
-_unit addHeadgear "LOP_H_Turban";
+_taliban_turbans = ["CUP_H_TKI_Lungee_Open_01", "CUP_H_TKI_Lungee_Open_02", "CUP_H_TKI_Lungee_Open_03", "CUP_H_TKI_Lungee_Open_04", "CUP_H_TKI_Lungee_Open_05", "CUP_H_TKI_Lungee_Open_06"];
+_randomTurban = selectRandom _taliban_turbans;
+_unit addHeadgear _randomTurban;
 
 _unit addGoggles "SFG_Tac_BeardD";
 
 _unit addWeapon "rhs_weap_ak74m_npz";
-_unit addWeapon "RH_mak";
+_unit addWeapon "CUP_hgun_Makarov";
 
 _unit linkItem "tf_fadak";
 

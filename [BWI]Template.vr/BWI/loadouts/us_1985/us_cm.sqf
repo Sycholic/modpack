@@ -21,9 +21,8 @@ _unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "RH_M16A2";
-_unit addWeapon "RH_m9";
-_unit addHandgunItem "RH_M6X";
+_unit addWeapon "CUP_arifle_M16A2";
+_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_anprc152";
 

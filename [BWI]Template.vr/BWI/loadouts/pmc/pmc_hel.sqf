@@ -18,18 +18,16 @@ _unit addItemToVest "SmokeShellRed";
 _unit addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
-for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
+for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 
 _unit addBackpack "B_FieldPack_cbr";
 _unit addItemToBackpack "hlc_muzzle_snds_a6AUG";
-_unit addItemToBackpack "RH_m9qd";
 
 _unit addHeadgear "H_PilotHelmetHeli_PMC";
 
 _unit addWeapon "hlc_rifle_auga2para_t";
-_unit addPrimaryWeaponItem "optic_ACO_grn_smg";
-_unit addWeapon "RH_m9";
-_unit addHandgunItem "RH_M6X";
+_unit addPrimaryWeaponItem "CUP_optic_MRad";
+_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_anprc154";
 

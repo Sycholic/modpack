@@ -18,23 +18,21 @@ for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
 _unit addItemToVest "rhs_mag_m18_green";
 _unit addItemToVest "rhs_mag_m18_red";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
-for "_i" from 1 to 2 do {_unit addItemToVest "RH_12Rnd_45cal_usp";};
+for "_i" from 1 to 2 do {_unit addItemToVest "BWA3_15Rnd_9x19_P8";};
 
 _unit addBackpack "BWA3_Kitbag_Fleck";
 _unit addItemToBackpack "acc_flashlight";
 _unit addItemToBackpack "BWA3_muzzle_snds_G36";
-_unit addItemToBackpack "RH_gemtech45";
-_unit addItemToBackpack "tf47_m3maaws_HEAT";
+_unit addItemToBackpack "CUP_MAAWS_HEAT_M";
 
 _unit addHeadgear "BWA3_MICH_Fleck";
 
 _unit addWeapon "BWA3_G36K";
 _unit addPrimaryWeaponItem "acc_pointer_IR";
 _unit addPrimaryWeaponItem "BWA3_optic_RSAS";
-_unit addWeapon "tf47_m3maaws";
-_unit addSecondaryWeaponItem "tf47_optic_m3maaws";
-_unit addWeapon "RH_usp";
-_unit addHandgunItem "RH_X300";
+_unit addWeapon "CUP_launch_MAAWS";
+_unit addSecondaryWeaponItem "CUP_optic_MAAWS_Scope";
+_unit addWeapon "BWA3_P8";
 
 _unit linkItem "tf_rf7800str";
 

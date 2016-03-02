@@ -63,7 +63,7 @@ if( side player == independent ) then {
 };
 
 if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
-	BWI_armory_roleSelected = [22];
+	BWI_armory_roleSelected = [10];
 	BWI_armory_baseSlot = BWI_armory_baseSlot + "Zeus";
 	group player setGroupIdGlobal ["Game Master"];
 } else {
@@ -78,38 +78,38 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 	{
 		case "ple": {
 			if( _platoonRole2 == "pl" ) then {
-				BWI_armory_roleSelected = [0];
+				BWI_armory_roleSelected = [0,0];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Leader";
 				group player setGroupIdGlobal ["Platoon Element"];
 			};
 			
 			if( _platoonRole == "apl" ) then {
-				BWI_armory_roleSelected = [0];
+				BWI_armory_roleSelected = [0,1];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + " Assistant Platoon Leader";
 				group player setGroupIdGlobal ["Support Element"];
 			};
 			
 			if( _platoonRole == "rto" ) then {
-				BWI_armory_roleSelected = [1];
+				BWI_armory_roleSelected = [1,0];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon JTAC";
 			};
 		};
 		
 		case "log": {
 			if( _platoonRole4 == "eng1" ) then {
-				BWI_armory_roleSelected = [6];
+				BWI_armory_roleSelected = [2,2];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Combat Engineer (FOB)";
 			};
 			
 			if( _platoonRole4 == "eng2" ) then {
-				BWI_armory_roleSelected = [7];
+				BWI_armory_roleSelected = [2,3];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Combat Engineer (MEDTENT)";
 			};
 		};
 
 		case "med": {
 			if( _platoonRole2 == "cm"  ) then {
-				BWI_armory_roleSelected = [5];
+				BWI_armory_roleSelected = [2,0];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Corpsman";
 			};
 		};
@@ -150,7 +150,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 				
 			};
 			
-			BWI_armory_roleSelected = [20];
+			BWI_armory_roleSelected = [8,2];
 		};
 
 		case "jet": {
@@ -165,7 +165,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon 1 / Jet 1 Copilot";
 			};
 
-			BWI_armory_roleSelected = [17,0];
+			BWI_armory_roleSelected = [8,1];
 		};	
 		
 		case "rot": {
@@ -180,7 +180,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon 1 / Rotary 1 Copilot";
 			};
 			
-			BWI_armory_roleSelected = [17,1];
+			BWI_armory_roleSelected = [8,0];
 		};
 		
 		default {
@@ -208,17 +208,17 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 					BWI_armory_baseSlot = BWI_armory_baseSlot + " / Squad Element";
 					
 					if( _fireteamRole == "sql" ) then {
-						BWI_armory_roleSelected = [2];  BWI_armory_baseSlot = BWI_armory_baseSlot + " / Leader";
+						BWI_armory_roleSelected = [0,2];  BWI_armory_baseSlot = BWI_armory_baseSlot + " / Leader";
 						group player setGroupIdGlobal ["%GroupNames", BWI_squadName];
 					};
 					
 					if( _fireteamRole == "rto" ) then {
-						BWI_armory_roleSelected = [4];
+						BWI_armory_roleSelected = [1,1];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Radio Operator";
 					};
 					
 					if( _fireteamRole == "rif" ) then {
-						BWI_armory_roleSelected = [21];
+						BWI_armory_roleSelected = [9];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Rifleman";
 					};
 				};
@@ -227,17 +227,17 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 					BWI_armory_baseSlot = BWI_armory_baseSlot + " / Fireteam 1";
 					
 					if( _fireteamRole == "ftl" ) then {
-						BWI_armory_roleSelected = [3];
+						BWI_armory_roleSelected = [0,3];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Leader";
 					};
 					
 					if( _fireteamRole == "cfr" ) then {
-						BWI_armory_roleSelected = [8];
+						BWI_armory_roleSelected = [2,1];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Combat First Responder";
 					};
 					
 					if( _fireteamRole == "rif" ) then {
-						BWI_armory_roleSelected = [21];
+						BWI_armory_roleSelected = [9];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Rifleman";
 					};
 				};
@@ -246,17 +246,17 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 					BWI_armory_baseSlot = BWI_armory_baseSlot + " / Fireteam 2";
 					
 					if( _fireteamRole == "ftl" ) then {
-						BWI_armory_roleSelected = [3];
+						BWI_armory_roleSelected = [0,3];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Leader";
 					};
 					
 					if( _fireteamRole == "cfr" ) then {
-						BWI_armory_roleSelected = [8];
+						BWI_armory_roleSelected = [2,1];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Combat First Responder";
 					};
 					
 					if( _fireteamRole == "rif" ) then {
-						BWI_armory_roleSelected = [21];
+						BWI_armory_roleSelected = [9];
 						BWI_armory_baseSlot = BWI_armory_baseSlot + " / Rifleman";
 					};
 				};

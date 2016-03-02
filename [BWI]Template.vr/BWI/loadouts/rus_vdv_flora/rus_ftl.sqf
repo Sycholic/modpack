@@ -32,7 +32,7 @@ _unit addHeadgear "rhs_6b26_ess_bala";
 
 _unit addWeapon "hlc_rifle_ak12GL";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
-_unit addPrimaryWeaponItem "RH_SFM952V";
+_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addWeapon "ACE_Vector";
 _unit addWeapon "rhs_weap_makarov_pmm";
 
