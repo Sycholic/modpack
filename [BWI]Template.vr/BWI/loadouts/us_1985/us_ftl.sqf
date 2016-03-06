@@ -25,7 +25,6 @@ _unit addBackpack "B_AssaultPack_rgr";
 _unit addItemToBackpack "ACE_tourniquet";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 8 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
-_unit addItemToBackpack "DemoCharge_Remote_Mag";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 

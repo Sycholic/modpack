@@ -13,15 +13,15 @@ removeHeadgear _unit;
 _fsa_uniforms = ["U_BG_leader", "rhs_chdkz_uniform_5", "rhs_chdkz_uniform_4", "rhs_chdkz_uniform_3", "rhs_chdkz_uniform_2", "rhs_chdkz_uniform_1"];
 _randomUni = selectRandom _fsa_uniforms;
 _unit forceAddUniform _randomUni;
+for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShell";};
 
 _unit addVest "rhs_6sh92_headset";
 for "_i" from 1 to 2 do {_unit addItemToVest "CUP_8Rnd_9x18_Makarov_M";};
+for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
 
 _unit addBackpack "B_Carryall_oli";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
-for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellRed";};
-_unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhs_6b27m_ML_ess_bala";
 

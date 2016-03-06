@@ -11,9 +11,11 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_flora_patchless";
+for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShell";};
 
 _unit addVest "V_TacVestIR_blk";
 for "_i" from 1 to 2 do {_unit addItemToVest "CUP_8Rnd_9x18_Makarov_M";};
+for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
 
 _unit addBackpack "B_FieldPack_oli";
 for "_i" from 1 to 10 do {_unit addItemToBackpack "rhs_VOG25";};
