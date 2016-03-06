@@ -27,7 +27,7 @@ _unit addItemToBackpack "rhs_fim92_mag";
 
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
 
-_unit addWeapon "rhs_weap_m16a4_carryhandle_grip";
+_unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 _unit addWeapon "rhs_weap_fim92";
