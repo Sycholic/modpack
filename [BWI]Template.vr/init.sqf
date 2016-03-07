@@ -2,7 +2,8 @@
 
 //tp's
 
-carrier_tp addAction ["Teleport - USS Nimitz", "BWI\scripts\carrier_tp.sqf"];
+carrier_tp addAction ["Teleport - USS Nimitz", "BWI\scripts\nimitz_tp.sqf"];
+carrier_tp addAction ["Teleport - USS Wasp", "BWI\scripts\wasp_tp.sqf"];
 
 AdminAction0 = -1;
 AdminAction1 = -1;
