@@ -12,7 +12,7 @@ removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_FROG01_d";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
-for "_i" from 1 to 3 do {_unit addItemToUniform "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 4 do {_unit addItemToUniform "1Rnd_HE_Grenade_shell";};
 
 _unit addVest "rhsusf_spc_squadleader";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};

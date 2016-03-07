@@ -14,7 +14,7 @@ _pmc_uniforms = ["U_I_G_Story_Protagonist_F", "U_PMC_IndUniformLS_TSTPTB", "U_PM
 _randomUni = selectRandom _pmc_uniforms;
 _unit forceAddUniform _randomUni;
 for "_i" from 1 to 2 do {_unit addItemToUniform "I_IR_Grenade";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 3 do {_unit addItemToUniform "1Rnd_HE_Grenade_shell";};
 
 _unit addVest "V_PlateCarrier1_PMC_blk";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
@@ -24,7 +24,7 @@ _unit addItemToVest "SmokeShellGreen";
 _unit addItemToVest "UGL_FlareWhite_F";
 for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
-for "_i" from 1 to 4 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
 
 _unit addBackpack "PMC_AssaultPack_Blk";
 _unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
