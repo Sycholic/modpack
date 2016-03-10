@@ -11,7 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _pmc_uniforms = ["U_I_G_Story_Protagonist_F", "U_PMC_IndUniformLS_TSTPTB", "U_PMC_IndUniformLS_BSTPTB", "U_PMC_IndUniformLS_TSBPTB", "U_PMC_IndUniformLS_GSYPTB", "U_PMC_IndUniformLS_YSYPTB", "U_PMC_IndUniformLS_YSBPBB", "U_PMC_CombatUniformLS_SSGPSB"];
-_randomUni = _pmc_uniforms select floor random count _pmc_uniforms;
+_randomUni = selectRandom _pmc_uniforms;
 _unit forceAddUniform _randomUni;
 for "_i" from 1 to 2 do {_unit addItemToUniform "I_IR_Grenade";};
 
@@ -25,22 +25,20 @@ for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
 _unit addBackpack "tf_anprc155_coyote";
-_unit addItemToBackpack "RH_peq15b";
+_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 _unit addItemToBackpack "hlc_muzzle_snds_AUG";
-_unit addItemToBackpack "RH_m9qd";
-for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
 _pmc_headgear = ["H_MilCap_gry", "H_Cap_pmc_headphones", "H_Cap_headphones", "H_Cap_oli_hs", "rhsusf_bowman_cap"];
 
-_randomHeadgear = _pmc_headgear select floor random count _pmc_headgear;
+_randomHeadgear = selectRandom _pmc_headgear;
 _unit addHeadgear _randomHeadgear;
 
 _unit addWeapon "hlc_rifle_auga3_GL_B";
-_unit addPrimaryWeaponItem "RH_SFM952V";
+_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";
-_unit addWeapon "RH_m9";
-_unit addHandgunItem "RH_M6X";
+_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_anprc148jem";
 

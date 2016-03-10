@@ -20,9 +20,9 @@ if( _reportType == "STARTTIMER" ) then {
 			_timer = 0;
 			while { count BWI_playerReinsertionQueue >= 1 } do {
 				sleep 10;
+				waitUntil { !BWI_playerReinsertCriticalSection };
+				BWI_playerReinsertCriticalSection = true;
 				{
-					waitUntil { !BWI_playerReinsertCriticalSection };
-					BWI_playerReinsertCriticalSection = true;
 					if( (_x select 2) > 0 ) then {
 						_timer = (_x select 2) - 10;
 						if ( _timer < 0 ) then {
@@ -30,8 +30,8 @@ if( _reportType == "STARTTIMER" ) then {
 						};
 						_x set [2, _timer];
 					};
-					BWI_playerReinsertCriticalSection = false;
 				} forEach BWI_playerReinsertionQueue;
+				BWI_playerReinsertCriticalSection = false;
 			};
 		};
 	};

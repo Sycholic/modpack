@@ -11,9 +11,11 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_flora_patchless";
+for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShell";};
 
 _unit addVest "V_TacVestIR_blk";
-for "_i" from 1 to 2 do {_unit addItemToVest "RH_8Rnd_9x18_Mak";};
+for "_i" from 1 to 2 do {_unit addItemToVest "CUP_8Rnd_9x18_Makarov_M";};
+for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
 
 _unit addBackpack "B_FieldPack_oli";
 for "_i" from 1 to 10 do {_unit addItemToBackpack "rhs_VOG25";};
@@ -23,8 +25,8 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 _unit addHeadgear "rhs_6b28_green";
 
 _unit addWeapon "rhs_weap_ak74m_gp25_npz";
-_unit addPrimaryWeaponItem "RH_barska_rds";
-_unit addWeapon "RH_mak";
+_unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
+_unit addWeapon "CUP_hgun_Makarov";
 
 _unit linkItem "tf_anprc148jem";
 

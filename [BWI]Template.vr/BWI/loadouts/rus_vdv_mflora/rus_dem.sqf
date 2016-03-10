@@ -26,7 +26,7 @@ _unit addItemToBackpack "SmokeShellGreen";
 _unit addHeadgear "rhs_6b27m_ML_ess_bala";
 
 _unit addWeapon "hlc_rifle_ak12";
-_unit addPrimaryWeaponItem "RH_SFM952V";
+_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 _unit addWeapon "rhs_weap_makarov_pmm";
 _unit linkItem "tf_pnr1000a";

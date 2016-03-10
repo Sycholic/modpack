@@ -35,6 +35,5 @@ _unit linkItem "tf_rf7800str";
 [_unit, "DMR"] call BWI_fnc_AddGear;
 [_unit, "DMR"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "UK3CB_BAF_20Rnd";}; 
-for "_i" from 1 to 4 do {_unit addItemToBackpack "UK3CB_BAF_20Rnd";}; 
-for "_i" from 1 to 3 do {_unit addItemToVest "UK3CB_BAF_20Rnd_T";};
+for "_i" from 1 to 10 do {_unit addItemToBackpack "UK3CB_BAF_20Rnd";}; 
+for "_i" from 1 to 3 do {_unit addItemToBackpack "UK3CB_BAF_20Rnd_T";};

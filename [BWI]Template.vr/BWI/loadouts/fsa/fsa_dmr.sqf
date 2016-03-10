@@ -9,12 +9,14 @@ removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
 
-_fsa_uniforms = ["LOP_U_UA_Fatigue_02", "LOP_U_UA_Fatigue_03", "LOP_U_UA_Fatigue_04"];
-_randomUni = _fsa_uniforms select floor random count _fsa_uniforms;
+_fsa_uniforms = ["U_BG_leader", "rhs_chdkz_uniform_5", "rhs_chdkz_uniform_4", "rhs_chdkz_uniform_3", "rhs_chdkz_uniform_2", "rhs_chdkz_uniform_1"];
+_randomUni = selectRandom _fsa_uniforms;
 _unit forceAddUniform _randomUni;
+for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShell";};
 
-_unit addVest "LOP_V_6Sh92_OLV";
-for "_i" from 1 to 2 do {_unit addItemToVest "RH_8Rnd_9x18_Mak";};
+_unit addVest "rhs_6sh92_headset";
+for "_i" from 1 to 2 do {_unit addItemToVest "CUP_8Rnd_9x18_Makarov_M";};
+for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
 
 _unit addBackpack "B_FieldPack_oli";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
@@ -24,7 +26,7 @@ _unit addHeadgear "H_Shemag_olive";
 
 _unit addWeapon "rhs_weap_svdp";
 _unit addPrimaryWeaponItem "rhs_acc_pso1m2";
-_unit addWeapon "RH_mak";
+_unit addWeapon "CUP_hgun_Makarov";
 
 _unit linkItem "tf_anprc154";
 

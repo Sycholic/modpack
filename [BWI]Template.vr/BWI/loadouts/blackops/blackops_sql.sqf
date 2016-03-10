@@ -24,20 +24,17 @@ for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
 _unit addBackpack "PMC_B_Kitbag_blk";
-_unit addItemToBackpack "rhsusf_acc_anpeq15A";
-_unit addItemToBackpack "RH_spr_mbs";
-_unit addItemToBackpack "RH_m9qd";
-for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
+_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
 _unit addHeadgear "BWA3_OpsCore_Schwarz_Camera";
 _unit addGoggles "PU_shemagh_GryCLR";
 
-_unit addWeapon "RH_M4A1_ris_M203";
-_unit addPrimaryWeaponItem "RH_SFM952V";
-_unit addPrimaryWeaponItem "RH_ta31rmr"	;
-_unit addWeapon "RH_m9";
-_unit addHandgunItem "RH_M6X";
+_unit addWeapon "rhs_weap_m4a1_carryhandle_m203";
+_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
+_unit addPrimaryWeaponItem "UK3CB_BAF_TA31F"	;
+_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_anprc152";
 

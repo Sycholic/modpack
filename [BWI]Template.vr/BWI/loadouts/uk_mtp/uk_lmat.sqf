@@ -38,6 +38,6 @@ _unit linkItem "tf_anprc152";
 [_unit, "LMAT"] call BWI_fnc_AddGear;
 [_unit, "LMAT"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 3 do {_unit addItemToBackpack "tf47_m3maaws_HEAT";}; 
+for "_i" from 1 to 3 do {_unit addItemToBackpack "CUP_MAAWS_HEAT_M";}; 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
 for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";}; 

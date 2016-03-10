@@ -20,7 +20,7 @@ _unit addItemToVest "rhs_mag_m18_red";
 _unit addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";};
 
-_unit addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A";
+_unit addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 
 _unit addHeadgear "UK3CB_BAF_H_Mk7_Camo_CESS_D";
 
@@ -34,5 +34,5 @@ _unit linkItem "tf_rf7800str";
 [_unit, "MMG"] call BWI_fnc_AddGear;
 [_unit, "MMG"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 3 do {_unit addItemToBackpack "UK3CB_BAF_75Rnd";};
+for "_i" from 1 to 4 do {_unit addItemToBackpack "UK3CB_BAF_75Rnd";};
 for "_i" from 1 to 2 do {_unit addItemToVest "UK3CB_BAF_75Rnd_T";};

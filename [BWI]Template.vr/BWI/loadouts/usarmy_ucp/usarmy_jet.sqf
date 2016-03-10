@@ -16,13 +16,13 @@ for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 _unit addVest "FIR_pilot_vest";
 _unit addItemToVest "ACE_HandFlare_Red";
 _unit addItemToVest "ACE_HandFlare_Green";
-for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
+for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 
 _unit addBackpack "B_Parachute";
 
 _unit addHeadgear "FIR_USHelmetType1_Navy_Black_Open";
 
-_unit addWeapon "RH_m9";
+_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "rhsusf_ANPVS_15";
 _unit linkItem "tf_anprc152";
