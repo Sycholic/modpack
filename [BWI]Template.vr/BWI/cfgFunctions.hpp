@@ -11,6 +11,10 @@ class BWI
 		class AddNewMedicalTentObject {};
 		class ReportReinsertionToPlatoon {};
 		class ReceivePlayerReinsertionReport {};
+		class ClearCargoInit {};
+		class ClearCargoZeus {};
+		class ClearCargoEditor {};
+		
 	};
 };
 
