@@ -21,7 +21,6 @@ _unit addItemToBackpack "SmokeShellGreen";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 _unit addItemToBackpack "muzzle_snds_L";
 
 _unit addHeadgear "BWA3_OpsCore_Schwarz";

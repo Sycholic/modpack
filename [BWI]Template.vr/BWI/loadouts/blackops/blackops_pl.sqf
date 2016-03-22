@@ -27,7 +27,6 @@ _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 _unit addItemToVest "1Rnd_HE_Grenade_shell";
 
 _unit addBackpack "tf_rt1523g_black";
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 5 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 

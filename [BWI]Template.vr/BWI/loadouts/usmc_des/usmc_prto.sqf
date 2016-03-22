@@ -19,7 +19,6 @@ for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 _unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "tf_rt1523g_sage";
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 _unit addItemToBackpack "rhsusf_acc_nt4_black";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};

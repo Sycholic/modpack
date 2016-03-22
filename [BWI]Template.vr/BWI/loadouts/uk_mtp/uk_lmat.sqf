@@ -23,7 +23,6 @@ _unit addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";
 _unit addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B";
 _unit addItemToBackpack "UK3CB_BAF_Silencer_L85";
 _unit addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 
 _unit addHeadgear "UK3CB_BAF_H_Mk7_Camo_CESS_D";
 

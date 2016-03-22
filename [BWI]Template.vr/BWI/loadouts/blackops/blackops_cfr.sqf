@@ -21,7 +21,6 @@ _unit addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 
 _unit addBackpack "PMC_B_Kitbag_blk";
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
 
 _unit addHeadgear "BWA3_OpsCore_Schwarz_Camera";

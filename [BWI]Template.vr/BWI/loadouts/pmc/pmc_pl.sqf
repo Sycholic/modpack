@@ -25,7 +25,6 @@ for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
 _unit addBackpack "tf_anprc155_coyote";
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 _unit addItemToBackpack "hlc_muzzle_snds_AUG";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};

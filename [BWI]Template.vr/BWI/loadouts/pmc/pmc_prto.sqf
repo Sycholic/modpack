@@ -19,7 +19,6 @@ _unit addVest "V_PlateCarrier1_PMC_blk";
 for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 
 _unit addBackpack "tf_anprc155_coyote";
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 _unit addItemToBackpack "hlc_muzzle_snds_AUG";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};

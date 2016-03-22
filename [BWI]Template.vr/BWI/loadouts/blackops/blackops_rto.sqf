@@ -22,7 +22,6 @@ _unit addItemToVest "SmokeShellRed";
 _unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "tf_rt1523g_black";
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 
 _unit addHeadgear "BWA3_OpsCore_Schwarz_Camera";
 _unit addGoggles "PU_shemagh_GryCLR";

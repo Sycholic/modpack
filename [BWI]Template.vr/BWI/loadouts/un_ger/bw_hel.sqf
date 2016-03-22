@@ -22,7 +22,6 @@ for "_i" from 1 to 3 do {_unit addItemToVest "BWA3_15Rnd_9x19_P8";};
 
 _unit addBackpack "B_FieldPack_oli";
 _unit addItemToBackpack "hlc_muzzle_Tundra";
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 
 _unit addHeadgear "rhsusf_hgu56p";
 
