@@ -37,4 +37,4 @@ _unit linkItem "tf_pnr1000a";
 [_unit, "DMR", "TALIBAN"] call BWI_fnc_AddGear;
 [_unit, "DMR", "TALIBAN"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 15 do {_unit addItemToVest "rhs_10Rnd_762x54mmR_7N1";};
+for "_i" from 1 to 15 do {_unit addItemToBackpack "rhs_10Rnd_762x54mmR_7N1";};
