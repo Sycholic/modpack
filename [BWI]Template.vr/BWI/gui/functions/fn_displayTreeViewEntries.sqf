@@ -47,54 +47,78 @@ switch _sideNr do {
 	};
 };
 
-_tvRole tvAdd [[],"Leadership"];
-_tvRole tvAdd [[],"Radio"];
-_tvRole tvAdd [[],"Support"];
-_tvRole tvAdd [[],"LMG Team"];
-_tvRole tvAdd [[],"MMG Team"];
-_tvRole tvAdd [[],"MAT Team"];
-_tvRole tvAdd [[],"HAT Team"];
-_tvRole tvAdd [[],"Specialists"];
-_tvRole tvAdd [[],"Crewman"];
-_tvRole tvAdd [[],"Rifleman"];
-_tvRole tvAdd [[],"Zeus"];
-
+_tvRole tvAdd [[],"Platoon"];
 _tvRole tvAdd [[0],"Platoon Leader"];
-_tvRole tvAdd [[0],"Ass. Platoon Leader"];
-_tvRole tvAdd [[0],"Squad Leader"];
-_tvRole tvAdd [[0],"Fireteam Leader"];
+_tvRole tvAdd [[0],"Platoon Sergeant"];
+_tvRole tvAdd [[0],"Platoon Corpsman"];
 
-_tvRole tvAdd [[1],"Platoon RTO"];
-_tvRole tvAdd [[1],"Radio Operator"];
+_tvRole tvAdd [[],"Squad"];
+_tvRole tvAdd [[1],"Squad Leader"];
 
-_tvRole tvAdd [[2],"Corpsman"];
-_tvRole tvAdd [[2],"Combat First Responder"];
-_tvRole tvAdd [[2],"Engineer (FOB)"];
-_tvRole tvAdd [[2],"Engineer (MEDTENT)"];
+_tvRole tvAdd [[],"Fireteam"];
+_tvRole tvAdd [[2],"Fireteam Leader"];
+_tvRole tvAdd [[2],"Grenadier"];
+_tvRole tvAdd [[2],"Automatic Rifleman"];
+_tvRole tvAdd [[2],"Anti-Tank Rifleman"];
 
-_tvRole tvAdd [[3],"Gunner"];
-_tvRole tvAdd [[3],"Assistant"];
+_tvRole tvAdd [[],"Fireteam (MMG)"];
+_tvRole tvAdd [[3],"Automatic Rifleman"];
+_tvRole tvAdd [[3],"Assistant Automatic Rifleman"];
 
-_tvRole tvAdd [[4],"Gunner"];
-_tvRole tvAdd [[4],"Assistant"];
+_tvRole tvAdd [[],"Fireteam (MAT)"];
+_tvRole tvAdd [[4],"Anti-Tank"];
+_tvRole tvAdd [[4],"Assistant Anti-Tank"];
 
-_tvRole tvAdd [[5],"Leader"];
-_tvRole tvAdd [[5],"Gunner"];
-_tvRole tvAdd [[5],"Spotter"];
+_tvRole tvAdd [[],"Fireteam (HAT)"];
+_tvRole tvAdd [[5],"Anti-Tank"];
+_tvRole tvAdd [[5],"Assistant Anti-Tank"];
 
-_tvRole tvAdd [[6],"Leader"];
-_tvRole tvAdd [[6],"Gunner"];
-_tvRole tvAdd [[6],"Spotter"];
+_tvRole tvAdd [[],"Medevac"];
+_tvRole tvAdd [[6],"Combat First Responder"];
 
-_tvRole tvAdd [[7],"Rifleman AT"];
-_tvRole tvAdd [[7],"Anti Air"];
-_tvRole tvAdd [[7],"Designated Marksman"];
-_tvRole tvAdd [[7],"Sniper"];
-_tvRole tvAdd [[7],"Demolition Specialist"];
+_tvRole tvAdd [[],"Engineering"];
+_tvRole tvAdd [[7],"Combat Engineer"];
 
-_tvRole tvAdd [[8],"Fixed Wing"];
-_tvRole tvAdd [[8],"Rotary"];
-_tvRole tvAdd [[8],"Armor Crewman"];
+_tvRole tvAdd [[],"Rear Echelon"];
+_tvRole tvAdd [[8],"Team Leader"];
+_tvRole tvAdd [[8],"Rifleman"];
+
+_tvRole tvAdd [[],"Rear Echolon (Logistics)"];
+_tvRole tvAdd [[9],"Driver"];
+
+_tvRole tvAdd [[],"Rear Echolon (Fire Support)"];
+_tvRole tvAdd [[10],"Gunner"];
+_tvRole tvAdd [[10],"Assistant Gunner"];
+
+_tvRole tvAdd [[],"Rear Echolon (Recon)"];
+_tvRole tvAdd [[11],"Designated Marksman"];
+_tvRole tvAdd [[11],"Spotter"];
+
+_tvRole tvAdd [[],"Rear Echolon (Sniper)"];
+_tvRole tvAdd [[12],"Sniper"];
+_tvRole tvAdd [[12],"Spotter"];
+
+_tvRole tvAdd [[],"Rear Echolon (TACP)"];
+_tvRole tvAdd [[13],"Radio Transmitter Operator"];
+_tvRole tvAdd [[13],"Spotter"];
+
+_tvRole tvAdd [[],"Vehicle Crew"];
+_tvRole tvAdd [[14],"Commander"];
+_tvRole tvAdd [[14],"Gunner"];
+_tvRole tvAdd [[14],"Driver"];
+
+_tvRole tvAdd [[],"Air Crew (Fixed Wing)"];
+_tvRole tvAdd [[15],"Pilot"];
+_tvRole tvAdd [[15],"Copilot"];
+
+_tvRole tvAdd [[],"Air Crew (Rotary)"];
+_tvRole tvAdd [[16],"Pilot"];
+_tvRole tvAdd [[16],"Copilot"];
+
+_tvRole tvAdd [[],"Other"];
+_tvRole tvAdd [[17],"Joint Terminal Attack Controller"];
+_tvRole tvAdd [[17],"Explosive Ordinance Disposal"];
+_tvRole tvAdd [[17],"Radio Transmitter Operator"];
 
 
 _tvFaction tvSetCurSel BWI_armory_factionSelected;
