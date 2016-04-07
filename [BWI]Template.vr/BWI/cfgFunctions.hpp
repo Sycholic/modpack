@@ -8,7 +8,6 @@ class BWI
 		class AddMedical {};
 		class ReclaimOwnershipOfAI {};
 		class EndMission {};
-		class AddNewMedicalTentObject {};
 		class ReportReinsertionToPlatoon {};
 		class ReceivePlayerReinsertionReport {};
 		class ClearCargoInit {};

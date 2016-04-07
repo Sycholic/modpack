@@ -264,19 +264,3 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 		};
 	};
 };
-
-
-/**
-*
-*	Vars for reinsertion
-*
-*/
-"BWI_logistics_FOB_Flag" addPublicVariableEventHandler {
-	_squad 			= (str player) select [6,3];
-	_platoonRole 	= (str player) select [10,3];
-	_platoonRole2	= (str player) select [10,2];
-
-	if( _squad == "log" && _platoonRole == "eng" ) then {
-		BWI_logistics_FOB_Flag addAction ["<t color='#1111ff'>Deconstruct FOB</t>", "BWI\scripts\repackageFOB.sqf", [], 1.5, false, false, "", "('ToolKit' in items _this)"];
-	};
-};
