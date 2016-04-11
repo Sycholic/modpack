@@ -1,1 +1,0 @@
-["end1",(_this select 0)] call BIS_fnc_endMission;
