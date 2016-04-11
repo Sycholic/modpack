@@ -24,7 +24,7 @@ if( AdminAction3 != -1 ) then {
 	AdminAction3 = -1;
 };
 
-if( player in [z1,z2,z3,z4,z5,z6,z7,z8,z9,z10,z11,z12,z13,z14,z15,z16] ) then {
+if( player in [z1,z2,z3,z4,z5,z6,z7,z8,z9,z10,z11,z12] ) then { 
 	AdminAction0 = SpawnVAS addAction[ "---BWI Mission Admin---", "" ];
 	AdminAction1 = SpawnVAS addAction[ "BWI Admin: Reclaim AI", "[player] remoteExecCall ['BWI_fnc_ReclaimOwnershipOfAI', 2, false]" ];
 	AdminAction2 = SpawnVAS addAction[ "<t color='#11c311'>BWI Admin: End Mission (Success)</t>", "[true] remoteExecCall ['BWI_fnc_EndMission']" ];
@@ -43,15 +43,9 @@ player addAction ["BWI: CommCard", "createDialog 'ShowCommCard';", nil, -10, fal
 *	Add actions to player objects when they initially spawn or respawn
 *
 */
-_platoonRole2 	= (str player) select [10,2];
 _platoonRole    = (str player) select [10,3];
 
-if( _platoonRole == "eng" ) then {
-	player addAction ["<t color='#11ffff'>Deploy Medical Tent</t>", "BWI\scripts\deployMedicalTent.sqf", nil, 1.5, false, false, "", "('BWI_medical_tentBox' in items _this) && ('ToolKit' in items _this)"];
-	player addAction ["<t color='#11ffff'>Deploy FOB</t>", "BWI\scripts\deployFOB.sqf", nil, 1.5, false, false, "", "('BWI_logistics_fobBox' in items _this) && ('ToolKit' in items _this)"];
-};
-
-if( _platoonRole == "apl" || _platoonRole2 == "pl" ) then {
+if( _platoonRole == "pls" || _platoonRole2 == "pll" ) then {
 	player addAction ["Display reinforcements list", "BWI\scripts\displayReinforcements.sqf", nil, 1.5, false, false, "", "!BWI_displayReinsertionQueue"];
 	player addAction ["Hide reinforcements list", "BWI_displayReinsertionQueue = false; hint """";", nil, 1.5, false, false, "", "BWI_displayReinsertionQueue"];
 };
