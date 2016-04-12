@@ -36,5 +36,5 @@ _unit linkItem "tf_anprc152";
 [_unit, "CM"] call BWI_fnc_AddGear;
 [_unit, "CM"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_30Rnd_9x19_B_MP5";}; 
-for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_30Rnd_9x19_B_MP5";}; 
+for "_i" from 1 to 6 do {_unit addItemToBackpack "hlc_30Rnd_9x19_B_MP5";}; 
+for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_30Rnd_9x19_B_MP5";}; 
