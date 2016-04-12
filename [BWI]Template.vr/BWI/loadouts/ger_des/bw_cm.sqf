@@ -11,17 +11,14 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "BWA3_Uniform2_Tropen";
-for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "BWA3_Vest_Medic_Tropen";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
 _unit addItemToVest "rhs_mag_m18_green";
-_unit addItemToVest "rhs_mag_m18_red";
 for "_i" from 1 to 2 do {_unit addItemToVest "BWA3_15Rnd_9x19_P8";};
 
 _unit addBackpack "BWA3_Kitbag_Tropen_Medic";
 _unit addItemToBackpack "acc_flashlight";
-_unit addItemToBackpack "BWA3_muzzle_snds_G36";
 
 _unit addHeadgear "BWA3_MICH_Tropen";
 

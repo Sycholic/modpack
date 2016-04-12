@@ -16,7 +16,6 @@ _unit addVest "V_I_G_resistanceLeader_F";
 
 _unit addBackpack "B_Carryall_khk";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
-_unit addItemToBackpack "SmokeShellRed";
 _unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
