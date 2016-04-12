@@ -21,8 +21,8 @@ if( AdminAction2 != -1 ) then {
 
 if( player in [z1,z2,z3,z4,z5,z6,z7,z8,z9,z10,z11,z12] ) then { 
 	AdminAction0 = SpawnVAS addAction[ "---BWI Mission Admin---", "" ];
-	AdminAction1 = SpawnVAS addAction[ "BWI Admin: Disable FOB", "BWI_logistics_FOB_enabled = true; publicVariable ""BWI_logistics_FOB_enabled"";", nil, 1.5, true, true, "", "BWI_logistics_FOB_enabled" ];
-	AdminAction2 = SpawnVAS addAction[ "BWI Admin: Enable FOB", "BWI_logistics_FOB_enabled = false; publicVariable ""BWI_logistics_FOB_enabled"";", nil, 1.5, true, true, "", "!BWI_logistics_FOB_enabled" ];
+	AdminAction1 = SpawnVAS addAction[ "BWI Admin: Disable FOB", "BWI_logistics_FOB_enabled = false; publicVariable ""BWI_logistics_FOB_enabled"";", nil, 1.5, true, true, "", "BWI_logistics_FOB_enabled" ];
+	AdminAction2 = SpawnVAS addAction[ "BWI Admin: Enable FOB", "BWI_logistics_FOB_enabled = true; publicVariable ""BWI_logistics_FOB_enabled"";", nil, 1.5, true, true, "", "!BWI_logistics_FOB_enabled" ];
 };
 
 /**

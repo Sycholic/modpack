@@ -117,9 +117,14 @@ if( lbCurSel _xlistSide == 2 ) then {
 };
 
 
-if( _xlistRoleSelection == 0 ) then {
-	// single member role
+if( lbCurSel _xlistRoleSelection == 0 ) then {
+
+	// personal roles
+
+	
 	if( count _roleSelected == 1 ) then {
+		// single member role
+	
 		switch ( _roleSelected select 0 ) do {
 			case 0 :{
 						_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a a role inside 'Platoon'!</t>";
@@ -219,8 +224,10 @@ if( _xlistRoleSelection == 0 ) then {
 		};
 	};
 
-	// multi member role (HAT/MAT/pilot team)
+	
 	if( count _roleSelected == 2 ) then {
+		// multi member role (HAT/MAT/pilot team)
+	
 		switch ( _roleSelected select 0 ) do {
 			case 0 :{
 						if( _roleSelected select 1 == 0 ) then { _role = "pl"; };
@@ -305,9 +312,8 @@ if( _xlistRoleSelection == 0 ) then {
 
 	
 } else {
-
 	// team roles
-
+	
 	if( count _roleSelected == 1 ) then {
 	
 		_recipientBaseFireteam = (str player) select [0,14];
