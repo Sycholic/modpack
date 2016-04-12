@@ -19,16 +19,10 @@ if( AdminAction2 != -1 ) then {
 	AdminAction2 = -1;
 };
 
-if( AdminAction3 != -1 ) then {
-	SpawnVAS removeAction AdminAction3;
-	AdminAction3 = -1;
-};
-
 if( player in [z1,z2,z3,z4,z5,z6,z7,z8,z9,z10,z11,z12] ) then { 
 	AdminAction0 = SpawnVAS addAction[ "---BWI Mission Admin---", "" ];
-	AdminAction1 = SpawnVAS addAction[ "BWI Admin: Reclaim AI", "[player] remoteExecCall ['BWI_fnc_ReclaimOwnershipOfAI', 2, false]" ];
-	AdminAction2 = SpawnVAS addAction[ "<t color='#11c311'>BWI Admin: End Mission (Success)</t>", "[true] remoteExecCall ['BWI_fnc_EndMission']" ];
-	AdminAction3 = SpawnVAS addAction[ "<t color='#bb1111'>BWI Admin: End Mission (Failure)</t>", "[false] remoteExecCall ['BWI_fnc_EndMission']" ];
+	AdminAction1 = SpawnVAS addAction[ "BWI Admin: Disable FOB", "BWI_logistics_FOB_enabled = true; publicVariable ""BWI_logistics_FOB_enabled"";", nil, 1.5, true, true, "", "BWI_logistics_FOB_enabled" ];
+	AdminAction2 = SpawnVAS addAction[ "BWI Admin: Enable FOB", "BWI_logistics_FOB_enabled = false; publicVariable ""BWI_logistics_FOB_enabled"";", nil, 1.5, true, true, "", "!BWI_logistics_FOB_enabled" ];
 };
 
 /**

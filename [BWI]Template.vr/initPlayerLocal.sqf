@@ -9,6 +9,7 @@ BWI_playerKillCount = 0;
 BWI_playerReinsertionQueue = [];
 BWI_playerReinsertCriticalSection = false;
 BWI_displayReinsertionQueue = false;
+BWI_logistics_FOB_enabled = true;
 
 /**
 *
