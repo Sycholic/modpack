@@ -16,6 +16,7 @@ _unit addBackpack "tf_rt1523g_big_bwmod";
 _unit addHeadgear "UK3CB_BAF_H_Beret_Mer_PRR";
 _unit addGoggles "G_Aviator";
 
+_unit addItemToUniform "ACE_MapTools";
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
