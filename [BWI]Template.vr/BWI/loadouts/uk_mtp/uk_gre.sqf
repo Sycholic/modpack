@@ -15,7 +15,6 @@ _unit addVest "UK3CB_BAF_V_Osprey_SL_D";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
 _unit addItemToVest "rhs_mag_m18_green";
-for "_i" from 1 to 2 do {_unit addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";};
 for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_Smoke_Grenade_shell";};
 for "_i" from 1 to 8 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
@@ -29,7 +28,6 @@ _unit addHeadgear "UK3CB_BAF_H_Mk7_Camo_A";
 
 _unit addWeapon "UK3CB_BAF_L85A2_UGL";
 _unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
-_unit addWeapon "rhsusf_weap_glock17g4";
 
 _unit linkItem "tf_rf7800str";
 

@@ -16,7 +16,6 @@ _unit addVest "BWA3_Vest_Marksman_Fleck";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
 _unit addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
-for "_i" from 1 to 2 do {_unit addItemToVest "BWA3_15Rnd_9x19_P8";};
 
 _unit addBackpack "BWA3_Kitbag_Fleck";
 _unit addItemToBackpack "acc_flashlight";
@@ -26,7 +25,6 @@ _unit addHeadgear "BWA3_MICH_Fleck";
 _unit addWeapon "BWA3_G28_Assault";
 _unit addPrimaryWeaponItem "acc_pointer_IR";
 _unit addPrimaryWeaponItem "BWA3_optic_20x50";
-_unit addWeapon "BWA3_P8";
 
 _unit linkItem "tf_rf7800str";
 

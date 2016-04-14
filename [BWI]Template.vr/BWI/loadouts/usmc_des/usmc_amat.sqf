@@ -15,7 +15,6 @@ _unit forceAddUniform "rhs_uniform_FROG01_d";
 _unit addVest "rhsusf_spc_mg";
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
-for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 
 _unit addBackpack "B_Carryall_cbr";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
@@ -25,7 +24,6 @@ _unit addHeadgear "rhsusf_lwh_helmet_marpatd_ess";
 _unit addWeapon "rhs_weap_m16a4_carryhandle_grip";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_compm4";
-_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_rf7800str";
 

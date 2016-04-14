@@ -18,7 +18,6 @@ for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
 _unit addItemToVest "rhs_mag_m18_green";
 _unit addItemToVest "rhs_mag_m18_red";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
-for "_i" from 1 to 2 do {_unit addItemToVest "BWA3_15Rnd_9x19_P8";};
 
 _unit addBackpack "BWA3_Kitbag_Tropen";
 _unit addItemToBackpack "acc_flashlight";
@@ -29,7 +28,6 @@ _unit addHeadgear "LOP_H_6B27M_ess_UN";
 _unit addWeapon "BWA3_G28_Assault";
 _unit addPrimaryWeaponItem "acc_pointer_IR";
 _unit addPrimaryWeaponItem "BWA3_optic_20x50";
-_unit addWeapon "BWA3_P8";
 
 _unit linkItem "tf_rf7800str";
 

@@ -16,7 +16,6 @@ _unit addVest "rhsusf_spc_rifleman";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
-for "_i" from 1 to 2 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 
 _unit addBackpack "B_Kitbag_rgr";
 
@@ -27,7 +26,6 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 _unit addWeapon "tf47_smaw_green";
 _unit addSecondaryWeaponItem "tf47_optic_smaw";
-_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_rf7800str";
 

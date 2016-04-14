@@ -16,7 +16,6 @@ _unit addVest "V_I_G_resistanceLeader_F";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 
 _unit addBackpack "B_AssaultPack_rgr";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 _unit addItemToBackpack "SmokeShellGreen";
 
@@ -24,7 +23,6 @@ _unit addHeadgear "rhsusf_ach_helmet_M81";
 
 _unit addWeapon "rhs_weap_m16a4_carryhandle";
 _unit addWeapon "UK3CB_BAF_AT4_CS_AP_Launcher";
-_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_rf7800str";
 

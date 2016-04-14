@@ -18,7 +18,6 @@ for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "rhsusf_assault_eagleaiii_ucp";
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 8 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
@@ -26,7 +25,6 @@ _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
 _unit addWeapon "rhs_weap_m4a1_carryhandle_m203";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_compm4";
-_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_rf7800str";
 

@@ -16,14 +16,12 @@ _unit addVest "V_I_G_resistanceLeader_F";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 
 _unit addBackpack "tf_rt1523g_green";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 _unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
 _unit addWeapon "rhs_weap_m16a4_carryhandle";
-_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_anprc152";
 

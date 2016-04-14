@@ -15,7 +15,6 @@ for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 _unit addVest "rhs_6b23_6sh92_headset";
 
 _unit addBackpack "tf_mr3000_rhs";
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x19_17";};
 _unit addItemToBackpack "acc_pointer_IR";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 _unit addItemToBackpack "SmokeShellGreen";
@@ -24,7 +23,6 @@ _unit addHeadgear "rhs_6b26_ess_bala";
 _unit addWeapon "hlc_rifle_ak12";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
-_unit addWeapon "rhs_weap_pya";
 _unit linkItem "tf_fadak";
 
 [_unit, "RTO"] call BWI_fnc_AddGear;

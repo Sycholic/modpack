@@ -16,7 +16,6 @@ _unit addVest "UK3CB_BAF_V_Osprey_MG_B";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
 _unit addItemToVest "rhs_mag_m18_green";
-_unit addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";
 
 _unit addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A";
 _unit addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black";
@@ -25,7 +24,6 @@ _unit addHeadgear "UK3CB_BAF_H_Mk7_Camo_CESS_D";
 
 _unit addWeapon "UK3CB_BAF_L85A2_RIS";
 _unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
-_unit addWeapon "rhsusf_weap_glock17g4";
 
 _unit linkItem "tf_rf7800str";
 

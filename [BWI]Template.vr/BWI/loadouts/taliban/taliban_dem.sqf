@@ -17,7 +17,6 @@ _unit forceAddUniform _randomUni;
 _taliban_vests = ["V_BandollierB_blk", "V_BandollierB_rgr", "V_BandollierB_oli", "V_BandollierB_cbr", "V_BandollierB_khk", "rhs_vydra_3m"];
 _randomVest = selectRandom _taliban_vests;
 _unit addVest _randomVest;
-for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_9x18_12_57N181S";};
 
 _unit addBackpack "B_FieldPack_cbr";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
@@ -30,7 +29,6 @@ _unit addHeadgear _randomTurban;
 _unit addGoggles "SFG_Tac_BeardD";
 
 _unit addWeapon "rhs_weap_ak74m_npz";
-_unit addWeapon "rhs_weap_makarov_pmm";
 
 _unit linkItem "tf_pnr1000a";
 

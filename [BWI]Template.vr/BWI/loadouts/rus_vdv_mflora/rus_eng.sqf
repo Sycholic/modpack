@@ -17,7 +17,6 @@ _unit addItemToVest "rhs_mag_rgd5";
 _unit addItemToVest "SmokeShell";
 
 _unit addBackpack "BWA3_Carryall_Tropen";
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x19_17";};
 _unit addItemToBackpack "acc_pointer_IR";
 _unit addItemToBackpack "rhsusf_ANPVS_15";
 _unit addItemToBackpack "SmokeShell";
@@ -28,7 +27,6 @@ _unit addHeadgear "rhs_6b27m_ML_ess_bala";
 _unit addWeapon "hlc_rifle_ak12";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
-_unit addWeapon "rhs_weap_pya";
 _unit linkItem "tf_fadak";
 
 [_unit, (_this select 1)] call BWI_fnc_AddGear;

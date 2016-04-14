@@ -14,7 +14,6 @@ _unit forceAddUniform "rhs_uniform_vdv_emr";
 _unit addVest "rhs_6b23_digi_6sh92_headset";
 
 _unit addBackpack "B_Kitbag_sgg";
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x19_17";};
 _unit addItemToBackpack "rhs_acc_tgpv";
 _unit addItemToBackpack "rhsusf_ANPVS_15";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
@@ -24,7 +23,6 @@ _unit addHeadgear "rhs_6b27m_digi_ess_bala";
 
 _unit addWeapon "rhs_weap_svdp";
 _unit addPrimaryWeaponItem "rhs_acc_pso1m2";
-_unit addWeapon "rhs_weap_pya";
 _unit linkItem "tf_pnr1000a";
 
 [_unit, "DMR"] call BWI_fnc_AddGear;

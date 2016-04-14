@@ -15,7 +15,6 @@ _unit forceAddUniform _randomUni;
 for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShell";};
 
 _unit addVest "rhs_6sh92_headset";
-for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_9x18_12_57N181S";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
 
 _unit addBackpack "B_FieldPack_oli";
@@ -26,7 +25,6 @@ _unit addHeadgear "H_Shemag_olive";
 
 _unit addWeapon "rhs_weap_svdp";
 _unit addPrimaryWeaponItem "rhs_acc_pso1m2";
-_unit addWeapon "rhs_weap_makarov_pmm";
 
 _unit linkItem "tf_anprc154";
 
