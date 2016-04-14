@@ -1,0 +1,35 @@
+params ["_display"];
+
+_comboBox = _display displayctrl 2100;
+
+_comboBox lbAdd "--- BASIC ---";
+_comboBox lbAdd "Platoon";
+_comboBox lbAdd "Alpha";
+_comboBox lbAdd "Bravo";
+_comboBox lbAdd "Charlie";
+_comboBox lbAdd "Delta";
+_comboBox lbAdd "Echo";
+_comboBox lbAdd "--- SUPPORT ---";
+_comboBox lbAdd "Medevac";
+_comboBox lbAdd "Casevac";
+_comboBox lbAdd "Medical";
+_comboBox lbAdd "Enigneering";
+_comboBox lbAdd "Logistics";
+_comboBox lbAdd "--- SPECIALIZED ---";
+_comboBox lbAdd "MMG";
+_comboBox lbAdd "MAT";
+_comboBox lbAdd "HAT";
+_comboBox lbAdd "EOD";
+_comboBox lbAdd "TACP";
+_comboBox lbAdd "Recon";
+_comboBox lbAdd "Mortar";
+_comboBox lbAdd "Artillery";
+_comboBox lbAdd "Fire Support";
+_comboBox lbAdd "--- ARMOR ---";
+_comboBox lbAdd "Hammer";
+_comboBox lbAdd "Thor";
+_comboBox lbAdd "Thunder";
+_comboBox lbAdd "--- AIR ---";
+_comboBox lbAdd "Sparrow";
+_comboBox lbAdd "Blackbird";
+_comboBox lbAdd "Bluejay";

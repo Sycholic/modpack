@@ -1,4 +1,4 @@
-class showCommCard
+class BWICommCard
 {
 	idd = 5000;
 	movingenable = 0;

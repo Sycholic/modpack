@@ -30,7 +30,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8,z9,z10,z11,z12] ) then {
 *	CommCard action
 *
 */
-player addAction ["BWI: CommCard", "createDialog 'ShowCommCard';", nil, -10, false, false];
+player addAction ["BWI: CommCard", "createDialog 'BWICommCard';", nil, -10, false, false];
 
 /**
 *

@@ -110,3 +110,34 @@ class BWIButton: RscButton
 	sizeEx = GUI_GRID_CENTER_H; // Text size
 	font = GUI_FONT_NORMAL; // Font from CfgFontFamilies	
 };
+
+class BWIComboBox: RscCombo
+{
+	access = 0;
+	type = CT_COMBO;
+	style = ST_LEFT + LB_TEXTURES;
+
+	wholeHeight = 0.25;
+	colorSelect[] = {0.275,0.463,0.694,1};
+	colorText[] = {1,1,1,1};
+	colorBackground[] = {0.3,0.3,0.3,1};
+	colorScrollbar[] = {1,1,1,1};
+	font = GUI_FONT_NORMAL;
+	sizeEx = GUI_GRID_CENTER_H;
+	soundSelect[] = {"",0.1,1};
+	soundExpand[] = {"",0.1,1};
+	soundCollapse[] = {"",0.1,1};
+	maxHistoryDelay = 1.0;
+	shadow = 0;
+	class ComboScrollBar : ComboScrollBar
+	{
+		color[] = {1,1,1,0.6};
+		colorActive[] = {1,1,1,1};
+		colorDisabled[] = {1,1,1,0.3};
+		thumb = "#(argb,8,8,3)color(1,1,1,1)";
+		arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
+		arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
+		border = "#(argb,8,8,3)color(1,1,1,1)";
+		shadow = 0;
+	};
+};
