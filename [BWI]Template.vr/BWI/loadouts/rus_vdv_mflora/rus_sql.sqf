@@ -18,7 +18,6 @@ _unit addVest "rhs_6b23_ML_6sh92_headset";
 _unit addBackpack "B_Kitbag_mcamo";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};
 _unit addItemToBackpack "acc_pointer_IR";
-_unit addItemToBackpack "hlc_muzzle_545SUP_AK";
 for "_i" from 1 to 10 do {_unit addItemToBackpack "hlc_VOG25_AK";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_GRD_White";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_GRD_Red";};

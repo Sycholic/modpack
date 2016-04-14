@@ -19,7 +19,6 @@ _unit addItemToVest "SmokeShell";
 _unit addBackpack "BWA3_Carryall_Tropen";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};
 _unit addItemToBackpack "acc_pointer_IR";
-_unit addItemToBackpack "hlc_muzzle_545SUP_AK";
 _unit addItemToBackpack "rhsusf_ANPVS_15";
 _unit addItemToBackpack "SmokeShell";
 _unit addItemToBackpack "SmokeShellGreen";

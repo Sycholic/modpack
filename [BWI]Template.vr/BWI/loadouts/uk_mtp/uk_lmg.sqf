@@ -19,7 +19,6 @@ _unit addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";};
 
 _unit addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A";
-_unit addItemToBackpack "UK3CB_BAF_Silencer_L110";
 
 _unit addHeadgear "UK3CB_BAF_H_Mk7_Camo_CESS_D";
 

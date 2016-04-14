@@ -19,7 +19,6 @@ _unit addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 
 _unit addBackpack "B_AssaultPack_cbr";
-_unit addItemToBackpack "rhsusf_acc_nt4_black";
 
 _unit addHeadgear "rhsusf_lwh_helmet_marpatd_ess";
 

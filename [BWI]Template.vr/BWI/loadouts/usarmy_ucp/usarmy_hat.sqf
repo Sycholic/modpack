@@ -21,7 +21,6 @@ for "_i" from 1 to 2 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 _unit addBackpack "rhsusf_assault_eagleaiii_ucp";
 _unit addItemToBackpack "rhs_fgm148_magazine_AT";
 _unit addWeapon "rhs_weap_fgm148";
-_unit addItemToBackpack "rhsusf_acc_nt4_black";
 
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
 

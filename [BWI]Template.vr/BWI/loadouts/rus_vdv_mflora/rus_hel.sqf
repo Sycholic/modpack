@@ -17,7 +17,6 @@ _unit addVest "rhs_vest_commander";
 
 _unit addBackpack "B_FieldPack_blk";
 _unit addItemToBackpack "acc_pointer_IR";
-_unit addItemToBackpack "hlc_muzzle_545SUP_AK";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_HandFlare_Red";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_HandFlare_Green";};
 

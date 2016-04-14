@@ -23,7 +23,6 @@ _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 _unit addItemToVest "UGL_FlareWhite_F";
 
 _unit addBackpack "UK3CB_BAF_B_Bergen_MTP_Radio_L_A";
-_unit addItemToBackpack "UK3CB_BAF_Silencer_L85";
 _unit addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black";
 
 _unit addHeadgear "UK3CB_BAF_H_Mk7_Camo_A";

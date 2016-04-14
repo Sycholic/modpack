@@ -19,7 +19,6 @@ _unit addItemToVest "rhs_mag_m18_green";
 _unit addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";
 
 _unit addBackpack "B_AssaultPack_khk";
-_unit addItemToBackpack "UK3CB_BAF_Silencer_L85";
 _unit addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black";
 
 _unit addHeadgear "UK3CB_BAF_H_CrewHelmet_A";

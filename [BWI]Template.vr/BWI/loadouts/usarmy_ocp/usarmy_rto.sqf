@@ -20,7 +20,6 @@ for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "tf_rt1523g_big_rhs";
-_unit addItemToBackpack "rhsusf_acc_nt4_black";
 
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
 

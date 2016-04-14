@@ -19,7 +19,6 @@ for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 
 _unit addBackpack "B_Carryall_mcamo";
-_unit addItemToBackpack "rhsusf_acc_nt4_black";
 
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
 _unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
