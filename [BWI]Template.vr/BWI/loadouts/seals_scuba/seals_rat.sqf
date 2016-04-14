@@ -29,7 +29,7 @@ _unit addGoggles "G_B_Diving";
 
 _unit addWeapon "hlc_smg_MP5N";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "CUP_optic_MRad";
+_unit addPrimaryWeaponItem "RH_barska_rds";
 _unit addWeapon "rhs_weap_M136";
 _unit addWeapon "rhsusf_weap_m9";
 
