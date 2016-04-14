@@ -20,13 +20,13 @@ for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
 _unit addItemToVest "UGL_FlareWhite_F";
-for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
+for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
 _unit addBackpack "tf_anprc155_coyote";
 _unit addItemToBackpack "hlc_muzzle_snds_AUG";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
-for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
 _pmc_headgear = ["H_MilCap_gry", "H_Cap_pmc_headphones", "H_Cap_headphones", "H_Cap_oli_hs", "rhsusf_bowman_cap"];
 

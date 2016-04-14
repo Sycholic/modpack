@@ -17,8 +17,8 @@ for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
 _unit addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";};
-for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
-for "_i" from 1 to 9 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
+for "_i" from 1 to 3 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 _unit addItemToVest "UGL_FlareWhite_F";
 

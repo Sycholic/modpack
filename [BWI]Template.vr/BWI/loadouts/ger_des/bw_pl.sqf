@@ -21,8 +21,8 @@ for "_i" from 1 to 2 do {_unit addItemToVest "BWA3_15Rnd_9x19_P8";};
 
 _unit addBackpack "tf_rt1523g_big_bwmod_tropen";
 _unit addItemToBackpack "acc_flashlight";
-for "_i" from 1 to 4 do {_unit addItemToBackpack "1Rnd_SmokeRed_Grenade_shell";};
-for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "1Rnd_SmokeRed_Grenade_shell";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 _unit addItemToBackpack "1Rnd_Smoke_Grenade_shell";
 _unit addItemToBackpack "UGL_FlareWhite_F";
 

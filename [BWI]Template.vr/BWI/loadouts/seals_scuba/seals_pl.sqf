@@ -17,7 +17,6 @@ _unit addItemToUniform "1Rnd_SmokeRed_Grenade_shell";
 _unit addItemToUniform "1Rnd_Smoke_Grenade_shell";
 _unit addItemToUniform "SmokeShell";
 _unit addItemToUniform "HandGrenade";
-_unit addItemToUniform "SmokeShellRed";
 _unit addItemToUniform "SmokeShellGreen";
 _unit addItemToBackpack "1Rnd_HE_Grenade_shell";
 

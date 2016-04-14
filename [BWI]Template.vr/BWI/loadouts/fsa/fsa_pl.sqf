@@ -18,7 +18,7 @@ for "_i" from 1 to 2 do {_unit addItemToVest "CUP_8Rnd_9x18_Makarov_M";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
 
 _unit addBackpack "tf_anprc155";
-for "_i" from 1 to 10 do {_unit addItemToBackpack "rhs_VOG25";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_VOG25";};
 _unit addItemToBackpack "SmokeShellRed";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 

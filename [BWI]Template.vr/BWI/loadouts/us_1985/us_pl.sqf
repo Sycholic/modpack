@@ -17,12 +17,12 @@ _unit addItemToUniform "SmokeShellGreen";
 _unit addVest "V_I_G_resistanceLeader_F";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 _unit addItemToVest "UGL_FlareWhite_F";
-for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
+for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 
 _unit addBackpack "tf_rt1523g_green";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
-for "_i" from 1 to 9 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 

@@ -20,8 +20,8 @@ _unit addVest _randomVest;
 for "_i" from 1 to 2 do {_unit addItemToVest "CUP_8Rnd_9x18_Makarov_M";};
 
 _unit addBackpack "tf_mr3000_bwmod_tropen";
-for "_i" from 1 to 10 do {_unit addItemToBackpack "rhs_VOG25";};
-for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_VOG25";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 
 _taliban_turbans = ["CUP_H_TKI_Lungee_Open_01", "CUP_H_TKI_Lungee_Open_02", "CUP_H_TKI_Lungee_Open_03", "CUP_H_TKI_Lungee_Open_04", "CUP_H_TKI_Lungee_Open_05", "CUP_H_TKI_Lungee_Open_06"];

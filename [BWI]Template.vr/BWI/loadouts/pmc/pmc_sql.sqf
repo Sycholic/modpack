@@ -21,9 +21,9 @@ for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
 _unit addItemToVest "UGL_FlareWhite_F";
-for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
+for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
-for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 5 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
 
 _unit addBackpack "PMC_AssaultPack_Blk";
 _unit addItemToBackpack "hlc_muzzle_snds_AUG";

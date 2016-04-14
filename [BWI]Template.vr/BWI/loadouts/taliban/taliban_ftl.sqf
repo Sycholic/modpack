@@ -20,7 +20,7 @@ _unit addVest _randomVest;
 for "_i" from 1 to 2 do {_unit addItemToVest "CUP_8Rnd_9x18_Makarov_M";};
 
 _unit addBackpack "B_FieldPack_cbr";
-for "_i" from 1 to 10 do {_unit addItemToBackpack "rhs_VOG25";};
+for "_i" from 1 to 5 do {_unit addItemToBackpack "rhs_VOG25";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 
