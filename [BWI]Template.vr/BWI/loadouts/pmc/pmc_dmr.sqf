@@ -23,7 +23,7 @@ for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 
 _unit addBackpack "B_AssaultPack_blk";
 _unit addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black_tan";
-_unit addItemToBackpack "CUP_acc_ANPEQ_15";
+_unit addItemToBackpack "RH_peq15b";
 
 _pmc_headgear = ["H_Cap_pmc", "H_Capbw_pmc", "H_Cap_usblack", "H_Cap_blk"];
 _randomHeadgear = selectRandom _pmc_headgear;
