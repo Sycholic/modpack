@@ -28,7 +28,7 @@ for "_i" from 1 to 8 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "CUP_arifle_M16A2_GL";
+_unit addWeapon "rhs_weap_m16a4_carryhandle_M203";
 _unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_rf7800str";

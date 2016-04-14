@@ -22,7 +22,7 @@ _unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "CUP_arifle_M16A2";
+_unit addWeapon "rhs_weap_m16a4_carryhandle";
 _unit addWeapon "UK3CB_BAF_AT4_CS_AP_Launcher";
 _unit addWeapon "rhsusf_weap_m9";
 
