@@ -33,6 +33,6 @@ _unit linkItem "tf_rf7800str";
 [_unit, "MAT"] call BWI_fnc_AddMedical;
 
 _unit addItemToBackpack "tf47_smaw_HEAA";
-for "_i" from 1 to 2 do {this addItemToVest "tf47_smaw_SR";};
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
 for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
+_unit addItemToVest "tf47_smaw_SR";
