@@ -26,8 +26,6 @@ _unit addItemToBackpack "hlc_muzzle_Tundra";
 _unit addHeadgear "rhsusf_hgu56p";
 
 _unit addWeapon "hlc_smg_MP5N";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "CUP_optic_MRad";
 _unit addWeapon "BWA3_P8";
 
 _unit linkItem "tf_anprc152";

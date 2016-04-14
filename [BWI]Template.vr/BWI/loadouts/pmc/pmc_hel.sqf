@@ -25,7 +25,6 @@ _unit addItemToBackpack "hlc_muzzle_snds_a6AUG";
 _unit addHeadgear "H_PilotHelmetHeli_PMC";
 
 _unit addWeapon "hlc_rifle_auga2para_t";
-_unit addPrimaryWeaponItem "CUP_optic_MRad";
 _unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_anprc154";
