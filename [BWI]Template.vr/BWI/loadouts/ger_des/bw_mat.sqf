@@ -20,15 +20,15 @@ for "_i" from 1 to 2 do {_unit addItemToVest "BWA3_15Rnd_9x19_P8";};
 
 _unit addBackpack "BWA3_Kitbag_Tropen";
 _unit addItemToBackpack "acc_flashlight";
-_unit addItemToBackpack "CUP_MAAWS_HEAT_M";
+_unit addItemToBackpack "tf47_m3maaws_HEAT";
 
 _unit addHeadgear "BWA3_MICH_Tropen";
 
 _unit addWeapon "hlc_rifle_G36V";
 _unit addPrimaryWeaponItem "acc_pointer_IR";
 _unit addPrimaryWeaponItem "RH_eotech553";
-_unit addWeapon "CUP_launch_MAAWS";
-_unit addSecondaryWeaponItem "CUP_optic_MAAWS_Scope";
+_unit addWeapon "tf47_m3maaws";
+_unit addSecondaryWeaponItem "tf47_optic_m3maaws";
 _unit addWeapon "BWA3_P8";
 
 _unit linkItem "tf_rf7800str";

@@ -20,14 +20,14 @@ _unit addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";
 
 _unit addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A";
 _unit addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addItemToBackpack "CUP_MAAWS_HEAT_M";
+_unit addItemToBackpack "tf47_m3maaws_HEAT";
 
 _unit addHeadgear "UK3CB_BAF_H_Mk7_Camo_CESS_D";
 
 _unit addWeapon "UK3CB_BAF_L85A2_RIS";
 _unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
-_unit addWeapon "CUP_launch_MAAWS";
-_unit addSecondaryWeaponItem "CUP_optic_MAAWS_Scope";
+_unit addWeapon "tf47_m3maaws";
+_unit addSecondaryWeaponItem "tf47_optic_m3maaws";
 _unit addWeapon "rhsusf_weap_glock17g4";
 
 _unit linkItem "tf_rf7800str";

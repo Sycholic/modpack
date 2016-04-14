@@ -25,8 +25,8 @@ _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
 _unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_compm4";
-_unit addWeapon "CUP_launch_MAAWS";
-_unit addSecondaryWeaponItem "CUP_optic_MAAWS_Scope";
+_unit addWeapon "tf47_m3maaws";
+_unit addSecondaryWeaponItem "tf47_optic_m3maaws";
 _unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_rf7800str";
@@ -34,6 +34,6 @@ _unit linkItem "tf_rf7800str";
 [_unit, "MAT"] call BWI_fnc_AddGear;
 [_unit, "MAT"] call BWI_fnc_AddMedical;
 
-_unit addItemToBackpack "CUP_MAAWS_HEAT_M";
+_unit addItemToBackpack "tf47_m3maaws_HEAT";
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
 for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
