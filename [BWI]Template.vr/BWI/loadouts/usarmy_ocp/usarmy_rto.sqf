@@ -17,7 +17,6 @@ _unit addVest "rhsusf_iotv_ocp_rifleman";
 for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
-_unit addItemToVest "SmokeShellRed";
 _unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "tf_rt1523g_big_rhs";

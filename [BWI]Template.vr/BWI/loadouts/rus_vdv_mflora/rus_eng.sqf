@@ -11,7 +11,6 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_vdv_mflora";
-for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 _unit addItemToUniform "rhs_mag_rgd5";
 _unit addVest "rhs_6b23_ML_6sh92_headset";
 _unit addItemToVest "rhs_mag_rgd5";
@@ -23,7 +22,6 @@ _unit addItemToBackpack "acc_pointer_IR";
 _unit addItemToBackpack "hlc_muzzle_545SUP_AK";
 _unit addItemToBackpack "rhsusf_ANPVS_15";
 _unit addItemToBackpack "SmokeShell";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellRed";};
 _unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhs_6b27m_ML_ess_bala";

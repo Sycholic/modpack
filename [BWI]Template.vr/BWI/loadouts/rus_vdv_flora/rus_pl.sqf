@@ -28,7 +28,6 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_GRD_White";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_GRD_Red";};
 _unit addItemToBackpack "hlc_GRD_green";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
-_unit addItemToBackpack "SmokeShellRed";
 _unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhs_6b26_ess_bala";

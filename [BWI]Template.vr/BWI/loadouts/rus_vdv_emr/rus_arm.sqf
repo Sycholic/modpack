@@ -11,7 +11,6 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_emr_patchless";
-for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 
 _unit addVest "rhs_6b23_digi_crew";
 

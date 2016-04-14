@@ -15,7 +15,6 @@ for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "V_TacVest_blk";
 _unit addItemToVest "rhs_mag_m18_green";
-_unit addItemToVest "rhs_mag_m18_red";
 for "_i" from 1 to 2 do {_unit addItemToVest "ACE_HandFlare_Green";};
 for "_i" from 1 to 2 do {_unit addItemToVest "ACE_HandFlare_Red";};
 for "_i" from 1 to 3 do {_unit addItemToVest "BWA3_15Rnd_9x19_P8";};

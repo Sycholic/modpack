@@ -19,7 +19,6 @@ for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};
 _unit addItemToBackpack "acc_pointer_IR";
 _unit addItemToBackpack "hlc_muzzle_545SUP_AK";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
-for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShellRed";};
 _unit addItemToBackpack "SmokeShellGreen";
 _unit addHeadgear "rhs_6b26_ess_bala";
 

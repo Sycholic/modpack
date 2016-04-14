@@ -20,7 +20,6 @@ _unit addBackpack "tf_rt1523g_sage";
 _unit addItemToBackpack "rhsusf_acc_nt4_black";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
-_unit addItemToBackpack "SmokeShellRed";
 _unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhsusf_lwh_helmet_marpatd_ess";

@@ -15,7 +15,6 @@ _unit forceAddUniform "rhs_uniform_FROG01_m81";
 _unit addVest "V_I_G_resistanceLeader_F";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
-_unit addItemToVest "SmokeShellRed";
 _unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "BWA3_Carryall_Fleck";

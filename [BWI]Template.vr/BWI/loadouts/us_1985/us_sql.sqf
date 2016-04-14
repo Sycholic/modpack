@@ -12,7 +12,6 @@ removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_FROG01_m81";
 for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShell";};
-_unit addItemToUniform "SmokeShellRed";
 _unit addItemToUniform "SmokeShellGreen";
 
 _unit addVest "V_I_G_resistanceLeader_F";

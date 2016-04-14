@@ -11,12 +11,10 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
-for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "UK3CB_BAF_V_Osprey_Belt_A";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
-_unit addItemToVest "rhs_mag_m18_red";
 _unit addItemToVest "rhs_mag_m18_green";
 _unit addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";
 
