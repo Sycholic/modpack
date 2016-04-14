@@ -13,7 +13,7 @@ removeHeadgear _unit;
 _unit forceAddUniform "rhs_uniform_df15";
 for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 _unit addVest "rhs_vest_commander";
-for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_9x18_12_57N181S";};
+for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_9x19_17";};
 _unit addItemToVest "ACE_HandFlare_Red";
 _unit addItemToVest "ACE_HandFlare_Green";
 
@@ -21,7 +21,7 @@ _unit addBackpack "B_Parachute";
 
 _unit addHeadgear "rhs_zsh7a";
 
-_unit addWeapon "rhs_weap_makarov_pmm";
+_unit addWeapon "rhs_weap_pya";
 _unit linkItem "tf_fadak";
 _unit linkItem "rhsusf_ANPVS_15";
 

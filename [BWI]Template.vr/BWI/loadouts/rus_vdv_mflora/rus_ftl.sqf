@@ -15,7 +15,7 @@ _unit forceAddUniform "rhs_uniform_vdv_mflora";
 _unit addVest "rhs_6b23_ML_6sh92_headset";
 
 _unit addBackpack "B_Kitbag_mcamo";
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x19_17";};
 _unit addItemToBackpack "acc_pointer_IR";
 for "_i" from 1 to 5 do {_unit addItemToBackpack "hlc_VOG25_AK";};
 _unit addItemToBackpack "hlc_GRD_White";
@@ -30,7 +30,7 @@ _unit addWeapon "hlc_rifle_ak12GL";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addWeapon "ACE_Vector";
-_unit addWeapon "rhs_weap_makarov_pmm";
+_unit addWeapon "rhs_weap_pya";
 
 _unit linkItem "tf_fadak";
 

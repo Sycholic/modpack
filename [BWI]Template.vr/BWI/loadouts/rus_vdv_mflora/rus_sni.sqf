@@ -14,7 +14,7 @@ _unit forceAddUniform "U_O_GhillieSuit";
 _unit addVest "rhs_6b23_ML_6sh92_headset";
 
 _unit addBackpack "B_Kitbag_mcamo";
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x19_17";};
 _unit addItemToBackpack "rhs_acc_tgpv";
 _unit addItemToBackpack "rhsusf_ANPVS_15";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
@@ -24,7 +24,7 @@ _unit addHeadgear "rhs_6b27m_ML_ess_bala";
 
 _unit addWeapon "rhs_weap_svdp";
 _unit addPrimaryWeaponItem "rhs_acc_pso1m2";
-_unit addWeapon "rhs_weap_makarov_pmm";
+_unit addWeapon "rhs_weap_pya";
 _unit linkItem "tf_fadak";
 
 [_unit, "SNI"] call BWI_fnc_AddGear;

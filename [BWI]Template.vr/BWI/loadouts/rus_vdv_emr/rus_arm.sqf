@@ -27,7 +27,7 @@ _unit addHeadgear "rhs_tsh4_ess";
 _unit addWeapon "hlc_rifle_aku12";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
-_unit addWeapon "rhs_weap_makarov_pmm";
+_unit addWeapon "rhs_weap_pya";
 
 _unit linkItem "tf_fadak";
 
@@ -35,4 +35,4 @@ _unit linkItem "tf_fadak";
 [_unit, "ARM"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 3 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x19_17";};

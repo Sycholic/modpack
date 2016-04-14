@@ -33,11 +33,11 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 _unit addItemToBackpack "SmokeShellRed";
 _unit addItemToBackpack "SmokeShellGreen";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "CUP_8Rnd_9x18_Makarov_M";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};
 _unit addHeadgear "LOP_H_SSh68Helmet_BLK";
 
 _unit addWeapon "hlc_rifle_ak47";
-_unit addWeapon "CUP_hgun_Makarov";
+_unit addWeapon "rhs_weap_makarov_pmm";
 _unit addWeapon "Binocular";
 
 _unit linkItem "ItemMap";
