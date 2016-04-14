@@ -28,9 +28,9 @@ _unit addItemToBackpack "UGL_FlareWhite_F";
 
 _unit addHeadgear "BWA3_MICH_Tropen";
 
-_unit addWeapon "BWA3_G36K_AG";
+_unit addWeapon "hlc_rifle_G36VAG36";
 _unit addPrimaryWeaponItem "acc_pointer_IR";
-_unit addPrimaryWeaponItem "BWA3_optic_ZO4x30";
+_unit addPrimaryWeaponItem "RH_eotech553mag";
 _unit addWeapon "BWA3_P8";
 
 _unit linkItem "tf_anprc152";

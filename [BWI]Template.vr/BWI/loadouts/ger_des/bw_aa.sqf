@@ -24,9 +24,9 @@ _unit addItemToBackpack "BWA3_Fliegerfaust_Mag";
 
 _unit addHeadgear "BWA3_MICH_Tropen";
 
-_unit addWeapon "BWA3_G36K";
+_unit addWeapon "hlc_rifle_G36V";
 _unit addPrimaryWeaponItem "acc_pointer_IR";
-_unit addPrimaryWeaponItem "BWA3_optic_RSAS";
+_unit addPrimaryWeaponItem "RH_eotech553";
 _unit addWeapon "BWA3_Fliegerfaust";
 _unit addWeapon "BWA3_P8";
 

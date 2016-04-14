@@ -24,9 +24,9 @@ _unit addItemToBackpack "rhs_fgm148_magazine_AT";
 
 _unit addHeadgear "BWA3_MICH_Fleck";
 
-_unit addWeapon "BWA3_G36K";
+_unit addWeapon "hlc_rifle_G36V";
 _unit addPrimaryWeaponItem "acc_pointer_IR";
-_unit addPrimaryWeaponItem "BWA3_optic_RSAS";
+_unit addPrimaryWeaponItem "RH_eotech553";
 _unit addWeapon "rhs_weap_fgm148";
 _unit addWeapon "BWA3_P8";
 
