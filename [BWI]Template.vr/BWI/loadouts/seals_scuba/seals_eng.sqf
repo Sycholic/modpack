@@ -34,7 +34,7 @@ _unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_anprc152";
 
-[_unit, (_this select 1)] call BWI_fnc_AddGear;
+[_unit, "ENG"] call BWI_fnc_AddGear;
 [_unit, "ENG"] call BWI_fnc_AddMedical;
 
 _unit addItemToUniform "hlc_30Rnd_9x19_B_MP5";
