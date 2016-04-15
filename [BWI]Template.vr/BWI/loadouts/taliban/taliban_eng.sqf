@@ -34,7 +34,7 @@ _unit addWeapon "CUP_hgun_Makarov";
 
 _unit linkItem "tf_fadak";
 
-[_unit, (_this select 1), "TALIBAN"] call BWI_fnc_AddGear;
+[_unit, "ENG", "TALIBAN"] call BWI_fnc_AddGear;
 [_unit, "ENG", "TALIBAN"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToBackpack "hlc_30Rnd_545x39_B_AK";}; 

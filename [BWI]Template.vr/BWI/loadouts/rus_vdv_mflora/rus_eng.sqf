@@ -34,7 +34,7 @@ _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 _unit addWeapon "rhs_weap_makarov_pmm";
 _unit linkItem "tf_fadak";
 
-[_unit, (_this select 1)] call BWI_fnc_AddGear;
+[_unit, "ENG"] call BWI_fnc_AddGear;
 [_unit, "ENG"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";};

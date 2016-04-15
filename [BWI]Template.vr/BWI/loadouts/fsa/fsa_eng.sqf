@@ -30,7 +30,7 @@ _unit addWeapon "CUP_hgun_Makarov";
 
 _unit linkItem "tf_anprc148jem";
 
-[_unit, (_this select 1), "FSA"] call BWI_fnc_AddGear;
+[_unit, "ENG", "FSA"] call BWI_fnc_AddGear;
 [_unit, "ENG", "FSA"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";}; 
