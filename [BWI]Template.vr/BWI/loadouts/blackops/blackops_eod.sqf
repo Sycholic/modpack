@@ -1,3 +1,4 @@
+//LOADOUTS - BWI - Rifleman
 
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
@@ -10,20 +11,24 @@ removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
 
-_unit forceAddUniform "rhs_uniform_cu_ucp";
+_unit forceAddUniform "U_PMC_IndUniformLS_BSBPBB";
 
-_unit addVest "rhsusf_iotv_ucp_rifleman";
+_unit addVest "V_PlateCarrier1_PMC_blk";
 _unit addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
+for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 
-_unit addBackpack "rhsusf_assault_eagleaiii_ucp";
+_unit addBackpack "PMC_B_Kitbag_blk";
+_unit addItemToBackpack "rhsusf_acc_nt4_black";
 
-_unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
+_unit addHeadgear "BWA3_OpsCore_Schwarz_Camera";
+_unit addGoggles "PU_shemagh_GryCLR";
 
-_unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
+_unit addWeapon "rhs_weap_m4a1_carryhandle_grip2";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_compm4";
+_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_rf7800str";
 

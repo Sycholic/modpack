@@ -23,7 +23,7 @@ _unit addHeadgear "rhs_6b26_ess_bala";
 _unit addWeapon "hlc_rifle_ak12";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
-_unit linkItem "tf_fadak";
+_unit linkItem "tf_pnr1000a";
 
 [_unit, "EOD"] call BWI_fnc_AddGear;
 [_unit, "EOD"] call BWI_fnc_AddMedical;

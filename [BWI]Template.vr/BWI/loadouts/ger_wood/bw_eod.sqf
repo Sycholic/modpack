@@ -26,7 +26,7 @@ _unit addWeapon "hlc_rifle_G36V";
 _unit addPrimaryWeaponItem "acc_pointer_IR";
 _unit addPrimaryWeaponItem "RH_eotech553";
 
-_unit linkItem "tf_anprc152";
+_unit linkItem "tf_rf7800str";
 
 [_unit, "EOD"] call BWI_fnc_AddGear;
 [_unit, "EOD"] call BWI_fnc_AddMedical;

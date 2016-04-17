@@ -25,7 +25,7 @@ _unit addHeadgear "UK3CB_BAF_H_Mk7_Camo_CESS_D";
 _unit addWeapon "UK3CB_BAF_L85A2_RIS";
 _unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
 
-_unit linkItem "tf_anprc152";
+_unit linkItem "tf_rf7800str";
 
 [_unit, "EOD", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "EOD"] call BWI_fnc_AddMedical;
