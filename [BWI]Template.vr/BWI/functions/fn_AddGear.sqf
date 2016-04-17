@@ -33,9 +33,9 @@
 *
 *
 *   Types
-*   RI	   	= Regular Infantry
-*	IN 		= Insurgents / Irregulars
-*	SF		= Special Forces / Private Military
+*   RI	= Regular Infantry
+*	IN	= Insurgents / Irregulars
+*	SF	= Special Forces / Private Military
 *
 *	created 25.10.2015
 */
@@ -135,21 +135,48 @@ switch( _class ) do {
 	case "RTO";
 	case "CM";
 	case "CFR";
-	case "DRV";
-	case "ENG":	{
+	case "DRV":	{
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
 		if ( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
 			if ( _era >= 2000 ) then {
 				_unit linkItem "ItemAndroid";
-			} else  {
+			} else {
 				_unit addItemToUniform "ACE_DAGR";
 			};
 		};
 		
-		if ( _class == "ENG" ) then {
-			_unit addItemToBackpack "ToolKit";
+		_unit addWeapon "Binocular";
+	};
+	
+	
+	case "ENG":	{
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( (_equipment == "RI" || _equipment == "SF") ) then {
+			if ( _era >= 2000 ) then {
+				_unit linkItem "ItemAndroid";
+			};
+			if ( _era >= 1990 && _era < 2000 ) then {
+				_unit addItemToUniform "ACE_DAGR";
+			};
+			
+			_unit addItemToBackpack "ACE_Clacker";
+			for "_i" from 1 to 4  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
+			if ( _equipment == "SF" ) then {
+				_unit addItemToBackpack "SatchelCharge_Remote_Mag";
+			};
+		} else {
+			_unit addItemToBackpack "ACE_Clacker";
+			for "_i" from 1 to 4  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
+			
+			if ( _era >= 2000 ) then {
+				_unit addItemToBackpack "ACE_Cellphone";
+				_unit addItemToBackpack "ACE_DeadManSwitch";
+			};
 		};
+		
+		_unit addItemToBackpack "ToolKit";
 		_unit addWeapon "Binocular";
 	};
 
@@ -171,40 +198,30 @@ switch( _class ) do {
 	};
 	
 	
-	case "DEM": {
+	case "DMR": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if ( _equipment == "RI" || _equipment == "SF" ) then {
-			_unit addItemToBackpack "ACE_Clacker";
-			_unit addItemToBackpack "ACE_DefusalKit";
-			for "_i" from 1 to 4  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
-			
-			if ( _equipment == "SF" ) then {
-				_unit addItemToBackpack "SatchelCharge_Remote_Mag";
-			};
+		if( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
+			_unit addWeapon "Leupold_Mk4";
 		} else {
-			_unit addItemToBackpack "ACE_Clacker";
-			for "_i" from 1 to 4  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
-			
-			if ( _era >= 2000 ) then {
-				_unit addItemToBackpack "ACE_Cellphone";
-				_unit addItemToBackpack "ACE_DeadManSwitch";
-			};
+			_unit addWeapon "Binocular";
 		};
-		_unit addWeapon "Binocular";
+		_unit addItemToUniform "ACE_RangeCard";
 	};
 	
 	
 	case "EOD": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
+		_unit addItemToBackpack "ACE_Clacker";
+		for "_i" from 1 to 2  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
+		
 		_unit addItemToBackpack "ACE_MineDetector";
 		_unit addItemToBackpack "ACE_DefusalKit";
 		_unit addWeapon "Binocular";
 	};
+
 	
-	
-	case "DMR";
 	case "SNI": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
@@ -256,6 +273,16 @@ switch( _class ) do {
 			_unit addWeapon "Binocular";
 		};
 	};
+	
+	
+	case "FSP": {
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if( (_equipment == "RI" || _equipment == "SF") && _era >= 2000 ) then {
+			_unit linkItem "ItemMicroDAGR";
+		};
+		_unit addWeapon "Binocular";
+	};
 
 	
 	case "HEL": {
@@ -295,7 +322,6 @@ switch( _class ) do {
 		if( (_equipment == "RI" || _equipment == "SF") && _era >= 2010 ) then {
 			_unit linkItem "ItemMicroDAGR";
 		};
-		
 		
 		_unit addWeapon "Binocular";
 	};
