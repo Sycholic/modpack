@@ -13,11 +13,12 @@ class BWIGroupIDMenu
 			y = 8 * GUI_GRID_H + GUI_GRID_Y;
 			w = 39.5 * GUI_GRID_W;
 			h = 6 * GUI_GRID_H;
-			colorBackground[] = {0.3,0.3,0.3,1};
+			colorBackground[] = {0.063,0.09,0.133,1};
 		};
 		class bgdHeader: RscText
 		{
 			idc = 1001;
+			text = "Select your group name";
 			x = 0.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 8 * GUI_GRID_H + GUI_GRID_Y;
 			w = 39.5 * GUI_GRID_W;
@@ -44,6 +45,8 @@ class BWIGroupIDMenu
 			y = 10.29 * GUI_GRID_H + GUI_GRID_Y;
 			w = 8 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
+			
+			onMouseButtonClick = "[ctrlParent (_this select 0)] call BWI_gui_fnc_SetGroupID;";
 		};
 		class lblError: RscStructuredText
 		{

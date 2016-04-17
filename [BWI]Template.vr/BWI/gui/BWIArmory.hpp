@@ -29,7 +29,7 @@ class BWIArmory
 			w = 8 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			
-			onMouseButtonClick = "[ctrlParent (_this select 0)] call BWI_gui_fnc_selectLoadout;";
+			onMouseButtonClick = "[ctrlParent (_this select 0)] call BWI_gui_fnc_SelectLoadout;";
 		};
 		
 		class btnCancel: BWIButton
@@ -103,7 +103,7 @@ class BWIArmory
 			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0.275,0.463,0.694,1};
 			
-			onLBSelChanged = "[ctrlParent (_this select 0)] call BWI_gui_fnc_displayTreeViewEntries; true";
+			onLBSelChanged = "[ctrlParent (_this select 0)] call BWI_gui_fnc_DisplayTreeViewEntries; true";
 		};
 		
 		class lblError: RscStructuredText
@@ -135,7 +135,7 @@ class BWIArmory
 			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0.275,0.463,0.694,1};
 			
-			onLBSelChanged = "[ctrlParent (_this select 0)] call BWI_gui_fnc_displayTreeViewEntries; true";
+			onLBSelChanged = "[ctrlParent (_this select 0)] call BWI_gui_fnc_DisplayTreeViewEntries; true";
 		};
 	};
 };

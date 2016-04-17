@@ -116,12 +116,16 @@ class BWIComboBox: RscCombo
 	access = 0;
 	type = CT_COMBO;
 	style = ST_LEFT + LB_TEXTURES;
+	blinkingPeriod = 0;
+	
+	arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_ca.paa"; // Expand arrow
+	arrowFull = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_active_ca.paa"; // Collapse arrow
 
 	wholeHeight = 0.25;
-	colorSelect[] = {0.275,0.463,0.694,1};
+	colorSelect[] = {1,1,1,1};
 	colorText[] = {1,1,1,1};
-	colorBackground[] = {0.3,0.3,0.3,1};
-	colorScrollbar[] = {1,1,1,1};
+	colorBackground[] = {0.1,0.1,0.1,1};
+	colorSelectBackground[] = {0.275,0.463,0.694,1}; // Selected item fill color
 	font = GUI_FONT_NORMAL;
 	sizeEx = GUI_GRID_CENTER_H;
 	soundSelect[] = {"",0.1,1};
@@ -129,15 +133,20 @@ class BWIComboBox: RscCombo
 	soundCollapse[] = {"",0.1,1};
 	maxHistoryDelay = 1.0;
 	shadow = 0;
-	class ComboScrollBar : ComboScrollBar
+	
+	pictureColor[] = {1,0.5,0,1}; // Picture color
+	pictureColorSelect[] = {1,1,1,1}; // Selected picture color
+	pictureColorDisabled[] = {1,1,1,0.5}; // Disabled picture color
+	
+	class ComboScrollBar
 	{
-		color[] = {1,1,1,0.6};
-		colorActive[] = {1,1,1,1};
-		colorDisabled[] = {1,1,1,0.3};
-		thumb = "#(argb,8,8,3)color(1,1,1,1)";
-		arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
-		arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
-		border = "#(argb,8,8,3)color(1,1,1,1)";
+		color[] = {0.8,0.8,0.8,1};
+		colorActive[] = {0.275,0.463,0.694,1};
+		colorDisabled[] = {1,1,1,1};
+		arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"; // Arrow
+		arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"; // Arrow when clicked on
+		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"; // Slider background (stretched vertically)
+		thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"; // Dragging element (stretched vertically)
 		shadow = 0;
 	};
 };
