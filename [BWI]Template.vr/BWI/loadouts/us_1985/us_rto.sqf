@@ -25,7 +25,7 @@ _unit addWeapon "rhs_weap_m16a4_carryhandle";
 
 _unit linkItem "tf_anprc152";
 
-[_unit, "RTO", "1985"] call BWI_fnc_AddGear;
+[_unit, "RTO", "RI", 1985] call BWI_fnc_AddGear;
 [_unit, "RTO"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";};

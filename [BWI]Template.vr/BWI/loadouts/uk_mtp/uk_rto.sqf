@@ -28,7 +28,7 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
 
 _unit linkItem "tf_anprc152";
 
-[_unit, "RTO"] call BWI_fnc_AddGear;
+[_unit, "RTO", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "RTO"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 

@@ -34,7 +34,7 @@ _unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_rf7800str";
 
-[_unit, "AR"] call BWI_fnc_AddGear;
+[_unit, "AR", "SF", 2011] call BWI_fnc_AddGear;
 [_unit, "AR"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 10 do {_unit addItemToBackpack "30Rnd_556x45_Stanag";};

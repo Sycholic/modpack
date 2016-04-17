@@ -27,7 +27,7 @@ _unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 
 _unit linkItem "tf_rf7800str";
 
-[_unit, "AAR"] call BWI_fnc_AddGear;
+[_unit, "AAR", "RI", 2015] call BWI_fnc_AddGear;
 [_unit, "AAR"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_100Rnd_762x51";}; 

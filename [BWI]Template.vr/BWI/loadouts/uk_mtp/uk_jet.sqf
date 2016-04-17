@@ -27,5 +27,5 @@ _unit addWeapon "rhsusf_weap_m9";
 _unit linkItem "rhsusf_ANPVS_15";
 _unit linkItem "tf_anprc152";
 
-[_unit, "JET"] call BWI_fnc_AddGear;
+[_unit, "JET", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "JET"] call BWI_fnc_AddMedical;

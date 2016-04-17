@@ -29,7 +29,7 @@ _unit addWeapon "rhs_weap_fim92";
 
 _unit linkItem "tf_rf7800str";
 
-[_unit, "AA"] call BWI_fnc_AddGear;
+[_unit, "AA", "RI", 2015] call BWI_fnc_AddGear;
 [_unit, "AA"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 

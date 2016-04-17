@@ -28,7 +28,7 @@ _unit addWeapon "UK3CB_BAF_NLAW_Launcher";
 
 _unit linkItem "tf_rf7800str";
 
-[_unit, "RAT"] call BWI_fnc_AddGear;
+[_unit, "RAT", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "RAT"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";};

@@ -29,7 +29,7 @@ _unit addWeapon "rhsusf_weap_glock17g4";
 
 _unit linkItem "tf_anprc152";
 
-[_unit, "ARM"] call BWI_fnc_AddGear;
+[_unit, "ARM", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "ARM"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 

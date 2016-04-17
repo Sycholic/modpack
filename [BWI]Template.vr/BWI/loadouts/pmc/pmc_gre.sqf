@@ -39,7 +39,7 @@ _unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_anprc154";
 
-[_unit, "GRE"] call BWI_fnc_AddGear;
+[_unit, "GRE", "SF", 2008] call BWI_fnc_AddGear;
 [_unit, "GRE"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_556x45_B_AUG";}; 

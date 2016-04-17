@@ -28,7 +28,7 @@ _unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 
 _unit linkItem "tf_anprc152";
 
-[_unit, "RTO"] call BWI_fnc_AddGear;
+[_unit, "RTO", "RI", 2015] call BWI_fnc_AddGear;
 [_unit, "RTO"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 7 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 

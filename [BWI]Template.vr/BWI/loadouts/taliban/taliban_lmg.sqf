@@ -34,8 +34,8 @@ _unit addWeapon "rhs_weap_makarov_pmm";
 
 _unit linkItem "tf_rf7800str";
 
-[_unit, "AR", "TALIBAN"] call BWI_fnc_AddGear;
-[_unit, "AR", "TALIBAN"] call BWI_fnc_AddMedical;
+[_unit, "AR", "IN", 2001] call BWI_fnc_AddGear;
+[_unit, "AR"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 8 do {_unit addItemToBackpack "hlc_45Rnd_545x39_t_rpk";};
 for "_i" from 1 to 8 do {_unit addItemToBackpack "hlc_45Rnd_545x39_t_rpk";};

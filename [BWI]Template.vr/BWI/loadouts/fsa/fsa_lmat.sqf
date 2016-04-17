@@ -29,8 +29,8 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
 
 _unit linkItem "tf_anprc148jem";
 
-[_unit, "LMAT", "FSA"] call BWI_fnc_AddGear;
-[_unit, "LMAT", "FSA"] call BWI_fnc_AddMedical;
+[_unit, "LMAT", "IN", 2011] call BWI_fnc_AddGear;
+[_unit, "LMAT"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";};
 for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_30Rnd_545x39_t_ak";};

@@ -32,7 +32,7 @@ _unit addPrimaryWeaponItem "rhs_acc_pso1m2";
 
 _unit linkItem "tf_pnr1000a";
 
-[_unit, "DMR", "TALIBAN"] call BWI_fnc_AddGear;
-[_unit, "DMR", "TALIBAN"] call BWI_fnc_AddMedical;
+[_unit, "DMR", "IN", 2001] call BWI_fnc_AddGear;
+[_unit, "DMR"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 15 do {_unit addItemToBackpack "rhs_10Rnd_762x54mmR_7N1";};

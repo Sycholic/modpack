@@ -27,7 +27,7 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_Eotech";
 
 _unit linkItem "tf_rf7800str";
 
-[_unit, "AAR"] call BWI_fnc_AddGear;
+[_unit, "AAR", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "AAR"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 3 do {_unit addItemToBackpack "UK3CB_BAF_75Rnd";};

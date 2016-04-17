@@ -28,7 +28,7 @@ _unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 
 _unit linkItem "tf_rf7800str";
 
-[_unit, "HAT"] call BWI_fnc_AddGear;
+[_unit, "HAT", "RI", 2015] call BWI_fnc_AddGear;
 [_unit, "HAT"] call BWI_fnc_AddMedical;
 
 _unit addItemToBackpack "rhs_fgm148_magazine_AT";

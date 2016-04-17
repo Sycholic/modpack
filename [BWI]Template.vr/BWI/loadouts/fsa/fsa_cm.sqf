@@ -29,8 +29,8 @@ _unit addWeapon "rhs_weap_makarov_pmm";
 
 _unit linkItem "tf_anprc148jem";
 
-[_unit, "CM", "FSA"] call BWI_fnc_AddGear;
-[_unit, "CM", "FSA"] call BWI_fnc_AddMedical;
+[_unit, "CM", "IN", 2011] call BWI_fnc_AddGear;
+[_unit, "CM"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";}; 
 for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_30Rnd_545x39_t_ak";};

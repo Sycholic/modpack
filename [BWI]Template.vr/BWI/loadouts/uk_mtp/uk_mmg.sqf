@@ -29,7 +29,7 @@ _unit addWeapon "Binocular";
 
 _unit linkItem "tf_rf7800str";
 
-[_unit, "MMG"] call BWI_fnc_AddGear;
+[_unit, "MMG", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "MMG"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 4 do {_unit addItemToBackpack "UK3CB_BAF_75Rnd";};

@@ -29,7 +29,7 @@ _unit addWeapon "BWA3_P8";
 
 _unit linkItem "tf_anprc152";
 
-[_unit, "SNI"] call BWI_fnc_AddGear;
+[_unit, "SNI", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "SNI"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 20 do {_unit addItemToBackpack "UK3CB_BAF_L115A3_Mag";}; 

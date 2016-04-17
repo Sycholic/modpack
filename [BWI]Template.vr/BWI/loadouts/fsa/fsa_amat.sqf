@@ -28,8 +28,8 @@ _unit addWeapon "rhs_weap_ak74m_npz";
 
 _unit linkItem "tf_anprc154";
 
-[_unit, "AMAT", "FSA"] call BWI_fnc_AddGear;
-[_unit, "AMAT", "FSA"] call BWI_fnc_AddMedical;
+[_unit, "AMAT", "IN", 2011] call BWI_fnc_AddGear;
+[_unit, "AMAT"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";};
 for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_30Rnd_545x39_t_ak";};

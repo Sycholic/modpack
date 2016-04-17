@@ -29,7 +29,7 @@ _unit addSecondaryWeaponItem "tf47_optic_m3maaws";
 
 _unit linkItem "tf_rf7800str";
 
-[_unit, "MAT"] call BWI_fnc_AddGear;
+[_unit, "MAT", "RI", 2015] call BWI_fnc_AddGear;
 [_unit, "MAT"] call BWI_fnc_AddMedical;
 
 _unit addItemToBackpack "tf47_m3maaws_HEAT";

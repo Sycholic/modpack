@@ -27,7 +27,7 @@ _unit addPrimaryWeaponItem "optic_DMS";
 
 _unit linkItem "tf_rf7800str";
 
-[_unit, "DMR"] call BWI_fnc_AddGear;
+[_unit, "DMR", "RI", 2015] call BWI_fnc_AddGear;
 [_unit, "DMR"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 2 do {_unit addItemToVest "20Rnd_762x51_Mag";}; 

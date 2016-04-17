@@ -28,8 +28,8 @@ _unit addWeapon "rhs_weap_ak74m_npz";
 
 _unit linkItem "tf_anprc148jem";
 
-[_unit, "RTO", "FSA"] call BWI_fnc_AddGear;
-[_unit, "RTO", "FSA"] call BWI_fnc_AddMedical;
+[_unit, "RTO", "IN", 2011] call BWI_fnc_AddGear;
+[_unit, "RTO"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";}; 
 for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_30Rnd_545x39_t_ak";};

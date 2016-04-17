@@ -30,7 +30,7 @@ _unit addWeapon "Binocular";
 
 _unit linkItem "tf_rf7800str";
 
-[_unit, "AR"] call BWI_fnc_AddGear;
+[_unit, "AR", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "AR"] call BWI_fnc_AddMedical;
 
 _unit addItemToBackpack "UK3CB_BAF_200Rnd_T";
