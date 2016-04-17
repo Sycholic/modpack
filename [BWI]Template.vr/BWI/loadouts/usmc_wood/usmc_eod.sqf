@@ -25,7 +25,7 @@ _unit addWeapon "rhs_weap_m16a4_carryhandle_grip";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
 _unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 
-_unit linkItem "tf_rf7800str";
+_unit linkItem "tf_anprc152";
 
 [_unit, "EOD"] call BWI_fnc_AddGear;
 [_unit, "EOD"] call BWI_fnc_AddMedical;
