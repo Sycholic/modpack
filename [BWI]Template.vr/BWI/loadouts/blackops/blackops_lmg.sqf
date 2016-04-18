@@ -25,8 +25,8 @@ _unit addItemToBackpack "rhsusf_acc_nt4_black";
 _unit addHeadgear "BWA3_OpsCore_Schwarz_Camera";
 _unit addGoggles "PU_shemagh_GryCLR";
 
-_unit addWeapon "hlc_m249_pip1";
-_unit addPrimaryWeaponItem "rhsusf_acc_ELCAN";
+_unit addWeapon "rhs_weap_m27iar";
+_unit addPrimaryWeaponItem "UK3CB_BAF_SpecterLDS_Dot_3D";
 _unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_rf7800str";
@@ -34,5 +34,7 @@ _unit linkItem "tf_rf7800str";
 [_unit, "AR"] call BWI_fnc_AddGear;
 [_unit, "AR"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_200rnd_556x45_M_SAW";};
-_unit addItemToBackpack "hlc_200rnd_556x45_T_SAW";
+for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
+for "_i" from 1 to 6 do {_unit addItemToBackpack "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 3 do {_unit addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";};
