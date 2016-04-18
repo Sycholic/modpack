@@ -31,7 +31,6 @@ _unit linkItem "tf_rf7800str";
 [_unit, "AMAT"] call BWI_fnc_AddGear;
 [_unit, "AMAT"] call BWI_fnc_AddMedical;
 
-_unit addItemToBackpack "tf47_m3maaws_HE"; 
-for "_i" from 1 to 2 do {_unit addItemToBackpack "tf47_m3maaws_HEAT";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "tf47_m3maaws_HEAT";};
 for "_i" from 1 to 6 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36";}; 
 for "_i" from 1 to 3 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36_Tracer";};
