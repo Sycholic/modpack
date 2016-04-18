@@ -11,7 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-_unit forceAddUniform "U_PMC_BlckPolo_BluPants";
+_unit forceAddUniform "tacs_Uniform_TShirt_JP_BS_LP_BB";
 _unit addBackpack "tf_rt1523g_big_rhs";
 _unit addHeadgear "UK3CB_BAF_H_Beret_Mer_PRR";
 _unit addGoggles "G_Aviator";

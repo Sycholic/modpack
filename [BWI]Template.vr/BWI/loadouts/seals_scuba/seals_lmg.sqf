@@ -15,7 +15,7 @@ for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "V_RebreatherB";
 
-_unit addBackpack "PMC_B_Carryall_blk";
+_unit addBackpack "tacs_Backpack_Carryall_DarkBlack";
 _unit addItemToBackpack "SmokeShellRed";
 _unit addItemToBackpack "SmokeShellGreen";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};

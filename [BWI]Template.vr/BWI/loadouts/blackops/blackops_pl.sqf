@@ -11,11 +11,11 @@ removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
 
-_unit forceAddUniform "U_PMC_IndUniformLS_BSBPBB";
+_unit forceAddUniform "tacs_Item_Uniform_Garment_LS_BS_BP_BB";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 _unit addItemToUniform "rhsusf_mag_15Rnd_9x19_JHP";
 
-_unit addVest "V_PlateCarrier1_PMC_blk";
+_unit addVest "tacs_Item_Vest_PlateCarrier_Black";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
