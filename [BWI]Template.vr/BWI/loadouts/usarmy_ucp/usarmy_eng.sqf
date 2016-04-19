@@ -1,4 +1,4 @@
-
+// Combat Engineer
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -11,20 +11,23 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_cu_ucp";
+_unit addItemToUniform "RH_SFM952V";
 
 _unit addVest "rhsusf_iotv_ucp_rifleman";
 _unit addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 
-_unit addBackpack "B_Carryall_mcamo";
+_unit addBackpack "B_Carryall_cbr";
 
-_unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
+_unit addHeadgear "rhsusf_ach_helmet_ESS_ucp";
+
 _unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
+_unit addPrimaryWeaponItem "RH_compM2l";
+_unit addPrimaryWeaponItem "RH_peq15b";
 
 _unit linkItem "tf_anprc152";
+_unit linkItem "ItemWatch";
 
 [_unit, "ENG"] call BWI_fnc_AddGear;
 [_unit, "ENG"] call BWI_fnc_AddMedical;

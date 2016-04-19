@@ -1,4 +1,4 @@
-
+// Platoon Leader
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -12,7 +12,7 @@ removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_cu_ucp";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
-for "_i" from 1 to 3 do {_unit addItemToUniform "1Rnd_HE_Grenade_shell";};
+_unit addItemToUniform "RH_SFM952V";
 
 _unit addVest "rhsusf_iotv_ucp_squadleader";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
@@ -26,14 +26,15 @@ _unit addBackpack "tf_rt1523g_sage";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 3 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
-_unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
+_unit addHeadgear "rhsusf_ach_helmet_headset_ucp";
 
 _unit addWeapon "rhs_weap_m4a1_carryhandle_m203";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "UK3CB_BAF_TA31F";
+_unit addPrimaryWeaponItem "RH_ta31rco";
+_unit addPrimaryWeaponItem "RH_peq15b";
 _unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_anprc152";
+_unit linkItem "ItemWatch";
 
 [_unit, "PL"] call BWI_fnc_AddGear;
 [_unit, "PL"] call BWI_fnc_AddMedical;

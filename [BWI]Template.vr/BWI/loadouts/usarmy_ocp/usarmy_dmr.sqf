@@ -23,7 +23,7 @@ _unit addBackpack "rhsusf_assault_eagleaiii_ocp";
 _unit addHeadgear "rhsusf_ach_helmet_ESS_ocp";
 
 _unit addWeapon "RH_SAMR";
-this addPrimaryWeaponItem "RH_ta648";
+_unit addPrimaryWeaponItem "RH_ta648";
 _unit addPrimaryWeaponItem "RH_peq15b";
 _unit addPrimaryWeaponItem "RH_HBLM";
 _unit addWeapon "rhsusf_weap_m9";

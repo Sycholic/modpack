@@ -1,4 +1,4 @@
-
+// Designated Markmans Rifle
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -16,21 +16,23 @@ _unit addVest "rhsusf_iotv_ucp_rifleman";
 _unit addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
+for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 
 _unit addBackpack "rhsusf_assault_eagleaiii_ucp";
-_unit addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addItemToBackpack "RH_peq15b";
 
-_unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
+_unit addHeadgear "rhsusf_ach_helmet_ESS_ucp";
 
-_unit addWeapon "srifle_EBR_F";
-_unit addPrimaryWeaponItem "optic_DMS";
+_unit addWeapon "RH_SAMR";
+_unit addPrimaryWeaponItem "RH_ta648";
+_unit addPrimaryWeaponItem "RH_peq15b";
+_unit addPrimaryWeaponItem "RH_HBLM";
+_unit addWeapon "rhsusf_weap_m9";
 
 _unit linkItem "tf_rf7800str";
+_unit linkItem "tf_microDAGR";
 
-[_unit, "DMR"] call BWI_fnc_AddGear;
+[_unit, "DMR", "RI", 2015] call BWI_fnc_AddGear;
 [_unit, "DMR"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 2 do {_unit addItemToVest "20Rnd_762x51_Mag";}; 
-for "_i" from 1 to 8 do {_unit addItemToBackpack "20Rnd_762x51_Mag";}; 
-for "_i" from 1 to 3 do {_unit addItemToVest "ACE_20Rnd_762x51_Mag_Tracer_Dim";};
+for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
