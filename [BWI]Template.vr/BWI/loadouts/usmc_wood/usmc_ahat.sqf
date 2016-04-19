@@ -14,11 +14,11 @@ _unit forceAddUniform "rhs_uniform_FROG01_wd";
 _unit addItemToUniform "RH_SFM952V";
 
 _unit addVest "rhsusf_spc_mg";
+for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "B_Carryall_khk";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
 _unit addItemToBackpack "rhs_fgm148_magazine_AT";
 
 _unit addHeadgear "rhsusf_mich_helmet_marpatwd_norotos";

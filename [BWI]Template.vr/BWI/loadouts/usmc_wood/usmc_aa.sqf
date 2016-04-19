@@ -18,7 +18,7 @@ for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
 
-_unit addBackpack "rhsusf_assault_eagleaiii_coy";
+_unit addBackpack "B_Carryall_khk";
 
 _unit addHeadgear "rhsusf_mich_helmet_marpatwd_norotos";
 
@@ -33,5 +33,6 @@ _unit linkItem "tf_microDAGR";
 [_unit, "AA"] call BWI_fnc_AddGear;
 [_unit, "AA"] call BWI_fnc_AddMedical;
 
+_unit addItemToBackpack "rhs_fim92_mag";
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
 for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};

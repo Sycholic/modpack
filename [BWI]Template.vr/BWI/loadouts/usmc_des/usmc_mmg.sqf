@@ -11,7 +11,6 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_FROG01_d";
-_unit addItemToUniform "RH_SFM952V";
 
 _unit addVest "rhsusf_spc_mg";
 _unit addItemToVest "SmokeShellGreen";
