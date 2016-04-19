@@ -81,7 +81,6 @@ _BWI_lfnc_AddStandardGear = {
 	
 	_unit linkItem "ItemMap";
 	_unit linkItem "ItemCompass";
-	_unit linkItem "tf_microDAGR";
 };
 
 if( isNull _unit || !local _unit )  exitWith {};
@@ -216,7 +215,7 @@ switch( _class ) do {
 		_unit addItemToBackpack "ACE_Clacker";
 		for "_i" from 1 to 2  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
 		
-		_unit addItemToBackpack "ACE_MineDetector";
+		_unit addItemToBackpack "MineDetector";
 		_unit addItemToBackpack "ACE_DefusalKit";
 		_unit addWeapon "Binocular";
 	};
