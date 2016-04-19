@@ -1,4 +1,4 @@
-
+// Joint Terminal Attack Controller
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -11,6 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_cu_ocp";
+_unit addItemToUniform "RH_SFM952V";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "rhsusf_iotv_ocp_rifleman";
@@ -23,13 +24,14 @@ _unit addBackpack "tf_rt1523g_big_rhs";
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
 
 _unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
+_unit addPrimaryWeaponItem "RH_compM2l";
+_unit addPrimaryWeaponItem "RH_peq15b";
 
 _unit linkItem "tf_anprc152";
+_unit linkItem "ItemWatch";
 
 [_unit, "JTAC", "RI", 2015] call BWI_fnc_AddGear;
 [_unit, "JTAC"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 7 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
 for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};

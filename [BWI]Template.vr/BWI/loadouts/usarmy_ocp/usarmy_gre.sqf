@@ -1,4 +1,4 @@
-
+// Grenadier
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -11,6 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_cu_ocp";
+_unit addItemToUniform "RH_SFM952V";
 
 _unit addVest "rhsusf_iotv_ocp_Teamleader";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
@@ -24,13 +25,14 @@ _unit addItemToVest "1Rnd_SmokeGreen_Grenade_shell";
 _unit addBackpack "rhsusf_assault_eagleaiii_ocp";
 for "_i" from 1 to 8 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
-_unit addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
+_unit addHeadgear "rhsusf_ach_helmet_ESS_ocp";
 
 _unit addWeapon "rhs_weap_m4a1_carryhandle_m203";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
+_unit addPrimaryWeaponItem "RH_compM2l";
+_unit addPrimaryWeaponItem "RH_peq15b";
 
 _unit linkItem "tf_rf7800str";
+_unit linkItem "tf_microDAGR";
 
 [_unit, "GRE", "RI", 2015] call BWI_fnc_AddGear;
 [_unit, "GRE"] call BWI_fnc_AddMedical;
