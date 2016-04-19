@@ -110,7 +110,7 @@ switch( lbCurSel _xlistRoleSelection ) do {
 		_tvRole tvAdd [[14],"Explosive Ordnance Disposal"];
 
 		_tvRole tvAdd [[],"Rear Echolon (TACP)"];
-		_tvRole tvAdd [[15],"Joint Termianl Attack Controller"];
+		_tvRole tvAdd [[15],"Joint Terminal Attack Controller"];
 
 		_tvRole tvAdd [[],"Vehicle Crew"];
 		_tvRole tvAdd [[16],"Commander"];
