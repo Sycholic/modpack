@@ -35,7 +35,7 @@ switch( _class ) do {
 		for "_i" from 1 to 15 do { _unit addItemToBackpack "ACE_packingBandage"; };
 		for "_i" from 1 to 15 do { _unit addItemToBackpack "ACE_elasticBandage"; };
 		for "_i" from 1 to 20 do { _unit addItemToBackpack "ACE_quikclot"; };
-		for "_i" from 1 to 10  do { _unit addItemToBackpack "ACE_tourniquet"; };
+		for "_i" from 1 to 8  do { _unit addItemToBackpack "ACE_tourniquet"; };
 		for "_i" from 1 to 8  do { _unit addItemToBackpack "ACE_morphine"; };
 		for "_i" from 1 to 8  do { _unit addItemToBackpack "ACE_epinephrine"; };
 		for "_i" from 1 to 4  do { _unit addItemToBackpack "ACE_plasmaIV_250"; };
@@ -43,10 +43,10 @@ switch( _class ) do {
 	};
 	
 	case "CM": {
-		for "_i" from 1 to 20 do { _unit addItemToBackpack "ACE_fieldDressing"; };
+		for "_i" from 1 to 10 do { _unit addItemToBackpack "ACE_fieldDressing"; };
 		for "_i" from 1 to 20 do { _unit addItemToBackpack "ACE_packingBandage"; };
 		for "_i" from 1 to 20 do { _unit addItemToBackpack "ACE_elasticBandage"; };
-		for "_i" from 1 to 20 do { _unit addItemToBackpack "ACE_quikclot"; };
+		for "_i" from 1 to 10 do { _unit addItemToBackpack "ACE_quikclot"; };
 		for "_i" from 1 to 5  do { _unit addItemToBackpack "ACE_tourniquet"; };
 		for "_i" from 1 to 10 do { _unit addItemToBackpack "ACE_morphine"; };
 		for "_i" from 1 to 10 do { _unit addItemToBackpack "ACE_epinephrine"; };
@@ -60,7 +60,9 @@ switch( _class ) do {
 		for "_i" from 1 to 8 do { _unit addItemToVest "ACE_packingBandage"; };
 		for "_i" from 1 to 8 do { _unit addItemToVest "ACE_elasticBandage"; };
 		for "_i" from 1 to 10 do { _unit addItemToVest "ACE_quikclot"; };
+		for "_i" from 1 to 2 do { _unit addItemToVest "ACE_tourniquet"; };
 		_unit addItemToVest "ACE_morphine";
+		_unit addItemToVest "ACE_epinephrine";
 	};
 	
 	default {
