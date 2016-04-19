@@ -1,4 +1,4 @@
-//LOADOUTS - BWI - Rifleman (AT)
+// Anti-Tank (MAT)
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -11,23 +11,25 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_FROG01_wd";
+_unit addItemToUniform "RH_SFM952V";
 
 _unit addVest "rhsusf_spc_rifleman";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
 
-_unit addBackpack "B_Kitbag_rgr";
+_unit addBackpack "B_Carryall_khk";
 
 _unit addHeadgear "rhsusf_mich_helmet_marpatwd_norotos";
 
 _unit addWeapon "rhs_weap_m16a4_carryhandle_grip";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
+_unit addPrimaryWeaponItem "RH_peq15b";
+_unit addPrimaryWeaponItem "RH_compm4s";
 _unit addWeapon "tf47_smaw_green";
 _unit addSecondaryWeaponItem "tf47_optic_smaw";
 
 _unit linkItem "tf_rf7800str";
+_unit linkItem "tf_microDAGR";
 
 [_unit, "MAT"] call BWI_fnc_AddGear;
 [_unit, "MAT"] call BWI_fnc_AddMedical;

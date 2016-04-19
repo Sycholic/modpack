@@ -1,4 +1,4 @@
-//LOADOUTS - BWI - SQL/FTL
+// Grenadier
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -11,6 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_FROG01_wd";
+_unit addItemToUniform "RH_SFM952V";
 
 _unit addVest "rhsusf_spc_teamleader";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
@@ -21,16 +22,17 @@ for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_Smoke_Grenade_shell";};
 _unit addItemToVest "1Rnd_SmokeGreen_Grenade_shell";
 
-_unit addBackpack "B_AssaultPack_rgr";
+_unit addBackpack "rhsusf_assault_eagleaiii_coy";
 for "_i" from 1 to 8 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
 _unit addHeadgear "rhsusf_mich_helmet_marpatwd_norotos";
 
 _unit addWeapon "rhs_weap_m16a4_carryhandle_M203";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
+_unit addPrimaryWeaponItem "RH_peq15b";
+_unit addPrimaryWeaponItem "RH_compm4s";
 
 _unit linkItem "tf_rf7800str";
+_unit linkItem "tf_microDAGR";
 
 [_unit, "GRE"] call BWI_fnc_AddGear;
 [_unit, "GRE"] call BWI_fnc_AddMedical;

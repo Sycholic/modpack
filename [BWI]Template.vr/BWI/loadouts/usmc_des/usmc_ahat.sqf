@@ -1,4 +1,4 @@
-//LOADOUTS - BWI - Automatic Rifleman (M27)
+// Assistant Anti-Tank (HAT)
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -11,22 +11,24 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_FROG01_d";
+_unit addItemToUniform "RH_SFM952V";
 
 _unit addVest "rhsusf_spc_mg";
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
 
-_unit addBackpack "B_Carryall_khk";
+_unit addBackpack "B_Carryall_cbr";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
 _unit addItemToBackpack "rhs_fgm148_magazine_AT";
 
 _unit addHeadgear "rhsusf_lwh_helmet_marpatd_ess";
 
 _unit addWeapon "rhs_weap_m16a4_carryhandle_grip";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
+_unit addPrimaryWeaponItem "RH_peq15b";
+_unit addPrimaryWeaponItem "RH_compm4s";
 
 _unit linkItem "tf_rf7800str";
+_unit linkItem "tf_microDAGR";
 
 [_unit, "AHAT"] call BWI_fnc_AddGear;
 [_unit, "AHAT"] call BWI_fnc_AddMedical;
