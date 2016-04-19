@@ -34,7 +34,8 @@
 *
 *   Types
 *   RI	= Regular Infantry
-*	IN	= Insurgents / Irregulars
+*	IN	= Insurgents
+*   IR  = Irregulars
 *	SF	= Special Forces / Private Military
 *
 *	created 25.10.2015
@@ -169,9 +170,9 @@ switch( _class ) do {
 			_unit addItemToBackpack "ACE_Clacker";
 			for "_i" from 1 to 4  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
 			
-			if ( _era >= 2000 ) then {
+			if ( _equipment == "IN" ) then {
 				_unit addItemToBackpack "ACE_Cellphone";
-				_unit addItemToBackpack "ACE_DeadManSwitch";
+				for "_i" from 1 to 4  do { _unit addItemToBackpack "ACE_DeadManSwitch"; };
 			};
 		};
 		
@@ -190,6 +191,10 @@ switch( _class ) do {
 		
 		if( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
 			_unit addWeapon "ACE_Vector";
+			
+			if( _era >= 2010 ) then {
+				_unit linkItem "ItemMicroDAGR";
+			};
 		} else {
 			_unit addWeapon "Binocular";
 		};
@@ -202,6 +207,10 @@ switch( _class ) do {
 		
 		if( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
 			_unit addWeapon "Leupold_Mk4";
+			
+			if( _era >= 2010 ) then {
+				_unit linkItem "ItemMicroDAGR";
+			};
 		} else {
 			_unit addWeapon "Binocular";
 		};
@@ -211,6 +220,10 @@ switch( _class ) do {
 	
 	case "EOD": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if( (_equipment == "RI" || _equipment == "SF") && _era >= 2010 ) then {
+			_unit linkItem "ItemMicroDAGR";
+		};
 		
 		_unit addItemToBackpack "ACE_Clacker";
 		for "_i" from 1 to 2  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
