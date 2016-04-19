@@ -262,8 +262,8 @@ if( lbCurSel _xlistRoleSelection == 0 ) then {
 						if( _roleSelected select 1 == 1 ) then { _role = "amat"; };
 					};
 			case 5 :{
-						if( _roleSelected select 1 == 1 ) then { _role = "hat";  };
-						if( _roleSelected select 1 == 2 ) then { _role = "ahat"; };
+						if( _roleSelected select 1 == 0 ) then { _role = "hat";  };
+						if( _roleSelected select 1 == 1 ) then { _role = "ahat"; };
 					};
 			case 6 :{
 						if( _roleSelected select 1 == 0 ) then { _role = "dmr"; };
@@ -312,7 +312,7 @@ if( lbCurSel _xlistRoleSelection == 0 ) then {
 						if( _roleSelected select 1 == 1 ) then { _role = "hel"; };
 					};
 			case 19:{
-						if( _roleSelected select 1 == 2 ) then { _role = "rto"; };
+						if( _roleSelected select 1 == 0 ) then { _role = "rto"; };
 					};
 			case 20:{
 						// can not be selected
