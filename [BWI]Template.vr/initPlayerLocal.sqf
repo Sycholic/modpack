@@ -65,7 +65,7 @@ if( side player == independent ) then {
 };
 
 if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
-	BWI_armory_roleSelected = [18];
+	BWI_armory_roleSelected = [20];
 	BWI_armory_baseSlot = BWI_armory_baseSlot + "Zeus";
 	group player setGroupIdGlobal ["Game Master"];
 } else {
@@ -96,14 +96,14 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 		
 		case "log": {
 			if( _platoonRole == "eng" ) then {
-				BWI_armory_roleSelected = [7,0];
+				BWI_armory_roleSelected = [9,0];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Combat Engineer";
 			};
 		};
 
 		case "med": {
 			if( _platoonRole == "cfr" ) then {
-				BWI_armory_roleSelected = [6,0];
+				BWI_armory_roleSelected = [8,0];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "MEDEVAC CFR";
 			};
 		};
@@ -115,17 +115,17 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 			if( _armorRole == "dri" ) then {
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Armor " + _armorNumber + " Driver";
 				group player setGroupIdGlobal ["Armor"];
-				BWI_armory_roleSelected = [14,2];
+				BWI_armory_roleSelected = [16,2];
 			};
 			
 			if( _armorRole == "gun" ) then {
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Armor " + _armorNumber + " Gunner";
-				BWI_armory_roleSelected = [14,1];
+				BWI_armory_roleSelected = [16,1];
 			};
 			
 			if( _armorRole == "com" ) then {
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Armor " + _armorNumber + " Commander";
-				BWI_armory_roleSelected = [14,0];
+				BWI_armory_roleSelected = [16,0];
 			};
 		};
 
@@ -136,12 +136,12 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 			if( _jetRole == "pil" ) then {
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Jet " + _armorNumber + " Pilot";
 				group player setGroupIdGlobal ["Jet"];
-				BWI_armory_roleSelected = [16,0];
+				BWI_armory_roleSelected = [17,0];
 			};
 			
 			if( _jetRole == "cop" ) then {
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Jet " + _armorNumber + " Copilot";
-				BWI_armory_roleSelected = [16,1];
+				BWI_armory_roleSelected = [17,1];
 			};
 
 			
@@ -154,12 +154,12 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 			if( _rotRole == "pil" ) then {
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Rotary " + _armorNumber + " Pilot";
 				group player setGroupIdGlobal ["Rotary"];
-				BWI_armory_roleSelected = [16,0];
+				BWI_armory_roleSelected = [18,0];
 			};
 			
 			if( _rotRole == "cop" ) then {
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Rotary " + _armorNumber + " Copilot";
-				BWI_armory_roleSelected = [16,1];
+				BWI_armory_roleSelected = [18,1];
 			};
 		};
 		
