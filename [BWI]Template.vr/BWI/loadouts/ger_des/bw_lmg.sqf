@@ -29,7 +29,7 @@ _unit addWeapon "BWA3_P8";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "AR"] call BWI_fnc_AddGear;
+[_unit, "AR", "RI", 2010] call BWI_fnc_AddGear;
 [_unit, "AR"] call BWI_fnc_AddMedical;
 
 _unit addItemToBackpack "BWA3_200Rnd_556x45_Tracer";

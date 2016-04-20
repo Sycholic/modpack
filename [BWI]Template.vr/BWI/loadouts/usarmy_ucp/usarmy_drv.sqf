@@ -29,7 +29,7 @@ _unit addPrimaryWeaponItem "RH_peq15b";
 _unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
-[_unit, "DRV"] call BWI_fnc_AddGear;
+[_unit, "DRV", "RI", 2003] call BWI_fnc_AddGear;
 [_unit, "DRV"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 

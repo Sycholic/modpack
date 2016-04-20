@@ -31,7 +31,7 @@ _unit addWeapon "rhsusf_weap_m9";
 _unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
-[_unit, "SNI"] call BWI_fnc_AddGear;
+[_unit, "SNI", "RI", 2003] call BWI_fnc_AddGear;
 [_unit, "SNI"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToBackpack "RH_20Rnd_762x51_M80A1";}; 

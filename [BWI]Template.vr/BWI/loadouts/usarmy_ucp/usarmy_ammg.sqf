@@ -29,7 +29,7 @@ _unit addPrimaryWeaponItem "RH_peq15b";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "AMMG"] call BWI_fnc_AddGear;
+[_unit, "AMMG", "RI", 2003] call BWI_fnc_AddGear;
 [_unit, "AMMG"] call BWI_fnc_AddMedical;
 
 _unit addItemToBackpack "rhsusf_100Rnd_762x51_m62_tracer";

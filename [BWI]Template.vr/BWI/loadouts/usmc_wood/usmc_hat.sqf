@@ -30,7 +30,7 @@ _unit addWeapon "rhs_weap_fgm148";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "HAT"] call BWI_fnc_AddGear;
+[_unit, "HAT", "RI", 2008] call BWI_fnc_AddGear;
 [_unit, "HAT"] call BWI_fnc_AddMedical;
 
 _unit addItemToBackpack "rhs_fgm148_magazine_AT";

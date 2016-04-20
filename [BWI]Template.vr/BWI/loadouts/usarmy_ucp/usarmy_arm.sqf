@@ -26,7 +26,7 @@ _unit addWeapon "hlc_rifle_CQBR";
 _unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
-[_unit, "ARM"] call BWI_fnc_AddGear;
+[_unit, "ARM", "RI", 2003] call BWI_fnc_AddGear;
 [_unit, "ARM"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToBackpack "30Rnd_556x45_Stanag";};

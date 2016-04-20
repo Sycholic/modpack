@@ -27,7 +27,7 @@ _unit addPrimaryWeaponItem "HLC_Optic_G36Dualoptic15x2d";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "FSP"] call BWI_fnc_AddGear;
+[_unit, "FSP", "RI", 2010] call BWI_fnc_AddGear;
 [_unit, "FSP"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30rnd_556x45_EPR_G36";}; 

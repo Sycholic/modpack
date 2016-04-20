@@ -31,7 +31,7 @@ _unit addSecondaryWeaponItem "tf47_optic_m3maaws";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "MAT"] call BWI_fnc_AddGear;
+[_unit, "MAT", "RI", 2003] call BWI_fnc_AddGear;
 [_unit, "MAT"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 2 do {_unit addItemToBackpack "tf47_m3maaws_HEAT";};

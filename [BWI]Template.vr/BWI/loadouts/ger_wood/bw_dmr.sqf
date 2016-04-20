@@ -28,7 +28,7 @@ _unit addPrimaryWeaponItem "RH_ta648";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "DMR"] call BWI_fnc_AddGear;
+[_unit, "DMR", "RI", 2010] call BWI_fnc_AddGear;
 [_unit, "DMR"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "BWA3_20Rnd_762x51_G28";}; 

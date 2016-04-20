@@ -29,7 +29,7 @@ _unit addPrimaryWeaponItem "RH_peq15b";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "AMAT"] call BWI_fnc_AddGear;
+[_unit, "AMAT", "RI", 2003] call BWI_fnc_AddGear;
 [_unit, "AMAT"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 2 do {_unit addItemToBackpack "tf47_m3maaws_HEAT";};

@@ -31,7 +31,7 @@ _unit addWeapon "rhsusf_weap_m9";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "DMR", "RI", 2015] call BWI_fnc_AddGear;
+[_unit, "DMR", "RI", 2003] call BWI_fnc_AddGear;
 [_unit, "DMR"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 

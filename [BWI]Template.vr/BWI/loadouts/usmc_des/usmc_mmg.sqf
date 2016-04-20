@@ -29,7 +29,7 @@ _unit addWeapon "rhsusf_weap_m9";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "MMG"] call BWI_fnc_AddGear;
+[_unit, "MMG", "RI", 2008] call BWI_fnc_AddGear;
 [_unit, "MMG"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_100Rnd_762x51";};

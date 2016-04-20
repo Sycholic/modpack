@@ -27,7 +27,7 @@ _unit addPrimaryWeaponItem "HLC_Optic_G36Dualoptic15x2d";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "AAR"] call BWI_fnc_AddGear;
+[_unit, "AAR", "RI", 2010] call BWI_fnc_AddGear;
 [_unit, "AAR"] call BWI_fnc_AddMedical;
 
 _unit addItemToBackpack "BWA3_120Rnd_762x51_Tracer";

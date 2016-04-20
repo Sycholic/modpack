@@ -30,7 +30,7 @@ _unit addWeapon "rhs_weap_fim92";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "AA"] call BWI_fnc_AddGear;
+[_unit, "AA", "RI", 2008] call BWI_fnc_AddGear;
 [_unit, "AA"] call BWI_fnc_AddMedical;
 
 _unit addItemToBackpack "rhs_fim92_mag";
