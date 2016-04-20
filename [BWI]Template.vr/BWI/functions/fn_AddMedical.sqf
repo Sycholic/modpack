@@ -65,6 +65,14 @@ switch( _class ) do {
 		_unit addItemToVest "ACE_epinephrine";
 	};
 	
+	case "FSP": {
+		for "_i" from 1 to 6 do { _unit addItemToUniform "ACE_fieldDressing"; };
+		for "_i" from 1 to 8 do { _unit addItemToVest "ACE_packingBandage"; };
+		for "_i" from 1 to 8 do { _unit addItemToVest "ACE_elasticBandage"; };
+		for "_i" from 1 to 10 do { _unit addItemToVest "ACE_quikclot"; };
+		for "_i" from 1 to 2 do { _unit addItemToUniform "ACE_tourniquet"; };
+	};
+	
 	default {
 		for "_i" from 1 to 6 do { _unit addItemToBackpack "ACE_fieldDressing"; };
 		for "_i" from 1 to 8 do { _unit addItemToBackpack "ACE_packingBandage"; };
