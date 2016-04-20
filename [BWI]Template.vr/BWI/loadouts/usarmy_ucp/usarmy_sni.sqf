@@ -35,4 +35,4 @@ _unit linkItem "ItemWatch";
 [_unit, "SNI"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToBackpack "RH_20Rnd_762x51_M80A1";}; 
-for "_i" from 1 to 2 do {_unit addItemToVest "RH_20Rnd_762x51_M80A1";}; 
+for "_i" from 1 to 4 do {_unit addItemToVest "RH_20Rnd_762x51_M80A1";}; 
