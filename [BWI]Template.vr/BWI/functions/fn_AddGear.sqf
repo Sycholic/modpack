@@ -36,7 +36,8 @@
 *   RI	= Regular Infantry
 *	IN	= Insurgents
 *   IR  = Irregulars
-*	SF	= Special Forces / Private Military
+*	SF	= Special Forces
+*	PM  = Private Military
 *
 *	created 25.10.2015
 */
@@ -53,7 +54,7 @@ _BWI_lfnc_AddStandardGear = {
 	for "_i" from 1 to 2 do { _unit addItemToUniform "Chemlight_green";};
 	_unit addItemToUniform "ACE_EarPlugs";
 
-	if( _equipment == "RI" || _equipment == "SF" ) then {
+	if ( _equipment in ["RI", "SF", "PM"] ) then {
 		if ( _era >= 2020 ) then {
 			_unit addItemToBackpack "ACE_NVG_Gen4";
 		};
@@ -92,7 +93,7 @@ switch( _class ) do {
 	case "PL": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if ( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
 			if ( _era >= 2000 ) then {
 				_unit addWeapon "Rangefinder";
 				_unit linkItem "ItemcTab";
@@ -111,7 +112,7 @@ switch( _class ) do {
 	case "FTL":	{
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
 			_unit addWeapon "ACE_Vector";
 			
 			if ( _era >= 2000 ) then {
@@ -138,7 +139,7 @@ switch( _class ) do {
 	case "DRV":	{
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if ( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
 			if ( _era >= 2000 ) then {
 				_unit linkItem "ItemAndroid";
 			} else {
@@ -153,7 +154,7 @@ switch( _class ) do {
 	case "ENG":	{
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if ( (_equipment == "RI" || _equipment == "SF") ) then {
+		if ( _equipment in ["RI", "SF", "PM"] ) then {
 			if ( _era >= 2000 ) then {
 				_unit linkItem "ItemAndroid";
 			};
@@ -189,7 +190,7 @@ switch( _class ) do {
 	case "AHAT": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
 			_unit addWeapon "ACE_Vector";
 			
 			if( _era >= 2010 ) then {
@@ -205,7 +206,7 @@ switch( _class ) do {
 	case "DMR": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
 			_unit addWeapon "Leupold_Mk4";
 			
 			if( _era >= 2010 ) then {
@@ -221,7 +222,7 @@ switch( _class ) do {
 	case "EOD": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 2010 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2010 ) then {
 			_unit linkItem "ItemMicroDAGR";
 		};
 		
@@ -237,7 +238,7 @@ switch( _class ) do {
 	case "SNI": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
 			if ( _era >= 2000 ) then {
 				_unit linkItem "ItemAndroid";
 			} else {
@@ -255,7 +256,7 @@ switch( _class ) do {
 	case "SPO": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
 			if ( _era >= 2000 ) then {
 				_unit addWeapon "Rangefinder";
 				_unit linkItem "ItemAndroid";
@@ -272,7 +273,7 @@ switch( _class ) do {
 	case "JTAC": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 1990 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
 			if ( _era >= 2000 ) then {
 				_unit linkItem "ItemAndroid";
 			} else {
@@ -290,7 +291,7 @@ switch( _class ) do {
 	case "FSP": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 2000 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2000 ) then {
 			_unit linkItem "ItemMicroDAGR";
 		};
 		_unit addWeapon "Binocular";
@@ -300,7 +301,7 @@ switch( _class ) do {
 	case "HEL": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 2000 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2000 ) then {
 			_unit linkItem "ItemMicroDAGR";
 		};
 		_unit addWeapon "Binocular";
@@ -311,7 +312,7 @@ switch( _class ) do {
 	case "JET": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 2000 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2000 ) then {
 			_unit linkItem "ItemMicroDAGR";
 		};
 		_unit addWeapon "Binocular";
@@ -321,7 +322,7 @@ switch( _class ) do {
 	case "ARM": {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 2000 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2000 ) then {
 			_unit linkItem "ItemMicroDAGR";
 		};
 		_unit addWeapon "Binocular";
@@ -331,7 +332,7 @@ switch( _class ) do {
 	default {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
-		if( (_equipment == "RI" || _equipment == "SF") && _era >= 2010 ) then {
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2010 ) then {
 			_unit linkItem "ItemMicroDAGR";
 		};
 		
