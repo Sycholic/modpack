@@ -30,5 +30,4 @@ _unit linkItem "ItemWatch";
 [_unit, "HEL", "RI", 2015] call BWI_fnc_AddGear;
 [_unit, "HEL"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
-for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
+for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";};
