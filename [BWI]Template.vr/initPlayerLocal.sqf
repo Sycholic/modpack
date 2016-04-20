@@ -84,12 +84,12 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8] ) then {
 			};
 			
 			if( _platoonRole == "pls" ) then {
-				BWI_armory_roleSelected = [0,1];
+				BWI_armory_roleSelected = [0,0];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Seergeant";
 			};
 			
 			if( _platoonRole == "plc" ) then {
-				BWI_armory_roleSelected = [0,2];
+				BWI_armory_roleSelected = [0,1];
 				BWI_armory_baseSlot = BWI_armory_baseSlot + "Platoon Corpsman";
 			};
 		};
