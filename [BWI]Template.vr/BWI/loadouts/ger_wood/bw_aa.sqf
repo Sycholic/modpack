@@ -1,4 +1,4 @@
-
+// Anti-Air
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -18,20 +18,19 @@ _unit addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 
 _unit addBackpack "BWA3_Kitbag_Fleck";
-_unit addItemToBackpack "acc_flashlight";
-_unit addItemToBackpack "BWA3_Fliegerfaust_Mag";
 
 _unit addHeadgear "BWA3_MICH_Fleck";
 
-_unit addWeapon "hlc_rifle_G36V";
-_unit addPrimaryWeaponItem "acc_pointer_IR";
-_unit addPrimaryWeaponItem "RH_eotech553";
+_unit addWeapon "hlc_rifle_G36E1";
+_unit addPrimaryWeaponItem "HLC_Optic_G36Dualoptic15x2d";
 _unit addWeapon "BWA3_Fliegerfaust";
 
 _unit linkItem "tf_rf7800str";
+_unit linkItem "tf_microDAGR";
 
 [_unit, "AA"] call BWI_fnc_AddGear;
 [_unit, "AA"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36";}; 
-for "_i" from 1 to 3 do {_unit addItemToVest "BWA3_30Rnd_556x45_G36_Tracer";};
+_unit addItemToBackpack "BWA3_Fliegerfaust_Mag";
+for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30rnd_556x45_EPR_G36";}; 
+for "_i" from 1 to 3 do {_unit addItemToVest "hlc_30rnd_556x45_SOST_G36";};

@@ -1,4 +1,4 @@
-//LOADOUTS - BWI - ZEUS
+// Zeus
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -11,9 +11,9 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-_unit forceAddUniform "tacs_Uniform_TShirt_JP_BS_LP_BB";
-_unit addBackpack "tf_rt1523g_big_bwmod";
-_unit addHeadgear "UK3CB_BAF_H_Beret_Mer_PRR";
+_unit forceAddUniform "U_C_Poloshirt_burgundy";
+_unit addBackpack "tf_rt1523g_big_rhs";
+_unit addHeadgear "H_Cap_surfer";
 _unit addGoggles "G_Aviator";
 
 _unit addItemToUniform "ACE_MapTools";
