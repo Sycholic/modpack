@@ -1,4 +1,4 @@
-
+// Radio Transmitter Operator
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -14,19 +14,20 @@ _unit forceAddUniform "rhs_uniform_FROG01_m81";
 
 _unit addVest "V_I_G_resistanceLeader_F";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
+_unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "tf_rt1523g_green";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
-_unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "rhs_weap_m16a4_carryhandle";
+_unit addWeapon "RH_M16A1";
 
 _unit linkItem "tf_anprc152";
+_unit linkItem "ItemWatch";
 
-[_unit, "RTO", "RI", 1985] call BWI_fnc_AddGear;
+[_unit, "RTO", "RI", 1987] call BWI_fnc_AddGear;
 [_unit, "RTO"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";};
-for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";};

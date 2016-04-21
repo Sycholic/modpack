@@ -1,4 +1,4 @@
-
+// Automatic Rifleman (MMG)
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -11,23 +11,24 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_FROG01_m81";
+for "_i" from 1 to 3 do {_unit addItemToUniform "rhsusf_mag_7x45acp_MHP";};
 
 _unit addVest "V_I_G_resistanceLeader_F";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
 
-_unit addBackpack "BWA3_Carryall_Fleck";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
+_unit addBackpack "B_Carryall_oli";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "rhs_weap_m240B";
-_unit addWeapon "rhsusf_weap_m9";
+_unit addWeapon "rhs_weap_m240G";
+_unit addWeapon "rhsusf_weap_m1911a1";
 
 _unit linkItem "tf_rf7800str";
+_unit linkItem "tf_microDAGR";
 
-[_unit, "MMG", "RI", 1985] call BWI_fnc_AddGear;
+[_unit, "MMG", "RI", 1987] call BWI_fnc_AddGear;
 [_unit, "MMG"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_100Rnd_762x51";};

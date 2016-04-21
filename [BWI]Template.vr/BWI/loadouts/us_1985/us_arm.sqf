@@ -1,4 +1,4 @@
-
+// Vehicle Crew
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -13,24 +13,20 @@ removeHeadgear _unit;
 _unit forceAddUniform "rhs_uniform_FROG01_m81";
 
 _unit addVest "V_I_G_resistanceLeader_F";
-_unit addItemToVest "SmokeShellGreen";
-for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
-for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
+for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
+_unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "B_AssaultPack_rgr";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
-_unit addItemToBackpack "SmokeShellGreen";
 
-_unit addHeadgear "rhsusf_mich_bare_norotos_headset";
+_unit addHeadgear "rhsusf_mich_bare_headset";
 
-_unit addWeapon "rhs_weap_m16a4_carryhandle";
-_unit addWeapon "rhsusf_weap_m9";
+_unit addWeapon "hlc_smg_mp5a2";
 
-_unit linkItem "tf_rf7800str";
+_unit linkItem "tf_anprc152";
+_unit linkItem "ItemWatch";
 
-[_unit, "ARM", "RI", 1985] call BWI_fnc_AddGear;
+[_unit, "ARM", "RI", 1987] call BWI_fnc_AddGear;
 [_unit, "ARM"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";};
-for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
+for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_9x19_B_MP5";};
