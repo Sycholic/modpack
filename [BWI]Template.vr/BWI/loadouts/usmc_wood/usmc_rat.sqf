@@ -25,7 +25,7 @@ _unit addHeadgear "rhsusf_mich_helmet_marpatwd_norotos";
 _unit addWeapon "rhs_weap_m16a4_carryhandle_grip";
 _unit addPrimaryWeaponItem "RH_peq15b";
 _unit addPrimaryWeaponItem "RH_compm4s";
-_unit addWeapon "rhs_weap_M136";
+_unit addWeapon "tf47_at4_heat";
 
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
