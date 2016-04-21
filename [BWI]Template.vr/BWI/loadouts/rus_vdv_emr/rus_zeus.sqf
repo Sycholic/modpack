@@ -12,7 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "tacs_Uniform_Combat_RS_CPS_BP_BB";
-_unit addBackpack "tf_rt1523g_big_rhs";
+_unit addBackpack "tf_mr3000_rhs";
 _unit addHeadgear "rds_Woodlander_cap3";
 
 _unit addItemToUniform "ACE_MapTools";
@@ -24,6 +24,6 @@ _unit addItemToUniform "ACE_Flashlight_MX991";
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "tf_microdagr";
-_unit linkItem "tf_anprc152";
+_unit linkItem "tf_fadak";
 
 _unit setSpeaker "ACE_NoVoice";
