@@ -22,7 +22,7 @@ _unit addBackpack "B_FieldPack_oli";
 
 _unit addHeadgear "UK3CB_BAF_H_PilotHelmetHeli_A";
 
-_unit addWeapon "UK3CB_BAF_L91A1";
+_unit addWeapon "UK3CB_BAF_L22A2";
 
 _unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
@@ -30,4 +30,4 @@ _unit linkItem "ItemWatch";
 [_unit, "HEL", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "HEL"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "UK3CB_BAF_30Rnd_9mm";}; 
+for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
