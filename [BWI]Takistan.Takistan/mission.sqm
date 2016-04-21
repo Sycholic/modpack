@@ -1,4 +1,4 @@
-version=51;
+version=52;
 class EditorData
 {
 	moveGridStep=1;
@@ -19,7 +19,7 @@ class EditorData
 		pos[]={8213.7383,478.21078,-886.84985};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -42,6 +42,7 @@ randomSeed=9893940;
 class ScenarioData
 {
 	author="Black Watch International";
+	respawnDialog=0;
 	disabledAI=1;
 	respawn=3;
 	respawnDelay=10;
@@ -56,6 +57,25 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -91,10 +111,10 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
+		class Attribute2
 		{
-			property="RespawnButton";
-			expression="true";
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
 			class Value
 			{
 				class data
@@ -110,7 +130,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
+		nAttributes=3;
 	};
 	class Category1
 	{
@@ -177,6 +197,7 @@ class Mission
 			type="Empty";
 			angle=90;
 			id=209;
+			atlOffset=3.0517578e-005;
 		};
 		class Item2
 		{
@@ -196,6 +217,7 @@ class Mission
 				angles[]={0,0,0.098875321};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -214,6 +236,7 @@ class Mission
 				angles[]={0,2.5264256,0.11311824};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -232,6 +255,7 @@ class Mission
 				angles[]={0,0,0.10204189};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -251,6 +275,7 @@ class Mission
 				angles[]={0,0,0.11311824};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -267,6 +292,7 @@ class Mission
 				angles[]={0,0,0.11311824};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -284,6 +310,7 @@ class Mission
 			};
 			id=216;
 			type="TTT_ModuleNimitzBoat";
+			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -337,6 +364,7 @@ class Mission
 			};
 			id=217;
 			type="ACE_moduleAssignEngineerRoles";
+			atlOffset=-3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -720,6 +748,7 @@ class Mission
 			};
 			id=221;
 			type="ModuleCurator_F";
+			atlOffset=0.33151245;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -830,6 +859,7 @@ class Mission
 			};
 			id=222;
 			type="ModuleCurator_F";
+			atlOffset=0.33151245;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -940,6 +970,7 @@ class Mission
 			};
 			id=223;
 			type="ModuleCurator_F";
+			atlOffset=0.33151245;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1160,6 +1191,7 @@ class Mission
 			};
 			id=225;
 			type="ModuleCurator_F";
+			atlOffset=0.33151245;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1716,7 +1748,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -1780,6 +1812,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -1843,12 +1876,13 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="MAJOR";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_pl.sqf"";";
-						name="b_pl1_ple_plc_1";
+						name="b_pl1_ple_plc";
 						description="Platoon Corpsman";
 						isPlayable=1;
 					};
@@ -1919,7 +1953,7 @@ class Mission
 						angles[]={0,0,0.081416205};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -1983,6 +2017,7 @@ class Mission
 						angles[]={0,0,0.081416205};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2046,6 +2081,7 @@ class Mission
 						angles[]={0,0,0.081416205};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2108,6 +2144,7 @@ class Mission
 						angles[]={0,0,0.081416205};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2170,6 +2207,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2232,6 +2270,7 @@ class Mission
 						angles[]={0,0,0.089365855};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2253,6 +2292,7 @@ class Mission
 						angles[]={0,0,0.089365855};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2315,6 +2355,7 @@ class Mission
 						angles[]={0,0,0.089365855};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2377,6 +2418,7 @@ class Mission
 						angles[]={0,0,0.081416205};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2387,6 +2429,7 @@ class Mission
 					};
 					id=243;
 					type="rhsusf_army_ocp_rifleman_101st";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2452,7 +2495,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2474,6 +2517,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2495,6 +2539,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2557,6 +2602,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2619,6 +2665,7 @@ class Mission
 						angles[]={0,0,0.089365855};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2629,6 +2676,7 @@ class Mission
 					};
 					id=249;
 					type="rhsusf_army_ocp_rifleman_101st";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2681,6 +2729,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2702,6 +2751,7 @@ class Mission
 						angles[]={0,0,0.10204189};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2764,6 +2814,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2826,6 +2877,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2901,13 +2953,13 @@ class Mission
 						angles[]={0,0,0.11311824};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_sql.sqf"";";
-						name="b_pl1_sqc_sqe_sql_1";
+						name="b_pl1_sqc_sqe_sql";
 						description="Squad Charlie Leader";
 						isPlayable=1;
 					};
@@ -2923,17 +2975,19 @@ class Mission
 						angles[]={0,0,0.10204189};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
-						name="b_pl1_sqc_ft1_ftl_1";
+						name="b_pl1_sqc_ft1_ftl";
 						description="Fire Team Leader";
 						isPlayable=1;
 					};
 					id=256;
 					type="rhsusf_usmc_marpat_wd_officer";
+					atlOffset=-3.0517578e-005;
 				};
 				class Item2
 				{
@@ -2944,16 +2998,18 @@ class Mission
 						angles[]={0,0,0.10204189};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rat.sqf"";";
-						name="b_pl1_sqc_ft1_atr_1";
+						name="b_pl1_sqc_ft1_atr";
 						description="Anti-Tank Rifleman";
 						isPlayable=1;
 					};
 					id=257;
 					type="rhsusf_army_ucp_rifleman_101st";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3006,11 +3062,12 @@ class Mission
 						angles[]={0,0,0.11311824};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_lmg.sqf"";";
-						name="b_pl1_sqc_ft1_ari_1";
+						name="b_pl1_sqc_ft1_ari";
 						description="Automatic Rifleman";
 						isPlayable=1;
 					};
@@ -3068,16 +3125,18 @@ class Mission
 						angles[]={0,0,0.10204189};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_gre.sqf"";";
-						name="b_pl1_sqc_ft1_gre_1";
+						name="b_pl1_sqc_ft1_gre";
 						description="Grenadier";
 						isPlayable=1;
 					};
 					id=259;
 					type="rhsusf_army_ocp_rifleman_101st";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3130,12 +3189,13 @@ class Mission
 						angles[]={0,0,0.11311824};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
-						name="b_pl1_sqc_ft2_ftl_1";
+						name="b_pl1_sqc_ft2_ftl";
 						description="Fire Team Leader";
 						isPlayable=1;
 					};
@@ -3151,11 +3211,12 @@ class Mission
 						angles[]={0,0,0.11311824};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
-						name="b_pl1_sqc_ft2_atr_1";
+						name="b_pl1_sqc_ft2_atr";
 						description="Anti-Tank Rifleman";
 						isPlayable=1;
 					};
@@ -3213,11 +3274,12 @@ class Mission
 						angles[]={0,0,0.13045077};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_lmg.sqf"";";
-						name="b_pl1_sqc_ft2_ari_1";
+						name="b_pl1_sqc_ft2_ari";
 						description="Automatic Rifleman";
 						isPlayable=1;
 					};
@@ -3275,11 +3337,12 @@ class Mission
 						angles[]={0,0,0.11311824};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_gre.sqf""; ";
-						name="b_pl1_sqc_ft2_gre_1";
+						name="b_pl1_sqc_ft2_gre";
 						description="Grenadier";
 						isPlayable=1;
 					};
@@ -3349,16 +3412,17 @@ class Mission
 						position[]={8193.1836,402.31512,-846.16614};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
-						name="b_pl1_med_cfr1_1";
+						name="b_pl1_med_cfr1";
 						description="Combat First Responder";
 						isPlayable=1;
 					};
 					id=265;
 					type="rhsusf_army_ucp_medic";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3410,11 +3474,11 @@ class Mission
 						position[]={8196.1836,402.5795,-846.16614};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
-						name="b_pl1_med_cfr2_1";
+						name="b_pl1_med_cfr2";
 						description="Combat First Responder";
 						isPlayable=1;
 					};
@@ -3471,16 +3535,17 @@ class Mission
 						position[]={8199.1836,402.84833,-846.16614};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
-						name="b_pl1_med_cfr3_1";
+						name="b_pl1_med_cfr3";
 						description="Combat First Responder";
 						isPlayable=1;
 					};
 					id=267;
 					type="rhsusf_army_ucp_medic";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3529,6 +3594,7 @@ class Mission
 			{
 			};
 			id=264;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item27
 		{
@@ -3545,7 +3611,7 @@ class Mission
 						position[]={8207.1836,403.63699,-846.16614};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_eng.sqf""; ";
@@ -3606,7 +3672,7 @@ class Mission
 						position[]={8210.1836,403.94421,-846.16614};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_eng.sqf""; ";
@@ -3616,6 +3682,7 @@ class Mission
 					};
 					id=270;
 					type="rhsusf_army_ucp_engineer";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3667,7 +3734,7 @@ class Mission
 						position[]={8213.1836,404.25909,-846.16614};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_eng.sqf""; ";
@@ -3741,7 +3808,7 @@ class Mission
 						position[]={8193.1836,402.31512,-849.16614};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
@@ -3751,6 +3818,7 @@ class Mission
 					};
 					id=273;
 					type="B_Soldier_F";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3802,7 +3870,7 @@ class Mission
 						position[]={8196.1836,402.5795,-849.16614};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
@@ -3863,7 +3931,7 @@ class Mission
 						position[]={8199.1836,402.8483,-849.16614};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
@@ -3921,6 +3989,7 @@ class Mission
 			{
 			};
 			id=272;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item29
 		{
@@ -3937,7 +4006,7 @@ class Mission
 						position[]={8207.1836,403.63699,-849.16614};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_ftl.sqf"";";
@@ -3998,7 +4067,7 @@ class Mission
 						position[]={8210.1836,403.94424,-849.16614};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
@@ -4059,7 +4128,7 @@ class Mission
 						position[]={8213.1836,404.25909,-849.16614};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_rif.sqf"";";
@@ -4134,13 +4203,13 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
-						name="b_pl1_arm1_com_1";
+						name="b_pl1_arm1_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
@@ -4198,6 +4267,7 @@ class Mission
 						angles[]={0,0,0.081416205};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -4208,6 +4278,7 @@ class Mission
 					};
 					id=282;
 					type="rhsusf_army_ucp_combatcrewman";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4260,6 +4331,7 @@ class Mission
 						angles[]={0,0,0.081416205};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -4270,6 +4342,7 @@ class Mission
 					};
 					id=283;
 					type="rhsusf_army_ucp_combatcrewman";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4335,18 +4408,19 @@ class Mission
 						angles[]={0,0,0.089365855};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
-						name="b_pl1_arm2_com_1";
+						name="b_pl1_arm2_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
 					id=285;
 					type="rhsusf_army_ucp_combatcrewman";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4399,6 +4473,7 @@ class Mission
 						angles[]={0,0,0.089365855};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -4409,6 +4484,7 @@ class Mission
 					};
 					id=286;
 					type="rhsusf_army_ucp_combatcrewman";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4461,6 +4537,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -4519,6 +4596,7 @@ class Mission
 			{
 			};
 			id=284;
+			atlOffset=3.0517578e-005;
 		};
 		class Item32
 		{
@@ -4536,13 +4614,13 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
-						name="b_pl1_arm3_com_1";
+						name="b_pl1_arm3_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
@@ -4600,6 +4678,7 @@ class Mission
 						angles[]={0,0,0.10204189};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -4662,6 +4741,7 @@ class Mission
 						angles[]={0,0,0.10204189};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -4672,6 +4752,7 @@ class Mission
 					};
 					id=291;
 					type="rhsusf_army_ucp_combatcrewman";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4737,13 +4818,13 @@ class Mission
 						angles[]={0,0,0.11311824};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_arm.sqf"";";
-						name="b_pl1_arm4_com_1";
+						name="b_pl1_arm4_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
@@ -4801,6 +4882,7 @@ class Mission
 						angles[]={0,0,0.11311824};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -4863,6 +4945,7 @@ class Mission
 						angles[]={0,0,0.13045077};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -4938,7 +5021,7 @@ class Mission
 						angles[]={0,0,0.081416205};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -4949,6 +5032,7 @@ class Mission
 					};
 					id=297;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5001,11 +5085,12 @@ class Mission
 						angles[]={0,0,0.089365855};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="b_pl1_air1_cop_1";
+						name="b_pl1_air1_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
@@ -5059,6 +5144,7 @@ class Mission
 			{
 			};
 			id=296;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item35
 		{
@@ -5076,7 +5162,7 @@ class Mission
 						angles[]={0,0,0.089365855};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5087,6 +5173,7 @@ class Mission
 					};
 					id=300;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5139,11 +5226,12 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="b_pl1_air2_cop_1";
+						name="b_pl1_air2_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
@@ -5197,6 +5285,7 @@ class Mission
 			{
 			};
 			id=299;
+			atlOffset=3.0517578e-005;
 		};
 		class Item36
 		{
@@ -5214,7 +5303,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5277,11 +5366,12 @@ class Mission
 						angles[]={0,0,0.10204189};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="b_pl1_air3_cop_1";
+						name="b_pl1_air3_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
@@ -5352,7 +5442,7 @@ class Mission
 						angles[]={0,0,0.10204189};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5415,11 +5505,12 @@ class Mission
 						angles[]={0,0,0.11311824};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\usmc_des\usmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="b_pl1_air4_cop_1";
+						name="b_pl1_air4_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
@@ -5490,7 +5581,7 @@ class Mission
 						angles[]={0,0,0.089365855};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5501,6 +5592,7 @@ class Mission
 					};
 					id=309;
 					type="rhsusf_usmc_marpat_wd_fso";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5553,6 +5645,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5615,6 +5708,7 @@ class Mission
 						angles[]={0,0,0.098875321};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5677,6 +5771,7 @@ class Mission
 						angles[]={0,0,0.10204189};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5687,12 +5782,14 @@ class Mission
 					};
 					id=312;
 					type="rhsusf_usmc_marpat_wd_fso";
+					atlOffset=-3.0517578e-005;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=308;
+			atlOffset=3.0517578e-005;
 		};
 		class Item39
 		{
@@ -5710,7 +5807,7 @@ class Mission
 						angles[]={0,1.5682735,0.089365855};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5774,6 +5871,7 @@ class Mission
 						angles[]={0,1.5707964,0.081416205};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5785,6 +5883,7 @@ class Mission
 					};
 					id=315;
 					type="rhsusf_usmc_marpat_wd_fso";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5837,17 +5936,19 @@ class Mission
 						angles[]={0,1.5682657,0.081416205};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="MAJOR";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_pl.sqf"";";
-						name="i_pl1_ple_plc_1";
+						name="i_pl1_ple_plc";
 						description="Platoon Corpsman";
 						isPlayable=1;
 					};
 					id=316;
 					type="rhsusf_usmc_marpat_wd_officer";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5913,7 +6014,7 @@ class Mission
 						angles[]={0,1.5682735,0.081416205};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5977,6 +6078,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6040,6 +6142,7 @@ class Mission
 						angles[]={0,1.5682735,0.0814206};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6102,6 +6205,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6164,6 +6268,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6226,6 +6331,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6247,6 +6353,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6309,6 +6416,7 @@ class Mission
 						angles[]={0,1.5682735,0.0814206};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6371,6 +6479,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6446,7 +6555,7 @@ class Mission
 						angles[]={0,1.5682735,0.081416205};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6468,6 +6577,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6489,6 +6599,7 @@ class Mission
 						angles[]={0,1.5682735,0.0814206};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6551,6 +6662,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6613,6 +6725,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6675,6 +6788,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6696,6 +6810,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6758,6 +6873,7 @@ class Mission
 						angles[]={0,1.5682735,0.0814206};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6820,6 +6936,7 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6895,13 +7012,13 @@ class Mission
 						angles[]={0,1.5682735,0.081416205};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_sql.sqf"";";
-						name="i_pl1_sqc_sqe_sql_1";
+						name="i_pl1_sqc_sqe_sql";
 						description="Squad Charlie Leader";
 						isPlayable=1;
 					};
@@ -6917,12 +7034,13 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
-						name="i_pl1_sqc_ft1_ftl_1";
+						name="i_pl1_sqc_ft1_ftl";
 						description="Fire Team Leader";
 						isPlayable=1;
 					};
@@ -6938,11 +7056,12 @@ class Mission
 						angles[]={0,1.5682735,0.0814206};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rat.sqf"";";
-						name="i_pl1_sqc_ft1_atr_1";
+						name="i_pl1_sqc_ft1_atr";
 						description="Anti-Tank Rifleman";
 						isPlayable=1;
 					};
@@ -7000,11 +7119,12 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_lmg.sqf"";";
-						name="i_pl1_sqc_ft1_ari_1";
+						name="i_pl1_sqc_ft1_ari";
 						description="Automatic Rifleman";
 						isPlayable=1;
 					};
@@ -7062,11 +7182,12 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_gre.sqf"";";
-						name="i_pl1_sqc_ft1_gre_1";
+						name="i_pl1_sqc_ft1_gre";
 						description="Grenadier";
 						isPlayable=1;
 					};
@@ -7124,12 +7245,13 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
-						name="i_pl1_sqc_ft2_ftl_1";
+						name="i_pl1_sqc_ft2_ftl";
 						description="Fire Team Leader";
 						isPlayable=1;
 					};
@@ -7145,11 +7267,12 @@ class Mission
 						angles[]={0,1.5682735,0.0814206};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
-						name="i_pl1_sqc_ft2_atr_1";
+						name="i_pl1_sqc_ft2_atr";
 						description="Anti-Tank Rifleman";
 						isPlayable=1;
 					};
@@ -7207,11 +7330,12 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_lmg.sqf"";";
-						name="i_pl1_sqc_ft2_ari_1";
+						name="i_pl1_sqc_ft2_ari";
 						description="Automatic Rifleman";
 						isPlayable=1;
 					};
@@ -7269,11 +7393,12 @@ class Mission
 						angles[]={0,1.5682735,0.098875321};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_gre.sqf""; ";
-						name="i_pl1_sqc_ft2_gre_1";
+						name="i_pl1_sqc_ft2_gre";
 						description="Grenadier";
 						isPlayable=1;
 					};
@@ -7344,11 +7469,11 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
-						name="i_pl1_med_cfr1_1";
+						name="i_pl1_med_cfr1";
 						description="Combat First Responder";
 						isPlayable=1;
 					};
@@ -7406,11 +7531,11 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
-						name="i_pl1_med_cfr2_1";
+						name="i_pl1_med_cfr2";
 						description="Combat First Responder";
 						isPlayable=1;
 					};
@@ -7468,11 +7593,11 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
-						name="i_pl1_med_cfr3_1";
+						name="i_pl1_med_cfr3";
 						description="Combat First Responder";
 						isPlayable=1;
 					};
@@ -7543,7 +7668,7 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_eng.sqf""; ";
@@ -7605,7 +7730,7 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_eng.sqf""; ";
@@ -7667,7 +7792,7 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_eng.sqf""; ";
@@ -7742,7 +7867,7 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
@@ -7804,7 +7929,7 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
@@ -7866,7 +7991,7 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
@@ -7941,7 +8066,7 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_ftl.sqf"";";
@@ -8003,7 +8128,7 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
@@ -8065,7 +8190,7 @@ class Mission
 						angles[]={0,1.5682735,0};
 					};
 					side="Independent";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_rif.sqf"";";
@@ -8140,13 +8265,13 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_arm.sqf"";";
-						name="i_pl1_arm1_com_1";
+						name="i_pl1_arm1_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
@@ -8204,6 +8329,7 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -8266,6 +8392,7 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -8341,13 +8468,13 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_arm.sqf"";";
-						name="i_pl1_arm2_com_1";
+						name="i_pl1_arm2_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
@@ -8405,6 +8532,7 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -8467,6 +8595,7 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -8542,13 +8671,13 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_arm.sqf"";";
-						name="i_pl1_arm3_com_1";
+						name="i_pl1_arm3_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
@@ -8606,6 +8735,7 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -8668,6 +8798,7 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -8743,13 +8874,13 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_arm.sqf"";";
-						name="i_pl1_arm4_com_1";
+						name="i_pl1_arm4_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
@@ -8807,6 +8938,7 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -8869,6 +9001,7 @@ class Mission
 						angles[]={0,1.5682735,0.06232097};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -8944,7 +9077,7 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -8955,6 +9088,7 @@ class Mission
 					};
 					id=380;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9007,16 +9141,18 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="i_pl1_air1_cop_1";
+						name="i_pl1_air1_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
 					id=381;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9065,6 +9201,7 @@ class Mission
 			{
 			};
 			id=379;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item52
 		{
@@ -9082,7 +9219,7 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9093,6 +9230,7 @@ class Mission
 					};
 					id=383;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9145,16 +9283,18 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="i_pl1_air2_cop_1";
+						name="i_pl1_air2_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
 					id=384;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9203,6 +9343,7 @@ class Mission
 			{
 			};
 			id=382;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item53
 		{
@@ -9220,7 +9361,7 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9231,6 +9372,7 @@ class Mission
 					};
 					id=386;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9283,16 +9425,18 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="i_pl1_air3_cop_1";
+						name="i_pl1_air3_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
 					id=387;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9341,6 +9485,7 @@ class Mission
 			{
 			};
 			id=385;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item54
 		{
@@ -9358,7 +9503,7 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9369,6 +9514,7 @@ class Mission
 					};
 					id=389;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9421,16 +9567,18 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\pmc\pmc_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="i_pl1_air4_cop_1";
+						name="i_pl1_air4_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
 					id=390;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9479,6 +9627,7 @@ class Mission
 			{
 			};
 			id=388;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item55
 		{
@@ -9496,7 +9645,7 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9507,6 +9656,7 @@ class Mission
 					};
 					id=392;
 					type="rhsusf_usmc_marpat_wd_fso";
+					atlOffset=0.0022583008;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9559,6 +9709,7 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9569,6 +9720,7 @@ class Mission
 					};
 					id=393;
 					type="rhsusf_usmc_marpat_wd_fso";
+					atlOffset=0.0015563965;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9621,6 +9773,7 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9631,6 +9784,7 @@ class Mission
 					};
 					id=394;
 					type="rhsusf_usmc_marpat_wd_fso";
+					atlOffset=0.00076293945;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9683,6 +9837,7 @@ class Mission
 						angles[]={0,1.5682735,0.075058997};
 					};
 					side="Independent";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9741,6 +9896,7 @@ class Mission
 			{
 			};
 			id=391;
+			atlOffset=0.0022583008;
 		};
 		class Item56
 		{
@@ -9758,7 +9914,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9822,6 +9978,7 @@ class Mission
 						angles[]={0,3.1469111,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9885,6 +10042,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9961,7 +10119,7 @@ class Mission
 						angles[]={0,3.1443882,0.11311824};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10025,6 +10183,7 @@ class Mission
 						angles[]={0,3.1443882,0.11311824};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10088,6 +10247,7 @@ class Mission
 						angles[]={0,3.1443882,0.11311824};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10150,6 +10310,7 @@ class Mission
 						angles[]={0,3.1443882,0.11311824};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10212,6 +10373,7 @@ class Mission
 						angles[]={0,3.1443882,0.13045077};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10222,6 +10384,7 @@ class Mission
 					};
 					id=405;
 					type="rhsusf_army_ocp_rifleman_101st";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10274,6 +10437,7 @@ class Mission
 						angles[]={0,3.1443882,0.10204189};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10285,6 +10449,7 @@ class Mission
 					};
 					id=406;
 					type="rhsusf_usmc_marpat_wd_officer";
+					atlOffset=-3.0517578e-005;
 				};
 				class Item6
 				{
@@ -10295,6 +10460,7 @@ class Mission
 						angles[]={0,3.1443882,0.10204189};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10305,6 +10471,7 @@ class Mission
 					};
 					id=407;
 					type="rhsusf_army_ucp_rifleman_101st";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10357,6 +10524,7 @@ class Mission
 						angles[]={0,3.1443882,0.10204189};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10367,6 +10535,7 @@ class Mission
 					};
 					id=408;
 					type="rhsusf_army_ucp_rifleman_101st";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10419,6 +10588,7 @@ class Mission
 						angles[]={0,3.1443882,0.11311824};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10494,7 +10664,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10516,6 +10686,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10537,6 +10708,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10599,6 +10771,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10661,6 +10834,7 @@ class Mission
 						angles[]={0,3.1443882,0.10204189};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10671,6 +10845,7 @@ class Mission
 					};
 					id=415;
 					type="rhsusf_army_ocp_rifleman_101st";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10723,6 +10898,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10744,6 +10920,7 @@ class Mission
 						angles[]={0,3.1443882,0.089365855};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10754,6 +10931,7 @@ class Mission
 					};
 					id=417;
 					type="rhsusf_army_ucp_rifleman_101st";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10806,6 +10984,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10868,6 +11047,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10943,13 +11123,13 @@ class Mission
 						angles[]={0,3.1443882,0.081416205};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_sql.sqf"";";
-						name="o_pl1_sqc_sqe_sql_1";
+						name="o_pl1_sqc_sqe_sql";
 						description="Squad Charlie Leader";
 						isPlayable=1;
 					};
@@ -10965,12 +11145,13 @@ class Mission
 						angles[]={0,3.1443882,0.089365855};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
-						name="o_pl1_sqc_ft1_ftl_1";
+						name="o_pl1_sqc_ft1_ftl";
 						description="Fire Team Leader";
 						isPlayable=1;
 					};
@@ -10986,11 +11167,12 @@ class Mission
 						angles[]={0,3.1443882,0.089365855};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rat.sqf"";";
-						name="o_pl1_sqc_ft1_atr_1";
+						name="o_pl1_sqc_ft1_atr";
 						description="Anti-Tank Rifleman";
 						isPlayable=1;
 					};
@@ -11048,16 +11230,18 @@ class Mission
 						angles[]={0,3.1443882,0.081416205};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_lmg.sqf"";";
-						name="o_pl1_sqc_ft1_ari_1";
+						name="o_pl1_sqc_ft1_ari";
 						description="Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=424;
 					type="rhsusf_army_ucp_rifleman_101st";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11110,16 +11294,18 @@ class Mission
 						angles[]={0,3.1443882,0.089365855};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_gre.sqf"";";
-						name="o_pl1_sqc_ft1_gre_1";
+						name="o_pl1_sqc_ft1_gre";
 						description="Grenadier";
 						isPlayable=1;
 					};
 					id=425;
 					type="rhsusf_army_ocp_rifleman_101st";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11172,12 +11358,13 @@ class Mission
 						angles[]={0,3.1443882,0.081416205};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
-						name="o_pl1_sqc_ft2_ftl_1";
+						name="o_pl1_sqc_ft2_ftl";
 						description="Fire Team Leader";
 						isPlayable=1;
 					};
@@ -11193,11 +11380,12 @@ class Mission
 						angles[]={0,3.1443882,0.081416205};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
-						name="o_pl1_sqc_ft2_atr_1";
+						name="o_pl1_sqc_ft2_atr";
 						description="Anti-Tank Rifleman";
 						isPlayable=1;
 					};
@@ -11255,11 +11443,12 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_lmg.sqf"";";
-						name="o_pl1_sqc_ft2_ari_1";
+						name="o_pl1_sqc_ft2_ari";
 						description="Automatic Rifleman";
 						isPlayable=1;
 					};
@@ -11317,16 +11506,18 @@ class Mission
 						angles[]={0,3.1443882,0.081416205};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_gre.sqf""; ";
-						name="o_pl1_sqc_ft2_gre_1";
+						name="o_pl1_sqc_ft2_gre";
 						description="Grenadier";
 						isPlayable=1;
 					};
 					id=429;
 					type="rhsusf_army_ocp_rifleman_101st";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11392,11 +11583,11 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
-						name="o_pl1_med_cfr1_1";
+						name="o_pl1_med_cfr1";
 						description="Combat First Responder";
 						isPlayable=1;
 					};
@@ -11454,16 +11645,17 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
-						name="o_pl1_med_cfr2_1";
+						name="o_pl1_med_cfr2";
 						description="Combat First Responder";
 						isPlayable=1;
 					};
 					id=432;
 					type="rhsusf_army_ucp_medic";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11516,11 +11708,11 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_cfr.sqf""; this setVariable [""Ace_medical_medicClass"", 1];";
-						name="o_pl1_med_cfr3_1";
+						name="o_pl1_med_cfr3";
 						description="Combat First Responder";
 						isPlayable=1;
 					};
@@ -11591,7 +11783,7 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_eng.sqf""; ";
@@ -11601,6 +11793,7 @@ class Mission
 					};
 					id=435;
 					type="rhsusf_army_ucp_engineer";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11653,7 +11846,7 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_eng.sqf""; ";
@@ -11663,6 +11856,7 @@ class Mission
 					};
 					id=436;
 					type="rhsusf_army_ucp_engineer";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11715,7 +11909,7 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_eng.sqf""; ";
@@ -11725,6 +11919,7 @@ class Mission
 					};
 					id=437;
 					type="rhsusf_army_ucp_engineer";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11773,6 +11968,7 @@ class Mission
 			{
 			};
 			id=434;
+			atlOffset=3.0517578e-005;
 		};
 		class Item62
 		{
@@ -11790,7 +11986,7 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
@@ -11852,7 +12048,7 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
@@ -11914,7 +12110,7 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
@@ -11989,7 +12185,7 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_ftl.sqf"";";
@@ -11999,6 +12195,7 @@ class Mission
 					};
 					id=443;
 					type="B_Soldier_F";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12051,7 +12248,7 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
@@ -12113,7 +12310,7 @@ class Mission
 						angles[]={0,3.1443882,0};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_rif.sqf"";";
@@ -12123,6 +12320,7 @@ class Mission
 					};
 					id=445;
 					type="B_Soldier_F";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12171,6 +12369,7 @@ class Mission
 			{
 			};
 			id=442;
+			atlOffset=3.0517578e-005;
 		};
 		class Item64
 		{
@@ -12188,13 +12387,13 @@ class Mission
 						angles[]={0,3.1443882,0.13045077};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
-						name="o_pl1_arm1_com_1";
+						name="o_pl1_arm1_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
@@ -12252,6 +12451,7 @@ class Mission
 						angles[]={0,3.1443882,0.11311824};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -12314,6 +12514,7 @@ class Mission
 						angles[]={0,3.1443882,0.11311824};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -12389,18 +12590,19 @@ class Mission
 						angles[]={0,3.1443882,0.10204189};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
-						name="o_pl1_arm2_com_1";
+						name="o_pl1_arm2_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
 					id=451;
 					type="rhsusf_army_ucp_combatcrewman";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12453,6 +12655,7 @@ class Mission
 						angles[]={0,3.1443882,0.10204189};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -12515,6 +12718,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -12573,6 +12777,7 @@ class Mission
 			{
 			};
 			id=450;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item66
 		{
@@ -12590,13 +12795,13 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
-						name="o_pl1_arm3_com_1";
+						name="o_pl1_arm3_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
@@ -12654,6 +12859,7 @@ class Mission
 						angles[]={0,3.1443882,0.089365855};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -12664,6 +12870,7 @@ class Mission
 					};
 					id=456;
 					type="rhsusf_army_ucp_combatcrewman";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12716,6 +12923,7 @@ class Mission
 						angles[]={0,3.1443882,0.089365855};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -12726,6 +12934,7 @@ class Mission
 					};
 					id=457;
 					type="rhsusf_army_ucp_combatcrewman";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12791,18 +13000,19 @@ class Mission
 						angles[]={0,3.1443882,0.081416205};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_arm.sqf"";";
-						name="o_pl1_arm4_com_1";
+						name="o_pl1_arm4_com";
 						description="Armor Commander";
 						isPlayable=1;
 					};
 					id=459;
 					type="rhsusf_army_ucp_combatcrewman";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12855,6 +13065,7 @@ class Mission
 						angles[]={0,3.1443882,0.081416205};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -12865,6 +13076,7 @@ class Mission
 					};
 					id=460;
 					type="rhsusf_army_ucp_combatcrewman";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12917,6 +13129,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -12975,6 +13188,7 @@ class Mission
 			{
 			};
 			id=458;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item68
 		{
@@ -12992,7 +13206,7 @@ class Mission
 						angles[]={0,3.1443882,0.11311824};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -13055,11 +13269,12 @@ class Mission
 						angles[]={0,3.1443882,0.10204189};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="o_pl1_air1_cop_1";
+						name="o_pl1_air1_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
@@ -13130,7 +13345,7 @@ class Mission
 						angles[]={0,3.1443882,0.10204189};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -13193,11 +13408,12 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="o_pl1_air2_cop_1";
+						name="o_pl1_air2_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
@@ -13268,7 +13484,7 @@ class Mission
 						angles[]={0,3.1443882,0.098875321};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -13331,16 +13547,18 @@ class Mission
 						angles[]={0,3.1443882,0.089365855};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="o_pl1_air3_cop_1";
+						name="o_pl1_air3_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
 					id=470;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13406,7 +13624,7 @@ class Mission
 						angles[]={0,3.1443882,0.089365855};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -13469,16 +13687,18 @@ class Mission
 						angles[]={0,3.1443882,0.081416205};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[this] call compile preprocessFileLineNumbers ""BWI\loadouts\rus_vdv_mflora\rus_jet.sqf"";this setVariable [""ACE_GForceCoef"", 0.75];";
-						name="o_pl1_air4_cop_1";
+						name="o_pl1_air4_cop";
 						description="Copilot";
 						isPlayable=1;
 					};
 					id=473;
 					type="rhsusf_airforce_jetpilot";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13544,7 +13764,7 @@ class Mission
 						angles[]={0,3.1443853,0.10204189};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -13555,6 +13775,7 @@ class Mission
 					};
 					id=475;
 					type="rhsusf_usmc_marpat_wd_fso";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13607,6 +13828,7 @@ class Mission
 						angles[]={0,3.1443853,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -13669,6 +13891,7 @@ class Mission
 						angles[]={0,3.1443853,0.098875321};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -13731,6 +13954,7 @@ class Mission
 						angles[]={0,3.1443853,0.089365855};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -13741,6 +13965,7 @@ class Mission
 					};
 					id=478;
 					type="rhsusf_usmc_marpat_wd_fso";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13789,6 +14014,7 @@ class Mission
 			{
 			};
 			id=474;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item73
 		{
