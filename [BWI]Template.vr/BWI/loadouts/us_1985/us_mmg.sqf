@@ -22,7 +22,7 @@ _unit addBackpack "B_Carryall_oli";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "rhs_weap_m240G";
+_unit addWeapon "hlc_lmg_m60";
 _unit addWeapon "rhsusf_weap_m1911a1";
 
 _unit linkItem "tf_rf7800str";
@@ -31,5 +31,6 @@ _unit linkItem "tf_microDAGR";
 [_unit, "MMG", "RI", 1987] call BWI_fnc_AddGear;
 [_unit, "MMG"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_100Rnd_762x51";};
-_unit addItemToBackpack "rhsusf_100Rnd_762x51_m62_tracer";
+for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_100Rnd_762x51_B_M60E4";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_100Rnd_762x51_M_M60E4";};
+_unit addItemToBackpack "hlc_100Rnd_762x51_T_M60E4";

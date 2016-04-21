@@ -31,5 +31,6 @@ _unit linkItem "tf_microDAGR";
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 3 do {_unit addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_100Rnd_762x51";};
-_unit addItemToBackpack "rhsusf_100Rnd_762x51_m62_tracer";
+for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_100Rnd_762x51_B_M60E4";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_100Rnd_762x51_M_M60E4";};
+_unit addItemToBackpack "hlc_100Rnd_762x51_T_M60E4";
