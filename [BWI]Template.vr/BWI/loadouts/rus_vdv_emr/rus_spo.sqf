@@ -13,7 +13,7 @@ removeHeadgear _unit;
 _unit forceAddUniform "rhs_uniform_vdv_emr";
 _unit addItemToUniform "RH_SFM952V";
 
-_unit addVest "rhs_6b23_digi_6sh92_headset";
+_unit addVest "rhs_6b23_digi_6sh92";
 _unit addItemToVest "RH_peq15b";
 
 _unit addBackpack "B_FieldPack_oli";
