@@ -77,7 +77,7 @@ if( lbCurSel _xlistSide == 1 ) then {
 						[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 						_factionPath = ""; _error = true;
 					};
-			case 1: { _factionPath = "taliban\taliban_"; };
+			case 1: { _factionPath = "afghan_militia\afghan_"; };
 			default { _factionPath = ""; _error = true; };
 		};
 	};
@@ -103,7 +103,7 @@ if( lbCurSel _xlistSide == 2 ) then {
 	if( count _factionSelected == 1 ) then {
 		switch ( _factionSelected select 0 ) do {
 			case 0: { _factionPath = "pmc\pmc_"; };
-			case 1: { _factionPath = "fsa\fsa_"; };
+			case 1: { _factionPath = "syrian_rebels\syrian_"; };
 			default { _factionPath = ""; _error = true; };
 		};
 	};

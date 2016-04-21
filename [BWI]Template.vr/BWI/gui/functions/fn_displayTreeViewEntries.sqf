@@ -36,7 +36,7 @@ switch ( _sideNr ) do {
 		
 	case 1: {
 		_tvFaction tvAdd [[],"RUS VDV"];
-		_tvFaction tvAdd [[],"Taliban"];
+		_tvFaction tvAdd [[],"Afghan Militia"];
 		
 		_tvFaction tvAdd [[0],"Flora"];
 		_tvFaction tvAdd [[0],"Mountain Flora"];
@@ -47,7 +47,7 @@ switch ( _sideNr ) do {
 	
 	case 2: {
 		_tvFaction tvAdd [[],"PMC"];
-		_tvFaction tvAdd [[],"FSA"];
+		_tvFaction tvAdd [[],"Syrian Rebels"];
 	};
 };
 
