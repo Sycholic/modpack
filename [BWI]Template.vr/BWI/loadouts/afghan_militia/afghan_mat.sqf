@@ -1,4 +1,4 @@
-// Anti-Air
+// Anti-Tank (MAT)
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -32,12 +32,14 @@ if ( _randomTurban in ["Afghan_01Hat", "Afghan_02Hat", "Afghan_03Hat", "Afghan_0
 	_afghan_beards = ["SFG_Tac_BeardD", "SFG_Tac_BeardO", "SFG_Tac_smallBeardD", "SFG_Tac_smallBeardO"];
 	_randomBeard = selectRandom _afghan_beards;
 	_unit addGoggles _randomBeard;
+} else {
+	removeGoggles _unit;
 };
 
 _afghan_weapons = ["rhs_weap_akms", "rhs_weap_akm", "hlc_rifle_akm", "hlc_rifle_ak47"];
 _randomWeapon = selectRandom _afghan_weapons;
 _unit addWeapon _randomWeapon;
-_unit addWeapon "rhs_weap_igla";
+_unit addWeapon "rhs_weap_rpg7";
 
 _unit linkItem "tf_pnr1000a";
 _unit linkItem "tf_microDAGR";
@@ -48,4 +50,5 @@ _unit linkItem "tf_microDAGR";
 for "_i" from 1 to 4 do {_unit addItemToVest "hlc_30Rnd_762x39_b_ak";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
 for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_30Rnd_762x39_t_ak";};
-_unit addItemToBackpack "rhs_mag_9k38_rocket";
+for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_PG7VL_mag";};
+_unit addItemToBackpack "rhs_rpg7_OG7V_mag";

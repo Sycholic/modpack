@@ -1,4 +1,4 @@
-// Corpsman
+// Combat First Responder
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -33,6 +33,8 @@ if ( _randomTurban in ["Afghan_01Hat", "Afghan_02Hat", "Afghan_03Hat", "Afghan_0
 	_afghan_beards = ["SFG_Tac_BeardD", "SFG_Tac_BeardO", "SFG_Tac_smallBeardD", "SFG_Tac_smallBeardO"];
 	_randomBeard = selectRandom _afghan_beards;
 	_unit addGoggles _randomBeard;
+} else {
+	removeGoggles _unit;
 };
 
 _afghan_weapons = ["rhs_weap_akms", "rhs_weap_akm", "hlc_rifle_akm", "hlc_rifle_ak47"];
@@ -43,8 +45,8 @@ _unit addWeapon "rhs_weap_makarov_pmm";
 _unit linkItem "tf_fadak";
 _unit linkItem "ItemWatch";
 
-[_unit, "CM", "IN", 2001] call BWI_fnc_AddGear;
-[_unit, "CM"] call BWI_fnc_AddMedical;
+[_unit, "CFR", "IN", 2001] call BWI_fnc_AddGear;
+[_unit, "CFR"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 4 do {_unit addItemToVest "hlc_30Rnd_762x39_b_ak";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_30Rnd_762x39_b_ak";};

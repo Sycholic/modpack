@@ -1,4 +1,4 @@
-// Automatic Rifleman (MMG)
+// Automatic Rifleman
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -33,16 +33,18 @@ if ( _randomTurban in ["Afghan_01Hat", "Afghan_02Hat", "Afghan_03Hat", "Afghan_0
 	_afghan_beards = ["SFG_Tac_BeardD", "SFG_Tac_BeardO", "SFG_Tac_smallBeardD", "SFG_Tac_smallBeardO"];
 	_randomBeard = selectRandom _afghan_beards;
 	_unit addGoggles _randomBeard;
+} else {
+	removeGoggles _unit;
 };
 
-_unit addWeapon "rhs_weap_pkm";
+_unit addWeapon "hlc_rifle_rpk";
 _unit addWeapon "rhs_weap_makarov_pmm";
 
 _unit linkItem "tf_pnr1000a";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "MMG", "IN", 2001] call BWI_fnc_AddGear;
-[_unit, "MMG"] call BWI_fnc_AddMedical;
+[_unit, "AR", "IN", 2001] call BWI_fnc_AddGear;
+[_unit, "AR"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
-_unit addItemToBackpack "rhs_100Rnd_762x54mmR_green";
+for "_i" from 1 to 2 do {_unit addItemToVest "hlc_75Rnd_762x39_m_rpk";};
+for "_i" from 1 to 6 do {_unit addItemToBackpack "hlc_75Rnd_762x39_m_rpk";};

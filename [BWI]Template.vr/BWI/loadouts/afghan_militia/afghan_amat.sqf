@@ -1,4 +1,4 @@
-// Automatic Rifleman
+// Assistant Anti-Tank (MAT)
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -17,7 +17,6 @@ _unit forceAddUniform _randomUni;
 _afghan_vests = ["V_BandollierB_blk", "V_BandollierB_rgr", "V_BandollierB_oli", "V_BandollierB_cbr", "V_BandollierB_khk", "rhs_vydra_3m"];
 _randomVest = selectRandom _afghan_vests;
 _unit addVest _randomVest;
-for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_9x18_12_57N181S";};
 
 _afghan_backpacks = ["B_CarryAll_cbr", "B_CarryAll_khk", "B_CarryAll_oli"];
 _randomBackpack = selectRandom _afghan_backpacks;
@@ -33,16 +32,22 @@ if ( _randomTurban in ["Afghan_01Hat", "Afghan_02Hat", "Afghan_03Hat", "Afghan_0
 	_afghan_beards = ["SFG_Tac_BeardD", "SFG_Tac_BeardO", "SFG_Tac_smallBeardD", "SFG_Tac_smallBeardO"];
 	_randomBeard = selectRandom _afghan_beards;
 	_unit addGoggles _randomBeard;
+} else {
+	removeGoggles _unit;
 };
 
-_unit addWeapon "hlc_rifle_rpk";
-_unit addWeapon "rhs_weap_makarov_pmm";
+_afghan_weapons = ["rhs_weap_akms", "rhs_weap_akm", "hlc_rifle_akm", "hlc_rifle_ak47"];
+_randomWeapon = selectRandom _afghan_weapons;
+_unit addWeapon _randomWeapon;
 
 _unit linkItem "tf_pnr1000a";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "AR", "IN", 2001] call BWI_fnc_AddGear;
-[_unit, "AR"] call BWI_fnc_AddMedical;
+[_unit, "AMAT", "IN", 2001] call BWI_fnc_AddGear;
+[_unit, "AMAT"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 2 do {_unit addItemToVest "hlc_75Rnd_762x39_m_rpk";};
-for "_i" from 1 to 6 do {_unit addItemToBackpack "hlc_75Rnd_762x39_m_rpk";};
+for "_i" from 1 to 4 do {_unit addItemToVest "hlc_30Rnd_762x39_b_ak";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_30Rnd_762x39_t_ak";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_PG7VL_mag";};
+_unit addItemToBackpack "rhs_rpg7_OG7V_mag";
