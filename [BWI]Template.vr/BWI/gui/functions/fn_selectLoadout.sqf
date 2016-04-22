@@ -121,7 +121,6 @@ if( lbCurSel _xlistRoleSelection == 0 ) then {
 
 	// personal roles
 
-	
 	if( count _roleSelected == 1 ) then {
 		// single member role
 	
@@ -317,15 +316,15 @@ if( lbCurSel _xlistRoleSelection == 0 ) then {
 			case 20:{
 						// can not be selected
 					};
-			default { _role = ""; _error = true; };
+			default { 
+                        _role = ""; _error = true;
+                    };
 		};
 	};
-	
 
-	
 } else {
+
 	// team roles
-	
 	if( count _roleSelected == 1 ) then {
 	
 		_recipientBaseFireteam = (str player) select [0,14];
@@ -339,33 +338,32 @@ if( lbCurSel _xlistRoleSelection == 0 ) then {
 		// 3 : FTL/GRE/DMR/RAT
 	
 		switch( _roleSelected select 0 ) do {
-			switch 0  :{
+			case 0  :{
 							_role = "ftl";
 							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, true];
 							[player, _factionPath, "mmg"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, true];
 							[player, _factionPath, "ammg"]  remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATI, true];
 					   };
-			switch 1  :{
+			case 1  :{
 							_role = "ftl";
 							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, true];
 							[player, _factionPath, "amat"]  remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, true];
 							[player, _factionPath, "mat"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATI, true];
 					   };
-			switch 2  :{
+			case 2  :{
 							_role = "ftl";
 							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, true];
 							[player, _factionPath, "ahat"]  remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, true];
 							[player, _factionPath, "hat"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATI, true];
 					   };
-			switch 3  :{
+			case 3  :{
 							_role = "ftl";
 							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, true];
 							[player, _factionPath, "dmr"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, true];
 							[player, _factionPath, "rat"]  remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATI, true];
 					   };
 			default    {
-							_role = "";
-							_error = true;
+							_role = ""; _error = true;
 					   };
 		};
 		
