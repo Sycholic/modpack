@@ -59,7 +59,11 @@ _BWI_lfnc_AddStandardGear = {
 			_unit addItemToBackpack "ACE_NVG_Gen4";
 		};
 		if ( _era >= 2000 && _era < 2020 ) then {
-			_unit addItemToBackpack "rhsusf_ANPVS_15";
+			if ( _equipment == "SF" ) then {
+				_unit addItemToBackpack "NVGoggles_OPFOR"; // Gen 3
+			} else {
+				_unit addItemToBackpack "rhsusf_ANPVS_15";
+			};
 		};
 		if ( _era >= 1990 && _era < 2000 ) then {
 			_unit addItemToBackpack "ACE_NVG_Gen2";
