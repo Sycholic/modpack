@@ -14,7 +14,7 @@ switch ( _sideNr ) do {
 	case 0:	{
 		_tvFaction tvAdd [[],"USMC"];
 		_tvFaction tvAdd [[],"US Army"];
-		_tvFaction tvAdd [[],"Blackops"];
+		_tvFaction tvAdd [[],"SFOD-D Night"];
 		_tvFaction tvAdd [[],"UK"];
 		_tvFaction tvAdd [[],"Bundeswehr"];
 		_tvFaction tvAdd [[],"US - 1985"];

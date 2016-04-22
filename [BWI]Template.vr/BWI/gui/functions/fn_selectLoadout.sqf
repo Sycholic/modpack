@@ -32,7 +32,7 @@ if( lbCurSel _xlistSide == 0 ) then {
 						[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 						_factionPath = ""; _error = true;
 					};
-			case 2: { _factionPath = "blackops\blackops_"; };
+			case 2: { _factionPath = "sfodd_night\sfodd_"; };
 			case 3: { _factionPath = "uk_mtp\uk_"; };
 			case 4: {
 						_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a camouflage!</t>";
