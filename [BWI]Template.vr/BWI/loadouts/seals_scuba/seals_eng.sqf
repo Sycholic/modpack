@@ -11,6 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "U_B_Wetsuit";
+_unit addItemToUniform "US_Facepaint";
 _unit addItemToUniform "HandGrenade";
 _unit addItemToUniform "SmokeShell";
 _unit addItemToUniform "SmokeShellGreen";

@@ -11,6 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "U_B_Wetsuit";
+_unit addItemToUniform "US_Facepaint";
 _unit addItemToUniform "B_IR_Grenade";
 _unit addItemToUniform "HandGrenade";
 _unit addItemToUniform "SmokeShell";
@@ -37,6 +38,6 @@ _unit linkItem "ItemWatch";
 [_unit, "RTO", "SF", 2016] call BWI_fnc_AddGear;
 [_unit, "RTO"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 4 do {_unit addItemToUniform "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 3 do {_unit addItemToUniform "30Rnd_556x45_Stanag";}; 
 for "_i" from 1 to 2 do {_unit addItemToBackpack "30Rnd_556x45_Stanag";}; 
 for "_i" from 1 to 3 do {_unit addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";};

@@ -11,15 +11,16 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "U_B_Wetsuit";
+_unit addItemToUniform "US_Facepaint";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShell";};
 _unit addItemToUniform "SmokeShellGreen";
-for "_i" from 1 to 3 do {_unit addItemToUniform "RH_15Rnd_9x19_M9";};
 
 _unit addVest "V_RebreatherB";
 
 _unit addBackpack "tacs_Backpack_Kitbag_DarkBlack";
+for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_15Rnd_9x19_M9";};
 
 _unit addGoggles "G_B_Diving";
 

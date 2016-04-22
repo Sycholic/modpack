@@ -11,6 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "U_B_Wetsuit";
+_unit addItemToUniform "US_Facepaint";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShell";};
