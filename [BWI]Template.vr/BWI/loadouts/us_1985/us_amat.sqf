@@ -21,7 +21,7 @@ _unit addBackpack "B_Kitbag_rgr";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "RH_M16A1";
+_unit addWeapon "RH_M16A2";
 
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";

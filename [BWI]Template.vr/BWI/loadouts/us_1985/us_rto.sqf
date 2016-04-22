@@ -21,7 +21,7 @@ _unit addBackpack "tf_rt1523g_green";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "RH_M16A1";
+_unit addWeapon "RH_M16A2";
 
 _unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";

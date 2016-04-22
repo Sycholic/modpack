@@ -27,7 +27,7 @@ _unit addItemToBackpack "UGL_FlareWhite_F";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "RH_M16A1gl";
+_unit addWeapon "RH_M16A2gl";
 
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";

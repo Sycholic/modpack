@@ -22,7 +22,7 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "tf47_m3maaws_HEAT";};
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "RH_M16A1";
+_unit addWeapon "RH_M16A2";
 _unit addWeapon "tf47_m3maaws";
 
 _unit linkItem "tf_rf7800str";

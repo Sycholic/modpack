@@ -22,7 +22,7 @@ _unit addBackpack "B_AssaultPack_rgr";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "RH_M16A1";
+_unit addWeapon "RH_M16A2";
 _unit addWeapon "rhsusf_weap_m1911a1";
 
 _unit linkItem "tf_anprc152";
