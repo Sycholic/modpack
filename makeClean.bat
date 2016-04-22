@@ -20,6 +20,7 @@ for /d %%a in ([BWI]*) do (
 	  del /s /y /x "%%a\BWI\scripts\reinsertPlayerToFOB.sqf" >> "logs\%%a_clean.log" 2>&1
 	  del /s /y /x "%%a\BWI\scripts\displayReinforcements.sqf" >> "logs\%%a_clean.log" 2>&1
 	  del /s /y /x "%%a\BWI\cfgFunctions.hpp" >> "logs\%%a_clean.log" 2>&1
+	  del /s /y /x "%%a\BWI\cfgRemoteExec.hpp" >> "logs\%%a_clean.log" 2>&1
 	  del /y /x "%%a\onPlayerRespawn.sqf" >> "logs\%%a_copy.log" 2>&1
 	  del /y /x "%%a\onPlayerKilled.sqf" >> "logs\%%a_copy.log" 2>&1
 	  del /y /x "%%a\initPlayerLocal.sqf" >> "logs\%%a_copy.log" 2>&1

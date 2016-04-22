@@ -30,7 +30,7 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8,z9,z10,z11,z12] ) then {
 *	CommCard action
 *
 */
-player addAction ["BWI: CommCard", "createDialog 'ShowCommCard';", nil, -10, false, false];
+player addAction ["BWI: CommCard", "createDialog 'BWICommCard';", nil, -10, false, false];
 
 /**
 *
@@ -39,9 +39,9 @@ player addAction ["BWI: CommCard", "createDialog 'ShowCommCard';", nil, -10, fal
 */
 _platoonRole    = (str player) select [10,3];
 
-if( _platoonRole == "pls" || _platoonRole2 == "pll" ) then {
-	player addAction ["Display reinforcements list", "BWI\scripts\displayReinforcements.sqf", nil, 1.5, false, false, "", "!BWI_displayReinsertionQueue"];
-	player addAction ["Hide reinforcements list", "BWI_displayReinsertionQueue = false; hint """";", nil, 1.5, false, false, "", "BWI_displayReinsertionQueue"];
+if( _platoonRole == "pls" || _platoonRole == "pll" ) then {
+	player addAction ["Display reinforcements list", "BWI\scripts\displayReinforcements.sqf", nil, 1.5, false, false, "", "BWI_logistics_FOB_enabled && !BWI_displayReinsertionQueue"];
+	player addAction ["Hide reinforcements list", "BWI_displayReinsertionQueue = false; hint """";", nil, 1.5, false, false, "", "BWI_logistics_FOB_enabled && BWI_displayReinsertionQueue"];
 };
 
 /**
@@ -51,35 +51,39 @@ if( _platoonRole == "pls" || _platoonRole2 == "pll" ) then {
 */
 if( BWI_playerGotKilled ) then {
 
-	_timerScript = [] spawn {
-		_timer = 120 + (BWI_playerKillCount - 1) * 180;
-		
-		[player, "STARTTIMER", _timer] call BWI_fnc_ReportReinsertionToPlatoon;
-		
-		while { _timer > 0 && !BWI_playerCanDeploy && (player distance2D SpawnVAS) < 50 } do {
-			hintSilent parseText format ["<t color='#ff1111'>Waiting for reinsertion</t><br/>Wait til the timer has finished!<br/>%1:%2 remaining.", [floor(_timer / 60),2] call CBA_fnc_formatNumber, [_timer % 60,2] call CBA_fnc_formatNumber];
-			sleep 1;
-			_timer = _timer - 1;
-		};
-		
-		if( ( player distance2D SpawnVAS ) >= 50) then {
-			hint "";
-			[player, "DEPLOYED"] call BWI_fnc_ReportReinsertionToPlatoon;
-		} else {
-			BWI_playerCanDeploy = true;
-			
-			while { isNull BWI_logistics_FOB_Flag && ( player distance2D SpawnVAS ) < 50 } do {
-				hintSilent parseText "<t color='#FFA805'>FOB not placed</t><br/>You have to wait until the FOB has been placed by the PL/APL to reinsert.";
-				sleep 2;
-			};
-			
-			if( ( player distance2D SpawnVAS ) >= 50) then {
-				hint "";
-				[player, "DEPLOYED"] call BWI_fnc_ReportReinsertionToPlatoon;
-			} else {
-				hintSilent parseText "<t color='#11ff11'>REINSERTION READY!</t><br/>Use the teleporter flag pole!";
-			};
-		};
-	};
+    if( BWI_logistics_FOB_enabled ) then {
+        _timerScript = [] spawn {
+            _timer = 120 + (BWI_playerKillCount - 1) * 180;
+            
+            [player, "STARTTIMER", _timer] call BWI_fnc_ReportReinsertionToPlatoon;
+            
+            while { _timer > 0 && !BWI_playerCanDeploy && (player distance2D SpawnVAS) < 50 } do {
+                hintSilent parseText format ["<t color='#ff1111'>Waiting for reinsertion</t><br/>Wait til the timer has finished!<br/>%1:%2 remaining.", [floor(_timer / 60),2] call CBA_fnc_formatNumber, [_timer % 60,2] call CBA_fnc_formatNumber];
+                sleep 1;
+                _timer = _timer - 1;
+            };
+            
+            if( ( player distance2D SpawnVAS ) >= 50) then {
+                hint "";
+                [player, "DEPLOYED"] call BWI_fnc_ReportReinsertionToPlatoon;
+            } else {
+                BWI_playerCanDeploy = true;
+                
+                while { isNull BWI_logistics_FOB_Flag && ( player distance2D SpawnVAS ) < 50 } do {
+                    hintSilent parseText "<t color='#FFA805'>FOB not placed</t><br/>You have to wait until the FOB has been placed by the PL/APL to reinsert.";
+                    sleep 2;
+                };
+                
+                if( ( player distance2D SpawnVAS ) >= 50) then {
+                    hint "";
+                    [player, "DEPLOYED"] call BWI_fnc_ReportReinsertionToPlatoon;
+                } else {
+                    hintSilent parseText "<t color='#11ff11'>REINSERTION READY!</t><br/>Use the teleporter flag pole!";
+                };
+            };
+        };
+    } else {
+        hintSilent parseText "<t color='#11ff11'>FOB not used for this mission!</t><br/>Please reinsert via teleporter flag pole or wait for reinsertion!";
+    };
 	
 };
