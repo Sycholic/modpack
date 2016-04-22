@@ -1,4 +1,4 @@
-//LOADOUTS - BWI - Rifleman
+// Fixed-Wing Pilot
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -10,22 +10,23 @@ removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
 
-_unit forceAddUniform "FIR_Fighter_Pilot_ROKAF_Nomex";
+_unit forceAddUniform "tacs_Uniform_Garment_LS_ES_EP_TB";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
-_unit addVest "FIR_pilot_vest";
+_unit addVest "V_TacVest_blk";
 _unit addItemToVest "ACE_HandFlare_Red";
 _unit addItemToVest "ACE_HandFlare_Green";
-for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
+for "_i" from 1 to 3 do {_unit addItemToVest "BWA3_15Rnd_9x19_P8";};
 
 _unit addBackpack "B_Parachute";
 
-_unit addHeadgear "FIR_USHelmetType1_Navy_Black_Close";
+_unit addHeadgear "rhsusf_hgu56p";
 
-_unit addWeapon "rhsusf_weap_m9";
+_unit addWeapon "BWA3_P8";
 
 _unit linkItem "rhsusf_ANPVS_15";
 _unit linkItem "tf_anprc152";
+_unit linkItem "ItemWatch";
 
-[_unit, "JET"] call BWI_fnc_AddGear;
+[_unit, "JET", "RI", 2010] call BWI_fnc_AddGear;
 [_unit, "JET"] call BWI_fnc_AddMedical;

@@ -31,28 +31,62 @@
 *	LMAT   = Heavy Anti-Tank Leader
 *	AA     = Anti Air
 *
+*
+*   Types
+*   RI	= Regular Infantry
+*	IN	= Insurgents
+*   IR  = Irregulars
+*	SF	= Special Forces
+*	PM  = Private Military
+*
 *	created 25.10.2015
 */
-params ["_unit", "_class", ["_equipment", "modern"]];
+params ["_unit", "_class", ["_equipment", "RI"], ["_era", 2000]];
 private ["_i", "_BWI_lfnc_AddStandardGear"];
+
 
 // Class- and faction independent gear. Everyone should have _unit 
 _BWI_lfnc_AddStandardGear = {
-	params ["_unit", "_equipment"];
+	params ["_unit", "_equipment", "_era"];
+	
 	_unit addItemToUniform "ACE_MapTools";
 	for "_i" from 1 to 4 do { _unit addItemToUniform "ACE_CableTie"; };
 	for "_i" from 1 to 2 do { _unit addItemToUniform "Chemlight_green";};
 	_unit addItemToUniform "ACE_EarPlugs";
-	
-	if( _equipment == "modern" ) then {
-		_unit addItemToUniform "ACE_IR_Strobe_Item";
+
+	if ( _equipment in ["RI", "SF", "PM"] ) then {
+		if ( _era >= 2020 ) then {
+			_unit addItemToBackpack "ACE_NVG_Gen4";
+		};
+		if ( _era >= 2000 && _era < 2020 ) then {
+			if ( _equipment == "SF" ) then {
+				_unit addItemToBackpack "NVGoggles_OPFOR"; // Gen 3
+			} else {
+				_unit addItemToBackpack "rhsusf_ANPVS_15";
+			};
+		};
+		if ( _era >= 1990 && _era < 2000 ) then {
+			_unit addItemToBackpack "ACE_NVG_Gen2";
+			
+			if( _equipment == "SF" ) then {
+				_unit addItemToUniform "ACE_DAGR";
+			};
+		};
+		if ( _era >= 1980 && _era < 1990 && _equipment == "SF" ) then {
+			_unit addItemToBackpack "rhsusf_ANPVS_14";
+		};
+		
+		if ( _era >= 1990 ) then {
+			_unit addItemToUniform "ACE_IR_Strobe_Item";
+		};
+		
 		_unit addItemToUniform "ACE_Flashlight_MX991";
-		_unit addItemToBackpack "rhsusf_ANPVS_15";
+	} else {
+		_unit addItemToUniform "ACE_Flashlight_XL50";
 	};
 	
 	_unit linkItem "ItemMap";
 	_unit linkItem "ItemCompass";
-	_unit linkItem "tf_microDAGR";
 };
 
 if( isNull _unit || !local _unit )  exitWith {};
@@ -61,227 +95,251 @@ if( isNull _unit || !local _unit )  exitWith {};
 switch( _class ) do {
 
 	case "PL": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "ACE_Vector";
-			_unit linkItem "ItemcTab";
-		} else {
-			_unit addWeapon "Binocular";
-		};
-		_unit addItemToBackpack "DemoCharge_Remote_Mag";
-	};
-	
-	case "PRTO": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "ACE_Vector";
-			_unit linkItem "ItemcTab";
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
+			if ( _era >= 2000 ) then {
+				_unit addWeapon "Rangefinder";
+				_unit linkItem "ItemcTab";
+			} else  {
+				_unit addWeapon "ACE_Vector";
+				_unit addItemToUniform "ACE_DAGR";
+			};
 		} else {
 			_unit addWeapon "Binocular";
 		};
 		_unit addItemToBackpack "DemoCharge_Remote_Mag";
 	};
 
-	case "SQL": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
+
+	case "SQL";
+	case "FTL":	{
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
 			_unit addWeapon "ACE_Vector";
-			_unit linkItem "ItemAndroid";
-			_unit addItemToBackpack "ItemcTabHCam";
+			
+			if ( _era >= 2000 ) then {
+				if ( _class == "SQL" ) then {
+					_unit linkItem "ItemAndroid";
+				} else {
+					_unit linkItem "ItemMicroDAGR";
+				};
+				
+				_unit addItemToBackpack "ItemcTabHCam";
+			} else {
+				_unit addItemToUniform "ACE_DAGR";
+			};
 		} else {
 			_unit addWeapon "Binocular";
 		};
 		_unit addItemToBackpack "DemoCharge_Remote_Mag";
 	};
 	
-	case "FTL": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "ACE_Vector";
-			_unit linkItem "ItemMicroDAGR";
-			_unit addItemToBackpack "ItemcTabHCam";
+	
+	case "RTO";
+	case "CM";
+	case "CFR";
+	case "DRV":	{
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
+			if ( _era >= 2000 ) then {
+				_unit linkItem "ItemAndroid";
+			} else {
+				_unit addItemToUniform "ACE_DAGR";
+			};
+		};
+		
+		_unit addWeapon "Binocular";
+	};
+	
+	
+	case "ENG":	{
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] ) then {
+			if ( _era >= 2000 ) then {
+				_unit linkItem "ItemAndroid";
+			};
+			if ( _era >= 1990 && _era < 2000 ) then {
+				_unit addItemToUniform "ACE_DAGR";
+			};
+			
+			_unit addItemToBackpack "ACE_Clacker";
+			for "_i" from 1 to 4  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
+			if ( _equipment == "SF" ) then {
+				_unit addItemToBackpack "SatchelCharge_Remote_Mag";
+			};
 		} else {
-			_unit addWeapon "Binocular";
+			_unit addItemToBackpack "ACE_Clacker";
+			for "_i" from 1 to 4  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
+			
+			if ( _equipment == "IN" ) then {
+				_unit addItemToBackpack "ACE_Cellphone";
+				for "_i" from 1 to 4  do { _unit addItemToBackpack "ACE_DeadManSwitch"; };
+			};
 		};
-		_unit addItemToBackpack "DemoCharge_Remote_Mag";
+		
+		_unit addItemToBackpack "ToolKit";
+		_unit addWeapon "Binocular";
 	};
+
 	
-	case "CM": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "Binocular";
-			_unit linkItem "ItemAndroid";
-		};
-	};
-	
-	case "AAR": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "ACE_Vector";
-		} else {
-			_unit addWeapon "Binocular";
-		};
-		_unit addItemToUniform "ACE_RangeCard";
-		_unit addItemToBackpack "ACE_SpareBarrel";
-	};
-	
-	case "MAT": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "ACE_Vector";
-		} else {
-			_unit addWeapon "Binocular";
-		};
-		_unit addItemToUniform "ACE_RangeCard";
-	};
-	
-	case "AMAT": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "ACE_Vector";
-		} else {
-			_unit addWeapon "Binocular";
-		};
-		_unit addItemToUniform "ACE_RangeCard";
-	};
-	
-	case "LMAT": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "ACE_Vector";
-			_unit linkItem "ItemMicroDAGR";
-		} else {
-			_unit addWeapon "Binocular";
-		};
-		_unit addItemToUniform "ACE_RangeCard";
-	};
-	
-	case "HAT": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "ACE_Vector";
-		} else {
-			_unit addWeapon "Binocular";
-		};
-		_unit addItemToUniform "ACE_RangeCard";
-	};
-	
+	case "MMG";
+	case "AMMG";
+	case "MAT";
+	case "AMAT";
+	case "HAT";
 	case "AHAT": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
 			_unit addWeapon "ACE_Vector";
+			
+			if( _era >= 2010 ) then {
+				_unit linkItem "ItemMicroDAGR";
+			};
 		} else {
 			_unit addWeapon "Binocular";
 		};
 		_unit addItemToUniform "ACE_RangeCard";
 	};
 	
-	case "LHAT": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "ACE_Vector";
+	
+	case "DMR": {
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
+			_unit addWeapon "Leupold_Mk4";
+			
+			if( _era >= 2010 ) then {
+				_unit linkItem "ItemMicroDAGR";
+			};
+		} else {
+			_unit addWeapon "Binocular";
+		};
+		_unit addItemToUniform "ACE_RangeCard";
+	};
+	
+	
+	case "EOD": {
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2010 ) then {
 			_unit linkItem "ItemMicroDAGR";
+		};
+		
+		_unit addItemToBackpack "ACE_Clacker";
+		for "_i" from 1 to 2  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
+		
+		_unit addItemToBackpack "MineDetector";
+		_unit addItemToBackpack "ACE_DefusalKit";
+		_unit addWeapon "Binocular";
+	};
+
+	
+	case "SNI": {
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
+			if ( _era >= 2000 ) then {
+				_unit linkItem "ItemAndroid";
+			} else {
+				_unit addItemToUniform "ACE_DAGR";
+			};
+		
+			_unit addWeapon "Leupold_Mk4";
 		} else {
 			_unit addWeapon "Binocular";
 		};
 		_unit addItemToUniform "ACE_RangeCard";
 	};
 	
-	case "RTO": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
+	
+	case "SPO": {
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
+			if ( _era >= 2000 ) then {
+				_unit addWeapon "Rangefinder";
+				_unit linkItem "ItemAndroid";
+			} else {
+				_unit addWeapon "Leupold_Mk4";
+				_unit addItemToUniform "ACE_DAGR";
+			};
+		} else {
+			_unit addWeapon "Binocular";
+		};
+	};
+	
+	
+	case "JTAC": {
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
+			if ( _era >= 2000 ) then {
+				_unit linkItem "ItemAndroid";
+			} else {
+				_unit addItemToUniform "ACE_DAGR";
+			};
+			
 			_unit addWeapon "Laserdesignator";
-			_unit linkItem "ItemAndroid";
 			for "_i" from 1 to 2 do {_unit addItemToBackpack "Laserbatteries";};
 		} else {
 			_unit addWeapon "Binocular";
 		};
 	};
 	
-	case "AR": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "Binocular";
-		};
-		_unit addItemToUniform "ACE_RangeCard";
-	};
 	
-	case "MMG": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "Binocular";
-		};
-		_unit addItemToUniform "ACE_RangeCard";
-	};
-	
-	case "ENG": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit linkItem "ItemAndroid";
-			_unit addWeapon "Binocular";
-		};
-		_unit addItemToBackpack "ToolKit";
-	};
-	
-	case "HEL": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "Binocular";
+	case "FSP": {
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2000 ) then {
 			_unit linkItem "ItemMicroDAGR";
 		};
+		_unit addWeapon "Binocular";
+	};
+
+	
+	case "HEL": {
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2000 ) then {
+			_unit linkItem "ItemMicroDAGR";
+		};
+		_unit addWeapon "Binocular";
 		_unit addItemToBackpack "DemoCharge_Remote_Mag";
 	};
 	
-	case "DMR": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "ACE_Vector";
-		} else {
-			_unit addWeapon "Binocular";
-		};
-	};
 	
 	case "JET": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "Binocular";
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2000 ) then {
 			_unit linkItem "ItemMicroDAGR";
 		};
+		_unit addWeapon "Binocular";
 	};
 	
-	case "DEM": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "Binocular";
-		};
-		_unit addItemToBackpack "ACE_Clacker";
-		for "_i" from 1 to 4  do { _unit addItemToBackpack "DemoCharge_Remote_Mag"; };
-		_unit addItemToBackpack "ACE_DefusalKit";
-	};
-	
+
 	case "ARM": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "Binocular";
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2000 ) then {
 			_unit linkItem "ItemMicroDAGR";
 		};
+		_unit addWeapon "Binocular";
 	};
-	
-	case "SNI": {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "ACE_Vector";
-			_unit linkItem "ItemMicroDAGR";
-		} else {
-			_unit addWeapon "Binocular";
-		};
-		_unit addItemToUniform "ACE_RangeCard";
-	};
+
 	
 	default {
-		[_unit, _equipment] call _BWI_lfnc_AddStandardGear;
-		if( _equipment == "modern" ) then {
-			_unit addWeapon "Binocular";
+		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
+		
+		if ( _equipment in ["RI", "SF", "PM"] && _era >= 2010 ) then {
+			_unit linkItem "ItemMicroDAGR";
 		};
+		
+		_unit addWeapon "Binocular";
 	};
 };

@@ -1,4 +1,4 @@
-//LOADOUTS - BWI - Helicopter Pilot
+// Rotary Pilot
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -13,24 +13,22 @@ removeHeadgear _unit;
 _unit forceAddUniform "rhs_uniform_df15";
 for "_i" from 1 to 2 do {_unit addItemToUniform "O_IR_Grenade";};
 
-_unit addVest "rhs_vest_commander";
+_unit addVest "tacs_Vest_Tactical_DarkBlack";
 
 _unit addBackpack "B_FieldPack_blk";
-_unit addItemToBackpack "acc_pointer_IR";
-_unit addItemToBackpack "hlc_muzzle_545SUP_AK";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_HandFlare_Red";};
-for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_HandFlare_Green";};
+_unit addItemToVest "SmokeShellGreen";
+_unit addItemToVest "ACE_HandFlare_Red";
+_unit addItemToVest "ACE_HandFlare_Green";
 
 _unit addHeadgear "rhs_zsh7a_mike";
 
-[_unit, "HEL"] call BWI_fnc_AddGear;
+_unit addWeapon "hlc_rifle_aks74u";
+
+_unit linkItem "tf_fadak";
+_unit linkItem "ItemWatch";
+
+[_unit, "HEL", "RI", 2006] call BWI_fnc_AddGear;
 [_unit, "HEL"] call BWI_fnc_AddMedical;
 
-_unit addWeapon "hlc_rifle_aku12";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
-_unit addWeapon "rhs_weap_makarov_pmm";
-_unit linkItem "tf_pnr1000a";
-
-for "_i" from 1 to 3 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x18_12_57N181S";};
+for "_i" from 1 to 2 do {_unit addItemToVest "hlc_30Rnd_545x39_B_AK";};
+for "_i" from 1 to 4 do {_unit addItemToBackpack "hlc_30Rnd_545x39_B_AK";};

@@ -14,7 +14,7 @@ switch ( _sideNr ) do {
 	case 0:	{
 		_tvFaction tvAdd [[],"USMC"];
 		_tvFaction tvAdd [[],"US Army"];
-		_tvFaction tvAdd [[],"Blackops"];
+		_tvFaction tvAdd [[],"SFOD-D Night"];
 		_tvFaction tvAdd [[],"UK"];
 		_tvFaction tvAdd [[],"Bundeswehr"];
 		_tvFaction tvAdd [[],"US - 1985"];
@@ -36,7 +36,7 @@ switch ( _sideNr ) do {
 		
 	case 1: {
 		_tvFaction tvAdd [[],"RUS VDV"];
-		_tvFaction tvAdd [[],"Taliban"];
+		_tvFaction tvAdd [[],"Afghan Militia"];
 		
 		_tvFaction tvAdd [[0],"Flora"];
 		_tvFaction tvAdd [[0],"Mountain Flora"];
@@ -47,7 +47,7 @@ switch ( _sideNr ) do {
 	
 	case 2: {
 		_tvFaction tvAdd [[],"PMC"];
-		_tvFaction tvAdd [[],"FSA"];
+		_tvFaction tvAdd [[],"Syrian Rebels"];
 	};
 };
 
@@ -79,61 +79,63 @@ switch( lbCurSel _xlistRoleSelection ) do {
 		_tvRole tvAdd [[5],"Anti-Tank"];
 		_tvRole tvAdd [[5],"Assistant Anti-Tank"];
 
+		_tvRole tvAdd [[],"Fireteam (DMR)"];
+		_tvRole tvAdd [[6],"Designated Marksman"];
+		
+		_tvRole tvAdd [[],"Fireteam (AA)"];
+		_tvRole tvAdd [[7],"Anti-Air"];
+		
 		_tvRole tvAdd [[],"Medevac"];
-		_tvRole tvAdd [[6],"Combat First Responder"];
+		_tvRole tvAdd [[8],"Combat First Responder"];
 
 		_tvRole tvAdd [[],"Engineering"];
-		_tvRole tvAdd [[7],"Combat Engineer"];
+		_tvRole tvAdd [[9],"Combat Engineer"];
 
 		_tvRole tvAdd [[],"Rear Echelon"];
-		_tvRole tvAdd [[8],"Team Leader"];
-		_tvRole tvAdd [[8],"Rifleman"];
+		_tvRole tvAdd [[10],"Team Leader"];
+		_tvRole tvAdd [[10],"Rifleman"];
 
 		_tvRole tvAdd [[],"Rear Echolon (Logistics)"];
-		_tvRole tvAdd [[9],"Driver"];
+		_tvRole tvAdd [[11],"Driver"];
 
 		_tvRole tvAdd [[],"Rear Echolon (Fire Support)"];
-		_tvRole tvAdd [[10],"Gunner"];
-		_tvRole tvAdd [[10],"Assistant Gunner"];
-
-		_tvRole tvAdd [[],"Rear Echolon (Recon)"];
-		_tvRole tvAdd [[11],"Designated Marksman"];
-		_tvRole tvAdd [[11],"Spotter"];
-
+		_tvRole tvAdd [[12],"Gunner"];
+		_tvRole tvAdd [[12],"Assistant Gunner"];
+		
 		_tvRole tvAdd [[],"Rear Echolon (Sniper)"];
-		_tvRole tvAdd [[12],"Sniper"];
-		_tvRole tvAdd [[12],"Spotter"];
-
-		_tvRole tvAdd [[],"Rear Echolon (TACP)"];
-		_tvRole tvAdd [[13],"Radio Transmitter Operator"];
+		_tvRole tvAdd [[13],"Sniper"];
 		_tvRole tvAdd [[13],"Spotter"];
 
+		_tvRole tvAdd [[],"Rear Echelon (EOD)"];
+		_tvRole tvAdd [[14],"Explosive Ordnance Disposal"];
+
+		_tvRole tvAdd [[],"Rear Echolon (TACP)"];
+		_tvRole tvAdd [[15],"Joint Terminal Attack Controller"];
+
 		_tvRole tvAdd [[],"Vehicle Crew"];
-		_tvRole tvAdd [[14],"Commander"];
-		_tvRole tvAdd [[14],"Gunner"];
-		_tvRole tvAdd [[14],"Driver"];
+		_tvRole tvAdd [[16],"Commander"];
+		_tvRole tvAdd [[16],"Gunner"];
+		_tvRole tvAdd [[16],"Driver"];
 
 		_tvRole tvAdd [[],"Air Crew (Fixed Wing)"];
-		_tvRole tvAdd [[15],"Pilot"];
-		_tvRole tvAdd [[15],"Copilot"];
+		_tvRole tvAdd [[17],"Pilot"];
+		_tvRole tvAdd [[17],"Copilot"];
 
 		_tvRole tvAdd [[],"Air Crew (Rotary)"];
-		_tvRole tvAdd [[16],"Pilot"];
-		_tvRole tvAdd [[16],"Copilot"];
+		_tvRole tvAdd [[18],"Pilot"];
+		_tvRole tvAdd [[18],"Copilot"];
 
 		_tvRole tvAdd [[],"Other"];
-		_tvRole tvAdd [[17],"Joint Terminal Attack Controller"];
-		_tvRole tvAdd [[17],"Explosive Ordinance Disposal"];
-		_tvRole tvAdd [[17],"Radio Transmitter Operator"];
+		_tvRole tvAdd [[19],"Radio Transmitter Operator"];
 
 		_tvRole tvAdd [[],"Zeus"];
 	};
 
 	case 1: {
-		_tvRole tvAdd [[],"FTL/GRE/ALMG/LMG"];
 		_tvRole tvAdd [[],"FTL/GRE/AMMG/MMG"];
 		_tvRole tvAdd [[],"FTL/GRE/MAT/AMAT"];
 		_tvRole tvAdd [[],"FTL/GRE/HAT/AHAT"];
+		_tvRole tvAdd [[],"FTL/GRE/DMR/RAT"];
 	};
 };
 
