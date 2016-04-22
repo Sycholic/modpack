@@ -1,4 +1,4 @@
-// Platoon Leader
+// Joint Terminal Attack Controller
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -34,8 +34,9 @@ _unit addHandgunItem "RH_X300";
 _unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
-[_unit, "PL", "SF", 2016] call BWI_fnc_AddGear;
-[_unit, "PL"] call BWI_fnc_AddMedical;
+[_unit, "JTAC", "SF", 2016] call BWI_fnc_AddGear;
+[_unit, "JTAC"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 4 do {_unit addItemToUniform "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 2 do {_unit addItemToBackpack "30Rnd_556x45_Stanag";}; 
 for "_i" from 1 to 3 do {_unit addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";};
