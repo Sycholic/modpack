@@ -30,7 +30,7 @@ _unit addPrimaryWeaponItem "RH_barska_rds";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_m9qd";
 _unit addHandgunItem "RH_X300";
-_unit addWeapon "tf47_at4_heat";
+_unit addWeapon "tf47_at4_HP";
 
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
