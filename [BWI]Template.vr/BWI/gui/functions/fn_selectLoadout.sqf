@@ -360,7 +360,7 @@ if( lbCurSel _xlistRoleSelection == 0 ) then {
 							_role = "ftl";
 							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, true];
 							[player, _factionPath, "dmr"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, true];
-							[player, _factionPath, "rat"]  remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATI, true];
+							[player, _factionPath, "rat"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATI, true];
 					   };
 			default    {
 							_role = ""; _error = true;
