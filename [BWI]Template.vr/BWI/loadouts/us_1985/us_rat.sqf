@@ -27,7 +27,7 @@ _unit addWeapon "tf47_at4_heat";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "RAT", "RI", 1987] call BWI_fnc_AddGear;
+[_unit, "RAT", "RI", 1986] call BWI_fnc_AddGear;
 [_unit, "RAT"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";};

@@ -32,7 +32,7 @@ _unit addWeapon "RH_M16A2gl";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "GRE", "RI", 1987] call BWI_fnc_AddGear;
+[_unit, "GRE", "RI", 1986] call BWI_fnc_AddGear;
 [_unit, "GRE"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";};

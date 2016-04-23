@@ -26,7 +26,7 @@ _unit addWeapon "RH_M16A2";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "AMMG", "RI", 1987] call BWI_fnc_AddGear;
+[_unit, "AMMG", "RI", 1986] call BWI_fnc_AddGear;
 [_unit, "AMMG"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";};

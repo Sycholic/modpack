@@ -27,7 +27,7 @@ _unit addWeapon "hlc_smg_mp5a2";
 _unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
-[_unit, "HEL", "RI", 1987] call BWI_fnc_AddGear;
+[_unit, "HEL", "RI", 1986] call BWI_fnc_AddGear;
 [_unit, "HEL"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_30Rnd_9x19_B_MP5";};

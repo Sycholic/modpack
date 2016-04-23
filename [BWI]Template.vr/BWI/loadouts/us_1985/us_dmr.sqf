@@ -27,7 +27,7 @@ _unit addPrimaryWeaponItem "hlc_optic_artel_m14";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "DMR", "RI", 1987] call BWI_fnc_AddGear;
+[_unit, "DMR", "RI", 1986] call BWI_fnc_AddGear;
 [_unit, "DMR"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "hlc_20Rnd_762x51_B_M14";};

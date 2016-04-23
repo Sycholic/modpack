@@ -27,5 +27,5 @@ _unit linkItem "ACE_NVG_Gen2";
 _unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
-[_unit, "JET", "RI", 2008] call BWI_fnc_AddGear;
+[_unit, "JET", "RI", 1986] call BWI_fnc_AddGear;
 [_unit, "JET"] call BWI_fnc_AddMedical;
