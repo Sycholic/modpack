@@ -1,5 +1,4 @@
-//LOADOUTS - BWI - Rifleman (AT)
-
+// Anti-Air
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
