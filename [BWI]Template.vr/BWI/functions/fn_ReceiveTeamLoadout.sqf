@@ -43,7 +43,7 @@ switch( _role ) do {
     };
 };
 
-switch( _role ) do {
+switch( _factionPath ) do {
 	case "usmc_des\usmc_": {
 		_factionDisplayName = "USMC (Desert)";
 	};
@@ -95,7 +95,7 @@ switch( _role ) do {
 
 _timer = 10;
 while { _timer > 0 } do {
-	hint parseText format ["<t color='#FFA805'>Team Loadout</t><br/>A loadout has been assigned to you by your team leader %1:<br/>In %2 seconds you will change your loadout to:<br/>%3 / %4",
+	hintSilent parseText format ["<t color='#FFA805'>Team Loadout</t><br/>A loadout has been assigned to you by your team leader %1:<br/>In %2 seconds you will change your loadout to:<br/>%3 / %4",
                             name _teamLeader,
                             [_timer % 60,2] call CBA_fnc_formatNumber,
                             _factionDisplayName,
@@ -103,6 +103,10 @@ while { _timer > 0 } do {
 	sleep 1;
 	_timer = _timer - 1;
 };
+
+hintSilent parseText format ["<t color='#FFA805'>Team Loadout</t><br/>New loadout loading...<br/>%1 / %2",
+                            _factionDisplayName,
+                            _roleDisplayName];
 
 _scriptName = "BWI\loadouts\" + _factionPath + _role + ".sqf";
 [player] call compile preprocessFileLineNumbers _scriptName;
