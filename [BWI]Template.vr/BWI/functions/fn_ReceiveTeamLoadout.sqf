@@ -48,7 +48,7 @@ switch( _factionPath ) do {
 		_factionDisplayName = "USMC (Desert)";
 	};
 	
-	case "usmc_wood": {
+	case "usmc_wood\usmc_": {
 		_factionDisplayName = "USMC (Wood)";
 	};
 	
