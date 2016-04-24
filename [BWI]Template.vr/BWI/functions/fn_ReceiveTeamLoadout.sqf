@@ -38,6 +38,10 @@ switch( _role ) do {
 		_roleDisplayName = "Heavy AT Assistant";
 	};
     
+    case "dmr": {
+		_roleDisplayName = "Designated Marksman";
+	};
+    
     default {
         _roleDisplayName = "";
     };

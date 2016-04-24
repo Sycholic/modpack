@@ -330,7 +330,7 @@ if( lbCurSel _xlistRoleSelection == 0 ) then {
 		_recipientBaseFireteam = (str player) select [0,14];
 		_recipientGRE = _recipientBaseFireteam + "gre";
 		_recipientARI = _recipientBaseFireteam + "ari";
-		_recipientATI = _recipientBaseFireteam + "ati";
+		_recipientATR = _recipientBaseFireteam + "atr";
 		
 		// 0 : FTL/GRE/AMMG/MMG
 		// 1 : FTL/GRE/MAT/AMAT
@@ -340,27 +340,27 @@ if( lbCurSel _xlistRoleSelection == 0 ) then {
 		switch( _roleSelected select 0 ) do {
 			case 0  :{
 							_role = "ftl";
-							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, true];
-							[player, _factionPath, "mmg"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, true];
-							[player, _factionPath, "ammg"]  remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATI, true];
+							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, false];
+							[player, _factionPath, "mmg"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, false];
+							[player, _factionPath, "ammg"]  remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATR, false];
 					   };
 			case 1  :{
 							_role = "ftl";
-							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, true];
-							[player, _factionPath, "amat"]  remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, true];
-							[player, _factionPath, "mat"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATI, true];
+							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, false];
+							[player, _factionPath, "amat"]  remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, false];
+							[player, _factionPath, "mat"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATR, false];
 					   };
 			case 2  :{
 							_role = "ftl";
-							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, true];
-							[player, _factionPath, "ahat"]  remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, true];
-							[player, _factionPath, "hat"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATI, true];
+							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, false];
+							[player, _factionPath, "ahat"]  remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, false];
+							[player, _factionPath, "hat"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATR, false];
 					   };
 			case 3  :{
 							_role = "ftl";
-							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, true];
-							[player, _factionPath, "dmr"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, true];
-							[player, _factionPath, "rat"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATI, true];
+							[player, _factionPath, "gre"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientGRE, false];
+							[player, _factionPath, "dmr"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientARI, false];
+							[player, _factionPath, "rat"]   remoteExec ["BWI_fnc_ReceiveTeamLoadout", _recipientATR, false];
 					   };
 			default    {
 							_role = ""; _error = true;
