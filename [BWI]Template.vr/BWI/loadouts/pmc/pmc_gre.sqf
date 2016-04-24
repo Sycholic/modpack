@@ -23,7 +23,7 @@ for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_Smoke_Grenade_shell";};
 _unit addItemToVest "UGL_FlareWhite_F";
 
 _unit addBackpack "B_AssaultPack_blk";
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_17Rnd_9x19_JHP";};
 for "_i" from 1 to 8 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
 _pmc_headgear = ["tacs_Cap_Earpiece_BlackLogo", "tacs_Cap_Backwards_BlackLogo", "tacs_Cap_BlackLogo", "H_Cap_blk", "H_Cap_blu", "rhsusf_bowman_cap", "H_MilCap_gry", "H_MilCap_blue", "H_Cap_usblack", "H_Cap_red", "H_Watchcap_blk", "H_Watchcap_cbr", "H_Watchcap_camo", "H_Watchcap_khk"];
