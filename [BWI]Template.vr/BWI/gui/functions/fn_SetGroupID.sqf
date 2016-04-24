@@ -8,9 +8,9 @@ switch( _selection ) do {
     case 0;
     case 7;
     case 13;
-    case 23;
-    case 27: {
-        _lblError ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a group name!</t>";
+    case 28;
+    case 32: {
+        _lblError ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a valid group name!</t>";
 		[_lblError] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
         
         false
