@@ -24,13 +24,14 @@ for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
 
 _unit addBackpack "tacs_Backpack_Kitbag_DarkBlack";
 for "_i" from 1 to 5 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
+_unit addItemToBackpack "RH_SFM952V";
 
 _unit addHeadgear "tacs_Helmet_Ballistic_DarkBlack";
-_unit addGoggles "tacs_Goggles_Black";
+_unit addGoggles "T_HoodBlkCLR";
 
 _unit addWeapon "RH_M4A1_ris_M203";
 _unit addPrimaryWeaponItem "RH_qdss_nt4";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
+_unit addPrimaryWeaponItem "RH_peq15b_top";
 _unit addPrimaryWeaponItem "RH_ta31rmr";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_m9qd";
