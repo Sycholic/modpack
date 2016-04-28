@@ -24,7 +24,7 @@ _unit addBackpack "tf_rt1523g_big_rhs";
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
 
 _unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
-_unit addPrimaryWeaponItem "RH_compM2l";
+_unit addPrimaryWeaponItem "RH_compm4s";
 _unit addPrimaryWeaponItem "RH_peq15b";
 
 _unit linkItem "tf_anprc152";

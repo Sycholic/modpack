@@ -28,7 +28,7 @@ _unit addGoggles "tacs_Goggles_Black";
 _unit addWeapon "RH_M4A1_ris";
 _unit addPrimaryWeaponItem "RH_qdss_nt4";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "RH_compM2l";
+_unit addPrimaryWeaponItem "RH_compm4s";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_m9qd";
 _unit addHandgunItem "RH_X300";

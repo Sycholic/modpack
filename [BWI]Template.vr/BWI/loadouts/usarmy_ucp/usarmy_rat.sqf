@@ -23,7 +23,7 @@ _unit addBackpack "rhsusf_assault_eagleaiii_ucp";
 _unit addHeadgear "rhsusf_ach_helmet_ESS_ucp";
 
 _unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
-_unit addPrimaryWeaponItem "RH_compM2l";
+_unit addPrimaryWeaponItem "RH_compm4s";
 _unit addPrimaryWeaponItem "RH_peq15b";
 _unit addWeapon "tf47_at4_heat";
 
