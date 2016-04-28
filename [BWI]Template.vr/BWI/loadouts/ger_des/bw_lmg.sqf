@@ -23,7 +23,7 @@ _unit addBackpack "BWA3_Kitbag_Tropen";
 _unit addHeadgear "BWA3_MICH_Tropen";
 
 _unit addWeapon "BWA3_MG4";
-_unit addPrimaryWeaponItem "RH_shortdot";
+_unit addPrimaryWeaponItem "RH_c79";
 _unit addWeapon "BWA3_P8";
 
 _unit linkItem "tf_rf7800str";
