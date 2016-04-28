@@ -19,7 +19,8 @@ switch ( _sideNr ) do {
 		_tvFaction tvAdd [[],"Bundeswehr"];
 		_tvFaction tvAdd [[],"US - 1985"];
 		_tvFaction tvAdd [[],"SEALS - Scuba"];
-		//_tvFaction tvAdd [[],"UN (Ger)"]; disabled, LOP UN vests gone with the modpack
+		_tvFaction tvAdd [[],"SFOD-D Desert"];
+		_tvFaction tvAdd [[],"SFOD-D Wood"];
 
 		_tvFaction tvAdd [[0],"Desert"];
 		_tvFaction tvAdd [[0],"Wood"];

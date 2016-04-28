@@ -39,9 +39,10 @@ if( lbCurSel _xlistSide == 0 ) then {
 						[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
 						_factionPath = ""; _error = true;
 					};
-			case 5: { _factionPath = "us_1985\us_"; };
+			case 5: { _factionPath = "usmc_wood86\usmc_"; };
 			case 6: { _factionPath = "seals_scuba\seals_"; };
-			case 7: { _factionPath = "un_ger\bw_"; };
+			case 7: { _factionPath = "sfodd_des\sfodd_"; };
+			case 8: { _factionPath = "sfodd_wood\sfodd_"; };
 			default { _factionPath = ""; _error = true; };
 		};
 	};
