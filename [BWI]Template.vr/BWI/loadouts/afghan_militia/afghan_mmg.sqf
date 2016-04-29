@@ -14,7 +14,7 @@ _afghan_uniforms = ["U_Afghan01NH", "U_Afghan02NH", "U_Afghan03NH", "U_Afghan06N
 _randomUni = selectRandom _afghan_uniforms;
 _unit forceAddUniform _randomUni;
 
-_afghan_vests = ["V_BandollierB_blk", "V_BandollierB_rgr", "V_BandollierB_oli", "V_BandollierB_cbr", "V_BandollierB_khk", "rhs_vydra_3m"];
+_afghan_vests = ["V_BandollierB_blk", "V_BandollierB_rgr", "V_BandollierB_oli", "V_BandollierB_cbr", "V_BandollierB_khk"];
 _randomVest = selectRandom _afghan_vests;
 _unit addVest _randomVest;
 for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_9x18_12_57N181S";};
@@ -40,7 +40,7 @@ if ( _randomTurban in ["Afghan_01Hat", "Afghan_02Hat", "Afghan_03Hat", "Afghan_0
 _unit addWeapon "rhs_weap_pkm";
 _unit addWeapon "rhs_weap_makarov_pmm";
 
-_unit linkItem "tf_pnr1000a";
+_unit linkItem "tf_anprc154";
 _unit linkItem "tf_microDAGR";
 
 [_unit, "MMG", "IN", 2001] call BWI_fnc_AddGear;

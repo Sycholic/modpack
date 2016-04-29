@@ -12,7 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "U_Afghan05";
-_unit addBackpack "tf_mr3000_rhs";
+_unit addBackpack "tf_anprc155_coyote";
 
 _unit addItemToUniform "ACE_MapTools";
 for "_i" from 1 to 4 do { _unit addItemToUniform "ACE_CableTie"; };
@@ -23,6 +23,6 @@ _unit addItemToUniform "ACE_Flashlight_MX991";
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "tf_microdagr";
-_unit linkItem "tf_fadak";
+_unit linkItem "tf_anprc148jem";
 
 _unit setSpeaker "ACE_NoVoice";
