@@ -91,6 +91,10 @@ if( lbCurSel _xlistSide == 1 ) then {
 						if( _factionSelected select 1 == 1 ) then { _factionPath = "rus_vdv_mflora\rus_";  };
 						if( _factionSelected select 1 == 2 ) then { _factionPath = "rus_vdv_emr\rus_";  };
 					};
+			case 1: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "ussr_oksva_des_s\ussr_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "ussr_oksva_des_w\ussr_";  };
+					};
 			default { _factionPath = ""; _error = true; };
 		};
 	};

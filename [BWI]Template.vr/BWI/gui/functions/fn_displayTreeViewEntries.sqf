@@ -41,8 +41,13 @@ switch ( _sideNr ) do {
 		_tvFaction tvAdd [[0],"Flora"];
 		_tvFaction tvAdd [[0],"Mountain Flora"];
 		_tvFaction tvAdd [[0],"EMR"];
-		
 		_tvFaction tvExpand [0];
+		
+		_tvFaction tvAdd [[],"USSR OKSVA"];
+		
+		_tvFaction tvAdd [[1],"Summer"];
+		_tvFaction tvAdd [[1],"Winter"];
+		_tvFaction tvExpand [1];
 	};
 	
 	case 2: {
