@@ -54,7 +54,9 @@ _BWI_lfnc_AddStandardGear = {
 	for "_i" from 1 to 4 do { _unit addItemToUniform "ACE_CableTie"; };
 
 	if ( _equipment in ["RI", "SF", "PM"] ) then {
-		for "_i" from 1 to 2 do { _unit addItemToUniform "Chemlight_green";};
+		if ( _era >= 2000 ) then {
+			for "_i" from 1 to 2 do { _unit addItemToUniform "Chemlight_green";};
+		};
 	
 		if ( _era >= 2020 ) then {
 			_unit addItemToBackpack "ACE_NVG_Gen4";
@@ -83,10 +85,6 @@ _BWI_lfnc_AddStandardGear = {
 		
 		_unit addItemToUniform "ACE_Flashlight_MX991";
 	} else {
-		if ( _era >= 2000 ) then {
-			for "_i" from 1 to 2 do { _unit addItemToUniform "Chemlight_green";};
-		};
-	
 		_unit addItemToUniform "ACE_Flashlight_XL50";
 	};
 	
