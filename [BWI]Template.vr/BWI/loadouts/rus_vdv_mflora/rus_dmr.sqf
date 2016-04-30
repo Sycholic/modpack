@@ -21,8 +21,8 @@ _unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhs_6b27m_ml_ess";
 
-_unit addWeapon "rhs_weap_svds";
-_unit addPrimaryWeaponItem "rhs_acc_pso1m2";
+_unit addWeapon "rhs_weap_svds_npz";
+_unit addPrimaryWeaponItem "UK3CB_BAF_SpecterLDS_3D";
 
 _unit linkItem "tf_pnr1000a";
 _unit linkItem "tf_microDAGR";

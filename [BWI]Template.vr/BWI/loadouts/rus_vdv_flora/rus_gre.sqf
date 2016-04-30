@@ -26,8 +26,8 @@ _unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhs_6b26_ess";
 
-_unit addWeapon "hlc_rifle_ak74m_gl";
-_unit addPrimaryWeaponItem "hlc_optic_kobra";
+_unit addWeapon "rhs_weap_ak74m_gp25_npz";
+_unit addPrimaryWeaponItem "optic_ACO_grn";
 
 _unit linkItem "tf_pnr1000a";
 _unit linkItem "tf_microDAGR";

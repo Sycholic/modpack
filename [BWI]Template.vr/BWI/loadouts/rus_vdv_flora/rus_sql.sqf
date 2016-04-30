@@ -26,8 +26,8 @@ _unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhs_6b26_ess";
 
-_unit addWeapon "hlc_rifle_ak74m_gl";
-_unit addPrimaryWeaponItem "rhs_acc_1p29";
+_unit addWeapon "rhs_weap_ak74m_gp25_npz";
+_unit addPrimaryWeaponItem "UK3CB_BAF_SpecterLDS_Dot_3D";
 _unit addWeapon "rhs_weap_pya";
 
 _unit linkItem "tf_fadak";
