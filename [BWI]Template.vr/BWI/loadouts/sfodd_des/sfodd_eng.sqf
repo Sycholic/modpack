@@ -19,7 +19,7 @@ for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
 
-_unit addBackpack "B_Kitbag_cbr";
+_unit addBackpack "B_Carryall_cbr";
 _unit addItemToBackpack "RH_SFM952V_tan";
 
 _unit addHeadgear "rhsusf_mich_bare_norotos_arc_alt_tan_headset";
