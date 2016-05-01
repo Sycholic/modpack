@@ -13,6 +13,7 @@ removeHeadgear _unit;
 _unit forceAddUniform "AFGH_AFG_S3";
 
 _unit addVest "V_AFGH_6B23_Sniper_bleached";
+for "_i" from 1 to 3 do {_unit addItemToVest "RH_8Rnd_9x18_Mak";};
 
 _unit addBackpack "B_FieldPack_khk";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
@@ -23,6 +24,7 @@ _unit addHeadgear "AFGHAN_SH_68_2";
 
 _unit addWeapon "rhs_weap_svds";
 _unit addPrimaryWeaponItem "rhs_acc_pso1m2";
+_unit addWeapon "RH_mak";
 
 _unit linkItem "tf_pnr1000a";
 _unit linkItem "tf_microDAGR";

@@ -24,6 +24,7 @@ _unit addHeadgear "BWA3_MICH_Fleck";
 
 _unit addWeapon "BWA3_G27";
 _unit addPrimaryWeaponItem "RH_ta648";
+_unit addWeapon "BWA3_P8";
 
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";

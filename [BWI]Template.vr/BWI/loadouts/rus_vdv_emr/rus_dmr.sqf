@@ -13,6 +13,7 @@ removeHeadgear _unit;
 _unit forceAddUniform "rhs_uniform_vdv_emr";
 
 _unit addVest "rhs_6b23_digi_6sh92_headset";
+for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_9x19_17";};
 
 _unit addBackpack "B_FieldPack_oli";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
@@ -23,6 +24,7 @@ _unit addHeadgear "rhs_6b28_ess";
 
 _unit addWeapon "rhs_weap_svds";
 _unit addPrimaryWeaponItem "rhs_acc_pso1m2";
+_unit addWeapon "rhs_weap_pya";
 
 _unit linkItem "tf_pnr1000a";
 _unit linkItem "tf_microDAGR";
