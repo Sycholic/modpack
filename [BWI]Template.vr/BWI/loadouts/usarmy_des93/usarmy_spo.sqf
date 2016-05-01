@@ -1,4 +1,4 @@
-// Designated Marksman
+// Spotter
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -19,17 +19,15 @@ _unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "B_AssaultPack_cbr";
 
-_unit addHeadgear "BWI_Helmet_USA_3CO";
+_unit addHeadgear "H_Booniehat_tan";
 
-_unit addWeapon "hlc_rifle_M21";
-_unit addPrimaryWeaponItem "hlc_optic_artel_m14";
+_unit addWeapon "RH_M16A2";
 
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "DMR", "RI", 1993] call BWI_fnc_AddGear;
-[_unit, "DMR"] call BWI_fnc_AddMedical;
+[_unit, "SPO", "RI", 1993] call BWI_fnc_AddGear;
+[_unit, "SPO"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 6 do {_unit addItemToVest "hlc_20Rnd_762x51_B_M14";};
-for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_20Rnd_762x51_B_M14";};
-for "_i" from 1 to 4 do {_unit addItemToBackpack "hlc_20Rnd_762x51_T_M14";};
+for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";};
