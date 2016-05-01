@@ -21,7 +21,7 @@ _unit addBackpack "B_AssaultPack_rgr";
 
 _unit addHeadgear "rhsusf_ach_helmet_M81";
 
-_unit addWeapon "hlc_rifle_M14";
+_unit addWeapon "hlc_rifle_M21";
 _unit addPrimaryWeaponItem "hlc_optic_artel_m14";
 
 _unit linkItem "tf_rf7800str";
