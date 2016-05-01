@@ -12,7 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "tacs_Uniform_Polo_TP_LS_TP_TB";
-_unit addBackpack "tf_rt1523g_big_rhs";
+_unit addBackpack "tf_anprc155_coyote";
 _unit addHeadgear "H_Hat_tan";
 _unit addGoggles "G_Aviator";
 
