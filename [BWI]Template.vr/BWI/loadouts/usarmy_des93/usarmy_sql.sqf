@@ -11,6 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "BWI_Uniform_USA_3CO";
+for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 for "_i" from 1 to 3 do {_unit addItemToUniform "RH_15Rnd_9x19_M9";};
 
 _unit addVest "BWI_Vest_USA_3CO";

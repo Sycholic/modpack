@@ -11,6 +11,7 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "tacs_Uniform_Garment_LS_TS_TP_TB";
+for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "tacs_Vest_Tactical_DarkBlack";
 _unit addItemToVest "SmokeShellGreen";
