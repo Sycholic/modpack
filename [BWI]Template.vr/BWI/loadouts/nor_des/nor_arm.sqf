@@ -17,7 +17,7 @@ _unit addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 
-_unit addBackpack "B_Kitbag_cbr";
+_unit addBackpack "B_FieldPack_cbr";
 
 _unit addHeadgear "rhsusf_cvc_green_helmet";
 
