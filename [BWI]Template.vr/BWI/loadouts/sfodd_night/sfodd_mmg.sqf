@@ -20,16 +20,12 @@ _unit addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
 
 _unit addBackpack "tacs_Backpack_Kitbag_DarkBlack";
-_unit addItemToBackpack "RH_SFM952V";
 
 _unit addHeadgear "tacs_Helmet_Ballistic_DarkBlack";
 _unit addGoggles "T_HoodBlkCLR";
 
 _unit addWeapon "rhs_weap_m240B_CAP";
-_unit addPrimaryWeaponItem "RH_qdss_nt4";
 _unit addPrimaryWeaponItem "RH_m145";
-_unit addPrimaryWeaponItem "RH_peq15b_top";
-_unit addPrimaryWeaponItem "RH_HBLM";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_m9qd";
 _unit addHandgunItem "RH_X300";

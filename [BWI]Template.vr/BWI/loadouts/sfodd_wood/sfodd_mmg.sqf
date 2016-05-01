@@ -20,16 +20,12 @@ _unit addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
 
 _unit addBackpack "B_Kitbag_rgr";
-_unit addItemToBackpack "RH_SFM952V";
 
 _unit addHeadgear "rhsusf_mich_bare_norotos_arc_alt_headset";
 _unit addGoggles "T_HoodODCLR";
 
 _unit addWeapon "rhs_weap_m240B_CAP";
-_unit addPrimaryWeaponItem "RH_qdss_nt4_wdl";
 _unit addPrimaryWeaponItem "RH_m145";
-_unit addPrimaryWeaponItem "RH_peq15b_top";
-_unit addPrimaryWeaponItem "RH_HBLM";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_m9qd";
 _unit addHandgunItem "RH_X300";
