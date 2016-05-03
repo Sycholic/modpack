@@ -27,7 +27,7 @@ _unit addGoggles "T_HoodBlkCLR";
 _unit addWeapon "RH_Mk12mod1";
 _unit addPrimaryWeaponItem "hlc_muzzle_Tundra";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
-_unit addPrimaryWeaponItem "RH_shortdot";
+_unit addPrimaryWeaponItem "RH_leu_mk4";
 _unit addPrimaryWeaponItem "RH_HBLM";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_m9qd";
