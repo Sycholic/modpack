@@ -253,6 +253,8 @@ switch( _class ) do {
 		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
 			if ( _era >= 2000 ) then {
 				_unit linkItem "ItemAndroid";
+				_unit addItemToUniform "ACE_ATragMX";
+				_unit addItemToUniform "ACE_Kestrel4500";
 			} else {
 				_unit addItemToUniform "ACE_DAGR";
 			};
