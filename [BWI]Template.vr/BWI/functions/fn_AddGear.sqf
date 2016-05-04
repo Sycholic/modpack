@@ -120,9 +120,13 @@ switch( _class ) do {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
 		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
-			_unit addWeapon "ACE_Vector";
-			
 			if ( _era >= 2000 ) then {
+				if ( _class == "SQL" && _era >= 2010 ) then {
+					_unit addWeapon "Rangefinder";
+				} else {
+					_unit addWeapon "ACE_Vector";
+				};
+			
 				if ( _class == "SQL" ) then {
 					_unit linkItem "ItemAndroid";
 				} else {
@@ -131,6 +135,7 @@ switch( _class ) do {
 				
 				_unit addItemToBackpack "ItemcTabHCam";
 			} else {
+				_unit addWeapon "ACE_Vector";
 				_unit addItemToUniform "ACE_DAGR";
 			};
 		} else {
@@ -214,7 +219,7 @@ switch( _class ) do {
 		[_unit, _equipment, _era] call _BWI_lfnc_AddStandardGear;
 		
 		if ( _equipment in ["RI", "SF", "PM"] && _era >= 1990 ) then {
-			_unit addWeapon "Leupold_Mk4";
+			_unit addWeapon "ACE_Yardage450";
 			
 			if( _era >= 2010 ) then {
 				_unit linkItem "ItemMicroDAGR";
@@ -252,7 +257,7 @@ switch( _class ) do {
 				_unit addItemToUniform "ACE_DAGR";
 			};
 		
-			_unit addWeapon "Leupold_Mk4";
+			_unit addWeapon "ACE_Vector";
 		} else {
 			_unit addWeapon "Binocular";
 		};
@@ -267,8 +272,10 @@ switch( _class ) do {
 			if ( _era >= 2000 ) then {
 				_unit addWeapon "Rangefinder";
 				_unit linkItem "ItemAndroid";
+				_unit addItemToUniform "ACE_ATragMX";
+				_unit addItemToUniform "ACE_Kestrel4500";
 			} else {
-				_unit addWeapon "Leupold_Mk4";
+				_unit addWeapon "ACE_Vector";
 				_unit addItemToUniform "ACE_DAGR";
 			};
 		} else {
