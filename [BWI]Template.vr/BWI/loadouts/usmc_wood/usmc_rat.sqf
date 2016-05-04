@@ -20,7 +20,7 @@ _unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "rhsusf_assault_eagleaiii_coy";
 
-_unit addHeadgear "rhsusf_mich_helmet_marpatwd_norotos";
+_unit addHeadgear "rhsusf_lwh_helmet_marpatwd_ess";
 
 _unit addWeapon "rhs_weap_m16a4_carryhandle_grip";
 _unit addPrimaryWeaponItem "RH_peq15b";

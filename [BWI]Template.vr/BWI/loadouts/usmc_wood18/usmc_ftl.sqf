@@ -25,7 +25,7 @@ _unit addBackpack "rhsusf_assault_eagleaiii_coy";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 5 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
-_unit addHeadgear "rhsusf_mich_helmet_marpatwd_norotos";
+_unit addHeadgear "rhsusf_lwh_helmet_marpatwd_ess";
 
 _unit addWeapon "rhs_weap_m4a1_carryhandle_m203";
 _unit addPrimaryWeaponItem "RH_peq15b";

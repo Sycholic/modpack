@@ -21,7 +21,7 @@ _unit addItemToVest "SmokeShellGreen";
 _unit addBackpack "B_Carryall_khk";
 _unit addItemToBackpack "rhs_fgm148_magazine_AT";
 
-_unit addHeadgear "rhsusf_mich_helmet_marpatwd_norotos";
+_unit addHeadgear "rhsusf_lwh_helmet_marpatwd_ess";
 
 _unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
 _unit addPrimaryWeaponItem "RH_peq15b";

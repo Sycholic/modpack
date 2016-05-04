@@ -25,7 +25,7 @@ _unit addItemToVest "1Rnd_SmokeGreen_Grenade_shell";
 _unit addBackpack "rhsusf_assault_eagleaiii_coy";
 for "_i" from 1 to 8 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
-_unit addHeadgear "rhsusf_mich_helmet_marpatwd_norotos";
+_unit addHeadgear "rhsusf_lwh_helmet_marpatwd_ess";
 
 _unit addWeapon "rhs_weap_m16a4_carryhandle_M203";
 _unit addPrimaryWeaponItem "RH_peq15b";
