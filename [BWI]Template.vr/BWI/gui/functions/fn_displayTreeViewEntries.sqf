@@ -12,49 +12,106 @@ _sideNr = lbCurSel _xlistSide;
 
 switch ( _sideNr ) do {
 	case 0:	{
-		_tvFaction tvAdd [[],"USMC"];
-		_tvFaction tvAdd [[],"US Army"];
-		_tvFaction tvAdd [[],"SFOD-D Night"];
-		_tvFaction tvAdd [[],"UK"];
-		_tvFaction tvAdd [[],"Bundeswehr"];
-		_tvFaction tvAdd [[],"US - 1985"];
-		_tvFaction tvAdd [[],"SEALS - Scuba"];
-		_tvFaction tvAdd [[],"SFOD-D Desert"];
-		_tvFaction tvAdd [[],"SFOD-D Wood"];
-
-		_tvFaction tvAdd [[0],"Desert"];
-		_tvFaction tvAdd [[0],"Wood"];
+		_tvFaction tvAdd [[],"British Army"];
+		_tvFaction tvAdd [[0],"MTP (c. 2013)"];
 		_tvFaction tvExpand [0];
-
-		_tvFaction tvAdd [[1],"OCP"];
-		_tvFaction tvAdd [[1],"UCP"];
+		
+		_tvFaction tvAdd [[],"Bundeswehr"];
+		_tvFaction tvAdd [[1],"Tropentarn (c. 2010)"];
+		_tvFaction tvAdd [[1],"Flecktarn (c. 2010)"];
 		_tvFaction tvExpand [1];
-
-		_tvFaction tvAdd [[4],"Tropentarn (Desert)"];
-		_tvFaction tvAdd [[4],"Flecktarn (Wood)"];
+		
+		_tvFaction tvAdd [[],"Delta Force"];
+		_tvFaction tvAdd [[2],"Desert (c. 1993)"];
+		_tvFaction tvAdd [[2],"Desert (c. 2016)"];
+		_tvFaction tvAdd [[2],"Night (c. 2016)"];
+		_tvFaction tvAdd [[2],"Urban (c. 2016)"];
+		_tvFaction tvAdd [[2],"Woodland (c. 2016)"];
+		_tvFaction tvExpand [2];
+		
+		_tvFaction tvAdd [[],"Israel Defence Forces"];
+		_tvFaction tvAdd [[3],"Field Dress (c. 2016)"];
+		_tvFaction tvExpand [3];
+		
+		_tvFaction tvAdd [[],"Norwegian Army"];
+		_tvFaction tvAdd [[4],"Desert (c. 2006)"];
+		_tvFaction tvAdd [[4],"Woodland (c. 2006)"];
 		_tvFaction tvExpand [4];
+		
+		_tvFaction tvAdd [[],"Royal Danish Army"];
+		_tvFaction tvAdd [[5],"MTP (c. 2015)"];
+		_tvFaction tvExpand [5];
+		
+		_tvFaction tvAdd [[],"Special Air Service"];
+		_tvFaction tvAdd [[6],"Desert (c. 1991)"];
+		_tvFaction tvAdd [[6],"Woodland (c. 1991)"];
+		_tvFaction tvAdd [[6],"MTP (c. 2016)"];
+		_tvFaction tvExpand [6];
+		
+		_tvFaction tvAdd [[],"US Army"];
+		_tvFaction tvAdd [[7],"DCU (c. 1993)"];
+		_tvFaction tvAdd [[7],"UCP (c. 2013)"];
+		_tvFaction tvAdd [[7],"OCP (c. 2015)"];
+		_tvFaction tvExpand [7];
+		
+		_tvFaction tvAdd [[],"US Navy"];
+		_tvFaction tvAdd [[8],"SEALS (c. 2016)"];
+		_tvFaction tvExpand [8];
+		
+		_tvFaction tvAdd [[],"USMC"];
+		_tvFaction tvAdd [[9],"Woodland (c. 1986)"];
+		_tvFaction tvAdd [[9],"Desert (c. 2008)"];
+		_tvFaction tvAdd [[9],"Woodland (c. 2008)"];
+		_tvFaction tvAdd [[9],"Desert (c. 2018)"];
+		_tvFaction tvAdd [[9],"Woodland (c. 2018)"];
+		_tvFaction tvExpand [9];
 	};
 		
 	case 1: {
-		_tvFaction tvAdd [[],"RUS VDV"];
-		
-		_tvFaction tvAdd [[0],"Flora"];
-		_tvFaction tvAdd [[0],"Mountain Flora"];
-		_tvFaction tvAdd [[0],"EMR"];
+		_tvFaction tvAdd [[],"Russian VDV"];
+		_tvFaction tvAdd [[0],"Flora (c. 2006)"];
+		_tvFaction tvAdd [[0],"M. Flora (c. 2006)"];
+		_tvFaction tvAdd [[0],"EMR (c. 2018)"];
 		_tvFaction tvExpand [0];
 		
-		_tvFaction tvAdd [[],"USSR OKSVA"];
-		
-		_tvFaction tvAdd [[1],"Summer"];
-		_tvFaction tvAdd [[1],"Winter"];
+		_tvFaction tvAdd [[],"Spetsnaz GRU"];
+		_tvFaction tvAdd [[1],"Woodland (c. 2018)"];
+		_tvFaction tvAdd [[1],"Urban (c. 2018)"];
 		_tvFaction tvExpand [1];
+		
+		_tvFaction tvAdd [[],"USSR OKSVA"];
+		_tvFaction tvAdd [[2],"Summer (c. 1984)"];
+		_tvFaction tvAdd [[2],"Winter (c. 1984)"];
+		_tvFaction tvExpand [2];
 	};
 	
 	case 2: {
-		_tvFaction tvAdd [[],"PMC"];
-		_tvFaction tvAdd [[],"Syrian Rebels"];
-		_tvFaction tvAdd [[],"Afghan Militia"];
-		_tvFaction tvAdd [[],"Afghan Militia (c.1984)"];
+		_tvFaction tvAdd [[],"Afghanistan"];
+		_tvFaction tvAdd [[0],"Mujahideen (c. 1984)"];
+		_tvFaction tvAdd [[0],"Taliban (c. 2001)"];
+		_tvFaction tvExpand [0];
+	
+		_tvFaction tvAdd [[],"Contractors"];
+		_tvFaction tvAdd [[1],"Black Watch (c. 2018)"];
+		_tvFaction tvAdd [[1],"ION Corp. (c. 2014)"];
+		_tvFaction tvExpand [1];
+		
+		_tvFaction tvAdd [[],"Finnish Defence Forces"];
+		_tvFaction tvAdd [[2],"Winter (c. 2008)"];
+		_tvFaction tvAdd [[2],"Woodland (c. 2008)"];
+		_tvFaction tvAdd [[2],"UN Woodland (c. 2008)"];
+		_tvFaction tvExpand [2];
+		
+		_tvFaction tvAdd [[],"Swedish Army"];
+		_tvFaction tvAdd [[3],"Desert (c. 2010)"];
+		_tvFaction tvAdd [[3],"Woodland (c. 2010)"];
+		_tvFaction tvAdd [[3],"UN Desert (c. 2010)"];
+		_tvFaction tvAdd [[3],"UN Woodland (c. 2010)"];
+		_tvFaction tvExpand [3];
+	
+		_tvFaction tvAdd [[],"Syria"];
+		_tvFaction tvAdd [[4],"FSA (c. 2011)"];
+		_tvFaction tvExpand [4];
 	};
 };
 

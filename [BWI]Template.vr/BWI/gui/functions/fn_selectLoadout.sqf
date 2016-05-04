@@ -16,74 +16,79 @@ _error = false;
 
 if( count _factionSelected == 0 ) exitWith {false};
 
-// blufor is current side
+// BLUFOR is current side
 if( lbCurSel _xlistSide == 0 ) then {
 
-	// single camo faction
+	// no camo selected
 	if( count _factionSelected == 1 ) then {
-		switch ( _factionSelected select 0 ) do {
-			case 0: {
-						_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a camouflage!</t>";
-						[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
-						_factionPath = ""; _error = true;
-					};
-			case 1: {
-						_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a camouflage!</t>";
-						[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
-						_factionPath = ""; _error = true;
-					};
-			case 2: { _factionPath = "sfodd_night\sfodd_"; };
-			case 3: { _factionPath = "uk_mtp\uk_"; };
-			case 4: {
-						_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a camouflage!</t>";
-						[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
-						_factionPath = ""; _error = true;
-					};
-			case 5: { _factionPath = "usmc_wood86\usmc_"; };
-			case 6: { _factionPath = "seals_scuba\seals_"; };
-			case 7: { _factionPath = "sfodd_des\sfodd_"; };
-			case 8: { _factionPath = "sfodd_wood\sfodd_"; };
-			default { _factionPath = ""; _error = true; };
-		};
+		_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a camouflage!</t>";
+		[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
+		_factionPath = ""; _error = true;
 	};
 
-	// multi camo faction
+	// camo selected
 	if( count _factionSelected == 2 ) then {
 		switch ( _factionSelected select 0 ) do {
 			case 0: {
-						if( _factionSelected select 1 == 0 ) then { _factionPath = "usmc_des\usmc_";  };
-						if( _factionSelected select 1 == 1 ) then { _factionPath = "usmc_wood\usmc_";  };
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "uk_mtp\uk_";  };
 					};
 			case 1: {
-						if( _factionSelected select 1 == 0 ) then { _factionPath = "usarmy_ocp\usarmy_";  };
-						if( _factionSelected select 1 == 1 ) then { _factionPath = "usarmy_ucp\usarmy_";  };
-					};
-			case 4: {
 						if( _factionSelected select 1 == 0 ) then { _factionPath = "ger_des\bw_";  };
 						if( _factionSelected select 1 == 1 ) then { _factionPath = "ger_wood\bw_";  };
+					};
+			case 2: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "sfodd_des93\sfodd_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "sfodd_des\sfodd_";  };
+						if( _factionSelected select 1 == 2 ) then { _factionPath = "sfodd_night\sfodd_";  };
+						if( _factionSelected select 1 == 3 ) then { _factionPath = "sfodd_urban\sfodd_";  };
+						if( _factionSelected select 1 == 4 ) then { _factionPath = "sfodd_wood\sfodd_";  };
+					};
+			case 3: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "idf\idf_";  };
+					};
+			case 4: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "nor_des\nor_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "nor_wood\nor_";  };
+					};
+			case 5: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "den_mtp\den_";  };
+					};
+			case 6: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "sas_des91\sas_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "sas_wood91\sas_";  };
+						if( _factionSelected select 1 == 2 ) then { _factionPath = "sas_mtp\sas_";  };
+					};
+			case 7: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "usarmy_des93\usarmy_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "usarmy_ucp\usarmy_";  };
+						if( _factionSelected select 1 == 2 ) then { _factionPath = "usarmy_ocp\usarmy_";  };
+					};
+			case 8: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "seals_scuba\seals_";  };
+					};
+			case 9: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "usmc_wood86\usmc_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "usmc_des\usmc_";  };
+						if( _factionSelected select 1 == 2 ) then { _factionPath = "usmc_wood\usmc_";  };
+						if( _factionSelected select 1 == 3 ) then { _factionPath = "usmc_des18\usmc_";  };
+						if( _factionSelected select 1 == 4 ) then { _factionPath = "usmc_wood18\usmc_";  };
 					};
 			default { _factionPath = ""; _error = true; };
 		};
 	};
 };
 
-// opfor is current side
+// OPFOR is current side
 if( lbCurSel _xlistSide == 1 ) then {
 
-	// single camo faction
+	// no camo selected
 	if( count _factionSelected == 1 ) then {
-		switch ( _factionSelected select 0 ) do {
-			case 0: {
-						_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a camouflage!</t>";
-						[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
-						_factionPath = ""; _error = true;
-					};
-			
-			default { _factionPath = ""; _error = true; };
-		};
+		_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a camouflage!</t>";
+		[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
+		_factionPath = ""; _error = true;
 	};
 
-	// multi camo faction
+	// camo selected
 	if( count _factionSelected == 2 ) then {
 		switch ( _factionSelected select 0 ) do {
 			case 0: {
@@ -92,6 +97,10 @@ if( lbCurSel _xlistSide == 1 ) then {
 						if( _factionSelected select 1 == 2 ) then { _factionPath = "rus_vdv_emr\rus_";  };
 					};
 			case 1: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "spetz_emr\spetz_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "spetz_urban\spetz_";  };
+					};
+			case 2: {
 						if( _factionSelected select 1 == 0 ) then { _factionPath = "ussr_oksva_des_s\ussr_";  };
 						if( _factionSelected select 1 == 1 ) then { _factionPath = "ussr_oksva_des_w\ussr_";  };
 					};
@@ -101,23 +110,41 @@ if( lbCurSel _xlistSide == 1 ) then {
 };
 
 
-// independent is current side
+// INDEPT is current side
 if( lbCurSel _xlistSide == 2 ) then {
 
-	// single camo faction
+	// no camo selected
 	if( count _factionSelected == 1 ) then {
-		switch ( _factionSelected select 0 ) do {
-			case 0: { _factionPath = "pmc\pmc_"; };
-			case 1: { _factionPath = "syrian_rebels\syrian_"; };
-			case 2: { _factionPath = "afghan_militia\afghan_"; };
-			case 3: { _factionPath = "afghan_militia84\afghan_"; };
-			default { _factionPath = ""; _error = true; };
-		};
+		_errorMsg ctrlSetStructuredText parseText "<t color='#ff1111'>Error: Select a camouflage!</t>";
+		[_errorMsg] spawn {_timer = 10; while { _timer > 0 } do { sleep 1; _timer = _timer - 1;}; (_this select 0) ctrlSetStructuredText parseText ""; };
+		_factionPath = ""; _error = true;
 	};
 
-	// multi camo faction
+	// camo selected
 	if( count _factionSelected == 2 ) then {
 		switch ( _factionSelected select 0 ) do {
+			case 0: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "afghan_militia84\afghan_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "afghan_militia\afghan_";  };
+					};
+			case 1: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "bwi\bwi_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "pmc\pmc_";  };
+					};
+			case 2: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "fin_snow\fin_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "fin_wood\fin_";  };
+						if( _factionSelected select 1 == 2 ) then { _factionPath = "fin_wood_un\fin_";  };
+					};
+			case 3: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "swe_des\swe_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "swe_wood\swe_";  };
+						if( _factionSelected select 1 == 2 ) then { _factionPath = "swe_des_un\swe_";  };
+						if( _factionSelected select 1 == 3 ) then { _factionPath = "swe_wood_un\swe_";  };
+					};
+			case 4: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "syrian_rebels\syrian_";  };
+					};
 			default { _factionPath = ""; _error = true; };
 		};
 	};
