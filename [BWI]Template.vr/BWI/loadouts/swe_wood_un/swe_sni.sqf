@@ -23,7 +23,7 @@ _unit addBackpack "B_Kitbag_sgg";
 _unit addHeadgear "H_Booniehat_oli";
 
 _unit addWeapon "hlc_rifle_awmagnum";
-_unit addPrimaryWeaponItem "RH_leu_mk4";
+_unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 _unit addWeapon "RH_g17";
 
 _unit linkItem "tf_anprc148jem";

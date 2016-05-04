@@ -22,8 +22,8 @@ _unit addBackpack "B_AssaultPack_rgr";
 
 _unit addHeadgear "BWI_Helmet_FIN_M05L";
 
-_unit addWeapon "rhs_weap_svdp_wd";
-_unit addPrimaryWeaponItem "rhs_acc_pso1m2";
+_unit addWeapon "rhs_weap_svdp_wd_npz";
+_unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4";
 _unit addWeapon "RH_g17";
 
 _unit linkItem "tf_anprc154";

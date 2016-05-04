@@ -23,7 +23,7 @@ _unit addBackpack "BWA3_Kitbag_Fleck";
 _unit addHeadgear "BWA3_Booniehat_Fleck";
 
 _unit addWeapon "hlc_rifle_awmagnum_BL";
-_unit addPrimaryWeaponItem "UK3CB_BAF_SB31250";
+_unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 _unit addWeapon "BWA3_P8";
 
 _unit linkItem "tf_anprc152";

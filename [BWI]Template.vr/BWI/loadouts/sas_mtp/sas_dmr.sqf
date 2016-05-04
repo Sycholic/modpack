@@ -28,7 +28,7 @@ _unit addGoggles "T_HoodTanBlk";
 _unit addWeapon "BWA3_G27";
 _unit addPrimaryWeaponItem "RH_fa762";
 _unit addPrimaryWeaponItem "RH_peq15b";
-_unit addPrimaryWeaponItem "RH_accupoint";
+_unit addPrimaryWeaponItem "optic_SOS";
 _unit addWeapon "RH_p226";
 _unit addHandgunItem "RH_suppr9";
 _unit addHandgunItem "RH_X300";

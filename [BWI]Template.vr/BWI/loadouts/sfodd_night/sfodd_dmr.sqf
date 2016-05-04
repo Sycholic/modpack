@@ -28,7 +28,7 @@ _unit addGoggles "T_HoodBlkCLR";
 _unit addWeapon "RH_Mk12mod1";
 _unit addPrimaryWeaponItem "RH_qdss_nt4";
 _unit addPrimaryWeaponItem "RH_peq15b";
-_unit addPrimaryWeaponItem "RH_leu_mk4";
+_unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 _unit addPrimaryWeaponItem "RH_HBLM";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_m9qd";

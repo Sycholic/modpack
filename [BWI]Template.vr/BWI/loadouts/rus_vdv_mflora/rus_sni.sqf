@@ -23,7 +23,7 @@ _unit addItemToBackpack "SmokeShellGreen";
 _unit addHeadgear "H_Booniehat_khk";
 
 _unit addWeapon "rhs_weap_svdp_npz";
-_unit addPrimaryWeaponItem "RH_leu_mk4";
+_unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 _unit addWeapon "rhs_weap_pya";
 
 _unit linkItem "tf_fadak";

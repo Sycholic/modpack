@@ -24,7 +24,7 @@ _unit addItemToBackpack "UK3CB_BAF_Silencer_L115A3";
 _unit addHeadgear "UK3CB_BAF_H_Mk7_Scrim_C";
 
 _unit addWeapon "hlc_rifle_awmagnum_FDE";
-_unit addPrimaryWeaponItem "UK3CB_BAF_SB31250";
+_unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 _unit addWeapon "UK3CB_BAF_L131A1";
 
 _unit linkItem "tf_anprc152";

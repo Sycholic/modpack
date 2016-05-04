@@ -24,7 +24,7 @@ _unit addHeadgear "UK3CB_BAF_H_Mk7_Scrim_B";
 
 _unit addWeapon "UK3CB_BAF_L129A1_AFG";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
-_unit addPrimaryWeaponItem "RH_accupoint";
+_unit addPrimaryWeaponItem "optic_SOS";
 _unit addWeapon "UK3CB_BAF_L131A1";
 
 _unit linkItem "tf_rf7800str";

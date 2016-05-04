@@ -26,7 +26,7 @@ _unit addHeadgear "H_Booniehat_tan";
 _unit addGoggles "L_Shemagh_Tan";
 
 _unit addWeapon "hlc_rifle_awmagnum_FDE";
-_unit addPrimaryWeaponItem "UK3CB_BAF_SB31250";
+_unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 _unit addWeapon "RH_p226";
 _unit addHandgunItem "RH_suppr9";
 _unit addHandgunItem "RH_X300";

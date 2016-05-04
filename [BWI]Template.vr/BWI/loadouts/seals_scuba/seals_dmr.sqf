@@ -26,7 +26,7 @@ _unit addGoggles "G_B_Diving";
 _unit addWeapon "RH_Mk12mod1";
 _unit addPrimaryWeaponItem "rhsusf_acc_nt4_black";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "RH_leu_mk4";
+_unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 _unit addPrimaryWeaponItem "RH_HBLM";
 _unit addWeapon "RH_m9";
 _unit addHandgunItem "RH_m9qd";

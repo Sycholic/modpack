@@ -22,8 +22,8 @@ _unit addItemToBackpack "SmokeShellGreen";
 
 _unit addHeadgear "rhs_6b28_ess";
 
-_unit addWeapon "rhs_weap_svds";
-_unit addPrimaryWeaponItem "rhs_acc_pso1m2";
+_unit addWeapon "rhs_weap_svds_npz";
+_unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4";
 _unit addWeapon "rhs_weap_pya";
 
 _unit linkItem "tf_pnr1000a";

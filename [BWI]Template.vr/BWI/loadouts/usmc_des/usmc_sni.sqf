@@ -24,7 +24,7 @@ _unit addHeadgear "rhs_Booniehat_marpatd";
 
 _unit addWeapon "RH_m110";
 _unit addPrimaryWeaponItem "RH_peq15";
-_unit addPrimaryWeaponItem "RH_leu_mk4";
+_unit addPrimaryWeaponItem "optic_LRPS";
 _unit addPrimaryWeaponItem "RH_TD_ACB";
 _unit addWeapon "rhsusf_weap_m9";
 
