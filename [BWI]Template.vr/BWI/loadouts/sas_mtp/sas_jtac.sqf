@@ -18,7 +18,7 @@ _unit addVest "tacs_Vest_PlateCarrier_Khaki";
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
-for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_M9";};
+for "_i" from 1 to 3 do {_unit addItemToVest "RH_15Rnd_9x19_SIG";};
 
 _unit addBackpack "tf_rt1523g_sage";
 _unit addItemToBackpack "RH_SFM952V";
