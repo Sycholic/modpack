@@ -1,0 +1,1 @@
+h3_billboard2 setObjectTextureGlobal [0,"textures\h3_convoy_holding.paa"];
