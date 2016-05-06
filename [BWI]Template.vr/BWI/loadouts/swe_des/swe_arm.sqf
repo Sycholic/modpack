@@ -19,7 +19,7 @@ for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 
 _unit addBackpack "B_FieldPack_oli";
 
-_unit addHeadgear "rhsusf_cvc_green_helmet";
+_unit addHeadgear "rhsusf_cvc_helmet";
 
 _unit addWeapon "hlc_smg_mp5a3";
 
