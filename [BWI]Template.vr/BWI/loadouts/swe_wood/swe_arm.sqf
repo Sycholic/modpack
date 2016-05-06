@@ -23,7 +23,7 @@ _unit addHeadgear "rhsusf_cvc_green_helmet";
 
 _unit addWeapon "hlc_smg_mp5a3";
 
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
 [_unit, "ARM", "RI", 2010] call BWI_fnc_AddGear;

@@ -12,7 +12,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 _unit forceAddUniform "tacs_Uniform_Polo_TP_BS_TP_TB";
-_unit addBackpack "tf_anprc155_coyote";
+_unit addBackpack "tf_rt1523g_big_bwmod";
 _unit addHeadgear "H_Hat_brown";
 _unit addGoggles "G_Aviator";
 
@@ -25,6 +25,6 @@ _unit addItemToUniform "ACE_Flashlight_MX991";
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "tf_microdagr";
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 
 _unit setSpeaker "ACE_NoVoice";

@@ -27,7 +27,7 @@ _unit addWeapon "hlc_rifle_falosw";
 _unit addPrimaryWeaponItem "RH_compM2l";
 _unit addWeapon "tf47_at4_heat";
 
-_unit linkItem "tf_anprc154";
+_unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
 [_unit, "RAT", "RI", 2010] call BWI_fnc_AddGear;

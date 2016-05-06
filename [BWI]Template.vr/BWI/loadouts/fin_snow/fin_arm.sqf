@@ -23,7 +23,7 @@ _unit addHeadgear "rhs_tsh4";
 
 _unit addWeapon "rhs_weap_akms";
 
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
 [_unit, "ARM", "RI", 2008] call BWI_fnc_AddGear;

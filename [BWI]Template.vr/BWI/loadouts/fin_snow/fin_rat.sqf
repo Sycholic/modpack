@@ -24,7 +24,7 @@ _unit addHeadgear "BWI_Helmet_FIN_M05L";
 _unit addWeapon "hlc_rifle_RK62";
 _unit addWeapon "UK3CB_BAF_NLAW_Launcher";
 
-_unit linkItem "tf_anprc154";
+_unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
 [_unit, "RAT", "RI", 2008] call BWI_fnc_AddGear;

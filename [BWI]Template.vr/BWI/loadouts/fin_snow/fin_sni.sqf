@@ -26,7 +26,7 @@ _unit addWeapon "UK3CB_BAF_L82A1";
 _unit addPrimaryWeaponItem "BWA3_optic_24x72";
 _unit addWeapon "RH_g17";
 
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
 [_unit, "SNI", "RI", 2008] call BWI_fnc_AddGear;

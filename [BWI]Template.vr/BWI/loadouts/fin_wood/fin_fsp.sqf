@@ -23,7 +23,7 @@ _unit addHeadgear "BWI_Helmet_FIN_M05M";
 
 _unit addWeapon "hlc_rifle_RK62";
 
-_unit linkItem "tf_anprc154";
+_unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
 [_unit, "FSP", "RI", 2008] call BWI_fnc_AddGear;

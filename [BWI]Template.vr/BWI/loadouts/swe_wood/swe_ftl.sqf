@@ -32,7 +32,7 @@ _unit addWeapon "hlc_rifle_osw_GL";
 _unit addPrimaryWeaponItem "RH_ta31rco";
 _unit addWeapon "RH_g17";
 
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
 [_unit, "FTL", "RI", 2010] call BWI_fnc_AddGear;

@@ -28,7 +28,7 @@ _unit addPrimaryWeaponItem "RH_compM2l";
 _unit addWeapon "tf47_m3maaws";
 _unit addSecondaryWeaponItem "tf47_optic_m3maaws";
 
-_unit linkItem "tf_anprc154";
+_unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
 [_unit, "MAT", "RI", 2010] call BWI_fnc_AddGear;

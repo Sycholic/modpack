@@ -25,7 +25,7 @@ _unit addHeadgear "rhsusf_hgu56p";
 _unit addWeapon "RH_g17";
 
 _unit linkItem "rhsusf_ANPVS_15";
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
 [_unit, "JET", "RI", 2010] call BWI_fnc_AddGear;

@@ -26,7 +26,7 @@ _unit addHeadgear "H_Booniehat_oli";
 _unit addWeapon "hlc_rifle_falosw";
 _unit addPrimaryWeaponItem "RH_compM2l";
 
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
 [_unit, "SPO", "RI", 2010] call BWI_fnc_AddGear;

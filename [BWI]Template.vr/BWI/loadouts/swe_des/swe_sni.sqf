@@ -26,7 +26,7 @@ _unit addWeapon "hlc_rifle_awmagnum_FDE";
 _unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 _unit addWeapon "RH_g17";
 
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
 [_unit, "SNI", "RI", 2010] call BWI_fnc_AddGear;

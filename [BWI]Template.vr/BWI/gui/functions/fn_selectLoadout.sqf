@@ -44,29 +44,38 @@ if( lbCurSel _xlistSide == 0 ) then {
 						if( _factionSelected select 1 == 4 ) then { _factionPath = "sfodd_wood\sfodd_";  };
 					};
 			case 3: {
-						if( _factionSelected select 1 == 0 ) then { _factionPath = "idf\idf_";  };
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "fin_snow\fin_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "fin_wood\fin_";  };
 					};
 			case 4: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "idf\idf_";  };
+					};
+			case 5: {
 						if( _factionSelected select 1 == 0 ) then { _factionPath = "nor_des\nor_";  };
 						if( _factionSelected select 1 == 1 ) then { _factionPath = "nor_wood\nor_";  };
 					};
-			case 5: {
+			case 6: {
 						if( _factionSelected select 1 == 0 ) then { _factionPath = "den_mtp\den_";  };
 					};
-			case 6: {
+			case 7: {
 						if( _factionSelected select 1 == 0 ) then { _factionPath = "sas_des91\sas_";  };
 						if( _factionSelected select 1 == 1 ) then { _factionPath = "sas_wood91\sas_";  };
 						if( _factionSelected select 1 == 2 ) then { _factionPath = "sas_mtp\sas_";  };
 					};
-			case 7: {
+			case 8: {
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "swe_des\swe_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "swe_wood\swe_";  };
+					};
+					
+			case 9: {
 						if( _factionSelected select 1 == 0 ) then { _factionPath = "usarmy_des93\usarmy_";  };
 						if( _factionSelected select 1 == 1 ) then { _factionPath = "usarmy_ucp\usarmy_";  };
 						if( _factionSelected select 1 == 2 ) then { _factionPath = "usarmy_ocp\usarmy_";  };
 					};
-			case 8: {
+			case 10: {
 						if( _factionSelected select 1 == 0 ) then { _factionPath = "seals_scuba\seals_";  };
 					};
-			case 9: {
+			case 11: {
 						if( _factionSelected select 1 == 0 ) then { _factionPath = "usmc_wood86\usmc_";  };
 						if( _factionSelected select 1 == 1 ) then { _factionPath = "usmc_des\usmc_";  };
 						if( _factionSelected select 1 == 2 ) then { _factionPath = "usmc_wood\usmc_";  };
@@ -132,15 +141,11 @@ if( lbCurSel _xlistSide == 2 ) then {
 						if( _factionSelected select 1 == 1 ) then { _factionPath = "pmc\pmc_";  };
 					};
 			case 2: {
-						if( _factionSelected select 1 == 0 ) then { _factionPath = "fin_snow\fin_";  };
-						if( _factionSelected select 1 == 1 ) then { _factionPath = "fin_wood\fin_";  };
-						if( _factionSelected select 1 == 2 ) then { _factionPath = "fin_wood_un\fin_";  };
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "fin_wood_un\fin_";  };
 					};
 			case 3: {
-						if( _factionSelected select 1 == 0 ) then { _factionPath = "swe_des\swe_";  };
-						if( _factionSelected select 1 == 1 ) then { _factionPath = "swe_wood\swe_";  };
-						if( _factionSelected select 1 == 2 ) then { _factionPath = "swe_des_un\swe_";  };
-						if( _factionSelected select 1 == 3 ) then { _factionPath = "swe_wood_un\swe_";  };
+						if( _factionSelected select 1 == 0 ) then { _factionPath = "swe_des_un\swe_";  };
+						if( _factionSelected select 1 == 1 ) then { _factionPath = "swe_wood_un\swe_";  };
 					};
 			case 4: {
 						if( _factionSelected select 1 == 0 ) then { _factionPath = "syrian_rebels\syrian_";  };

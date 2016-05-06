@@ -24,7 +24,7 @@ _unit addHeadgear "BWI_Helmet_FIN_M05L";
 _unit addWeapon "hlc_rifle_RK62";
 _unit addWeapon "RH_g17";
 
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
 [_unit, "CFR", "RI", 2008] call BWI_fnc_AddGear;

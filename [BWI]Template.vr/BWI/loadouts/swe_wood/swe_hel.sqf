@@ -24,7 +24,7 @@ _unit addHeadgear "H_PilotHelmetHeli_B";
 
 _unit addWeapon "hlc_smg_mp5a3";
 
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
 [_unit, "HEL", "RI", 2010] call BWI_fnc_AddGear;

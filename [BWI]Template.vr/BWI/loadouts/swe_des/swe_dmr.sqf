@@ -26,7 +26,7 @@ _unit addWeapon "hlc_rifle_falosw";
 _unit addPrimaryWeaponItem "RH_ta648";
 _unit addWeapon "RH_g17";
 
-_unit linkItem "tf_anprc154";
+_unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
 [_unit, "DMR", "RI", 2010] call BWI_fnc_AddGear;

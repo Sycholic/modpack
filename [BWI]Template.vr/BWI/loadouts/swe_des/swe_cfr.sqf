@@ -27,7 +27,7 @@ _unit addWeapon "hlc_rifle_falosw";
 _unit addPrimaryWeaponItem "RH_compM2l";
 _unit addWeapon "RH_g17";
 
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
 [_unit, "CFR", "RI", 2010] call BWI_fnc_AddGear;

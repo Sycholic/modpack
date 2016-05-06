@@ -26,7 +26,7 @@ _unit addWeapon "hlc_lmg_minimi_railed";
 _unit addPrimaryWeaponItem "RH_c79";
 _unit addWeapon "RH_g17";
 
-_unit linkItem "tf_anprc154";
+_unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
 [_unit, "AR", "RI", 2010] call BWI_fnc_AddGear;

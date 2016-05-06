@@ -19,7 +19,7 @@ for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 _unit addItemToVest "SmokeShellGreen";
 _unit addItemToVest "SmokeShellRed";
 
-_unit addBackpack "tf_anprc155";
+_unit addBackpack "tf_rt1523g_big_bwmod";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "RH_17Rnd_9x19_g17";};
 
 _unit addHeadgear "BWI_Helmet_FIN_M05M";
@@ -27,7 +27,7 @@ _unit addHeadgear "BWI_Helmet_FIN_M05M";
 _unit addWeapon "hlc_rifle_RK62";
 _unit addWeapon "RH_g17";
 
-_unit linkItem "tf_anprc148jem";
+_unit linkItem "tf_anprc152";
 _unit linkItem "ItemWatch";
 
 [_unit, "PL", "RI", 2008] call BWI_fnc_AddGear;
