@@ -22,8 +22,7 @@ _unit addItemToBackpack "rhs_mag_rdg2_black";
 
 _unit addHeadgear "AFGHAN_SH_68_2";
 
-_unit addWeapon "rhs_weap_pkp";
-_unit addPrimaryWeaponItem "rhs_acc_1p78";
+_unit addWeapon "rhs_weap_pkm";
 _unit addWeapon "RH_mak";
 
 _unit linkItem "tf_pnr1000a";
