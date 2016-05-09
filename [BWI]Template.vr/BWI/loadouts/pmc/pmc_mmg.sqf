@@ -10,7 +10,7 @@ removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
 
-_pmc_uniforms = ["tacs_Uniform_TShirt_JP_GS_LP_BB", "tacs_Uniform_TShirt_JP_BS_TP_BB", "tacs_Uniform_TShirt_JP_LS_LP_BB", "tacs_Uniform_Garment_RS_GS_BP_BB", "tacs_Uniform_Garment_RS_GS_EP_TB", "tacs_Uniform_Garment_RS_BS_GP_BB", "tacs_Uniform_Garment_LS_GS_TP_TB", "tacs_Uniform_Garment_LS_ES_GP_BB", "tacs_Uniform_Garment_LS_GS_BP_BB", "tacs_Uniform_Combat_RS_CLRS_TP_BB", "tacs_Uniform_Combat_RS_CLBS_GP_BB", "tacs_Uniform_Combat_RS_CDBS_GP_TB", "tacs_Uniform_Combat_RS_GS_TP_BB", "tacs_Uniform_Garment_RS_OS_TP_TB", "tacs_Uniform_Polo_TP_LS_TP_TB", "tacs_Uniform_Polo_TP_TS_GP_BB", "tacs_Uniform_Polo_TP_LS_GP_BB", "tacs_Uniform_Polo_CP_RS_LP_BB", "tacs_Uniform_Polo_CP_LS_TP_OB"];
+_pmc_uniforms = ["tacs_Uniform_TShirt_JP_BS_TP_BB", "tacs_Uniform_TShirt_JP_LS_LP_BB", "tacs_Uniform_Garment_RS_GS_BP_BB", "tacs_Uniform_Garment_RS_GS_EP_TB", "tacs_Uniform_Garment_RS_BS_GP_BB", "tacs_Uniform_Garment_LS_GS_TP_TB", "tacs_Uniform_Garment_LS_ES_GP_BB", "tacs_Uniform_Garment_LS_GS_BP_BB", "tacs_Uniform_Combat_RS_CLRS_TP_BB", "tacs_Uniform_Combat_RS_CLBS_GP_BB", "tacs_Uniform_Combat_RS_CDBS_GP_TB", "tacs_Uniform_Combat_RS_GS_TP_BB", "tacs_Uniform_Garment_RS_OS_TP_TB", "tacs_Uniform_Polo_TP_LS_TP_TB", "tacs_Uniform_Polo_TP_LS_GP_BB", "tacs_Uniform_Polo_CP_RS_LP_BB", "tacs_Uniform_Polo_CP_LS_TP_OB", "tacs_Uniform_Polo_TP_GS_TP_TB", "tacs_Uniform_Polo_TP_WS_LP_BB", "tacs_Uniform_Polo_CP_BS_TP_BB"];
 _randomUni = selectRandom _pmc_uniforms;
 _unit forceAddUniform _randomUni;
 
