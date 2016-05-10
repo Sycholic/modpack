@@ -1,0 +1,1 @@
+h4_billboard2 setObjectTextureGlobal [0,"textures\h4_lr_radio.paa"];

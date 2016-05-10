@@ -1,4 +1,4 @@
-//LOADOUTS - BWI - Rifleman
+// Designated Marksman
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -11,32 +11,32 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "U_B_Wetsuit";
-for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
+_unit addItemToUniform "US_Facepaint";
+for "_i" from 1 to 2 do {_unit addItemToUniform "HandGrenade";};
+for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShell";};
+_unit addItemToUniform "SmokeShellGreen";
+for "_i" from 1 to 3 do {_unit addItemToUniform "RH_15Rnd_9x19_M9";};
 
 _unit addVest "V_RebreatherB";
 
-_unit addBackpack "PMC_B_Carryall_blk";
-_unit addItemToBackpack "SmokeShellRed";
-_unit addItemToBackpack "SmokeShellGreen";
-for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
-for "_i" from 1 to 2 do {_unit addItemToBackpack "HandGrenade";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhsusf_mag_15Rnd_9x19_JHP";};
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
-_unit addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black_tan";
-_unit addItemToBackpack "CUP_acc_ANPEQ_15";
-
-_unit addHeadgear "BWA3_OpsCore_Schwarz";
+_unit addBackpack "tacs_Backpack_Kitbag_DarkBlack";
 
 _unit addGoggles "G_B_Diving";
 
-_unit addWeapon "srifle_EBR_F";
-_unit addPrimaryWeaponItem "optic_DMS";
-_unit addWeapon "rhsusf_weap_m9";
+_unit addWeapon "RH_Mk12mod1";
+_unit addPrimaryWeaponItem "rhsusf_acc_nt4_black";
+_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
+_unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
+_unit addPrimaryWeaponItem "RH_HBLM";
+_unit addWeapon "RH_m9";
+_unit addHandgunItem "RH_m9qd";
+_unit addHandgunItem "RH_X300";
 
 _unit linkItem "tf_rf7800str";
+_unit linkItem "tf_microDAGR";
 
-[_unit, "DMR"] call BWI_fnc_AddGear;
+[_unit, "DMR", "SF", 2016] call BWI_fnc_AddGear;
 [_unit, "DMR"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 10 do {_unit addItemToBackpack "20Rnd_762x51_Mag";}; 
-for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_20Rnd_762x51_Mag_Tracer_Dim";};
+for "_i" from 1 to 8 do {_unit addItemToBackpack "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 4 do {_unit addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";};

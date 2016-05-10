@@ -1,4 +1,4 @@
-
+// Rotary Pilot
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -10,30 +10,24 @@ removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
 
-_unit forceAddUniform "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
+_unit forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
-_unit addVest "V_TacVest_blk";
-_unit addItemToVest "rhs_mag_m18_green";
-_unit addItemToVest "rhs_mag_m18_red";
-for "_i" from 1 to 2 do {_unit addItemToVest "ACE_HandFlare_Green";};
-for "_i" from 1 to 2 do {_unit addItemToVest "ACE_HandFlare_Red";};
-for "_i" from 1 to 3 do {_unit addItemToVest "BWA3_15Rnd_9x19_P8";};
+_unit addVest "UK3CB_BAF_V_Pilot_A";
+_unit addItemToVest "SmokeShellGreen";
+_unit addItemToVest "ACE_HandFlare_Red";
+_unit addItemToVest "ACE_HandFlare_Green";
 
 _unit addBackpack "B_FieldPack_oli";
-_unit addItemToBackpack "hlc_muzzle_Tundra";
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
 
-_unit addHeadgear "rhsusf_hgu56p";
+_unit addHeadgear "UK3CB_BAF_H_PilotHelmetHeli_A";
 
-_unit addWeapon "hlc_smg_MP5N";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "CUP_optic_MRad";
-_unit addWeapon "BWA3_P8";
+_unit addWeapon "UK3CB_BAF_L22A2";
 
 _unit linkItem "tf_anprc152";
+_unit linkItem "ItemWatch";
 
-[_unit, "HEL"] call BWI_fnc_AddGear;
+[_unit, "HEL", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "HEL"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 3 do {_unit addItemToVest "hlc_30Rnd_9x19_B_MP5";}; 
+for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 

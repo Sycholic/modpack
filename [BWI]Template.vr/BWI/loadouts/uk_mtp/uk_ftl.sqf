@@ -1,3 +1,4 @@
+// Fireteam Leader
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -9,34 +10,31 @@ removeVest _unit;
 removeBackpack _unit;
 removeHeadgear _unit;
 
-_unit forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
-for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
+_unit forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP";
 
 _unit addVest "UK3CB_BAF_V_Osprey_SL_D";
+for "_i" from 1 to 3 do {_unit addItemToVest "UK3CB_BAF_17Rnd_9mm";};
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_an_m8hc";};
-_unit addItemToVest "rhs_mag_m18_red";
 _unit addItemToVest "rhs_mag_m18_green";
-for "_i" from 1 to 2 do {_unit addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";};
-for "_i" from 1 to 4 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
-for "_i" from 1 to 9 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 2 do {_unit addItemToVest "1Rnd_SmokeRed_Grenade_shell";};
 _unit addItemToVest "1Rnd_Smoke_Grenade_shell";
 _unit addItemToVest "UGL_FlareWhite_F";
 
 _unit addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A";
-_unit addItemToBackpack "UK3CB_BAF_Silencer_L85";
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
-_unit addItemToBackpack "UK3CB_BAF_LLM_Flashlight_Black";
+for "_i" from 1 to 5 do {_unit addItemToBackpack "1Rnd_HE_Grenade_shell";};
 
-_unit addHeadgear "UK3CB_BAF_H_Mk7_Camo_A";
+_unit addHeadgear "UK3CB_BAF_H_Mk7_Scrim_ESS_B";
 
 _unit addWeapon "UK3CB_BAF_L85A2_UGL";
-_unit addPrimaryWeaponItem "UK3CB_BAF_TA648_308";
-_unit addWeapon "rhsusf_weap_glock17g4";
+_unit addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";
+_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
+_unit addWeapon "UK3CB_BAF_L131A1";
 
 _unit linkItem "tf_anprc152";
+_unit linkItem "ItemWatch";
 
-[_unit, "FTL"] call BWI_fnc_AddGear;
+[_unit, "FTL", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "FTL"] call BWI_fnc_AddMedical;
 
 for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 

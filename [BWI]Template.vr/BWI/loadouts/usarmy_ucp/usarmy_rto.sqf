@@ -1,4 +1,4 @@
-
+// Radio Transmitter Operator
 _unit = (_this select 0);
 if( !local _unit ) exitWith {};
 
@@ -11,30 +11,27 @@ removeBackpack _unit;
 removeHeadgear _unit;
 
 _unit forceAddUniform "rhs_uniform_cu_ucp";
+_unit addItemToUniform "RH_SFM952V";
 for "_i" from 1 to 2 do {_unit addItemToUniform "B_IR_Grenade";};
 
 _unit addVest "rhsusf_iotv_ucp_rifleman";
-for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
-_unit addItemToVest "SmokeShellRed";
 _unit addItemToVest "SmokeShellGreen";
 
 _unit addBackpack "tf_rt1523g_sage";
-_unit addItemToBackpack "UK3CB_BAF_LLM_IR_Black";
-_unit addItemToBackpack "rhsusf_acc_nt4_black";
 
 _unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
 
 _unit addWeapon "rhs_weap_m4a1_carryhandle_grip";
-_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
-_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
-_unit addWeapon "rhsusf_weap_m9";
+_unit addPrimaryWeaponItem "RH_compm4s";
+_unit addPrimaryWeaponItem "RH_peq15b";
 
 _unit linkItem "tf_anprc152";
+_unit linkItem "ItemWatch";
 
-[_unit, "RTO"] call BWI_fnc_AddGear;
+[_unit, "RTO", "RI", 2003] call BWI_fnc_AddGear;
 [_unit, "RTO"] call BWI_fnc_AddMedical;
 
-for "_i" from 1 to 7 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
+for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag";}; 
 for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};

@@ -19,16 +19,10 @@ if( AdminAction2 != -1 ) then {
 	AdminAction2 = -1;
 };
 
-if( AdminAction3 != -1 ) then {
-	SpawnVAS removeAction AdminAction3;
-	AdminAction3 = -1;
-};
-
-if( player in [z1,z2,z3,z4,z5,z6,z7,z8,z9,z10,z11,z12,z13,z14,z15,z16] ) then {
+if( player in [z1,z2,z3,z4,z5,z6,z7,z8,z9,z10,z11,z12] ) then { 
 	AdminAction0 = SpawnVAS addAction[ "---BWI Mission Admin---", "" ];
-	AdminAction1 = SpawnVAS addAction[ "BWI Admin: Reclaim AI", "[player] remoteExecCall ['BWI_fnc_ReclaimOwnershipOfAI', 2, false]" ];
-	AdminAction2 = SpawnVAS addAction[ "<t color='#11c311'>BWI Admin: End Mission (Success)</t>", "[true] remoteExecCall ['BWI_fnc_EndMission']" ];
-	AdminAction3 = SpawnVAS addAction[ "<t color='#bb1111'>BWI Admin: End Mission (Failure)</t>", "[false] remoteExecCall ['BWI_fnc_EndMission']" ];
+	AdminAction1 = SpawnVAS addAction[ "BWI Admin: Disable FOB", "BWI_logistics_FOB_enabled = false; publicVariable ""BWI_logistics_FOB_enabled"";", nil, 1.5, true, true, "", "BWI_logistics_FOB_enabled" ];
+	AdminAction2 = SpawnVAS addAction[ "BWI Admin: Enable FOB", "BWI_logistics_FOB_enabled = true; publicVariable ""BWI_logistics_FOB_enabled"";", nil, 1.5, true, true, "", "!BWI_logistics_FOB_enabled" ];
 };
 
 /**
@@ -36,24 +30,18 @@ if( player in [z1,z2,z3,z4,z5,z6,z7,z8,z9,z10,z11,z12,z13,z14,z15,z16] ) then {
 *	CommCard action
 *
 */
-player addAction ["BWI: CommCard", "createDialog 'ShowCommCard';", nil, -10, false, false];
+player addAction ["BWI: CommCard", "createDialog 'BWICommCard';", nil, -10, false, false];
 
 /**
 *
 *	Add actions to player objects when they initially spawn or respawn
 *
 */
-_platoonRole2 	= (str player) select [10,2];
 _platoonRole    = (str player) select [10,3];
 
-if( _platoonRole == "eng" ) then {
-	player addAction ["<t color='#11ffff'>Deploy Medical Tent</t>", "BWI\scripts\deployMedicalTent.sqf", nil, 1.5, false, false, "", "('BWI_medical_tentBox' in items _this) && ('ToolKit' in items _this)"];
-	player addAction ["<t color='#11ffff'>Deploy FOB</t>", "BWI\scripts\deployFOB.sqf", nil, 1.5, false, false, "", "('BWI_logistics_fobBox' in items _this) && ('ToolKit' in items _this)"];
-};
-
-if( _platoonRole == "apl" || _platoonRole2 == "pl" ) then {
-	player addAction ["Display reinforcements list", "BWI\scripts\displayReinforcements.sqf", nil, 1.5, false, false, "", "!BWI_displayReinsertionQueue"];
-	player addAction ["Hide reinforcements list", "BWI_displayReinsertionQueue = false; hint """";", nil, 1.5, false, false, "", "BWI_displayReinsertionQueue"];
+if( _platoonRole == "pls" || _platoonRole == "pll" ) then {
+	player addAction ["Display reinforcements list", "BWI\scripts\displayReinforcements.sqf", nil, 1.5, false, false, "", "BWI_logistics_FOB_enabled && !BWI_displayReinsertionQueue"];
+	player addAction ["Hide reinforcements list", "BWI_displayReinsertionQueue = false; hint """";", nil, 1.5, false, false, "", "BWI_logistics_FOB_enabled && BWI_displayReinsertionQueue"];
 };
 
 /**
@@ -63,35 +51,39 @@ if( _platoonRole == "apl" || _platoonRole2 == "pl" ) then {
 */
 if( BWI_playerGotKilled ) then {
 
-	_timerScript = [] spawn {
-		_timer = 120 + (BWI_playerKillCount - 1) * 180;
-		
-		[player, "STARTTIMER", _timer] call BWI_fnc_ReportReinsertionToPlatoon;
-		
-		while { _timer > 0 && !BWI_playerCanDeploy && (player distance2D SpawnVAS) < 50 } do {
-			hintSilent parseText format ["<t color='#ff1111'>Waiting for reinsertion</t><br/>Wait til the timer has finished!<br/>%1:%2 remaining.", [floor(_timer / 60),2] call CBA_fnc_formatNumber, [_timer % 60,2] call CBA_fnc_formatNumber];
-			sleep 1;
-			_timer = _timer - 1;
-		};
-		
-		if( ( player distance2D SpawnVAS ) >= 50) then {
-			hint "";
-			[player, "DEPLOYED"] call BWI_fnc_ReportReinsertionToPlatoon;
-		} else {
-			BWI_playerCanDeploy = true;
-			
-			while { isNull BWI_logistics_FOB_Flag && ( player distance2D SpawnVAS ) < 50 } do {
-				hintSilent parseText "<t color='#FFA805'>FOB not placed</t><br/>You have to wait until the FOB has been placed by the PL/APL to reinsert.";
-				sleep 2;
-			};
-			
-			if( ( player distance2D SpawnVAS ) >= 50) then {
-				hint "";
-				[player, "DEPLOYED"] call BWI_fnc_ReportReinsertionToPlatoon;
-			} else {
-				hintSilent parseText "<t color='#11ff11'>REINSERTION READY!</t><br/>Use the teleporter flag pole!";
-			};
-		};
-	};
+    if( BWI_logistics_FOB_enabled ) then {
+        _timerScript = [] spawn {
+            _timer = 120 + (BWI_playerKillCount - 1) * 180;
+            
+            [player, "STARTTIMER", _timer] call BWI_fnc_ReportReinsertionToPlatoon;
+            
+            while { _timer > 0 && !BWI_playerCanDeploy && (player distance2D SpawnVAS) < 50 } do {
+                hintSilent parseText format ["<t color='#ff1111'>Waiting for reinsertion</t><br/>Wait til the timer has finished!<br/>%1:%2 remaining.", [floor(_timer / 60),2] call CBA_fnc_formatNumber, [_timer % 60,2] call CBA_fnc_formatNumber];
+                sleep 1;
+                _timer = _timer - 1;
+            };
+            
+            if( ( player distance2D SpawnVAS ) >= 50) then {
+                hint "";
+                [player, "DEPLOYED"] call BWI_fnc_ReportReinsertionToPlatoon;
+            } else {
+                BWI_playerCanDeploy = true;
+                
+                while { isNull BWI_logistics_FOB_Flag && ( player distance2D SpawnVAS ) < 50 } do {
+                    hintSilent parseText "<t color='#FFA805'>FOB not placed</t><br/>You have to wait until the FOB has been placed by the PL/APL to reinsert.";
+                    sleep 2;
+                };
+                
+                if( ( player distance2D SpawnVAS ) >= 50) then {
+                    hint "";
+                    [player, "DEPLOYED"] call BWI_fnc_ReportReinsertionToPlatoon;
+                } else {
+                    hintSilent parseText "<t color='#11ff11'>REINSERTION READY!</t><br/>Use the teleporter flag pole!";
+                };
+            };
+        };
+    } else {
+        hintSilent parseText "<t color='#11ff11'>FOB not used for this mission!</t><br/>Please reinsert via teleporter flag pole or wait for reinsertion!";
+    };
 	
 };

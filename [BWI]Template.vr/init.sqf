@@ -1,9 +1,8 @@
-[true,30,false,true,30,3,true,[]] execVM "BWI\scripts\WerthlesHeadless.sqf";
+[true,50,false,true,30,10,true,[]] execVM "BWI\scripts\WerthlesHeadless.sqf";
 
 //tp's
 
 carrier_tp addAction ["Teleport - USS Nimitz", "BWI\scripts\nimitz_tp.sqf"];
-carrier_tp addAction ["Teleport - USS Wasp", "BWI\scripts\wasp_tp.sqf"];
 
 AdminAction0 = -1;
 AdminAction1 = -1;

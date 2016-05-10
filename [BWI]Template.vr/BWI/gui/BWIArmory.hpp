@@ -11,65 +11,64 @@ class BWIArmory
 		{
 			idc = 1000;
 			text = "BWI\gui\armoryBgd.paa";
-			x = 0.304062 * safezoneW + safezoneX;
-			y = 0.159 * safezoneH + safezoneY;
-			w = 0.397031 * safezoneW;
-			h = 0.66 * safezoneH;
+			x = 1 * GUI_GRID_W + GUI_GRID_X;
+			y = -3 * GUI_GRID_H + GUI_GRID_Y;
+			w = 38.5 * GUI_GRID_W;
+			h = 30 * GUI_GRID_H;
 		};
 	};
 	
 	class Controls
 	{
-			
 		class btnSelect: BWIButton
 		{
 			idc = 1600;
 			text = "Select Loadout"; //--- ToDo: Localize;
-			x = 0.597969 * safezoneW + safezoneX;
-			y = 0.742 * safezoneH + safezoneY;
-			w = 0.0825 * safezoneW;
-			h = 0.033 * safezoneH;
+			x = 29.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 23.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 8 * GUI_GRID_W;
+			h = 1.5 * GUI_GRID_H;
 			
-			onMouseButtonClick = "[ctrlParent (_this select 0)] call BWI_gui_fnc_selectLoadout;";
+			onMouseButtonClick = "[ctrlParent (_this select 0)] call BWI_gui_fnc_SelectLoadout;";
 		};
 		
 		class btnCancel: BWIButton
 		{
 			idc = 1601;
 			text = "Cancel";
-			x = 0.5 * safezoneW + safezoneX;
-			y = 0.742 * safezoneH + safezoneY;
-			w = 0.0825 * safezoneW;
-			h = 0.033 * safezoneH;
+			x = 20 * GUI_GRID_W + GUI_GRID_X;
+			y = 23.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 8 * GUI_GRID_W;
+			h = 1.5 * GUI_GRID_H;
 			onMouseButtonClick = "closeDialog 2;";
 		};
 		
 		class tvFaction: BWITreeView
 		{
 			idc = 1001;
-			x = 0.36 * safezoneW + safezoneX;
-			y = 0.357 * safezoneH + safezoneY;
-			w = 0.13 * safezoneW;
-			h = 0.352 * safezoneH;
+			x = 5.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 13.5 * GUI_GRID_W;
+			h = 16 * GUI_GRID_H;
 		};
 		
 		class tvRole: BWITreeView
 		{
 			idc = 1002;
-			x = 0.520 * safezoneW + safezoneX;
-			y = 0.35876 * safezoneH + safezoneY;
-			w = 0.13 * safezoneW;
-			h = 0.351186 * safezoneH;
+			x = 22 * GUI_GRID_W + GUI_GRID_X;
+			y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 13.5 * GUI_GRID_W;
+			h = 15.963 * GUI_GRID_H;
 		};
 		
 		class lblSide: RscText
 		{
 			idc = 1003;
 			text = "Side:"; //--- ToDo: Localize;
-			x = 0.36 * safezoneW + safezoneX;
-			y = 0.26 * safezoneH + safezoneY;
-			w = 0.04125 * safezoneW;
-			h = 0.055 * safezoneH;
+			x = 5 * GUI_GRID_W + GUI_GRID_X;
+			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 4 * GUI_GRID_W;
+			h = 2.5 * GUI_GRID_H;
 			colorText[] = {1,1,1,1};
 		};
 
@@ -77,10 +76,10 @@ class BWIArmory
 		{
 			idc = 1004;
 			text = "Role:"; //--- ToDo: Localize;
-			x = 0.520 * safezoneW + safezoneX;
-			y = 0.314852 * safezoneH + safezoneY;
-			w = 0.04125 * safezoneW;
-			h = 0.055 * safezoneH;
+			x = 21.94 * GUI_GRID_W + GUI_GRID_X;
+			y = 4.08 * GUI_GRID_H + GUI_GRID_Y;
+			w = 4 * GUI_GRID_W;
+			h = 2.5 * GUI_GRID_H;
 			colorText[] = {1,1,1,1};
 		};
 		
@@ -88,32 +87,32 @@ class BWIArmory
 		{
 			idc = 1005;
 			text = "Faction:"; //--- ToDo: Localize;
-			x = 0.36 * safezoneW + safezoneX;
-			y = 0.313926 * safezoneH + safezoneY;
-			w = 0.04125 * safezoneW;
-			h = 0.055 * safezoneH;
+			x = 5 * GUI_GRID_W + GUI_GRID_X;
+			y = 4.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 4 * GUI_GRID_W;
+			h = 2.5 * GUI_GRID_H;
 			colorText[] = {1,1,1,1};
 		};
 		
 		class xlistSide: BWIXListbox
 		{
 			idc = 1006;
-			x = 0.36 * safezoneW + safezoneX;
-			y = 0.302 * safezoneH + safezoneY;
-			w = 0.11125 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 5.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 3.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 10.7879 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0.275,0.463,0.694,1};
 			
-			onLBSelChanged = "[ctrlParent (_this select 0), (_this select 1)] call BWI_gui_fnc_displayTreeViewEntries; true";
+			onLBSelChanged = "[ctrlParent (_this select 0)] call BWI_gui_fnc_DisplayTreeViewEntries; true";
 		};
 		
 		class lblError: RscStructuredText
 		{
 			idc = 1007;
-			x = 0.33 * safezoneW + safezoneX;
-			y = 0.742 * safezoneH + safezoneY;
-			w = 0.16 * safezoneW;
-			h = 0.06 * safezoneH;
+			x = 3.52 * GUI_GRID_W + GUI_GRID_X;
+			y = 23.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 15.5152 * GUI_GRID_W;
+			h = 2.72727 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,0,0,1};
 		};
@@ -121,10 +120,22 @@ class BWIArmory
 		class lblSlotPicked: RscStructuredText
 		{
 			idc = 1008;
-			x = 0.309724 * safezoneW + safezoneX;
-			y = 0.785659 * safezoneH + safezoneY;
-			w = 0.38 * safezoneW;
-			h = 0.033 * safezoneH;
+			x = 1.55 * GUI_GRID_W + GUI_GRID_X;
+			y = 25.48 * GUI_GRID_H + GUI_GRID_Y;
+			w = 36.8485 * GUI_GRID_W;
+			h = 1.5 * GUI_GRID_H;
+		};
+		
+		class xlistRoleSelection: BWIXListbox
+		{
+			idc = 1009;
+			x = 25.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 12 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+			colorBackground[] = {0.275,0.463,0.694,1};
+			
+			onLBSelChanged = "[ctrlParent (_this select 0)] call BWI_gui_fnc_DisplayTreeViewEntries; true";
 		};
 	};
 };
