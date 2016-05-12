@@ -21,7 +21,7 @@ _unit addItemToBackpack "rhs_mag_rdg2_black";
 
 _unit addHeadgear "rhs_tsh4";
 
-_unit addWeapon "hlc_rifle_aks74u";
+_unit addWeapon "hlc_rifle_aks74u_MTK";
 
 _unit linkItem "tf_fadak";
 _unit linkItem "ItemWatch";

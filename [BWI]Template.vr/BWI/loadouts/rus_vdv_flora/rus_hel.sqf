@@ -22,7 +22,7 @@ _unit addItemToVest "ACE_HandFlare_Green";
 
 _unit addHeadgear "rhs_zsh7a_mike";
 
-_unit addWeapon "hlc_rifle_aks74u";
+_unit addWeapon "hlc_rifle_aks74u_MTK";
 
 _unit linkItem "tf_fadak";
 _unit linkItem "ItemWatch";
