@@ -26,8 +26,8 @@ _unit addWeapon "hlc_rifle_G36E1";
 _unit addPrimaryWeaponItem "HLC_Optic_G36Dualoptic15x2d";
 _unit addWeapon "BWA3_P8";
 
-_unit linkItem "tf_rf7800str";
-_unit linkItem "tf_microDAGR";
+_unit linkItem "tf_anprc152";
+_unit linkItem "ItemWatch";
 
 [_unit, "CFR", "RI", 2010] call BWI_fnc_AddGear;
 [_unit, "CFR"] call BWI_fnc_AddMedical;
