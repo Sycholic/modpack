@@ -1,4 +1,4 @@
-[true,50,false,true,30,10,true,[]] execVM "BWI\scripts\WerthlesHeadless.sqf";
+[true,60,false,true,30,150,true,[]] execVM "BWI\scripts\WerthlesHeadless.sqf";
 
 //tp's
 
