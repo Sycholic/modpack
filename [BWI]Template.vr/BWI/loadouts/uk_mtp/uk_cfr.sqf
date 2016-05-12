@@ -27,8 +27,8 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_SUSAT_3D";
 _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
 _unit addWeapon "UK3CB_BAF_L131A1";
 
-_unit linkItem "tf_rf7800str";
-_unit linkItem "tf_microDAGR";
+_unit linkItem "tf_anprc152";
+_unit linkItem "ItemWatch";
 
 [_unit, "CFR", "RI", 2013] call BWI_fnc_AddGear;
 [_unit, "CFR"] call BWI_fnc_AddMedical;
