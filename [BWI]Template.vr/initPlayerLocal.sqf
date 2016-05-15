@@ -1,4 +1,9 @@
 /**
+ * Call the cargo clearance init
+ */
+call BWI_fnc_ClearCargoInit;
+
+/**
 *
 *	Vars for reinsertion
 *
