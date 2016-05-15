@@ -29,8 +29,8 @@ _unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 _unit linkItem "tf_pnr1000a";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "AAR", "RI", 2018] call BWI_fnc_AddGear;
-[_unit, "AAR"] call BWI_fnc_AddMedical;
+[_unit, "AMMG", "RI", 2018] call BWI_fnc_AddGear;
+[_unit, "AMMG"] call BWI_fnc_AddMedical;
 
 _unit addItemToBackpack "rhs_100Rnd_762x54mmR_green";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};

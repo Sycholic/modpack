@@ -28,8 +28,8 @@ _unit addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
 _unit linkItem "tf_rf7800str";
 _unit linkItem "tf_microDAGR";
 
-[_unit, "AAR", "RI", 2013] call BWI_fnc_AddGear;
-[_unit, "AAR"] call BWI_fnc_AddMedical;
+[_unit, "AMMG", "RI", 2013] call BWI_fnc_AddGear;
+[_unit, "AMMG"] call BWI_fnc_AddMedical;
 
 _unit addItemToVest "UK3CB_BAF_75Rnd_T";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "UK3CB_BAF_75Rnd";};
