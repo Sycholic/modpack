@@ -13,6 +13,7 @@ for /d %%a in ([BWI]*) do (
 	  copy "[BWI]Template.vr\onPlayerRespawn.sqf" "%%a" >> "logs\%%a_copy.log"
 	  copy "[BWI]Template.vr\onPlayerKilled.sqf" "%%a" >> "logs\%%a_copy.log"
 	  copy "[BWI]Template.vr\initPlayerLocal.sqf" "%%a" >> "logs\%%a_copy.log"
+	  copy "[BWI]Template.vr\initServer.sqf" "%%a" >> "logs\%%a_copy.log"
 	  copy "[BWI]Template.vr\init.sqf" "%%a" >> "logs\%%a_copy.log"
    )
 )

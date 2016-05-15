@@ -1,2 +1,6 @@
 call BWI_fnc_ClearCargoEditor;
-call BWI_fnc_ClearCargoInit;
+
+clearWeaponCargoGlobal SpawnVAS;
+clearMagazineCargoGlobal SpawnVAS;
+clearItemCargoGlobal SpawnVAS;
+clearBackpackCargoGlobal SpawnVAS;
