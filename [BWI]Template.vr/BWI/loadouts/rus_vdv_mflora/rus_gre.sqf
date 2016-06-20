@@ -15,7 +15,6 @@ _unit forceAddUniform "rhs_uniform_vdv_mflora";
 _unit addVest "rhs_6b23_ML_6sh92_headset";
 
 _unit addBackpack "B_FieldPack_khk";
-for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_9x19_17";};
 for "_i" from 1 to 8 do {_unit addItemToBackpack "hlc_VOG25_AK";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_GRD_Red";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "hlc_GRD_White";};
