@@ -75,21 +75,21 @@ if( count _roleSelected == 2 ) then {
 	switch ( _roleSelected select 0 ) do {
 		case 0 :{
 					if( _roleSelected select 1 == 0 ) then { _vehicle = "RHSUSF_M1A1aimwd_usarmy"; }; 
-					if( _roleSelected select 1 == 1 ) then { _vehicle = "RHS_M2A3_BUSKIII_wd"; };
-					if( _roleSelected select 1 == 2 ) then { _vehicle = "rhsusf_M1025_w_mk19"; };
-					if( _roleSelected select 1 == 3 ) then { _vehicle = "rhsusf_M1025_w_m2"; };
+					if( _roleSelected select 1 == 1 ) then { _vehicle = "BWA3_Leopard2A6M_Fleck"; }; 
+					if( _roleSelected select 1 == 2 ) then { _vehicle = "RHS_M2A3_BUSKIII_wd"; };
+					if( _roleSelected select 1 == 3 ) then { _vehicle = "rhsusf_M1025_w_mk19"; };
+					if( _roleSelected select 1 == 4 ) then { _vehicle = "rhsusf_M1025_w_m2"; };
 				};
 		case 1 :{
-					if( _roleSelected select 1 == 0 ) then { _vehicle = "rhs_btr60_msv"; }; 
-					if( _roleSelected select 1 == 1 ) then { _vehicle = "rhs_btr70_msv"; };
-					if( _roleSelected select 1 == 2 ) then { _vehicle = "rhs_btr80_msv"; };
-					if( _roleSelected select 1 == 3 ) then { _vehicle = "rhsusf_M1078A1P2_B_d_flatbed_fmtv_usarmy"; };
-				};
-		case 2 :{
-					if( _roleSelected select 1 == 0 ) then { _role = "cm"; }; 
-					if( _roleSelected select 1 == 1 ) then { _role = "cfr"; };
-					if( _roleSelected select 1 == 2 ) then { _role = "eng"; _loadoutParameter = "ENGF"; };
-					if( _roleSelected select 1 == 3 ) then { _role = "eng"; _loadoutParameter = "ENGT"; };
+					if( _roleSelected select 1 == 0 ) then { _vehicle = "rhs_btr70_msv"; }; 
+					if( _roleSelected select 1 == 1 ) then { _vehicle = "rhs_bmp2_msv"; };
+					if( _roleSelected select 1 == 2 ) then { _vehicle = "rhs_bmp3_late_msv"; };
+					if( _roleSelected select 1 == 3 ) then { _vehicle = "rhs_brm1k_msv"; };
+					if( _roleSelected select 1 == 4 ) then { _vehicle = "rhs_t72bb_tv"; };
+					if( _roleSelected select 1 == 5 ) then { _vehicle = "rhs_t80"; };
+					if( _roleSelected select 1 == 6 ) then { _vehicle = "rhs_t90_tv"; };
+					if( _roleSelected select 1 == 7 ) then { _vehicle = "rhs_zsu234_aa"; };
+					
 				};
 		
 		default { _role = ""; _error = true; };
@@ -97,9 +97,49 @@ if( count _roleSelected == 2 ) then {
 };
 
 if ( !_error ) then {
-	_variableActivated = true;
-	_veh = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
-	_veh setDir 325;
+
+if( lbCurSel _xlistSide == 0 ) then {
+	deleteVehicle veh1;
+	veh1 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
+	veh1 setDir 325;
+};
+
+if( lbCurSel _xlistSide == 1 ) then {
+	deleteVehicle veh2;
+	veh2 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
+	veh2 setDir 325;
+};
+
+
+if( lbCurSel _xlistSide == 2 ) then {
+	deleteVehicle veh3;
+	veh3 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
+	veh3 setDir 325;
+};
+
+
+if( lbCurSel _xlistSide == 3 ) then {
+	deleteVehicle veh4;
+	veh4 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
+	veh4 setDir 325;
+};
+
+
+if( lbCurSel _xlistSide == 4 ) then {
+	deleteVehicle veh5;
+	veh5 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
+	veh5 setDir 325;
+};
+
+
+if( lbCurSel _xlistSide == 5 ) then {
+	deleteVehicle veh6;
+	veh6 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
+	veh6 setDir 325;
+};
+
+
+
 	
 	closeDialog 1;
 	true

@@ -20,7 +20,7 @@ class vehiclespawn
 	
 	class Controls
 	{
-			
+	
 		class btnSelect: BWIButton
 		{
 			idc = 1600;
@@ -100,14 +100,7 @@ class vehiclespawn
 			colorText[] = {1,0,0,1};
 		};
 		
-		class lblSlotPicked: RscStructuredText
-		{
-			idc = 1008;
-			x = 0.309724 * safezoneW + safezoneX;
-			y = 0.785659 * safezoneH + safezoneY;
-			w = 0.38 * safezoneW;
-			h = 0.033 * safezoneH;
-		};
+		
 	};
 };
 // 
