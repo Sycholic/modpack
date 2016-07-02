@@ -1,5 +1,5 @@
 params ["_display"];
-private ["_tvRole", "_xlistSide", "_factionPath", "_role", "_scriptName", "_error", "_vehicle", "_spawnpos", "_veh"];
+private ["_tvRole", "_xlistSide", "_factionPath", "_role", "_scriptName", "_error", "_vehicle", "_spawnpos", "_veh", "_spCheck"];
 
 _xlistSide = _display displayctrl 1006;
 _tvFaction = _display displayctrl 1001;
@@ -11,36 +11,6 @@ _factionPath = "";
 _role = "";
 _loadoutParameter = "";
 _error = false;
-
-// Position 1
-if( lbCurSel _xlistSide == 0 ) then {
-_spawnpos = getMarkerPos "fr_vhc_spwn_1";
-};
-
-// Position 2
-if( lbCurSel _xlistSide == 1 ) then {
-_spawnpos = getMarkerPos "fr_vhc_spwn_2";
-};
-
-// Position 3
-if( lbCurSel _xlistSide == 2 ) then {
-_spawnpos = getMarkerPos "fr_vhc_spwn_3";
-};
-
-// Position 4
-if( lbCurSel _xlistSide == 3 ) then {
-_spawnpos = getMarkerPos "fr_vhc_spwn_4";
-};
-
-// Position 5
-if( lbCurSel _xlistSide == 4 ) then {
-_spawnpos = getMarkerPos "fr_vhc_spwn_5";
-};
-
-// Position 6
-if( lbCurSel _xlistSide == 5 ) then {
-_spawnpos = getMarkerPos "fr_vhc_spwn_6";
-};
 
 
 if( count _roleSelected == 1 ) then {
@@ -70,7 +40,6 @@ if( count _roleSelected == 1 ) then {
 	};
 };
 
-// multi member role (HAT/MAT/pilot team)
 if( count _roleSelected == 2 ) then {
 	switch ( _roleSelected select 0 ) do {
 		case 0 :{
@@ -100,49 +69,48 @@ if ( !_error ) then {
 
 if( lbCurSel _xlistSide == 0 ) then {
 	deleteVehicle veh1;
-	veh1 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
-	veh1 setDir 325;
+	veh1 = createVehicle [_vehicle, [0,0,0], [], 0, "NONE"];
+	execVM "scripts\firing_range\vehiclespawn\spawnpos\pos1.sqf";
 };
 
 if( lbCurSel _xlistSide == 1 ) then {
-	deleteVehicle veh2;
-	veh2 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
-	veh2 setDir 325;
+deleteVehicle veh2;
+veh2 = createVehicle [_vehicle, [0,0,0], [], 0, "NONE"];
+execVM "scripts\firing_range\vehiclespawn\spawnpos\pos2.sqf";
 };
 
 
 if( lbCurSel _xlistSide == 2 ) then {
-	deleteVehicle veh3;
-	veh3 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
-	veh3 setDir 325;
+deleteVehicle veh3;
+veh3 = createVehicle [_vehicle, [0,0,0], [], 0, "NONE"];
+execVM "scripts\firing_range\vehiclespawn\spawnpos\pos3.sqf";
 };
 
 
 if( lbCurSel _xlistSide == 3 ) then {
-	deleteVehicle veh4;
-	veh4 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
-	veh4 setDir 325;
+deleteVehicle veh4;
+veh4 = createVehicle [_vehicle, [0,0,0], [], 0, "NONE"];
+execVM "scripts\firing_range\vehiclespawn\spawnpos\pos4.sqf";
 };
 
 
 if( lbCurSel _xlistSide == 4 ) then {
-	deleteVehicle veh5;
-	veh5 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
-	veh5 setDir 325;
+deleteVehicle veh5;
+veh5 = createVehicle [_vehicle, [0,0,0], [], 0, "NONE"];
+execVM "scripts\firing_range\vehiclespawn\spawnpos\pos5.sqf";
 };
 
 
 if( lbCurSel _xlistSide == 5 ) then {
-	deleteVehicle veh6;
-	veh6 = createVehicle [_vehicle, _spawnpos, [], 0, "NONE"];
-	veh6 setDir 325;
+deleteVehicle veh6;
+veh6 = createVehicle [_vehicle, [0,0,0], [], 0, "NONE"];
+execVM "scripts\firing_range\vehiclespawn\spawnpos\pos6.sqf";
 };
 
 
 
 	
-	closeDialog 1;
-	true
+
 } else {
 	// error occured
 	false
