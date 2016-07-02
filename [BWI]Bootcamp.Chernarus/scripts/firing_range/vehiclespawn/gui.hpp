@@ -6,6 +6,7 @@ class vehiclespawn
 	onLoad = "_this call compile preprocessFileLineNumbers 'scripts\firing_range\vehiclespawn\initvehiclespawn.sqf'";
 	
 	class ControlsBackground
+	
 	{
 		class ArmoryBackground: RscPicture
 		{
@@ -36,7 +37,7 @@ class vehiclespawn
 		class btnCancel: BWIButton
 		{
 			idc = 1601;
-			text = "Cancel";
+			text = "Close";
 			x = 0.5 * safezoneW + safezoneX;
 			y = 0.742 * safezoneH + safezoneY;
 			w = 0.0825 * safezoneW;
@@ -86,7 +87,7 @@ class vehiclespawn
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0.275,0.463,0.694,1};
 			
-			onLBSelChanged = "[ctrlParent (_this select 0), (_this select 1)] call vehiclerespawn_gui_fnc_displayTreeViewEntries; true";
+			onLoad = "[ctrlParent (_this select 0), (_this select 1)] call vehiclerespawn_gui_fnc_displayTreeViewEntries; true";
 		};
 		
 		class lblError: RscStructuredText
