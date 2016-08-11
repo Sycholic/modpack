@@ -1,3 +1,5 @@
+[true,60,false,true,30,150,true,[]] execVM "BWI\scripts\WerthlesHeadless.sqf";
+
 _nop = [] execVM "scripts\firing_range\fr_init.sqf";
 
 fr_lane1 addAction ["Clear Score","[[player],'bwi_Func_clear_my_score',false,false] spawn BIS_fnc_MP;"];

@@ -24,9 +24,13 @@ if( player in [z1,z2,z3,z4] ) then {
 	AdminAction20 = h4_billboard2 addAction ["Radio Conversation Example", "scripts\tex_swap\h4_radio_ex.sqf"];
 	AdminAction21 = h4_billboard2 addAction ["GPS Grid", "scripts\tex_swap\h4_grid.sqf"];
 	
-	AdminAction22 = medInit addAction ["Spawn Test Subjects", "scripts\medical\med_hangar_init.sqf"];
-	AdminAction23 = medInit addAction ["Delete Test Subjects", "scripts\medical\med_hangar_del.sqf"];
+	AdminAction22 = medInit addAction ["Spawn Test Subject 1", "scripts\medical\med_hangar_init_1.sqf"];
+	AdminAction23 = medInit addAction ["Spawn Test Subject 2", "scripts\medical\med_hangar_init_2.sqf"];
+	AdminAction24 = medInit addAction ["Spawn Test Subject 3", "scripts\medical\med_hangar_init_3.sqf"];
+	AdminAction25 = medInit addAction ["Spawn Test Subject 4", "scripts\medical\med_hangar_init_4.sqf"];
+	AdminAction26 = medInit addAction ["Delete Test Subjects", "scripts\medical\med_hangar_del.sqf"];
 };
+
 
 
 /**

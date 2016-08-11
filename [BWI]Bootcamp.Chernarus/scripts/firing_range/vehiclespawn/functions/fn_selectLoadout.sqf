@@ -1,5 +1,5 @@
 params ["_display"];
-private ["_tvRole", "_xlistSide", "_factionPath", "_role", "_scriptName", "_error", "_vehicle", "_spawnpos", "_veh", "_spCheck"];
+private ["_tvRole", "_xlistSide", "_factionPath", "_role", "_scriptName", "_error", "_vehicle", "_spawnpos", "_veh", "_spCheck", "_veh1", "_veh2", "_veh3", "_veh4", "_veh5", "_veh6"];
 
 _xlistSide = _display displayctrl 1006;
 _tvRole = _display displayctrl 1002;
@@ -73,6 +73,7 @@ if( lbCurSel _xlistSide == 2 ) then {
 	deleteVehicle veh3;
 	veh3 = createVehicle [_vehicle, [0,0,0], [], 0, "NONE"];
 	execVM "scripts\firing_range\vehiclespawn\spawnpos\pos3.sqf";
+
 };
 
 
@@ -80,6 +81,7 @@ if( lbCurSel _xlistSide == 3 ) then {
 	deleteVehicle veh4;
 	veh4 = createVehicle [_vehicle, [0,0,0], [], 0, "NONE"];
 	execVM "scripts\firing_range\vehiclespawn\spawnpos\pos4.sqf";
+
 };
 
 

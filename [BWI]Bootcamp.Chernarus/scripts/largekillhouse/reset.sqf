@@ -1,0 +1,1 @@
+SST_resetpop2 = true; publicVariable "SST_resetpop2";
